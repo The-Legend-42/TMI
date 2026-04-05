@@ -1,0 +1,53 @@
+[
+    {
+        "name": "Drone",
+        "movementType": "Air",
+        "uniques": ["Aircraft", "[+2] Sight", "Can see over obstacles", "Can perform Air Sweep"]
+    },
+
+
+    	
+    {
+	 /////// SRM Stands for Short Range Missile //////
+        "name": "SRM",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking"]
+    },
+
+
+    { 
+	/////// Reconnaissance Aircraft ///////
+        "name": "Air Recon",
+        "movementType": "Air",
+        "uniques": ["Aircraft", "[+6] Sight", "Can see over obstacles", "Can perform Air Sweep"]
+    }
+
+    { 
+        "name": "Space Fighter",
+        "movementType": "Air",
+        "uniques": ["Aircraft", "[+6] Sight", "Can see over obstacles", "Can perform Air Sweep"]
+    }
+	
+    {
+        "name": "Orbital Ordnance",
+        "movementType": "Air",
+        "uniques": ["Self-destructs when attacking", "Cannot be intercepted","[-100]% maintenance costs",]
+    },
+		
+
+
+	//////AMPHIBS
+    { 
+        "name": "Amphibious",
+        "movementType": "Land",
+        "uniques": ["[+2] Movement <when [Embarked]>"]
+    },
+    { 
+        "name": "Melee Amphibious",
+        "movementType": "Land",
+        "uniques": ["[+2] Movement <when [Embarked]>","Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast"]
+    },
+	///May add in Melee Amphibious","Ranged Amphibious","Armored Amphibious"
+
+
+]

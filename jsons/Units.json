@@ -1,4 +1,256 @@
 [
+	
+
+	////////////////NORMAL UNITS////////////////////////////////
+
+	{
+		"name": "Machine Gun",
+		"unitType": "Ranged Gunpowder",
+		"range": 1,
+		"movement": 2,
+		"strength": 60,
+		"rangedStrength": 60,
+		"cost": 350,
+		"requiredTech": "Ballistics",
+		"upgradesTo": "Mechanized Infantry",
+		"obsoleteTech": "Mobile Tactics",  //Had to be done to avoid bugs
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Artillery",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 21,
+		"rangedStrength": 28,
+		"range": 3,
+		"cost": 320,
+		"requiredTech": "Dynamite",
+		"obsoleteTech": "Asteroid Mining",
+		"upgradesTo": "Rocket Artillery",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
+			"Must set up to ranged attack","[-1] Sight", "Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "artillery"
+	},
+	{
+		"name": "Carrier",
+		"unitType": "Aircraft Carrier",
+		"movement": 5,
+		"strength": 40,
+		"cost": 375,
+	//	"upgradesTo": "Shielded Carrier", //Perhaps will instead make em upgrade to heavy carrier if added
+		"requiredTech": "Electronics",
+		"uniques": ["Cannot attack", "Can carry [2] [Aircraft] units"]
+	},
+	{
+		"name": "Destroyer",
+		"unitType": "Melee Water",
+		"movement": 6,
+		"strength": 55,
+		"interceptRange": 2,
+		"cost": 375,
+		"upgradesTo": "Near Future Destroyer",
+	//	"obsoleteTech": "Energy Fields",	//There bt default may change
+		"requiredTech": "Combustion",
+		"uniques": ["Can see invisible [Submarine] units", "[40]% chance to intercept air attacks",
+			"Withdraws before melee combat <with [80]% chance>", "[+100]% Strength <vs [Submarine] units>"],
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Marine",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 65,
+		"cost": 400,
+		"requiredTech": "Pharmaceuticals",
+		"upgradesTo": "Shielded Marines",
+		"obsoleteTech": "Energy Fields",
+		"promotions": ["Amphibious"],
+		"uniques": ["[+1] Sight <when [Embarked]>", "[+100]% Strength <when defending> <when [Embarked]>"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Fighter",
+		"unitType": "Fighter",
+		"movement": 1,
+		"strength": 45,
+		"rangedStrength": 45,
+		"range": 8,
+		"interceptRange": 8,
+		"cost": 375,
+		"requiredTech": "Radar",
+		"requiredResource": "Oil",
+		"upgradesTo": "Jet Fighter",
+		"obsoleteTech": "Space Racing",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Bomber",
+		"unitType": "Bomber",
+		"movement": 1,
+		"strength": 65,
+		"rangedStrength": 65,
+		"range": 10,
+		"cost": 375,
+		"requiredTech": "Radar",
+		"requiredResource": "Oil",
+		"obsoleteTech": "Space Racing",
+		"upgradesTo": "Stealth Bomber",
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Paratrooper",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 65,
+		"cost": 375,
+		"requiredTech": "Radar",
+		"obsoleteTech": "Cyborgism",
+		"upgradesTo": "Cyborg Commando",
+		"uniques": ["May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>", "Never appears as a Barbarian unit"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Tank",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 70,
+		"cost": 375,
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Oil",
+		"upgradesTo": "Modern Armor",
+		"obsoleteTech": "High Energy Theory",
+		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Anti-Tank Gun",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 50,
+		"cost": 300,
+		"requiredTech": "Combined Arms",
+		"upgradesTo": "Helicopter Gunship",
+		"obsoleteTech": "Energy Fields",
+		"uniques": ["[+100]% Strength <vs [Armored] units>", "Never appears as a Barbarian unit"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Rocket Artillery",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 45,
+		"rangedStrength": 60,
+		"range": 3,
+		"cost": 425,
+		"requiredTech": "Rocketry",
+		"requiredResource": "Aluminum",
+		"upgradesTo": "MLRS Truck",
+		"obsoleteTech": "Cyborgism",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
+			"[-1] Sight", "Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "artillery"
+	},
+	{
+		"name": "Mechanized Infantry",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 90,
+		"cost": 375,
+		"requiredTech": "Mobile Tactics",
+		"upgradesTo": "Near Future Infantry",
+		"uniques": ["Never appears as a Barbarian unit"],
+		"obsoleteTech": "Augmented Reality",
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Modern Armor",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 100,
+		"cost": 425,
+		"requiredTech": "Lasers",
+		"requiredResource": "Aluminum",
+		"obsoleteTech": "Smart Cities",
+		"upgradesTo": "Giant Death Robot",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Missile Cruiser",
+		"unitType": "Ranged Water",
+		"movement": 7,
+		"strength": 80,
+		"rangedStrength": 100,
+		"range": 3,
+		"interceptRange": 2,
+		"cost": 425,
+		"requiredTech": "Robotics",
+		"upgradesTo": "Shielded Missile Ship",
+		"uniques": ["[100]% chance to intercept air attacks", "Can see invisible [Submarine] units",
+			"Can carry [3] [Missile] units", "[+100]% Strength <vs [Submarine] units>", "Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Giant Death Robot",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 150,
+		"cost": 425,
+		"requiredTech": "Nuclear Fusion",
+		"requiredResource": "Uranium",
+		"obsoleteTech": "AI",
+		"upgradesTo": "Giant Death Robot II",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "gdrAttack"
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	////////////////ALIENS////////////////////////////////
 	{
 		"name": "Phasers",
 		"unitType": "Ranged",
@@ -10,8 +262,4304 @@
 		"range": 2,
 		"cost": 500,
 		"requiredTech": "Ballistics",
+		"upgradesTo": "Q'u Zebbis",
 		"requiredResource": "Uranium",
 		"promotions": ["Logistics","Accuracy I"],
+		"obsoleteTech": "Cloning",
 		"attackSound": "phasers"
-	}
+	},
+	{
+		"name": "Q'u Zebbis",
+		"unitType": "Ranged",
+		"uniqueTo": "Aliens",
+		"replaces": "Bio-bot Infantry",
+		"movement": 2,
+		"strength": 155,
+		"rangedStrength": 77,
+		"range": 2,
+		"cost": 400,
+		"requiredTech": "Cloning",
+		"requiredResource": "Uranium",
+		"uniques": ["[+1] Sight","Can build [Road] improvements on tiles",],
+		"promotions": ["Logistics","Accuracy I"],
+		"attackSound": "phasers"
+        	"civilopediaText": [
+			{"text": "A clone of the fammed warrior Q'u Zebbis."}
+		]
+	},
+	{
+		"name": "Orbus",
+		"unitType": "Drone",
+		"uniqueTo": "Aliens",
+		"movement": 1,
+		"strength": 25,
+		"rangedStrength": 25,
+		"range": 7,
+		"cost": 50,
+		"requiredTech": "Metallurgy",
+		"obsoleteTech": "Nanotechnology",
+		"upgradesTo": "Gorbus",
+		"promotions": ["[Orbus] ability"],
+		"attackSound": "phasers"
+	},
+	{
+		"name": "Gorbus",
+		"unitType": "Drone",
+		"uniqueTo": "Aliens",
+		"movement": 1,
+		"strength": 33,
+		"rangedStrength": 33,
+		"range": 12,
+		"cost": 50,
+		"requiredTech": "Nanotechnology",
+		"uniques": ["[+100]% Strength <vs [Gunpowder] units>","[+100]% Strength <vs [Ranged Gunpowder] units>",],
+		"promotions": ["[Orbus] ability",],
+		"attackSound": "phasers"
+	},
+	{
+		"name": "Zubber",
+		"unitType": "Fighter",
+		"uniqueTo": "Aliens",
+		"movement": 1,
+		"strength": 250,
+		"rangedStrength": 250,
+		"range": 12,
+		"interceptRange": 12,
+		"cost": 500,
+		"requiredResource": "Aluminum",
+		"requiredTech": "Asteroid Mining",
+		"promotions": [Interception III,"Sortie"],
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", 
+			    "[+50]% Strength <vs [Helicopter] units>", "[+33]% Strength <vs [Drone] units>"],
+		"attackSound": "phasers"
+	},
+	{
+		"name": "Tripod",
+		"unitType": "Armored",
+		"uniqueTo": "Aliens",
+		"replaces": "Giant Death Robot II",
+		"movement": 5,
+		"strength": 350,
+		"cost": 450,
+		"requiredTech": "Asteroid Mining",
+		"requiredResource": "Aluminum",
+		"upgradesTo": "Tripod-II",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit",
+			    "[+2] Sight", "Can carry [2] [Aircraft] units"],
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Tripod-II",
+		"unitType": "Armored",
+		"uniqueTo": "Aliens",
+		"replaces": "Shielded Mech",
+		"movement": 5,
+		"strength": 445,
+		"rangedStrength": 300,
+		"range": 2,
+		"cost": 650,
+		"requiredTech": "Energy Fields",
+		"upgradesTo": "Tripod-III",
+		"requiredResource": "Copper",
+		"uniques": ["Can move after attacking", 
+			   "No defensive terrain bonus", 
+			   "Never appears as a Barbarian unit",
+			   "[+2] Sight",
+			   "Can carry [2] [Aircraft] units"],
+		"promotions": ["Medium Energy Shields"],
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Tripod-III",
+		"unitType": "Armored",
+		"uniqueTo": "Aliens",
+		"replaces": "Enhanced Shielded Mech",
+		"movement": 5,
+		"strength": 500,
+		"rangedStrength": 400,
+		"range": 2,
+		"cost": 900,
+		"upgradesTo": "Elite Tripod",
+		"requiredTech": "High Energy Theory",
+		"uniques": ["Can move after attacking", 
+			   "No defensive terrain bonus", 
+			   "Never appears as a Barbarian unit",
+			    "Consumes [2] [Copper]",
+			   "[+3] Sight",
+			   "Can carry [2] [Aircraft] units"],
+		"promotions": ["Medium Energy Shields"],
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Stealth Tripod",
+		"unitType": "Armored",
+		"uniqueTo": "Aliens",
+		"movement": 5,
+		"strength": 460,
+		"rangedStrength": 330,
+		"range": 3,
+		"cost": 1000,
+		"requiredTech": "Large-Scale Invisibility",
+		"requiredResource": "Silver",
+		"uniques": ["Can move after attacking", 
+			   "No defensive terrain bonus", 
+			   "Never appears as a Barbarian unit",
+			   "[+2] Sight",
+			   "Can carry [2] [Aircraft] units"],
+		"promotions": ["Cloaking"],
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Elite Tripod",
+		"unitType": "Armored",
+		"uniqueTo": "Aliens",
+		"replaces": "Shielded Mech MK-II",
+		"movement": 5,
+		"strength": 525,
+		"rangedStrength": 420,
+		"range": 2,
+		"cost": 1250,
+		"requiredTech": "Crystal Based Shielding",
+		"requiredResource": "Gems",
+		"uniques": ["Can move after attacking", 
+			   "No defensive terrain bonus", 
+			   "Never appears as a Barbarian unit",
+			    "Consumes [2] [Iron]",
+			   "[+3] Sight",
+			   "Can carry [2] [Aircraft] units"],
+		"promotions": ["Medium Crystal Shields"],
+		"attackSound": "gdrAttack"
+	},
+	/////////////////Israel/////////////////////////////
+	{
+		"name": "Rock Slinger",
+		"unitType": "Archery",
+		"uniqueTo": "Israel",
+		"movement": 3,
+		"strength": 2,
+		"rangedStrength": 7,
+		"cost": 45,
+		"requiredTech": "Archery",
+		"obsoleteTech": "Machinery",
+		"upgradesTo": "Crossbowman",
+		"promotions": ["Slinger Withdraw"],
+		"attackSound": "arrow"
+	
+	},
+	{
+		"name": "Heavy Chariot",
+		"unitType": "Archery",
+		"uniqueTo": "Israel",
+		"replaces": "Chariot Archer",
+		"movement": 4,
+		"strength": 6,
+		"rangedStrength": 12,
+		"cost": 56,
+		"requiredTech": "The Wheel",
+		"requiredResource": "Horses",
+		"upgradesTo": "Knight",
+		"obsoleteTech": "Chivalry",
+		"uniques": ["Rough terrain penalty", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Kiddon",
+		"unitType": "Sword",
+		"replaces": "Spearman",
+		"uniqueTo": "Israel",
+		"movement": 3,
+		"strength": 7,
+		"cost": 45,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Civil Service",
+		"upgradesTo": "Pikeman",
+		"uniques": ["[+100]% Strength <vs [Mounted] units>", "All healing effects doubled","[+1] Sight"],
+		"promotions":["[Blessed Warrior] ability"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Pagaz",
+		"unitType": "Siege",
+		"replaces": "Catapult",
+		"uniqueTo": "Israel",
+		"movement": 2,
+		"strength": 5,
+		"rangedStrength": 12,
+		"cost": 70,
+		"requiredResource": "Iron",
+		"requiredTech": "Mathematics",
+		"obsoleteTech": "Physics",
+		"upgradesTo": "Trebuchet",
+		"uniques": ["[+25]% Strength <vs cities> <when attacking>", "No defensive terrain bonus",
+			"Must set up to ranged attack", "[-1] Sight"],
+		"promotions": ["Extended Range","Indirect Fire"],
+		"hurryCostModifier": 20,
+		"attackSound": "throw"
+	},
+	{
+		"name": "Maccabi",
+		"unitType": "Sword",
+		"replaces": "Swordsman",
+		"uniqueTo": "Israel",
+		"movement": 3,
+		"strength": 11,
+		"cost": 50,
+		"requiredTech": "Iron Working",
+		"obsoleteTech": "Gunpowder",
+		"hurryCostModifier": 20,
+		"upgradesTo": "Longswordsman",
+		"uniques": ["[+100]% Strength <vs [Mounted] units>", "All healing effects doubled","[+1] Sight"],
+		"promotions":["[Blessed Warrior] ability"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Sphina",
+		"unitType": "Ranged Water",
+		"replaces": "Caravel",
+		"uniqueTo": "Israel",
+		"movement": 7,
+		"strength": 20,
+        	"rangedStrength": 10,
+		"cost": 155,
+		"requiredTech": "Astronomy",
+		"upgradesTo": "Destroyer",
+		"obsoleteTech": "Combustion",
+		"uniques": ["[+3] Sight"],
+		"hurryCostModifier": 30,
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Shomrei ha-Kottel",
+		"unitType": "Sword",
+		"uniqueTo": "Israel",
+		"movement": 2,
+		"strength": 14,
+		"cost": 85,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Civil Service",
+		"upgradesTo": "Pikeman",
+		"uniques": ["[+150]% Strength <vs [Mounted] units>", "All healing effects doubled"],
+		"promotions": ["[Blessed Warrior] ability","Defenders of the Capital"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Shot-Kal Dalled",
+		"unitType": "Armored",
+		"uniqueTo": "Israel",
+		"replaces": "Tank",
+		"movement": 6,
+		"strength": 100,
+		"cost": 450,
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Oil",
+		"upgradesTo": "Merkava II",
+		"uniques": ["Can move after attacking","No defensive terrain bonus"],
+		"promotions": ["Blitz","[Israeli Armour] ability"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Maggach",
+		"unitType": "Armored",
+		"uniqueTo": "Israel",
+		"movement": 5,
+		"strength": 125,
+		"cost": 450,
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Iron",
+		"upgradesTo": "Merkava II",
+		"uniques": ["Can move after attacking","No defensive terrain bonus"],
+		"promotions": ["Blitz","[Israeli Armour] ability"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Merkava II",
+		"unitType": "Armored",
+		"uniqueTo": "Israel",
+		"movement": 6,
+		"strength": 145,
+		"cost": 400,
+		"requiredTech": "Computers",
+		"requiredResource": "Aluminum",
+		"upgradesTo": "Merkava III",
+		"uniques": ["Can move after attacking", "Never appears as a Barbarian unit"],
+		"promotions": ["Blitz","[Israeli Armour] ability"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Merkava III",
+		"unitType": "Armored",
+		"uniqueTo": "Israel",
+		"replaces": "Modern Armor",
+		"movement": 6,
+		"strength": 165,
+		"cost": 450,
+		"requiredTech": "Lasers",
+		"requiredResource": "Aluminum",
+		"upgradesTo": "Merkava IV",
+		"uniques": ["Can move after attacking", "Never appears as a Barbarian unit"],
+		"promotions": ["Blitz","[Israeli Armour] ability","[Urban Combat] ability"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Merkava IV",
+		"unitType": "Armored",
+		"uniqueTo": "Israel",
+		"movement": 7,
+		"interceptRange": 1,
+		"strength": 200,
+		"cost": 500,
+		"requiredTech": "Stealth",
+		"requiredResource": "Aluminum",
+		"upgradesTo": "Merkava V",
+		"uniques": ["Can move after attacking", "Never appears as a Barbarian unit",
+			    "Can carry [1] [Drone] units",
+			    "[99]% chance to intercept air attacks", 
+			    "[+150]% Strength <vs [Drone] units>",
+			    "[+350]% Strength <vs [Missile] units>",
+			    "[+350]% Strength <vs [SRM] units>",],
+		"promotions": ["Blitz","[Israeli Armour] ability","[Urban Combat] ability","Drone Launcher"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Merkava V",
+		"unitType": "Armored",
+		"uniqueTo": "Israel",
+		"replaces": "Near Future Armor",
+		"movement": 7,
+		"strength": 250,
+		"rangedStrength": 235,
+		"range": 2,
+		"interceptRange": 2,
+		"cost": 500,
+		"requiredTech": "Augmented Reality",
+		"requiredResource": "Aluminum",
+		"uniques": ["Can move after attacking", "Never appears as a Barbarian unit",
+			    "Can carry [1] [Drone] units","Can carry [1] [SRM] units",
+			    "[+25]% Strength <vs [Armored] units>",
+				//Defence & Air Defence
+			    "[99]% chance to intercept air attacks", 
+			    "[+250]% Strength <vs [Drone] units>",
+			    "[+400]% Strength <vs [Missile] units>",
+			    "[+400]% Strength <vs [SRM] units>",],
+		"promotions": ["[Israeli Armour] ability","[Urban Combat] ability","Drone Launcher","Charge","Blitz"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Mattoki", //Blessed Infantry Tank
+		"unitType": "Armored",
+		"uniqueTo": "Israel",
+		"movement": 8,
+		"strength": 150,
+		"rangedStrength": 150,
+		"range": 2,
+		"interceptRange": 2,
+		"cost": 250,
+		"requiredResource": "Iron",
+		"requiredTech": "Augmented Reality",
+		"uniques": ["Can move after attacking", "Never appears as a Barbarian unit",
+			    "Can carry [1] [SRM] units","[+1] Movement <when [Embarked]>",
+				//Anti Infantry
+			    "[+25]% Strength <vs [Sword] units>",
+			    "[+25]% Strength <vs [Archery] units>",
+			    "[+25]% Strength <vs [Gunpowder] units>",
+			    "[+25]% Strength <vs [Ranged Gunpowder] units>",
+				//Defence & Air Defence
+			    "[99]% chance to intercept air attacks", 
+			    "[+250]% Strength <vs [Drone] units>",
+			    "[+400]% Strength <vs [Missile] units>",
+			    "[+400]% Strength <vs [SRM] units>",],					
+		"promotions": ["[Israeli Armour] ability","[Blessed Warrior] ability","[Urban Combat] ability","Charge","Blitz"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Oriole",
+		"unitType": "Drone",
+		"uniqueTo": "Israel",
+		"movement": 1,
+		"strength": 35,
+		"rangedStrength": 35,
+		"range": 5,
+		"interceptRange": 5,
+		"cost": 25,
+		"requiredTech": "Electronics",
+		"obsoleteTech": "Radar",
+		"upgradesTo": "Meyromit",
+		"uniques": ["[25]% chance to intercept air attacks", "[+15]% Strength <vs [Bomber] units>", "[+35]% Strength <vs [Helicopter] units>"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Meyromit",
+		"unitType": "Drone",
+		"uniqueTo": "Israel",
+		"movement": 1,
+		"strength": 50,
+		"rangedStrength": 50,
+		"range": 6,
+		"interceptRange": 6,
+		"cost": 25,
+		"requiredTech": "Radar",
+		"obsoleteTech": "Lasers",
+		"upgradesTo": "Heron",
+		"uniques": ["[25]% chance to intercept air attacks", "[+15]% Strength <vs [Bomber] units>", "[+35]% Strength <vs [Helicopter] units>"],
+		"promotions": ["Bombardment I","Siege I"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Hermes 450",
+		"unitType": "Drone",
+		"uniqueTo": "Israel",
+		"movement": 1,
+		"strength": 60,
+		"rangedStrength": 60,
+		"range": 7,
+		"interceptRange": 7,
+		"cost": 40,
+		"requiredTech": "Combined Arms",
+		"uniques": ["[25]% chance to intercept air attacks", "[+15]% Strength <vs [Bomber] units>", "[+35]% Strength <vs [Helicopter] units>"],
+		"promotions": ["Bombardment I","Siege I","Siege I","Ambush I"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Heron",
+		"unitType": "Drone",
+		"uniqueTo": "Israel",
+		"movement": 1,
+		"strength": 65,
+		"rangedStrength": 65,
+		"range": 8,
+		"interceptRange": 8,
+		"cost": 50,
+		"requiredTech": "Computers",
+		"uniques": ["[25]% chance to intercept air attacks", "[+15]% Strength <vs [Bomber] units>", "[+35]% Strength <vs [Helicopter] units>"],
+		"promotions": ["Bombardment I","Siege I","Siege I","Ambush I","Drone Sweep I","Interception I"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Eitan",
+		"unitType": "Armored",
+		"uniqueTo": "Israel",
+		"movement": 10,
+		"interceptRange": 1,
+		"strength": 115,
+		"cost": 450,
+		"requiredTech": "Mobile Tactics",
+		"uniques": ["[99]% chance to intercept air attacks",
+			    "[+150]% Strength <vs [Drone] units>",
+			    "[+350]% Strength <vs [SRM] units>",
+			    "[+350]% Strength <vs [Missile] units>",
+			    "Can carry [1] [SRM] units",
+			    "Can move after attacking","Never appears as a Barbarian unit"],
+		"promotions": ["Blitz","[Israeli Armour] ability","[Urban Combat] ability"],
+		"attackSound": "tankshot"
+	},	
+	{
+		"name": "Spike-LR",
+		"unitType": "SRM",
+		"uniqueTo": "Israel",
+		"replaces": "Anti-Tank Missile",
+		"movement": 1,
+		"strength": 35,
+		"rangedStrength": 35,
+		"range": 3,
+		"cost": 50,
+		"upgradesTo": "Spike-LR II",
+		"requiredTech": "Rocketry",
+		"obsoleteTech": "Advanced Ballistics",
+		"uniques": ["[-100]% maintenance costs","[+50]% Strength <vs [Armored] units>"],
+		"attackSound": "missile"
+	}, 
+	{
+		"name": "SRM motor launch boat",
+		"unitType": "Ranged Water",
+		"uniqueTo": "Israel",
+		"movement": 4,
+		"strength": 25,
+		"rangedStrength": 25,
+		"range": 2,
+		"cost": 265,
+		"requiredResource": "Iron",
+		"requiredTech": "Electronics",
+		"uniques": ["Never appears as a Barbarian unit","Double movement in [Coast]","Can carry [2] [SRM] units"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "shipguns"
+	},
+	{
+		"name": "Hagganah",
+		"replaces": "Rifleman",
+		"uniqueTo": "Israel",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 34,
+		"cost": 225,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Great War Infantry",
+		"promotions": ["[Defender] ability"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "AT-Rocket Jeep",
+		"unitType": "Armored",
+		"replaces": "Cavalry",
+		"uniqueTo": "Israel",
+		"movement": 8,
+		"strength": 45,
+		"rangedStrength": 15,
+		"range": 2,
+		"cost": 200,
+		"requiredTech": "Mobile Tactics",
+		"uniques": ["Can move after attacking","Never appears as a Barbarian unit","Can carry [6] [SRM] units"],
+		"promotions": ["[Israeli Armour] ability"],
+		"attackSound": "cavalry"
+	},
+	{
+		"name": "Spike-LR II",
+		"unitType": "SRM",
+		"uniqueTo": "Israel",
+		"movement": 1,
+		"strength": 40,
+		"rangedStrength": 40,
+		"range": 4,
+		"cost": 55,
+		"requiredTech": "Advanced Ballistics",
+		"obsoleteTech": "Nuclear Fusion",
+		"upgradesTo": "Spike-NLOS",
+		"uniques": ["[-100]% maintenance costs","[+75]% Strength <vs [Armored] units>","[+50]% Strength <vs [Water] units>"],
+		"attackSound": "missile"
+	}, 
+	{
+		"name": "Spike-SR",
+		"unitType": "SRM",
+		"uniqueTo": "Israel",
+		"movement": 1,
+		"strength": 40,
+		"rangedStrength": 40,
+		"range": 3,
+		"cost": 35,
+		"requiredTech": "Robotics",
+		"obsoleteTech": "Stealth",
+		"upgradesTo": "LAHAT",
+		"uniques": ["[-100]% maintenance costs","[+50]% Strength <vs [Armored] units>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Gill",
+		"unitType": "SRM",
+		"uniqueTo": "Israel",
+		"movement": 1,
+		"strength": 40,
+		"rangedStrength": 40,
+		"range": 4,
+		"cost": 50,
+		"requiredTech": "Lasers",
+		"obsoleteTech": "Nuclear Fusion",
+		"upgradesTo": "Spike-NLOS",
+		"uniques": ["[-100]% maintenance costs","[+150]% Strength <vs [Armored] units>"],
+		"attackSound": "missile"
+	}, 
+	{
+		"name": "Mini Spike",
+		"unitType": "SRM",
+		"uniqueTo": "Israel",
+		"movement": 1,
+		"strength": 30,
+		"rangedStrength": 30,
+		"range": 4,
+		"cost": 25,
+		"requiredTech": "Mobile Tactics",
+		"obsoleteTech": "Particle Physics",
+		"upgradesTo": "Spike FireFly",
+		"uniques": ["[-100]% maintenance costs","[+25]% Strength <vs [Armored] units>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Spike FireFly",
+		"unitType": "SRM",
+		"uniqueTo": "Israel",
+		"movement": 1,
+		"strength": 45,
+		"rangedStrength": 45,
+		"range": 4,
+		"cost": 35,
+		"requiredTech": "Particle Physics",
+		"uniques": ["[-100]% maintenance costs","[+75]% Strength <vs [Armored] units>","[+50]% Strength <vs [Water] units>"],
+		"attackSound": "missile"
+	}, 
+	{
+		"name": "Spike-NLOS",
+		"unitType": "SRM",
+		"uniqueTo": "Israel",
+		"movement": 1,
+		"strength": 85,
+		"rangedStrength": 85,
+		"range": 8,
+		"cost": 135,
+		"requiredTech": "Nuclear Fusion",
+		"uniques": ["[-100]% maintenance costs","[+150]% Strength <vs [Armored] units>","[+100]% Strength <vs [Water] units>"],
+		"attackSound": "missile"
+	}, 
+	{
+		"name": "LAHAT",
+		"unitType": "SRM",
+		"uniqueTo": "Israel",
+		"movement": 1,
+		"strength": 120,
+		"rangedStrength": 120,
+		"range": 7,
+		"cost": 100,
+		"requiredTech": "Stealth",
+		"uniques": ["[-100]% maintenance costs","[+350]% Strength <vs [Armored] units>","[+150]% Strength <vs [Water] units>"],
+		"attackSound": "missile"
+	}, 
+	{
+		"name": "Spike-ER",
+		"unitType": "SRM",
+		"uniqueTo": "Israel",
+		"movement": 1,
+		"strength": 40,
+		"rangedStrength": 40,
+		"range": 6,
+		"cost": 100,
+		"requiredTech": "Telecommunications",
+		"obsoleteTech": "Particle Physics",
+		"upgradesTo": "Spike FireFly",
+		"uniques": ["[-100]% maintenance costs","[+100]% Strength <vs [Armored] units>","[+100]% Strength <vs [Water] units>"],
+		"attackSound": "missile"
+	}, 
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////
+	{
+		"name": "Seasoned Israeli Clone Commander",
+		"replaces": "Clone Commander",
+		"unitType": "Gunpowder",
+		"uniqueTo": "Israel",
+		"movement": 5,
+		"strength": 220,
+		"requiredResource": "Copper",
+		"requiredTech": "Clone Armies",
+	//	"upgradesTo": "Near Future Infantry",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit","[+1] Sight"
+			    "[+50]% Strength bonus for [Gunpowder] units within [5] tiles",
+			    "[+35]% Strength bonus for [Ranged Gunpowder] units within [4] tiles",
+			    "[+20]% Strength bonus for [Armored] units within [4] tiles",
+			    "[+15]% Strength bonus for [Helicopter] units within [3] tiles",
+			    "[+75]% Strength <vs [Gunpowder] units>","[+75]% Strength <vs [Ranged Gunpowder] units>"],
+		"promotions": ["Light Energy Shields", "Logistics", "Medic II","[Urban Combat] ability","[Blessed Warrior] ability"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Israeli Clone Commander",
+		"replaces": "Clone Commander",
+		"unitType": "Gunpowder",
+		"uniqueTo": "Israel",
+		"movement": 4,
+		"strength": 195,
+		"cost": 950,
+		"requiredTech": "Clone Armies",
+	//	"upgradesTo": "Seasoned Israeli Clone Commander"
+		"uniques": ["Never appears as a Barbarian unit",
+			    "[+50]% Strength bonus for [Gunpowder] units within [3] tiles",
+			    "[+35]% Strength bonus for [Ranged Gunpowder] units within [3] tiles",
+			    "[+20]% Strength bonus for [Armored] units within [3] tiles",
+			    "[+65]% Strength <vs [Gunpowder] units>","[+65]% Strength <vs [Ranged Gunpowder] units>",
+			    "[5] free [Israeli Clone Infantry] units appear"],
+		"promotions": ["Logistics", "Medic","[Urban Combat] ability","[Blessed Warrior] ability"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Israeli Clone Captain",
+		"replaces": "Clone Captain",
+		"unitType": "Gunpowder",
+		"uniqueTo": "Israel",
+		"movement": 4,
+		"strength": 145,
+		"cost": 625,
+		"requiredTech": "Clone Armies",
+	//	"upgradesTo": "Near Future Infantry",
+		"uniques": ["Never appears as a Barbarian unit",
+			    "[+50]% Strength bonus for [Gunpowder] units within [1] tiles",
+			    "[+55]% Strength <vs [Gunpowder] units>","[+55]% Strength <vs [Ranged Gunpowder] units>",
+			    "[2] free [Israeli Clone Infantry] units appear"],
+		"promotions": ["Medic II","[Urban Combat] ability","[Blessed Warrior] ability"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "Israeli Clone Infantry",
+		"replaces": "Clone Infantry",
+		"unitType": "Gunpowder",
+		"uniqueTo": "Israel",
+		"movement": 4,
+		"strength": 130,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "Israeli Clone Veteran",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+			   "[+55]% Strength <vs [Gunpowder] units>","[+55]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+25]% to Flank Attack bonuses"],
+		"promotions": ["Medic","[Urban Combat] ability","[Blessed Warrior] ability"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Israeli Clone Veteran",
+		"replaces": "Clone Veteran",
+		"unitType": "Gunpowder",
+		"uniqueTo": "Israel",
+		"movement": 4,
+		"strength": 145,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "Israeli Clone Elite",
+		"requiredResource": "Iron",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+			   "[+66]% Strength <vs [Gunpowder] units>","[+66]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+33]% to Flank Attack bonuses"],
+		"promotions": ["Medic II","[Urban Combat] ability","[Blessed Warrior] ability"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "Israeli Clone Elite",
+		"replaces": "Clone Elite",
+		"unitType": "Gunpowder",
+		"uniqueTo": "Israel",
+		"movement": 5,
+		"strength": 185,
+		"requiredTech": "Invisibility",
+		"requiredResource": "Silver",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit",
+			   "[+85]% Strength <vs [Gunpowder] units>","[+85]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+85]% Strength <vs [Sword] units>","[+85]% Strength <vs [Archery] units>",
+			   "[+50]% to Flank Attack bonuses","Can carry [1] [SRM] units",
+			   "[+1] Sight"],
+		"promotions": ["Medic II","[Urban Combat] ability","[Blessed Warrior] ability", "Cloaking"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+	
+////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+	/* ------------------------------------ */
+
+	{
+		"name": "Champion",
+		"unitType": "Civilian",
+		"uniqueTo": "Israel",
+		"replaces": "Great General",
+		"uniques": [
+		"[+25]% Strength bonus for [Military] units within [3] tiles",
+		"All adjacent units heal [+5] HP when healing", "[+5] HP when healing",
+		"Can instantly construct a [Citadel] improvement <by consuming this unit>",
+		"Can be earned through combat <for [Land] units>",
+            	"Is part of Great Person group [General]",
+            	"Great Person - [War]", "Unbuildable", "Uncapturable"],
+		"movement": 3
+	},
+	{
+		"name": "Navi",
+		"unitType": "Civilian",
+		"uniqueTo": "Israel",
+		"replaces": "Great Prophet",
+		"uniques": [
+            	"Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+            	"Can Spread Religion <for [1] movement> <[6] times> <after which this unit is consumed>",
+		"Removes other religions when spreading religion",
+            	"May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
+            	"May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
+            	"Is part of Great Person group [Prophet]",
+            	"[This Unit] gets a name from the [Prophet] group",
+		"May enter foreign tiles without open borders", "[-1] Sight", "Great Person - [Faith]",
+		"Unbuildable", "Religious Unit", "Only available <when religion is enabled>",
+		"Takes your religion over the one in their birth city"],
+		"movement": 3,
+		"religiousStrength": 1500
+	},
+	{
+		"name": "Kohen",
+		"unitType": "Civilian",
+		"uniqueTo": "Israel",
+		"replaces": "Missionary",
+		"uniques": [
+            	"Can Spread Religion <for [2] movement> <[4] times> <after which this unit is consumed>","All adjacent units heal [+10] HP when healing",
+            	"May enter foreign tiles without open borders, but loses [50] religious strength each turn it ends there",
+		"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+		"[-1] Sight", "Unbuildable", "Religious Unit", "Only available <when religion is enabled>"],
+		"movement": 4,
+		"religiousStrength": 1250
+	},
+	{
+		"name": "Levi",
+		"unitType": "Civilian",
+		"uniqueTo": "Israel",
+		"uniques": [
+         	"Can Spread Religion <for [5] movement> <[2] times> <after which this unit is consumed>","All adjacent units heal [+5] HP when healing",
+          	"May enter foreign tiles without open borders, but loses [100] religious strength each turn it ends there",
+		"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+		"[-1] Sight", "Unbuildable", "Religious Unit", "Only available <when religion is enabled>"],
+		"movement": 5,
+		"religiousStrength": 500
+	},
+
+	////////////////////////Republic of Texas/////////////////////////
+
+	{
+		"name": "Texan Smoothbore Musketman",
+		"unitType": "Gunpowder",
+		"uniqueTo": "Republic of Texas",
+		"replaces": "Musketman",
+		"movement": 2,
+		"strength": 25,
+		"cost": 150,
+		"requiredTech": "Gunpowder",
+		"upgradesTo": "Rifleman",
+		"promotions": ["[Texan] ability"],
+		"obsoleteTech": "Rifling",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Texan Rifleman",
+		"unitType": "Gunpowder",
+		"replaces": "Rifleman",
+		"uniqueTo": "Republic of Texas",
+		"movement": 2,
+		"strength": 34,
+		"cost": 225,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Great War Infantry",
+		"promotions": ["[Texan] ability"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Demolitionist",
+		"unitType": "Gunpowder",
+		"uniqueTo": "Republic of Texas",
+		"movement": 2,
+		"strength": 25,
+		"cost": 250,
+		"requiredTech": "Dynamite",
+		"upgradesTo": "Landship",
+		"uniques": ["[+500]% Strength <vs cities> <when attacking>","[+100]% Strength <vs [Armored] units> <when attacking>","Never appears as a Barbarian unit"],
+		"promotions": ["[Texan] ability"],
+		"obsoleteTech": "Combustion",
+		"attackSound": "cannon"
+	},
+	{
+		"name": "Texan Rifleman",
+		"unitType": "Gunpowder",
+		"replaces": "Rifleman",
+		"uniqueTo": "Republic of Texas",
+		"movement": 2,
+		"strength": 34,
+		"cost": 225,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Replaceable Parts",
+		"upgradesTo": "Great War Infantry",
+		"promotions": ["[Texan] ability"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Sharpshooter",
+		"uniqueTo": "Republic of Texas",
+		"unitType": "Ranged Gunpowder",
+		"movement": 2,
+		"strength": 20,
+		"rangedStrength": 25,
+		"range": 3,
+		"cost": 225,
+		"requiredTech": "Military Science",
+		"upgradesTo": "Infantry",
+		"promotions": ["[Texan] ability"],
+		"obsoleteTech": "Plastics",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Gunslinger",
+		"unitType": "Gunpowder",
+		"uniqueTo": "Republic of Texas",
+		"movement": 3,
+		"strength": 30,
+		"cost": 200,
+		"requiredTech": "Gunpowder",
+		"upgradesTo": "Marine",
+		"promotions": ["[Texan] ability","Blitz"],
+		"obsoleteTech": "Pharmaceuticals",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Sherif",
+		"unitType": "Ranged Gunpowder",
+		"uniqueTo": "Republic of Texas",
+		"range": 2,
+		"movement": 3,
+		"strength": 20,
+		"rangedStrength": 20,
+		"range": 2,
+		"cost": 225,
+		"requiredTech": "Military Science",
+		"upgradesTo": "Infantry",
+		"uniques": ["Can move after attacking", "Never appears as a Barbarian unit","[+5]% Strength bonus for [Military] units within [1] tiles"],
+		"promotions": ["[Texan] ability"],
+		"obsoleteTech": "Plastics",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Cowboy",
+		"unitType": "Mounted",
+		"replaces": "Cavalry",
+		"uniqueTo": "Republic of Texas",
+		"movement": 4,
+		"strength": 34,
+		"cost": 225,
+		"requiredTech": "Military Science",
+		"obsoleteTech": "Combustion",
+		"requiredResource": "Horses",
+		"upgradesTo": "Landship",
+		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>"],
+		"promotions": ["[Cowboy] ability"],
+		"attackSound": "cavalry"
+	},
+	{
+		"name": "Texas Ranger",
+		"replaces": "Great War Infantry",
+		"unitType": "Gunpowder",
+		"uniqueTo": "Republic of Texas",
+		"movement": 3,
+		"strength": 50,
+		"cost": 320,
+		"requiredTech": "Replaceable Parts",
+		"promotions": ["[Texan] ability"],
+		"upgradesTo": "Infantry",
+		"obsoleteTech": "Plastics",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Ranger",
+		"replaces": "Infantry",
+		"unitType": "Gunpowder",
+		"uniqueTo": "Republic of Texas",
+		"movement": 3,
+		"strength": 75,
+		"cost": 375,
+		"requiredTech": "Plastics",
+		"promotions": ["[Texan] ability"],
+		"upgradesTo": "Modern Ranger",
+		"obsoleteTech": "Mobile Tactics",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Modern Ranger",
+		"unitType": "Gunpowder",
+		"uniqueTo": "Republic of Texas",
+		"movement": 3,
+		"strength": 85,
+		"cost": 350,
+		"requiredTech": "Mobile Tactics",
+		"promotions": ["[Texan] ability"],
+		"uniques": ["Never appears as a Barbarian unit"],
+		"upgradesTo": "Space Ranger",
+		"obsoleteTech": "Space Combat",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Space Ranger",
+		"unitType": "Gunpowder",
+		"uniqueTo": "Republic of Texas",
+		"movement": 4,
+		"strength": 135,
+		"cost": 250,
+		"requiredTech": "Space Combat",
+		"promotions": ["[Texan] ability","[Cowboy] ability"],
+		"uniques": ["Never appears as a Barbarian unit"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Bradley",
+		"replaces": "Mechanized Infantry",
+		"uniqueTo": "Republic of Texas",
+		"unitType": "Armored",
+		"movement": 7,
+		"strength": 90,
+		"cost": 400,
+		"requiredTech": "Mobile Tactics",
+		"uniques": ["Never appears as a Barbarian unit","Can carry [2] [SRM] units"],
+		"promotions": ["Drill I","Shock I","[Urban Combat] ability"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "AAI RQ-2 Pioneer",
+		"unitType": "Drone",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 40,
+		"rangedStrength": 40,
+		"range": 5,
+		"interceptRange": 5,
+		"cost": 35,
+		"requiredTech": "Electronics",
+		"uniques": ["[25]% chance to intercept air attacks", "[+15]% Strength <vs [Bomber] units>", "[+35]% Strength <vs [Helicopter] units>"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "BGM-71 TOW",
+		"unitType": "SRM",
+		"uniqueTo": "Republic of Texas",
+		"replaces": "Anti-Tank Missile",
+		"movement": 1,
+		"strength": 35,
+		"rangedStrength": 35,
+		"range": 3,
+		"cost": 50,
+		"requiredTech": "Rocketry",
+		"obsoleteTech": "Robotics",
+		"upgradesTo": "BGM-71 TOW-2",
+		"uniques": ["[-100]% maintenance costs","[+50]% Strength <vs [Armored] units>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "FGM-148 Javelin",
+		"unitType": "SRM",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 50,
+		"rangedStrength": 50,
+		"range": 2,
+		"cost": 75,
+		"requiredTech": "Telecommunications",
+		"obsoleteTech": "Particle Physics",
+		"upgradesTo": "M47 Dragon",
+		"uniques": ["[-100]% maintenance costs","[+100]% Strength <vs [Armored] units>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "M47 Dragon",
+		"unitType": "SRM",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 65,
+		"rangedStrength": 65,
+		"range": 3,
+		"cost": 60,
+		"requiredTech": "Particle Physics",
+		"uniques": ["[-100]% maintenance costs","[+100]% Strength <vs [Armored] units>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "BGM-71 TOW-2",
+		"unitType": "SRM",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 60,
+		"rangedStrength": 60,
+		"range": 4,
+		"cost": 50,
+		"requiredTech": "Robotics",
+		"uniques": ["[-100]% maintenance costs","[+75]% Strength <vs [Armored] units>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "BGM-71 TOW-2",
+		"unitType": "SRM",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 60,
+		"rangedStrength": 60,
+		"range": 4,
+		"cost": 50,
+		"requiredTech": "Robotics",
+		"uniques": ["[-100]% maintenance costs","[+75]% Strength <vs [Armored] units>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Douglas O-2",
+		"unitType": "Air Recon",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 28,
+		"rangedStrength": 28,
+		"range": 7,
+		"interceptRange": 7,
+		"cost": 335,
+		"requiredTech": "Flight",
+		"requiredResource": "Oil",
+		"upgradesTo": "Douglas O-43A",
+		"obsoleteTech": "Rocketry",
+		"uniques": ["[10]% chance to intercept air attacks"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Douglas O-43A",
+		"unitType": "Air Recon",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 33,
+		"rangedStrength": 33,
+		"range": 9,
+		"interceptRange": 9,
+		"cost": 435,
+		"requiredTech": "Radar",
+		"requiredResource": "Oil",
+		"upgradesTo": "U-2",
+		"obsoleteTech": "Lasers",
+		"uniques": ["[10]% chance to intercept air attacks","[+1] Sight"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "U-2",
+		"unitType": "Air Recon",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 45,
+		"rangedStrength": 1,
+		"interceptRange": 1,
+		"range": 12,
+		"cost": 600,
+		"requiredTech": "Computers",
+		"requiredResource": "Oil",
+		"upgradesTo": "SR-71 Blackbird",
+		"obsoleteTech": "Stealth",
+		"uniques": ["[+4] Sight"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "SR-71 Blackbird",
+		"unitType": "Air Recon",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 125,
+		"rangedStrength": 1,
+		"interceptRange": 1,
+		"range": 35,
+		"cost": 1000,
+		"requiredTech": "Stealth",
+		"requiredResource": "Aluminum",
+		"upgradesTo": "Spy Satellite",	
+		"uniques": ["[+24] Sight"],
+		"obsoleteTech": "Space Architecture",
+		"attackSound": "shot"
+	},
+	{
+		"name": "M101 Howitzer",
+		"replaces": "Artillery",
+		"uniqueTo": "Republic of Texas",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 22,
+		"rangedStrength": 33,
+		"range": 3,
+		"cost": 330,
+		"requiredTech": "Dynamite",
+		"upgradesTo": "Rocket Artillery",
+		"uniques": ["[+220]% Strength <vs cities> <when attacking>","No defensive terrain bonus",
+			"Must set up to ranged attack","Never appears as a Barbarian unit"],
+		"promotions": ["Barrage I","Indirect Fire"],
+		"attackSound": "artillery"
+	},
+	{
+		"name": "Tomahawk Missile",
+		"unitType": "Missile",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 200,
+		"rangedStrength": 200,
+		"range": 10,
+		"cost": 350,
+		"requiredTech": "Nanotechnology",
+		"uniques": ["[-100]% maintenance costs"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Escort Carrier",
+		"unitType": "Aircraft Carrier",
+		"uniqueTo": "Republic of Texas",
+		"movement": 4,
+		"strength": 30,
+		"cost": 260,
+		"requiredTech": "Electronics",
+		"obsoleteTech": "Advanced Ballistics"
+		"upgradesTo": "Amphibious Assault Ship",
+		"uniques": ["Cannot attack", "Can carry [1] [Aircraft] units"]
+	},
+	{
+		"name": "Fleet Carrier",
+		"replaces": "Carrier",
+		"unitType": "Aircraft Carrier",
+		"uniqueTo": "Republic of Texas",
+		"movement": 4,
+		"strength": 80,
+		"cost": 600,
+		"requiredTech": "Electronics",
+		"obsoleteTech": "Satellites"
+		"upgradesTo": "Super Carrier",
+		"uniques": ["Cannot attack", "Can carry [4] [Aircraft] units","[1] free [Grumman Hellcat] units appear",]
+	},
+	{
+		"name": "Amphibious Assault Ship",
+		"unitType": "Aircraft Carrier",
+		"uniqueTo": "Republic of Texas",
+		"movement": 6,
+		"strength": 80,
+		"rangedStrength": 20,
+		"range": 2,
+		"interceptRange": 2,
+		"cost": 600,
+		"requiredTech": "Advanced Ballistics",
+		"uniques": ["Can carry [3] [Aircraft] units",
+			    "Can carry [3] [SRM] units",
+			    "Can carry [1] [Missile] units",
+			    "[50]% chance to intercept air attacks",
+			    "[+1] Sight"]
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Super Carrier",
+		"unitType": "Aircraft Carrier",
+		"uniqueTo": "Republic of Texas",
+		"movement": 6,
+		"strength": 200,
+		"cost": 1200,
+		"requiredTech": "Satellites",
+		"requiredResource": "Uranium",
+		"promotions": ["Armor Plating II"],
+		"uniques": ["Cannot attack",
+			    "Can carry [5] [Aircraft] units",
+			    "Can carry [2] [Missile] units",
+			    "[+6] Sight"]
+	},
+	{
+		"name": "P-51 Mustang",
+		"unitType": "Fighter",
+		"replaces": "Fighter",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 55,
+		"rangedStrength": 55,
+		"range": 9,
+		"interceptRange": 9,
+		"cost": 395,
+		"requiredTech": "Radar",
+		"requiredResource": "Oil",
+		"upgradesTo": "F-4 Phantom",
+		"obsoleteTech": "Computers",
+		"uniques": ["[100]% chance to intercept air attacks",
+			    "[+15]% Strength <vs [Fighter] units>", 
+			    "[+150]% Strength <vs [Bomber] units>", 
+			    "[+150]% Strength <vs [Helicopter] units>"
+			    "[+1] Sight"],
+		"promotions": ["Operational Range","Dogfighting I"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "P-47 Thunderbolt",
+		"unitType": "Fighter",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 44,
+		"rangedStrength": 44,
+		"range": 7,
+		"interceptRange": 7,
+		"cost": 335,
+		"requiredTech": "Radar",
+		"requiredResource": "Oil",
+		"upgradesTo": "F-84 Thunderjet",
+		"uniques": ["[100]% chance to intercept air attacks", "[+155]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"promotions": ["Bombardment I"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Grumman Hellcat",
+		"unitType": "Fighter",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 47,
+		"rangedStrength": 47,
+		"range": 8,
+		"interceptRange": 8,
+		"cost": 370,
+		"requiredTech": "Electronics",
+		"requiredResource": "Oil",
+		"upgradesTo": "F-4 Phantom",
+		"obsoleteTech": "Computers",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"promotions": ["Sortie"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "P-70", //The night figher version
+		"uniqueTo": "Republic of Texas",
+		"unitType": "Fighter",
+		"movement": 1,
+		"strength": 60,
+		"rangedStrength": 60,
+		"range": 8,
+		"interceptRange": 8,
+		"cost": 400,
+		"requiredTech": "Radar",
+		"requiredResource": "Oil",
+		"obsoleteTech": "Mobile Tactics",
+		"upgradesTo": "A-10 Warthog",
+		"uniques": ["[+1] Sight"],
+		"promotions": ["Interception I"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "A-20 Havoc", // The Bomber Version
+		"uniqueTo": "Republic of Texas",
+		"unitType": "Bomber",
+		"replaces": "Bomber",
+		"movement": 1,
+		"strength": 60,
+		"rangedStrength": 60,
+		"range": 8,
+		"interceptRange": 8,
+		"cost": 400,
+		"requiredTech": "Radar",
+		"requiredResource": "Oil",
+		"upgradesTo": "A-10 Warthog",
+		"obsoleteTech": "Mobile Tactics",
+		"uniques": ["[+1] Sight"],
+		"promotions": ["Evasion", "Bombardment II"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "B-24 Liberator",
+		"unitType": "Bomber",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 74,
+		"rangedStrength": 74,
+		"range": 11,
+		"cost": 415,
+		"requiredTech": "Radar",
+		"requiredResource": "Oil",
+		"obsoleteTech": "Nuclear Fission",
+		"promotions": ["Evasion", "Siege I"],
+		"upgradesTo": "B-29 Superfortress",
+		"attackSound": "bombing"
+	},
+	{
+		"name": "B-29 Superfortress",
+		"unitType": "Bomber",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 100,
+		"rangedStrength": 100,
+		"range": 12,
+		"cost": 450,
+		"requiredTech": "Nuclear Fission",
+		"requiredResource": "Oil",
+		"obsoleteTech": "Particle Physics",
+		"uniques": ["Cannot be carried by [Carrier] units"],
+		"promotions": ["Evasion", "Siege II", "Bombardment II"],
+		"upgradesTo": "B-50 Superfortress",
+		"attackSound": "bombing"
+	},
+	{
+		"name": "F-84 Thunderjet",
+		"unitType": "Fighter",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 64,
+		"rangedStrength": 64,
+		"range": 9,
+		"interceptRange": 9,
+		"cost": 420,
+		"requiredTech": "Rocketry",
+		"requiredResource": "Oil",
+		"upgradesTo": "F-18 Hornet",
+		"obsoleteTech": "Advanced Ballistics",
+		"uniques": ["[100]% chance to intercept air attacks","[+155]% Strength <vs [Bomber] units>",
+			     "[+150]% Strength <vs [Helicopter] units>","[+50]% Strength <vs cities>"],
+		"promotions": ["Bombardment II"],
+		"attackSound": "jetgun"
+	},
+	{
+		"name": "F-4 Phantom",
+		"unitType": "Fighter",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 75,
+		"rangedStrength": 75,
+		"range": 10,
+		"interceptRange": 10,
+		"cost": 435,
+		"requiredTech": "Computers",
+		"requiredResource": "Oil",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"promotions": ["Dogfighting I"],
+		"upgradesTo": "Jet Fighter",
+		"attackSound": "jetgun"
+	},
+	{
+		"name": "B-50 Superfortress",
+		"unitType": "Bomber",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 120,
+		"rangedStrength": 120,
+		"range": 14,
+		"cost": 450,
+		"requiredTech": "Telecommunications",
+		"requiredResource": "Oil",
+		"obsoleteTech": "Programmable Materials",
+		"uniques": ["Cannot be carried by [Carrier] units"],
+		"promotions": ["Evasion", "Siege II", "Bombardment II"],
+		"upgradesTo": "Stealth Bomber",
+		"attackSound": "bombing"
+	},
+	{
+		"name": "A-10 Warthog",
+		"unitType": "Fighter",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 80,
+		"rangedStrength": 80,
+		"range": 6,
+		"interceptRange": 6,
+		"cost": 500,
+		"requiredTech": "Mobile Tactics",
+		"requiredResource": "Aluminum",
+		"uniques": ["[50]% chance to intercept air attacks", 
+			    "[+200]% Strength <vs [Armored] units>", 
+			    "[+200]% Strength <vs [Mounted] units>", 
+			    "[+200]% Strength <vs [Ranged Gunpowder] units>", 
+			    "[+200]% Strength <vs [Gunpowder] units>", 
+			    "[+200]% Strength <vs [Archery] units>", 
+			    "[+200]% Strength <vs [Sword] units>", 
+			    "[+200]% Strength <vs [Scout] units>", 
+			    "[+150]% Strength <vs [Helicopter] units>"],
+		"promotions": ["Logistics"],
+		"attackSound": "jetgun"
+	},
+	{
+		"name": "F-18 Hornet",
+		"unitType": "Fighter",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 86,
+		"rangedStrength": 86,
+		"range": 11,
+		"interceptRange": 11,
+		"cost": 445,
+		"requiredTech": "Advanced Ballistics",
+		"requiredResource": "Aluminum",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", 
+			   "[+150]% Strength <vs [Helicopter] units>","[+2] Sight"],
+		"promotions": ["Air Targeting II","Interception I","Air Repair"],
+		"attackSound": "jetgun"
+	},
+	{
+		"name": "F-16 Falcon",
+		"unitType": "Fighter",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 80,
+		"rangedStrength": 80,
+		"range": 11,
+		"interceptRange": 11,
+		"cost": 380,
+		"requiredTech": "Robotics",
+		"requiredResource": "Aluminum",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", 
+			   "[+150]% Strength <vs [Helicopter] units>","[+1] Sight"],
+		"promotions": ["Dogfighting II","Interception I","Air Repair"],
+		"attackSound": "jetgun"
+	},
+	{
+		"name": "F-15 Eagle",
+		"unitType": "Fighter",
+		"replaces": "Jet Fighter",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 115,
+		"rangedStrength": 115,
+		"range": 12,
+		"interceptRange": 12,
+		"cost": 470,
+		"requiredTech": "Lasers",
+		"requiredResource": "Aluminum",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", 
+			   "[+150]% Strength <vs [Helicopter] units>","[+2] Sight"],
+		"promotions": ["Sortie","Interception II","Air Repair"],
+		"attackSound": "jetgun"
+	},
+
+		//B-50, A-10, , F-18, ???, 16, 15,
+		//              F-18  35?  16V 15E+35
+	
+	{
+		"name": "Abrams (Early)",
+		"unitType": "Armored",
+		"uniqueTo": "Republic of Texas",
+		"movement": 5,
+		"strength": 125,
+		"cost": 450,
+		"requiredTech": "Computers",
+		"requiredResource": "Aluminum",
+		"upgradesTo": "Abrams",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"promotions": ["[Abrams] ability"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Abrams",
+		"replaces": "Modern Armor",
+		"uniqueTo": "Republic of Texas",
+		"unitType": "Armored",
+		"movement": 6,
+		"strength": 150,
+		"cost": 500,
+		"requiredTech": "Lasers",
+		"requiredResource": "Uranium", //Due to its Depleted Uranium Armour
+		"upgradesTo": "Giant Death Robot",
+		"uniques": ["Can carry [1] [SRM] units","Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"promotions": ["[Abrams] ability","Depleted Uranium Armour"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Abrams E3",
+		"uniqueTo": "Republic of Texas",
+		"unitType": "Armored",
+		"movement": 6,
+		"strength": 200,
+		"cost": 550,
+		"requiredTech": "Stealth",
+		"requiredResource": "Uranium", //Due to its Depleted Uranium Armour
+		"upgradesTo": "Giant Death Robot",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit",
+			    "Can carry [1] [SRM] units",
+			    "Can carry [1] [Drone] units",
+			    "[99]% chance to intercept air attacks", 
+			    "[+150]% Strength <vs [Drone] units>",
+			    "[+350]% Strength <vs [Missile] units>",
+			    "[+350]% Strength <vs [SRM] units>",],
+		"promotions": ["[Abrams] ability","Depleted Uranium Armour"],
+		"attackSound": "tankshot"
+	},
+
+//////////////////////////////////////////////////////////////////////////////
+	{
+		"name": "Texan Elite Clone Commander",
+		"uniqueTo": "Republic of Texas",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 190,
+		"requiredTech": "Clone Armies",
+	//	"upgradesTo": "Near Future Infantry",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit",
+			    "[+33]% Strength bonus for [Gunpowder] units within [3] tiles",
+			    "[+85]% Strength <vs [Gunpowder] units>","[+85]% Strength <vs [Ranged Gunpowder] units>",
+			    "Consumes [1] [Horses]",
+			    "Consumes [1] [Iron]",],
+		"promotions": ["Logistics",
+			       "[Texan] ability",
+			       "[Cowboy] ability",
+			       "Formation II",],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "Texan Clone Commander",
+		"replaces": "Clone Commander",
+		"uniqueTo": "Republic of Texas",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 150,
+		"cost": 1000,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "Texan Elite Clone Commander",
+		"uniques": ["Never appears as a Barbarian unit",
+			    "[+25]% Strength bonus for [Gunpowder] units within [3] tiles",
+			    "[+66]% Strength <vs [Gunpowder] units>","[+66]% Strength <vs [Ranged Gunpowder] units>",
+			    "[5] free [Texan Clone Infantry] units appear"],
+		"promotions": ["Logistics", "Formation I","[Texan] ability"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+
+	{
+		"name": "Texan Clone Captain",
+		"replaces": "Clone Captain",
+		"uniqueTo": "Republic of Texas",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 100,
+		"cost": 650,
+		"requiredTech": "Clone Armies",
+	//	"upgradesTo": "Near Future Infantry",
+		"uniques": ["Never appears as a Barbarian unit",
+			    "[+20]% Strength bonus for [Gunpowder] units within [1] tiles",			    
+			    "[+60]% Strength <vs [Gunpowder] units>","[+60]% Strength <vs [Ranged Gunpowder] units>",
+			    "Withdraws before melee combat <with [15]% chance>",
+			    "[2] free [Texan Clone Infantry] units appear"],
+		"promotions": ["Medic","[Texan] ability"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "Texan Clone Infantry",
+		"replaces": "Clone Infantry",
+		"uniqueTo": "Republic of Texas",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 123,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "Clone Veteran",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit",
+			   "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+10]% to Flank Attack bonuses"],
+	//	"obsoleteTech": "Augmented Reality",
+		"promotions": ["[Texan] ability"],
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "Texan Clone Veteran",
+		"replaces": "Clone Veteran",
+		"uniqueTo": "Republic of Texas",
+		"unitType": "Gunpowder",
+		"movement": 4,
+		"strength": 128,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "Clone Elite",
+		"requiredResource": "Iron",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit",
+			   "[+60]% Strength <vs [Gunpowder] units>","[+60]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+12]% to Flank Attack bonuses"],
+	//	"obsoleteTech": "Augmented Reality",
+		"promotions": ["[Texan] ability"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Texan Clone Elite",
+		"replaces": "Clone Elite",
+		"uniqueTo": "Republic of Texas",
+		"unitType": "Gunpowder",
+		"movement": 4,
+		"strength": 135,
+		"requiredTech": "Clone Armies",
+		"requiredResource": "Iron",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit",
+			   "[+66]% Strength <vs [Gunpowder] units>","[+66]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+14]% to Flank Attack bonuses",			
+			    "Consumes [1] [Aluminum]","Consumes [1] [Iron]",],
+		"promotions": ["Medic","[Urban Combat] ability","[Texan] ability"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+	////////////////////Magic Empire///////////////////////
+
+	{
+		"name": "Magic Archer",
+		"unitType": "Archery",
+		"uniqueTo": "Magic Empire",
+		"movement": 3,
+		"strength": 2,
+		"rangedStrength": 7,
+		"range": 3,
+		"cost": 55,
+		"requiredTech": "Archery",
+		"obsoleteTech": "Machinery",
+		"upgradesTo": "Crossbowman",
+		"attackSound": "arrow"
+	
+	},
+	{
+		"name": "Worker Golem",
+		"replaces": "Worker",
+		"unitType": "Civilian",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"requiredTech": "Agriculture",
+		"obsoleteTech": "AI",
+		"upgradesTo": "Construction Golem",
+		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action","[-100]% maintenance costs",],
+		"cost": 35
+	},
+	{
+		"name": "Construction Golem",
+		"unitType": "Civilian",
+		"uniqueTo": "Magic Empire",
+		"movement": 2,
+		"requiredTech": "Mining",
+		"obsoleteTech": "AI",
+		"upgradesTo": "Worker Bot",		
+		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action","[-100]% maintenance costs",],
+		"cost": 80
+	},
+	{
+		"name": "Eagle Scout",
+		"replaces": "Scout",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Scout",
+		"movement": 2,
+		"strength": 5,
+		"cost": 25,
+		"requiredTech": "Agriculture",
+		"uniques": ["Can carry [1] [Drone] units", "Never appears as a Barbarian unit"],
+		"promotions": ["Ignore terrain cost"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		//Canot upgrade to Giant Eagle Familiar as their two diffrent creatures
+		"name": "Scouting Eagle Familiar", 
+		"unitType": "Drone",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 3,
+		"rangedStrength": 3,
+		"range": 3,
+		"interceptRange": 3,
+		"cost": 20,
+		"upgradesTo": "Enchanted Eagle Familiar",
+		"requiredTech": "Animal Husbandry",
+		"obsoleteTech": "Guilds",
+		"uniques": ["[5]% chance to intercept air attacks", "[+34]% Strength <vs [Archery] units>","[+1] Sight"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		//A Scouting eagle wearing magical armour/weapons
+		"name": "Enchanted Eagle Familiar", 
+		"unitType": "Drone",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 10,
+		"rangedStrength": 10,
+		"range": 3,
+		"interceptRange": 4,
+		"cost": 80,
+		"requiredResource": "Iron",
+		"upgradesTo": "Fighting Eagle Familiar",
+		"requiredTech": "Guilds",
+		"obsoleteTech": "Printing Press",
+		"uniques": ["[10]% chance to intercept air attacks", "[+20]% Strength <vs [Archery] units>","[+20]% Strength <vs [Ranged Gunpowder] units>","[+3] Sight"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		//A Enchanted Eagle wearing even better magical equipment
+		"name": "Fighting Eagle Familiar", 
+		"unitType": "Drone",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 35,
+		"rangedStrength": 35,
+		"range": 4,
+		"interceptRange": 4,
+		"cost": 150,
+		"requiredResource": "Iron",
+		"requiredTech": "Printing Press",
+		"obsoleteTech": "Space Combat",
+		"uniques": ["[25]% chance to intercept air attacks", "[+34]% Strength <vs [Archery] units>","[+34]% Strength <vs [Ranged Gunpowder] units>","[+3] Sight"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Giant Eagle Familiar",
+		"unitType": "Drone",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 15,
+		"rangedStrength": 15,
+		"range": 5,
+		"interceptRange": 5,
+		"cost": 120,
+		"requiredTech": "Guilds",
+		"uniques": ["[7]% chance to intercept air attacks", "[+25]% Strength <vs [Archery] units>","[+25]% Strength <vs [Drone] units>","[+2] Sight"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Fireball Scroll",
+		"unitType": "SRM",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 30,
+		"rangedStrength": 30,
+		"range": 3,
+		"cost": 40,
+		"requiredTech": "Guilds",
+		"uniques": ["[-100]% maintenance costs"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Magic Swordsman",
+		"unitType": "Sword",
+		"replaces": "Longswordsman",
+		"uniqueTo": "Magic Empire",
+		"movement": 3,
+		"strength": 25,
+		"cost": 150,
+		"requiredTech": "Steel",
+		"upgradesTo": "Musketman",
+		"obsoleteTech": "Chemistry",
+		"requiredResource": "Iron",
+		"promotions": ["Shock I"],
+		"uniques": ["Can carry [1] [SRM] units","Can instantly construct a [Fishing Boats] improvement"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Giant",
+		"replaces": "Giant Death Robot",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Sword",
+		"movement": 5,
+		"strength": 250,
+		"cost": 520,
+		"requiredTech": "Nuclear Fusion",
+		"upgradesTo": "Great Colossus",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"
+			    "[-10]% Strength for enemy [Military] units in adjacent [All] tiles"],
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Land Drake Rider",
+		"replaces": "Modern Armor",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 85,
+		"cost": 380,
+		"requiredTech": "Lasers",
+		"requiredResource": "Iron",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit", "Can carry [1] [SRM] units"],
+		"attackSound": "Dragon"
+	},
+	{
+		"name": "Bicorn Cavalry",
+		"replaces": "Mechanized Infantry",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Mounted",
+		"movement": 3,
+		"strength": 70,
+		"cost": 350,
+		"requiredResource": "Horses",
+		"requiredTech": "Mobile Tactics",
+		"uniques": ["Never appears as a Barbarian unit","Can move after attacking","[+2] Sight"],
+		"attackSound": "cavalry"
+	},
+	{
+		"name": "Unicorn Cavalry",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Mounted",
+		"movement": 4,
+		"strength": 65,
+		"cost": 350,
+		"requiredResource": "Horses",
+		"requiredTech": "Mobile Tactics",
+		"uniques": ["Never appears as a Barbarian unit","Can move after attacking","All healing effects doubled"],
+		"attackSound": "cavalry"
+	},
+	{
+		"name": "Baby Dragon Familiar", 
+		"unitType": "Drone",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 60,
+		"rangedStrength": 60,
+		"range": 4,
+		"interceptRange": 4,
+		"cost": 200,
+		"requiredTech": "Industrialization",
+		"uniques": ["[10]% chance to intercept air attacks",
+			    "[+100]% Strength <vs [Archery] units>",
+			    "[+50]% Strength <vs [Sword] units>",
+			    "[+40]% Strength <vs [Mounted] units>", 
+			    "[+10]% Strength <vs [Drone] units>",
+			    "[+10]% Strength <vs [Helicopter] units>",
+			    "[+1] Sight"],
+		"attackSound": "Dragon"
+	},
+	{
+		"name": "Faerie Dragon Familiar", 
+		"unitType": "Drone",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 35,
+		"rangedStrength": 35,
+		"range": 4,
+		"interceptRange": 4,
+		"cost": 150,
+		"requiredTech": "Astronomy",
+		"obsoleteTech": "Ballistics",
+		"uniques": ["[25]% chance to intercept air attacks","[+100]% Strength <vs [Sword] units>","[+10]% Strength <vs [Drone] units>","[+5]% Strength <vs [Helicopter] units>",
+			    "[+2] Sight"],
+		"attackSound": "Dragon"
+	},
+	{
+		"name": "Defender Golem",
+		"replaces": "Lancer",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Armored",
+		"movement": 1,
+		"strength": 50,
+		"cost": 225,
+		"requiredTech": "Metallurgy",
+		"obsoleteTech": "Combined Arms",
+		"upgradesTo": "Siege Golem",
+		"promotions": ["Ignore terrain cost","[Combat Golem] ability","[Capital combatant] ability","[Urban Combat] ability"],
+		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "War Golem",
+		"replaces": "Great War Infantry",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Armored",
+		"movement": 2,
+		"strength": 62,
+		"cost": 300,
+		"requiredResource": "Iron",
+		"requiredTech": "Replaceable Parts",
+		"obsoleteTech": "Combined Arms",
+		"upgradesTo": "Siege Golem",
+		"promotions": ["Ignore terrain cost","[Combat Golem] ability","[Urban Combat] ability"],
+		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "The Exploding Sun",
+		"replaces": "Atomic Bomb",
+		"unitType": "Atomic Bomber",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 330,
+		"rangedStrength": 330,
+		"range": 8,
+		"cost": 1250,
+		"requiredTech": "Nuclear Fission",
+		"requiredResource": "Uranium",
+		"promotions" : ["Evasion"],
+		"uniques": ["Nuclear weapon of Strength [3]", "Only available <if [Manhattan Project] is constructed>", "Self-destructs when attacking",
+			"Blast radius [2]","Consumes [3] [Uranium]"],
+		"attackSound": "nuke"
+		// Plane rather than a missile - can be based in city or Carrier only.
+		// Can be intercepted, but must die for it not to take effect.
+	},	
+	{
+		"name": "Meteor Scroll",
+		"replaces": "Nuclear Missile",
+		"unitType": "Missile",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 120,
+		"rangedStrength": 120,
+		"range": 10,
+		"cost": 900,
+		"requiredTech": "Advanced Ballistics",
+		"uniques": ["Nuclear weapon of Strength [1]", "Only available <if [Manhattan Project] is constructed>",
+			"Blast radius [3]", "Consumes [1] [Uranium]"],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Mana Missile",
+		"unitType": "SRM",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 25,
+		"rangedStrength": 25,
+		"range": 5,
+		"cost": 35,
+		"requiredTech": "Guilds",
+		"uniques": ["[-100]% maintenance costs"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Grand Destruction Spell",
+		"replaces": "Primitive Quarkionic Bomb",
+		"unitType": "Missile",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 450,
+		"rangedStrength": 450,
+		"range": 13,
+		"cost": 9000,
+		"requiredTech": "Particle Physics",
+		"uniques": ["Nuclear weapon of Strength [2]", "Only available <if [Manhattan Project] is constructed>",
+			"Blast radius [4]", "Consumes [4] [Uranium]"],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Apprentice Wizard",
+		"replaces": "Triplane",
+		"unitType": "Fighter",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 32,
+		"rangedStrength": 32,
+		"range": 5,
+		"interceptRange": 5,
+		"cost": 300,
+		"requiredTech": "Flight",
+		"requiredResource": "Coal",
+		"upgradesTo": "Wizard",
+		"promotions": ["Air Repair"],
+		"uniques": ["[75]% chance to intercept air attacks", "[+50]% Strength <vs [Bomber] units>", "[+50]% Strength <vs [Helicopter] units>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Wizard",
+		"replaces": "Fighter",
+		"unitType": "Fighter",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 50,
+		"rangedStrength": 50,
+		"range": 7,
+		"interceptRange": 7,
+		"cost": 400,
+		"requiredTech": "Radar",
+		"requiredResource": "Coal",
+		"upgradesTo": "Jet Fighter",
+		"promotions": ["Air Repair"],
+		"uniques": ["[75]% chance to intercept air attacks", "[+50]% Strength <vs [Bomber] units>", "[+50]% Strength <vs [Helicopter] units>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Adult Dragon",
+		"replaces": "Jet Fighter",
+		"unitType": "Fighter",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 75,
+		"rangedStrength": 75,
+		"range": 8,
+		"interceptRange": 8,
+		"cost": 500,
+		"requiredTech": "Lasers",
+		"requiredResource": "Aluminum", // Its scales are made out of Aluminium
+		"promotions": ["Air Repair"],
+		"uniques": ["[75]% chance to intercept air attacks",
+			    "[+100]% Strength <vs [Bomber] units>", "[+100]% Strength <vs [Helicopter] units>",
+			    "[+3] Sight"],
+		"attackSound": "jetgun"
+	},
+	{
+		"name": "Apprentice Witch",
+		"replaces": "Great War Bomber",
+		"unitType": "Bomber",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 36,
+		"rangedStrength": 36,
+		"range": 5,
+		"cost": 300,
+		"requiredTech": "Flight",
+		"requiredResource": "Coal",
+		"promotions": ["Air Repair"],
+		"upgradesTo": "Witch",
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Witch",
+		"replaces": "Bomber",
+		"unitType": "Bomber",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 60,
+		"rangedStrength": 60,
+		"range": 7,
+		"cost": 400,
+		"requiredTech": "Radar",
+		"requiredResource": "Coal",
+		"promotions": ["Air Repair"],
+		"upgradesTo": "Stealth Bomber",
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Great Colossus",
+		"replaces": "Giant Death Robot II",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Sword",
+		"movement": 6,
+		"strength": 380,
+		"cost": 700,
+		"requiredTech": "AI",
+		"upgradesTo": "Greater Colossus",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"
+			    "[-15]% Strength for enemy [Military] units in adjacent [All] tiles"],
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Siege Golem",
+		"replaces": "Tank",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Armored",
+		"movement": 1,
+		"strength": 86,
+		"cost": 425,
+		"requiredResource": "Iron",
+		"requiredTech": "Combined Arms",
+		"obsoleteTech": "Nuclear Fusion",
+		"promotions": ["Ignore terrain cost","[Combat Golem] ability","[Urban Combat] ability","Ignore terrain cost"],
+		"uniques": ["[+55]% Strength <vs cities> <when attacking>","Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"upgradesTo": "Hulking Golem",
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Ancient Meteor Scroll",
+		"unitType": "Missile",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 220,
+		"rangedStrength": 220,
+		"range": 20,
+		"cost": 1600,
+		"requiredTech": "Programmable Materials",
+		"uniques": ["Nuclear weapon of Strength [1]", "Only available <if [Manhattan Project] is constructed>",
+			"Blast radius [3]", "Consumes [2] [Uranium]"],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Greater Land Drake Rider",
+		"replaces": "Near Future Armor",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Mounted",
+		"movement": 5,
+		"movement": 135,
+		"strength": 135,
+		"cost": 440,
+		"requiredTech": "Augmented Reality",
+		"requiredResource": "Iron",
+		"uniques": ["Can carry [1] [SRM] units",
+			    "[+2] Movement <in [Foreign Land] tiles>"
+			    "Can move after attacking",
+			    "[+20]% to Flank Attack bonuses"
+			    "No movement cost to pillage"
+			    "No defensive terrain bonus", 
+			    "Never appears as a Barbarian unit",],
+		"attackSound": "Dragon"
+	},
+	{
+		"name": "Lightning Destruction Spell",
+		"unitType": "Missile",
+		"replaces": "Guided Missile",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 100,
+		"rangedStrength": 100,
+		"range": 6,
+		"cost": 250,
+		"requiredResource": "Aluminum",
+		"requiredTech": "Advanced Ballistics",
+		"obsoleteTech": "Programmable Materials",
+		"uniques": ["[-100]% maintenance costs","[+50]% Strength <vs cities>"],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Increased Lightning Destruction Spell",
+		"unitType": "Missile",
+		"replaces": "Ballistic Missile",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 150,
+		"rangedStrength": 150,
+		"range": 8,
+		"cost": 300,
+		"requiredResource": "Aluminum",
+		"requiredTech": "Programmable Materials",
+		"obsoleteTech": "Space Racing",
+		"uniques": ["[-100]% maintenance costs","[+100]% Strength <vs cities>"],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Forbidden Lightning Destruction Spell", //Forbidden Supreme Lightning Destruction Spell
+		"replaces": "Primitive Quarkionic Missile",
+		"unitType": "Missile",
+		"replaces": "ICBM",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 200,
+		"rangedStrength": 300,
+		"range": 12,
+		"cost": 750,
+		"requiredResource": "Aluminum",
+		"requiredTech": "Space Combat",
+		"uniques": ["[-100]% maintenance costs","[+100]% Strength <vs cities>",
+			    "Nuclear weapon of Strength [1]", "Only available <if [Manhattan Project] is constructed>",
+			"Blast radius [1]",],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Greater Colossus",
+		"replaces": "Shielded Mech",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Sword",
+		"movement": 6,
+		"strength": 480,
+		"cost": 850,
+		"requiredTech": "Enhancement",
+		"upgradesTo": "Ancient Colossus",
+		"uniques": ["Can move after attacking",
+			    "No defensive terrain bonus",
+			    "Never appears as a Barbarian unit"
+			    "[-30]% Strength for enemy [Military] units in adjacent [All] tiles"],
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Ancient Colossus",
+		"replaces": "Shielded Mech MK-II",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Sword",
+		"movement": 6,
+		"strength": 530,
+		"cost": 1400,
+		"requiredTech": "Superhumans",
+		"uniques": ["Can move after attacking",
+			    "No defensive terrain bonus",
+			    "Never appears as a Barbarian unit"
+			    "[-30]% Strength for enemy [Military] units in adjacent [All] tiles"],
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Hobbit Scout",
+		"replaces": "Agent",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Scout",
+		"movement": 3,
+		"strength": 45,
+		"cost": 250,
+		"requiredResource": "Silver",
+		"requiredTech": "Invisibility",
+		"promotions": ["Cloaking",],
+		"uniques": ["[+2] Sight"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Giant Shielded Golem",
+		"replaces": "Enhanced Shielded Mech",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Armored",
+		"movement": 2,
+		"strength": 300,
+		"cost": 600,
+		"requiredTech": "High Energy Theory",
+	//	"upgradesTo": "Shielded Mech MK-II",
+		"uniques": ["Can move after attacking",
+			    "No defensive terrain bonus",
+			    "Never appears as a Barbarian unit"
+			    "All tiles cost 1 movement",
+			    "Consumes [1] [Copper]", "Consumes [3] [Iron]",
+			    "[+65]% Strength <vs cities> <when attacking>",
+			    ],
+		"promotions": ["Medium Energy Shields","[Combat Golem] ability"], 
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Hulking Golem",
+		"replaces": "Near Future Infantry",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Armored",
+		"movement": 2,
+		"strength": 100,
+		"cost": 395,
+		"requiredResource": "Iron",
+		"requiredTech": "Nuclear Fusion",
+		"obsoleteTech": "High Energy Theory",
+		"promotions": ["Ignore terrain cost","[Combat Golem] ability","Ignore terrain cost"],
+		"uniques": ["[+60]% Strength <vs cities> <when attacking>","Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"upgradesTo": "Giant Shielded Golem",
+		"attackSound": "metalhit"
+	},
+/////////////////////////////////////////////////////////
+	{
+		"name": "Wizened Necromancer",
+		"unitType": "Archery",
+		"uniqueTo": "Magic Empire",
+		"movement": 3,
+		"strength": 500,
+		"rangedStrength": 120,
+		"range": 3,
+		"requiredTech": "Clone Armies",
+	//	"upgradesTo": "Near Future Infantry",
+		"uniques": ["Never appears as a Barbarian unit",
+			   "[+20]% Strength bonus for [Sword] units within [6] tiles",
+			   "[+20]% Strength bonus for [Archery] units within [6] tiles",
+			   "[+20]% Strength bonus for [Gunpowder] units within [6] tiles",
+			   "[+25]% Strength <vs [Gunpowder] units>",
+			   "[+25]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+25]% Strength <vs [Sword] units>",
+			   "[+25]% Strength <vs [Archery] units>",
+			   "[-18]% Strength for enemy [Military] units in adjacent [All] tiles",
+			   "Withdraws before melee combat <with [33]% chance>",
+			   "Can carry [3] [SRM] units",
+			   "Can carry [1] [Drone] units",
+			   "[+3] Sight", "Can see invisible [Scout] units"
+			   "Consumes [2] [Uranium]","Consumes [5] [Coal]","Consumes [2] [Horses]", //Mass ritual for a unit with strength 500 and range 3
+			    ],
+		"promotions": ["Logistics",],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Necromancer",
+		"replaces": "Clone Commander",
+		"unitType": "Archery",
+		"uniqueTo": "Magic Empire",
+		"movement": 3,
+		"strength": 250,
+		"rangedStrength": 90,
+		"range": 3,
+		"cost": 1250,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "Wizened Necromancer"
+		"uniques": ["Never appears as a Barbarian unit",
+			   "[6] free [Skeletal Servant] units appear"
+			   "[+20]% Strength bonus for [Archery] units within [3] tiles",
+			   "[+20]% Strength bonus for [Sword] units within [3] tiles",
+			   "[+20]% Strength <vs [Gunpowder] units>",
+			   "[+20]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+20]% Strength <vs [Sword] units>",
+			   "[+20]% Strength <vs [Archery] units>",
+			   "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",
+			   "Withdraws before melee combat <with [33]% chance>",
+			   "Can carry [3] [SRM] units", "[+2] Sight",
+			    ],
+		"promotions": ["Logistics",],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+
+	{
+		"name": "Apprentice Necromancer",
+		"replaces": "Clone Captain",
+		"unitType": "Sword",
+		"uniqueTo": "Magic Empire",
+		"movement": 3,
+		"strength": 90,
+		"cost": 550,
+		"requiredTech": "Clone Armies",
+	//	"upgradesTo": "Near Future Infantry",
+		"uniques": ["Never appears as a Barbarian unit",
+			   "[+10]% Strength bonus for [Sword] units within [1] tiles",
+			   "[+10]% Strength bonus for [Archery] units within [1] tiles",
+			   "[+20]% Strength <vs [Gunpowder] units>",
+			   "[+20]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+20]% Strength <vs [Sword] units>",
+			   "[+20]% Strength <vs [Archery] units>",
+			   "Can carry [1] [SRM] units","[+1] Sight",
+			   "[-7]% Strength for enemy [Military] units in adjacent [All] tiles",
+			   "[2] free [Skeletal Servant] units appear"],
+		"promotions": ["Cover II"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "nonmetalhit"
+	},
+
+	{
+		"name": "Skeletal Servant",
+		"replaces": "Clone Infantry",
+		"unitType": "Sword",
+		"uniqueTo": "Magic Empire",
+		"movement": 4,
+		"strength": 85,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "Skeleton Archer",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit",
+			   "[-50]% maintenance costs",
+			   "[+10]% Strength <vs [Gunpowder] units>",
+			   "[+10]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+10]% Strength <vs [Sword] units>",
+			   "[+10]% Strength <vs [Archery] units>",
+			   "[+10]% to Flank Attack bonuses"
+			   "[-10]% Strength for enemy [Military] units in adjacent [All] tiles",],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "nonmetalhit"
+	},
+
+	{
+		"name": "Skeleton Archer",
+		"replaces": "Clone Veteran",
+		"unitType": "Archery",
+		"uniqueTo": "Magic Empire",
+		"movement": 3,
+		"strength": 95,
+		"rangedStrength": 75,
+		"range": 2,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "Clone Elite",
+		"requiredResource": "Iron",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+			   "[-50]% maintenance costs",
+			   "[+14]% Strength <vs [Gunpowder] units>",
+			   "[+14]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+14]% Strength <vs [Sword] units>",
+			   "[+14]% Strength <vs [Archery] units>",
+			   "[-5]% Strength for enemy [Military] units in adjacent [All] tiles",
+			   ],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Skeleton Mage",
+		"replaces": "Clone Elite",
+		"unitType": "Archery",
+		"uniqueTo": "Magic Empire",
+		"movement": 3,
+		"strength": 105,
+		"rangedStrength": 85,
+		"range": 2,
+		"requiredTech": "Clone Armies",
+		"requiredResource": "Coal",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+			   "[-50]% maintenance costs",
+			   "[+22]% Strength <vs [Gunpowder] units>",
+			   "[+22]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+22]% Strength <vs [Sword] units>",
+			   "[+22]% Strength <vs [Archery] units>",
+			   "Can carry [1] [SRM] units","[+1] Sight",
+			   "[-5]% Strength for enemy [Military] units in adjacent [All] tiles",	
+			],
+		"promotions": ["Cover I"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+///////////////////////////////////////////////////////////
+
+
+
+
+
+	/* ------------------------------------ */
+
+
+
+	{
+		"name": "Great Wizard",
+		"unitType": "Civilian",
+		"uniqueTo": "Magic Empire",
+		"replaces": "Great General",
+		"uniques": [
+		"[+10]% Strength bonus for [Military] units within [5] tiles",
+		"All adjacent units heal [+33] HP when healing", 
+		"[+33] HP when healing", 
+		"Can instantly construct a [Road] improvement <for [1] movement>",
+		"Can instantly construct a [Remove Road] improvement <for [2] movement>",
+		"Can instantly construct a [Pasture] improvement <for [2] movement>",
+		"Can instantly construct a [Plantation] improvement <for [2] movement>",
+		"Can instantly construct a [Fort] improvement <for [2] movement>",
+		"Can instantly construct a [Remove Fallout] improvement <for [3] movement>",
+
+
+		//Won't work
+		"Can instantly construct a [Remove Marsh] improvement <for [3] movement>",
+		"Can instantly construct a [Remove Jungle] improvement <for [3] movement>",
+		"Can instantly construct a [Remove Forest] improvement <for [3] movement>", 
+		/*
+		//Causes crashes:
+		"Can carry [3] [Drone] units",
+		"Can carry [3] [SRM] units",
+		*/
+            	"Can instantly construct a [Citadel] improvement <by consuming this unit>",
+		"Can be earned through combat <for [Land] units>",
+            	"Is part of Great Person group [General]",
+            	"Great Person - [War]", 
+		"Unbuildable",
+		"Uncapturable"],
+		"movement": 3
+	}, 
+
+
+
+	
+	////////////////////British Empire///////////////////////
+
+	{
+		"name": "British Longbowman",
+		"unitType": "Archery",
+		"range": 3,
+		"movement": 2,
+		"strength": 13,
+		"rangedStrength": 18,
+		"replaces": "Crossbowman",
+		"uniqueTo": "British Empire",
+		"cost": 120,
+		"requiredTech": "Machinery",
+		"upgradesTo": "Gatling Gun",
+		"obsoleteTech": "Industrialization",
+		"attackSound": "arrow"
+	},
+	{
+		"name": "British Ship of the Line",
+		"unitType": "Ranged Water",
+		"replaces": "Frigate",
+		"uniqueTo": "British Empire",
+		"movement": 5,
+		"strength": 30,
+		"rangedStrength": 35,
+		"cost": 185,
+		"requiredResource": "Iron",
+		"uniques": ["[+1] Sight"],
+		"requiredTech": "Navigation",
+		"obsoleteTech": "Electronics",
+		"upgradesTo": "Battleship",
+		"hurryCostModifier": 20,
+		"attackSound": "shipCannonVolley"
+	},
+	{
+		"name": "Brittonic Warrior",
+		"unitType": "Sword",
+		"uniqueTo": "British Empire",
+		"replaces": "Warrior",
+		"movement": 2,
+		"strength": 8,
+		"cost": 38,
+		"requiredTech": "Agriculture",
+		"obsoleteTech": "Metal Casting",
+		"upgradesTo": "Swordsman",
+		"uniques": ["May upgrade to [Spearman] through ruins-like effects","[+50]% Strength <vs [Sword] units>"],
+		"attackSound": "nonmetalhit"
+	},
+
+	{
+		"name": "Maori Mercenary",
+		"unitType": "Sword",
+		"uniqueTo": "British Empire",
+		"movement": 3,
+		"strength": 10,
+		"cost": 45,
+		"requiredTech": "Agriculture",
+		"obsoleteTech": "Steel",
+		"promotions": ["Haka War Dance"],
+		"uniques": ["[+2] Sight <when [Embarked]>", "[+100]% Strength <when defending> <when [Embarked]>"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "African Elephant Mercenary",
+		"unitType": "Mounted",
+		"uniqueTo": "British Empire",
+		"movement": 3,
+		"strength": 40,
+		"cost": 165,
+		"requiredResource": "Ivory",
+		"requiredTech": "Chivalry",
+		"upgradesTo": "Cavalry",
+		"obsoleteTech": "Military Science",
+		"promotions": ["Great Generals II"],
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "[+50]% Strength <vs cities> <when attacking>",
+			"[-10]% Strength for enemy [Military] units in adjacent [All] tiles"],
+		"hurryCostModifier": 20,
+		"attackSound": "elephant"
+	},
+	{
+		"name": "Indian Elephant Mercenary",
+		"unitType": "Ranged Gunpowder",
+		"uniqueTo": "British Empire",
+		"range": 3,
+		"movement": 3,
+		"strength": 40,
+		"rangedStrength": 24,
+		"cost": 175,
+		"requiredResource": "Ivory",
+		"requiredTech": "Gunpowder",
+		"upgradesTo": "Artillery",
+		"obsoleteTech": "Dynamite",
+		"promotions": ["Indirect Fire"],
+		"uniques": ["No defensive terrain bonus", "[+150]% Strength <vs cities> <when attacking>",
+			"[-25]% Strength for enemy [Military] units in adjacent [All] tiles"],
+		"hurryCostModifier": 20,
+		"attackSound": "elephant"
+	},
+	{
+		"name": "Celtic Warrior",
+		"uniqueTo": "British Empire",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 11,
+		"cost": 56,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Civil Service",
+		"upgradesTo": "Pikeman",
+		"uniques": ["Earn [50]% of killed [Military] unit's [Strength] as [Faith]"],
+		"promotions": ["Pictish Courage"],
+		"attackSound": "metalhit"
+	},
+	{
+		"name": "Medieval Galley",
+		"uniqueTo": "British Empire",
+		"unitType": "Melee Water",
+		"movement": 5,
+		"strength": 16,
+		"cost": 80,
+		"uniques": ["Cannot enter ocean tiles"],
+		"requiredTech": "Compass",
+		"obsoleteTech": "Navigation",
+		"upgradesTo": "Frigate",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Frontier Legion",
+		"unitType": "Sword",
+		"uniqueTo": "British Empire",
+		"movement": 2,
+		"strength": 18,
+		"cost": 78,
+		"requiredTech": "Iron Working",
+		"upgradesTo": "Longswordsman",
+		"obsoleteTech": "Gunpowder",
+		"requiredResource": "Iron",
+		"uniques": ["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles"],
+		"hurryCostModifier": 20,
+		"attackSound": "metalhit"
+	}, 
+	{
+		"name": "Elite Legion",
+		"unitType": "Sword",
+		"uniqueTo": "British Empire",
+		"movement": 3,
+		"strength": 23,
+		"cost": 120,
+		"requiredTech": "Iron Working",
+		"upgradesTo": "Musketman",
+		"obsoleteTech": "Gunpowder",
+		"requiredResource": "Copper",
+		"uniques": ["Can build [Road] improvements on tiles", "Can build [Fort] improvements on tiles"
+			    "[+1] Movement <when [Embarked]>","[+1] Sight <when [Embarked]>",
+            		    "[+5]% Strength bonus for [Military] units within [1] tiles",
+			    "[2] free [Auxiliary Cohort] units appear",],
+		"hurryCostModifier": 25,
+		"attackSound": "metalhit"
+	}, 
+	{
+		"name": "Auxiliary Cohort",
+		"unitType": "Sword",
+		"uniqueTo": "British Empire",
+		"movement": 2,
+		"strength": 10,
+		"requiredTech": "Iron Working",
+		"upgradesTo": "Longswordsman",
+		"obsoleteTech": "Gunpowder",
+		"uniques": ["Cannot be purchased","Unbuildable","[+100]% to Flank Attack bonuses"],
+		"attackSound": "metalhit"
+	}, 
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+	{
+		"name": "British Naval Clone Commander",
+		"uniqueTo": "British Empire",
+		"unitType": "Melee Amphibious",
+		"movement": 4,
+		"strength": 205,
+		"requiredTech": "Clone Armies",
+	//	"upgradesTo": "Near Future Infantry",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit",
+			    "[+33]% Strength bonus for [Water] units within [7] tiles",
+			    "[+25]% Strength bonus for [Melee Amphibious] units within [4] tiles",
+			    "[+5]% Strength bonus for [Helicopter] units within [1] tiles", //Air support
+			    "[+77]% Strength <vs [Gunpowder] units>","[+77]% Strength <vs [Ranged Gunpowder] units>",
+			    "[+77]% Strength <vs [Melee Amphibious] units>","[+77]% Strength <vs [Sword] units>",
+			    "Consumes [2] [Aluminum]","Consumes [1] [Iron]",],
+		"promotions": ["Blitz", "Shock III","[Urban Combat] ability"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+	{
+		"name": "British Clone Commander",
+		"replaces": "Clone Commander",
+		"uniqueTo": "British Empire",
+		"unitType": "Melee Amphibious",
+		"movement": 3,
+		"strength": 200,
+		"cost": 1280,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "British Naval Clone Commander"
+		"uniques": ["Never appears as a Barbarian unit",
+			    "[+25]% Strength bonus for [Water] units within [5] tiles",
+			    "[+20]% Strength bonus for [Melee Amphibious] units within [3] tiles",
+			    "[+55]% Strength <vs [Gunpowder] units>","[+55]% Strength <vs [Ranged Gunpowder] units>",
+			    "[+55]% Strength <vs [Melee Amphibious] units>","[+25]% Strength <vs [Sword] units>",
+			    "[5] free [British Clone Infantry] units appear"],
+		"promotions": ["Blitz", "Shock III"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+
+	{
+		"name": "British Clone Captain",
+		"replaces": "Clone Captain",
+		"uniqueTo": "British Empire",
+		"unitType": "Melee Amphibious",
+		"movement": 3,
+		"strength": 150,
+		"cost": 850,
+		"requiredTech": "Clone Armies",
+	//	"upgradesTo": "Near Future Infantry",
+		"uniques": ["Never appears as a Barbarian unit",
+			    "[+15]% Strength bonus for [Water] units within [2] tiles",
+			    "[+15]% Strength bonus for [Melee Amphibious] units within [1] tiles",
+			    "[+10]% Strength bonus for [Gunpowder] units within [1] tiles",
+			    "[+70]% Strength <vs [Gunpowder] units>","[+70]% Strength <vs [Ranged Gunpowder] units>",
+			    "[+33]% Strength <vs [Melee Amphibious] units>",
+			    "[3] free [British Clone Infantry] units appear"],
+		"promotions": ["Medic II","Sentry"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "British Clone Infantry",
+		"replaces": "Clone Infantry",
+		"uniqueTo": "British Empire",
+		"unitType": "Melee Amphibious",
+		"movement": 3,
+		"strength": 150,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "Clone Veteran",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+			   "[+60]% Strength <vs [Gunpowder] units>","[+60]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+33]% Strength <vs [Melee Amphibious] units>",
+			   "[+25]% to Flank Attack bonuses"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "British Clone Veteran",
+		"replaces": "Clone Veteran",
+		"uniqueTo": "British Empire",
+		"unitType": "Melee Amphibious",
+		"movement": 4,
+		"strength": 165,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "Clone Elite",
+		"requiredResource": "Iron",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+			   "[+66]% Strength <vs [Gunpowder] units>","[+66]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+33]% Strength <vs [Melee Amphibious] units>",
+			   "[+33]% to Flank Attack bonuses"],
+		"promotions": ["Sentry"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+	{
+		"name": "British Clone Elite",
+		"replaces": "Clone Elite",
+		"uniqueTo": "British Empire",
+		"unitType": "Melee Amphibious",
+		"movement": 4,
+		"strength": 175,
+		"requiredTech": "Clone Armies",
+		"requiredResource": "Iron",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+			   "[+70]% Strength <vs [Gunpowder] units>","[+70]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+45]% to Flank Attack bonuses",
+			   "[+33]% Strength <vs [Melee Amphibious] units>",			
+			    "Consumes [1] [Aluminum]","Consumes [2] [Iron]",],
+		"promotions": ["Medic", "Agility","Sentry"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+	////////////////////Nicho Clans///////////////////////
+
+	{
+		"name": "Nicho Warrior",
+		"unitType": "Sword",
+		"uniqueTo": "Nicho Clans",
+		"replaces": "Warrior",
+		"movement": 2,
+		"strength": 5,
+		"cost": 40,
+		"requiredTech": "Agriculture",
+		"obsoleteTech": "Metal Casting",
+		"upgradesTo": "Frost Guard",
+	//	"uniques": ["May upgrade to ["Nicho War Chief"] through ruins-like effects"],
+		"promotions": ["[Nicho] ability"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Nicho War Chief",
+		"unitType": "Sword",
+		"uniqueTo": "Nicho Clans",
+		"movement": 2,
+		"strength": 12,
+		"cost": 80,
+		"requiredTech": "Agriculture",
+		"obsoleteTech": "Steel",
+		"upgradesTo": "Longswordsman",
+		"uniques": ["[+5]% Strength bonus for [Military] units within [1] tiles",
+			    "[2] free [Nicho Warrior] units appear"],
+		"promotions": ["[Nicho] ability"],
+		"hurryCostModifier": 33,
+		"attackSound": "nonmetalhit"
+	}, 
+	{
+		"name": "Nicho Spear Fisher",
+		"unitType": "Archery",
+		"uniqueTo": "Nicho Clans",
+		"replaces": "Archer",
+		"movement": 3,
+		"strength": 5,
+		"rangedStrength": 8,
+		"cost": 40,
+		"requiredTech": "Archery",
+		"obsoleteTech": "Construction",
+		"upgradesTo": "Composite Bowman",
+		"uniques": ["[+1] Sight","Can enter ice tiles"],
+		"promotions": ["[Nicho] ability"],
+		"attackSound": "arrow"
+	},
+	{
+		"name": "Small Ice Boat",
+		"unitType": "Melee Water",
+		"uniqueTo": "Nicho Clans",
+		"replaces": "Trireme",
+		"movement": 5,
+		"strength": 8,
+		"cost": 33,
+		"requiredTech": "Sailing",
+		"uniques": ["Can enter ice tiles", "Cannot enter ocean tiles", "Never appears as a Barbarian unit", "[+2] Sight"],
+		"upgradesTo": "Caravel",
+		"obsoleteTech": "Astronomy",
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Macer",
+		"unitType": "Sword",
+		"uniqueTo": "Nicho Clans",
+		"movement": 2,
+		"strength": 10,
+		"cost": 50,
+		"requiredTech": "Trapping",
+		"obsoleteTech": "Metal Casting",
+		"upgradesTo": "Frost Guard",
+		"promotions": ["[Nicho] ability"],
+		"attackSound": "nonmetalhit"
+	},
+
+	{
+		"name": "Dog Sled",
+		"unitType": "Mounted",
+		"uniqueTo": "Nicho Clans",
+		"replaces": "Chariot Archer",
+		"movement": 4,
+		"strength": 12,
+		"cost": 66,
+		"requiredTech": "The Wheel",
+		"upgradesTo": "Knight",
+		"obsoleteTech": "Chivalry",
+		"uniques": ["No defensive terrain bonus", "Rough terrain penalty", "Never appears as a Barbarian unit", "[+1] Sight"],
+		"promotions": ["[Nicho] ability"],
+		"attackSound": "arrow"
+	},
+
+	{
+		"name": "Land Finder",
+		"unitType": "Scout",
+		"uniqueTo": "Nicho Clans",
+		"movement": 4,
+		"strength": 17,
+		"cost": 100,
+		"requiredTech": "Optics",
+		"upgradesTo": "Marine",
+		"obsoleteTech": "Globalization",
+		"uniques": ["Founds a new city <on foreign continents>","Can enter ice tiles","[+150]% Strength <when defending> <when [Embarked]>","[+2] Sight"],
+		"promotions": ["[Nicho] ability"],
+		"attackSound": "nonmetalhit"
+	},
+	{
+		"name": "Ice Hunter",
+		"unitType": "Melee Amphibious",
+		"replaces": "Spearman",
+		"uniqueTo": "Nicho Clans",
+		"movement": 2,
+		"strength": 12,
+		"cost": 62,
+		"requiredTech": "Bronze Working",
+		"obsoleteTech": "Civil Service",
+		"upgradesTo": "Nicho Pikeman",
+		"uniques": ["[+25]% Strength <vs [Mounted] units>","Can enter ice tiles",],
+		"promotions": ["[Nicho] ability"],
+		"attackSound": "metalhit"
+	},
+
+	{
+		"name": "Frost Guard",
+		"uniqueTo": "Nicho Clans",
+		"replaces": "Swordsman",
+		"unitType": "Sword",
+		"movement": 2,
+		"strength": 15,
+		"cost": 75,
+		"requiredTech": "Iron Working",
+		"upgradesTo": "Longswordsman",
+		"obsoleteTech": "Steel",
+		"uniques": ["Can enter ice tiles"],
+		"promotions": ["[Nicho] ability"],
+		"hurryCostModifier": 25,
+		"attackSound": "metalhit"
+	},
+
+	{
+		"name": "Sled Archers",
+		"uniqueTo": "Nicho Clans",
+		"replaces": "Horseman",
+		"unitType": "Archery",
+		"movement": 4,
+		"strength": 8,
+		"rangedStrength": 16,
+		"cost": 75,
+		"requiredTech": "Horseback Riding",
+		"upgradesTo": "Knight",
+		"obsoleteTech": "Chivalry",
+		"uniques": ["No defensive terrain bonus", "Rough terrain penalty", "Never appears as a Barbarian unit"],
+		"promotions": ["[Nicho] ability"],
+		"hurryCostModifier": 20,
+		"attackSound": "horse"
+	},
+	{
+		"name": "Nicho Pikeman",
+		"unitType": "Sword",
+		"uniqueTo": "Nicho Clans",
+		"replaces": "Pikeman",
+		"movement": 2,
+		"strength": 17,
+		"cost": 94,
+		"requiredTech": "Civil Service",
+		"obsoleteTech": "Metallurgy",
+		"upgradesTo": "Lancer",
+		"uniques": ["[+50]% Strength <vs [Mounted] units>"],
+		"promotions": ["[Nicho] ability"],
+		"attackSound": "metalhit"
+	},
+
+	{
+		"name": "Nicho Landship",
+		"uniqueTo": "Nicho Clans",
+		"unitType": "Armored",
+		"replaces": "Landship",
+		"movement": 3,
+		"strength": 68,
+		"cost": 370,
+		"requiredTech": "Combustion",
+		"requiredResource": "Oil",
+		"upgradesTo": "Nicho Tank",
+		"obsoleteTech": "Combined Arms",
+		"uniques": ["Can move after attacking",
+			    "No defensive terrain bonus", 
+			    "Never appears as a Barbarian unit",
+			    "[+10]% Strength <vs [Mounted] units>",
+			    "[+10]% Strength <vs [Water] units>",],
+		"promotions": ["[Nicho] ability"],
+		"attackSound": "tankshot"
+	},
+
+	{
+		"name": "Nicho Tank",
+		"unitType": "Armored",
+		"replaces": "Tank",
+		"uniqueTo": "Nicho Clans",
+		"movement": 4,
+		"strength": 82,
+		"cost": 390,
+		"requiredTech": "Combined Arms",
+		"upgradesTo": "Modern Armor",
+		"uniques": ["Can move after attacking",
+			    "Consumes [1] [Oil]",
+			    "Consumes [1] [Iron]",
+			    "No defensive terrain bonus",
+			    "Never appears as a Barbarian unit"],
+		"promotions": ["[Nicho] ability"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Nicho Decimator",	//Decimator evolves to Future armour while Defender evolves to a giant robot
+		"uniqueTo": "Nicho Clans",
+		"replaces": "Modern Armor",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 120,
+		"cost": 445,
+		"requiredTech": "Lasers",
+		"requiredResource": "Aluminum",
+		"upgradesTo": "Near Future Armor",
+		"uniques": ["Can move after attacking", 
+			    "Consumes [1] [Oil]",
+			    "Consumes [1] [Iron]",
+			    "No defensive terrain bonus",
+			    "Never appears as a Barbarian unit"],
+		"promotions": ["[Nicho] ability","Sentry",],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Nicho Defender",	//Decimator evolves to Future armour while Defender evolves to a giant robot
+		"uniqueTo": "Nicho Clans",
+		"unitType": "Armored",
+		"movement": 3,
+		"strength": 140,
+		"cost": 460,
+		"requiredTech": "Lasers",
+		"requiredResource": "Aluminum",
+		"upgradesTo": "Giant Death Robot",
+		"uniques": ["Can move after attacking", 
+			    "Consumes [2] [Oil]",
+			    "Consumes [1] [Iron]",
+			    "No defensive terrain bonus",
+			    "Never appears as a Barbarian unit"],
+		"promotions": ["[Nicho] ability","[Defender] ability","Defenders of the Capital","Sentry",],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Ice Skidder",
+		"unitType": "Mounted",
+		"replaces": "Cavalry",
+		"uniqueTo": "Nicho Clans",
+		"movement": 5,
+		"strength": 30,
+		"cost": 205,			//Cheeper to build but more expensive to maintain & more reasource hungry than regular Cavalry
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Combined Arms",
+		"upgradesTo": "Nicho Landship",
+		"promotions": ["[Ice Skidder] ability","Blitz","Charge",],
+		"uniques": [	//Reasorce Costs
+				"Consumes [1] [Coal]","Consumes [1] [Iron]",	
+				//Combat
+			    "Can move after attacking",
+			    "No defensive terrain bonus",
+			    "[+15]% to Flank Attack bonuses",
+			    "[-33]% Strength <vs cities> <when attacking>",
+				//Logistics
+			    "[+1] Sight","Never appears as a Barbarian unit","[+25]% maintenance costs"],
+		"attackSound": "cavalry"
+	},
+
+	{
+		"name": "Nicho Flag-Bearer",
+		"uniqueTo": "Nicho Clans",
+		"unitType": "Mounted",
+		"movement": 3,
+		"strength": 24,
+		"cost": 150,
+		"requiredTech": "Education",
+		"obsoleteTech": "Combustion",
+		"requiredResource": "Horses",
+		"upgradesTo": "Ice Skidder",
+		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"
+			    "[+5]% Strength bonus for [Mounted] units within [1] tiles",],
+		"promotions": ["[Ice Skidder] ability"],
+		"attackSound": "cavalry"
+	},
+	{
+		"name": "Nicho Knight",
+		"replaces": "Knight",
+		"unitType": "Mounted",
+		"uniqueTo": "Nicho Clans",
+		"movement": 4,
+		"strength": 22,
+		"cost": 120,
+		"requiredTech": "Chivalry",
+		"obsoleteTech": "Rifling",
+		"upgradesTo": "Ice Skidder",
+		"requiredResource": "Horses",
+		"uniques": ["Can move after attacking","No defensive terrain bonus","[-33]% Strength <vs cities> <when attacking>", "Never appears as a Barbarian unit"],
+		"promotions": ["[Ice Skidder] ability"],
+		"attackSound": "horse"
+	},
+
+
+	{
+		"name": "Nicho Frost Cavalry", //Spiritual success or to the Ice Skidder Essentially an Ice Skidder II in all but name
+		"unitType": "Mounted",
+		"replaces": "Cavalry",
+		"uniqueTo": "Nicho Clans",
+		"movement": 6,
+		"strength": 70,
+		"cost": 525,
+		"requiredTech": "Rifling",
+		"obsoleteTech": "Cyborgism",
+		"upgradesTo": "Near Future Armor",
+		"promotions": ["[Ice Skidder] ability","Blitz","Charge",],
+		"uniques": [	//Reasorce Costs
+				"Consumes [1] [Aluminum]","Consumes [1] [Iron]",	
+				//Combat
+			    "Can move after attacking",
+			    "No defensive terrain bonus",
+			    "[+25]% to Flank Attack bonuses",
+			    "[-33]% Strength <vs cities> <when attacking>",
+				//Logistics
+			    "[+1] Sight","Never appears as a Barbarian unit","[+25]% maintenance costs"],
+		"attackSound": "cavalry"
+	},
+
+	{
+		"name": "Nicho Infantry",
+		"replaces": "Infantry",
+		"unitType": "Gunpowder",
+		"uniqueTo": "Nicho Clans",
+		"movement": 2,
+		"strength": 74,
+		"cost": 380,
+		"requiredTech": "Plastics",
+		"upgradesTo": "Mechanized Infantry",
+		"obsoleteTech": "Mobile Tactics",
+		"promotions": ["[Nicho] ability"],
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "Nicho Neutrality Guard",
+		"unitType": "Gunpowder",
+		"replaces": "Great War Infantry",
+		"uniqueTo": "Nicho Clans",
+		"movement": 2,
+		"strength": 50,
+		"cost": 320,
+		"requiredTech": "Replaceable Parts",
+		"upgradesTo": "Infantry",
+		"obsoleteTech": "Plastics",
+		"uniques": ["[+12]% Strength <when fighting in [{Friendly} {Land}] tiles>"],
+		"promotions": ["[Nicho] ability"],
+		"attackSound": "shot"
+	},
+	{
+		"name": "Nicho T-Rex Rider", //Exactly the same just with the Ice Skidder abbility
+		"replaces": "T-Rex Rider",
+		"uniqueTo": "Nicho Clans",
+		"unitType": "Mounted",
+		"movement": 7,
+		"strength": 265,
+		"cost": 1000,
+		"requiredTech": "Dinosaurs",
+	//	"obsoleteTech": "AI",
+	//	"upgradesTo": "Shielded Mech",
+		"uniques": [
+				//Buffs
+			    "Can move after attacking", 
+			    "[+1] Sight",
+			    "[-10]% Strength for enemy [Military] units in adjacent [All] tiles"
+				//Debuffs
+			    "[-10]% Strength <when fighting in [Rough terrain] tiles>"
+			    "[-10]% Strength <when fighting in [Forest] tiles>"
+			    "[-10]% Strength <when fighting in [Jungle] tiles>"
+				//Other
+			    "Never appears as a Barbarian unit"
+			    "Only available <if [Dino Lab] is constructed>",],
+		"promotions": ["Blitz","[Ice Skidder] ability"]
+		"attackSound": "Dragon"
+	},
+
+
+///////////////////////////////////////////////////////
+	{
+		"name": "Nicho Clone Cheif",
+		"uniqueTo": "Nicho Clans",
+		"unitType": "Sword",
+		"movement": 6,
+		"strength": 235,
+		"requiredTech": "Clone Armies",
+	//	"upgradesTo": "Near Future Infantry",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit",
+			    "Can enter ice tiles","Can move after attacking",
+			    "[+15]% Strength bonus for [Gunpowder] units within [4] tiles",
+			    "[+10]% Strength bonus for [Water] units within [5] tiles",
+			    "[+5]% Strength bonus for [Sword] units within [5] tiles",
+			    "[+70]% Strength <vs [Gunpowder] units>","[+70]% Strength <vs [Ranged Gunpowder] units>",
+			    "[+33]% Strength <vs [Sword] units>","[+10]% Strength <vs [Water] units>",
+			    "Consumes [5] [Iron]",],
+		"promotions": ["Sentry",
+				"Medic II"
+				"[Nicho] ability",
+				],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+
+	{
+		"name": "Nicho Clone Commander",
+		"replaces": "Clone Commander",
+		"uniqueTo": "Nicho Clans",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 140,
+		"cost": 800,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "Nicho Clone Cheif",
+		"uniques": ["Never appears as a Barbarian unit",
+			    "[+20]% Strength bonus for [Gunpowder] units within [3] tiles",
+			    "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>",
+			    "[4] free [Nicho Clone Infantry] units appear","Can enter ice tiles"],
+		"promotions": ["Logistics", "Formation I", "[Nicho] ability",],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+
+	{
+		"name": "Nicho Clone Captain",
+		"replaces": "Clone Captain",
+		"uniqueTo": "Nicho Clans",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 100,
+		"cost": 600,
+		"requiredTech": "Clone Armies",
+	//	"upgradesTo": "Near Future Infantry",
+		"uniques": ["Never appears as a Barbarian unit",
+			    "[+10]% Strength bonus for [Gunpowder] units within [1] tiles",
+			    "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>",
+			    "Withdraws before melee combat <with [15]% chance>",
+			    "[2] free [Nicho Clone Infantry] units appear","Can enter ice tiles"],
+		"promotions": ["Medic","[Nicho] ability"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "Nicho Clone Infantry",
+		"replaces": "Clone Infantry",
+		"uniqueTo": "Nicho Clans",
+		"unitType": "Gunpowder",
+		"movement": 4,
+		"strength": 120,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "Clone Veteran",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+			   "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+10]% to Flank Attack bonuses","Can enter ice tiles"],
+		"promotions": ["[Nicho] ability"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "Nicho Clone Veteran",
+		"replaces": "Clone Veteran",
+		"uniqueTo": "Nicho Clans",
+		"unitType": "Gunpowder",
+		"movement": 4,
+		"strength": 125,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "Clone Elite",
+		"requiredResource": "Iron",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+			   "[+60]% Strength <vs [Gunpowder] units>","[+60]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+12]% to Flank Attack bonuses","Can enter ice tiles"],
+		"promotions": ["[Nicho] ability"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Nicho Clone Elite",
+		"replaces": "Clone Elite",
+		"uniqueTo": "Nicho Clans",
+		"unitType": "Gunpowder",
+		"movement": 4,
+		"strength": 130,
+		"requiredTech": "Clone Armies",
+		"requiredResource": "Iron",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+			   "[+66]% Strength <vs [Gunpowder] units>","[+66]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+14]% to Flank Attack bonuses","Can enter ice tiles",			
+			    "Consumes [1] [Aluminum]","Consumes [1] [Iron]",],
+		"promotions": ["Medic","[Nicho] ability"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+///////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	////////////////////UNIVERSAL////////////////////////////////
+	{
+		"name": "Worker",
+		"unitType": "Civilian",
+		"movement": 2,
+		"requiredTech": "Agriculture",
+		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action"],
+		"obsoleteTech": "AI",
+		"cost": 70
+	},
+ 	{
+		"name": "Worker Bot",
+		"unitType": "Civilian",
+		"movement": 3,
+		"requiredTech": "AI",
+		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action","[-100]% maintenance costs","[-100]% maintenance costs",],
+		"cost": 85
+	},
+	{
+		"name": "Giant Death Robot II",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 300,
+		"cost": 500,
+		"requiredTech": "AI",
+		"requiredResource": "Uranium",
+		"upgradesTo": "Shielded Mech",
+		"obsoleteTech": "Shielded Space-Fighters",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Near Future Armor",
+		"unitType": "Armored",
+		"movement": 6,
+		"strength": 150,
+		"rangedStrength": 150,
+		"range": 2,
+		"interceptRange": 1,
+		"cost": 300,
+		"upgradesTo": "Solar Tank",
+		"requiredTech": "Augmented Reality",
+		"obsoleteTech": "Crystal Based Shielding",
+		"requiredResource": "Aluminum",
+		"uniques": ["[50]% chance to intercept air attacks", 
+			    "[+20]% Strength <vs [Drone] units>"
+			    "Can move after attacking", 
+			    "No defensive terrain bonus", 
+			    "Never appears as a Barbarian unit"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Near Future Infantry",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 115,
+		"cost": 240,
+		"requiredTech": "Augmented Reality",
+		"uniques": ["[+1] Sight"],
+		"upgradesTo": "Stealth Infantry",
+		"obsoleteTech": "Large-Scale Invisibility",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Guided Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 60,
+		"rangedStrength": 60,
+		"range": 8,
+		"cost": 150,
+		"requiredTech": "Advanced Ballistics",
+		"obsoleteTech": "Programmable Materials",
+		"uniques": ["[-100]% maintenance costs"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Ballistic Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 125,
+		"rangedStrength": 125,
+		"range": 12,
+		"cost": 250,
+		"requiredTech": "Programmable Materials",
+		"uniques": ["[-100]% maintenance costs","[+20]% Strength <vs cities>"],
+		"upgradesTo": "Hypersonic Missile",
+		"obsoleteTech": "Space Racing",
+		"attackSound": "missile"
+	},
+	{
+		"name": "ICBM",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 200,
+		"rangedStrength": 200,
+		"range": 20,
+		"cost": 500,
+		"requiredResource": "Oil",
+		"requiredTech": "Space Combat",
+		"uniques": ["[-100]% maintenance costs"],
+		"upgradesTo": "Intercontinental Hypersonic Missile",
+		"attackSound": "missile"
+	},
+	{
+		"name": "Mini Shuttlecraft",
+		"unitType": "Space Fighter",
+		"movement": 1,
+		"strength": 180,
+		"rangedStrength": 180,
+		"range": 12,
+		"interceptRange": 16,
+		"cost": 450,
+		"requiredResource": "Aluminum",
+		"requiredTech": "Space Combat",
+		"upgradesTo": "Primitive Space Fighter",
+		"uniques": ["[100]% chance to intercept air attacks",],
+		"promotions": ["Space Supremecy"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Shuttlecraft",
+		"unitType": "Space Fighter",
+		"movement": 1,
+		"strength": 200,
+		"rangedStrength": 200,
+		"range": 16,
+		"interceptRange": 16,
+		"cost": 600,
+		"requiredResource": "Aluminum",
+		"requiredTech": "Space Combat",
+		"upgradesTo": "Primitive Space Fighter",
+		"uniques": ["[100]% chance to intercept air attacks", "[+33]% Strength <vs [Drone] units>"],
+		"promotions": ["Space Supremecy"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Heavy Shuttlecraft",
+		"unitType": "Space Fighter",
+		"movement": 1,
+		"strength": 260,
+		"rangedStrength": 260,
+		"range": 14,
+		"interceptRange": 14,
+		"cost": 850,
+		"requiredResource": "Aluminum",
+		"requiredTech": "Space Combat",
+		"upgradesTo": "Primitive Space Fighter",
+		"uniques": ["[100]% chance to intercept air attacks", "[+33]% Strength <vs [Drone] units>"],
+		"promotions": ["Space Supremecy"],
+		"attackSound": "missile"
+	},
+
+	{
+		"name": "Cloned Infantry Team",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 85,
+		"cost": 110,
+		"requiredTech": "Cloning",
+		"uniques": ["[+1] Sight","Can build [Road] improvements on tiles",],
+		"promotions": ["Blitz"],
+	//	"upgradesTo": "Mechanized Infantry",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Bio-bot Infantry",
+		"unitType": "Gunpowder",
+		"movement": 2,
+		"strength": 155,
+		"cost": 200,
+		"requiredTech": "Bio Machinery",
+		"uniques": ["[+1] Sight","Can build [Road] improvements on tiles",],
+		"promotions": ["March"],
+	//	"upgradesTo": "Mechanized Infantry",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Cyborg Commando",
+		"unitType": "Gunpowder",
+		"movement": 4,
+		"strength": 170,
+		"cost": 500,
+		"requiredResource": "Aluminum",
+		"requiredTech": "Cyborgism",
+		"uniques": ["[+3] Sight","Can move after attacking","Withdraws before melee combat <with [60]% chance>",
+			    "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>"
+			    "May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>", 
+			    "Never appears as a Barbarian unit"],
+		"promotions": ["[Urban Combat] ability","Cover I"],
+	//	"upgradesTo": "Mechanized Infantry",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Primitive Quarkionic Bomb",
+		"unitType": "Atomic Bomber",
+		"movement": 1,
+		"strength": 450,
+		"rangedStrength": 450,
+		"range": 20,
+		"cost": 1000,
+		"requiredTech": "Quantum Weaponry",
+		"requiredResource": "Uranium",
+		"promotions" : ["Evasion"],
+		"uniques": ["Nuclear weapon of Strength [3]", "Only available <if [Quark Weaponization Project] is constructed>", "Self-destructs when attacking",
+			"Blast radius [2]","Consumes [2] [Uranium]","Limited to [2] per Civilization",],
+		"attackSound": "nuke"
+	},
+	{
+		"name": "Primitive Quarkionic Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 600,
+		"rangedStrength": 600,
+		"range": 30,
+		"cost": 2000,
+		"requiredTech": "Quantum Weaponry",
+		"uniques": ["Nuclear weapon of Strength [6]", "Only available <if [Quark Weaponization Project] is constructed>",
+			"Blast radius [4]", "Consumes [2] [Uranium]","Limited to [1] per Civilization",],
+		"attackSound": "nuke"
+	},
+
+	{
+		"name": "Shielded Mech",
+		"unitType": "Armored", // Is a ground unit but can fly thus it moves like a helicopter
+		"movement": 5,
+		"strength": 435,
+		"cost": 700,
+		"requiredTech": "Energy Fields",
+		"requiredResource": "Copper",
+		"upgradesTo": "Enhanced Shielded Mech",
+		"uniques": ["Can pass through impassable tiles"
+			    "All tiles cost 1 movement",
+			    "Ignores Zone of Control",
+			    "Can move after attacking", 
+			    "Never appears as a Barbarian unit"],		
+		"promotions": ["Medium Energy Shields"],
+		"attackSound": "gdrAttack"
+	},
+
+	{
+		"name": "Railgun Artillery",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 45,
+		"rangedStrength": 120,
+		"range": 4,
+		"cost": 520,
+		"requiredTech": "Interplanetary Mining",
+		"upgradesTo": "Energy Cannon",
+		"uniques": ["[+300]% Strength <vs cities> <when attacking>",
+			"[+200]% Strength <vs [Armored] units>",
+			"[+100]% Strength <vs [Siege] units>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack","[-1] Sight", 
+			"Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire","Extended Range"],
+		"attackSound": "artillery"
+	},
+
+
+
+	{
+		"name": "Anti-Tank Trooper",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 65,
+		"cost": 280,
+		"requiredTech": "Globalization",
+		"obsoleteTech": "Enhancement",
+		"uniques": ["Can carry [1] [SRM] units","[+1] Sight",
+			    "[+100]% Strength <vs [Armored] units>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Anti-Tank Squad",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 75,
+		"cost": 440,
+		"requiredTech": "Globalization",
+		"obsoleteTech": "Enhancement",
+		"uniques": ["Can carry [2] [SRM] units","[+2] Sight"
+			    "[+100]% Strength <vs [Armored] units>"],
+		"promotions": ["Blitz"],
+		"attackSound": "missile"
+	},
+
+	{
+		"name": "MLRS Truck", //Multiple Launch Rocket System
+		"unitType": "Siege",
+		"movement": 4,
+		"strength": 45,
+		"rangedStrength": 70,
+		"range": 3,
+		"cost": 425,
+		"requiredTech": "Particle Physics",
+		"requiredResource": "Oil",
+		"uniques": ["[+200]% Strength <vs cities> <when attacking>",
+			    "Can carry [4] [SRM] units"
+			    "No defensive terrain bonus",
+			    "Can move after attacking"
+			    "[+2] Sight", 
+			    "Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire","Extended Range"],
+		"attackSound": "artillery"
+	},
+	{
+		"name": "Anti-Tank Missile",
+		"unitType": "SRM",
+		"movement": 1,
+		"strength": 50,
+		"rangedStrength": 50,
+		"range": 2,
+		"cost": 120,
+		"requiredTech": "Globalization",
+	//	"obsoleteTech": "Energy Fields",
+		"upgradesTo": "M47 Dragon",
+		"uniques": ["[-100]% maintenance costs","[+100]% Strength <vs [Armored] units>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Anti-Ship Missile",
+		"unitType": "SRM",
+		"movement": 1,
+		"strength": 40,
+		"rangedStrength": 40,
+		"range": 4,
+		"cost": 220,
+		"requiredTech": "Particle Physics",
+	//	"obsoleteTech": "Energy Fields",
+		"upgradesTo": "M47 Dragon",
+		"uniques": ["[-100]% maintenance costs","[+250]% Strength <vs [Water] units>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Spy Satellite",
+		"unitType": "Air Recon",
+		"movement": 1,
+		"strength": 125,
+		"rangedStrength": 1,
+		"interceptRange": 1,
+		"range": 40,
+		"cost": 2000,
+		"requiredTech": "Space Architecture",
+	//	"upgradesTo": "Super Duper Wooper Placeholding Spy Satellite",	
+		"uniques": ["[+34] Sight","Cannot attack","Never appears as a Barbarian unit","Limited to [7] per Civilization",],
+	},
+
+	{
+		"name": "Orbital Strike",
+		"unitType": "Orbital Ordnance",
+		"movement": 1,
+		"strength": 600,
+		"rangedStrength": 600,
+		"range": 99,
+		"cost": 2500,
+		"requiredTech": "Space Architecture",
+		"uniques": ["Only available <if [Orbital Bombardment Platform] is constructed>",],
+		"attackSound": "artillery"
+	},
+	{
+		"name": "Shielded Missile Ship",
+		"unitType": "Ranged Water",
+		"movement": 6,
+		"strength": 600,
+        	"rangedStrength": 200,
+		"range": 3,
+		"interceptRange": 2,
+		"cost": 1200,
+		"requiredTech": "Energy Fields",
+		"requiredResource": "Copper",
+		"uniques": ["[100]% chance to intercept air attacks", 
+			    "Can carry [3] [Missile] units",
+			    "Can carry [2] [SRM] units"
+			    "Never appears as a Barbarian unit"],	
+		"promotions": ["Medium Energy Shields","Indirect Fire","Supply",],
+		"attackSound": "shipguns"
+	},
+
+
+
+
+
+	/*
+	{
+		"name": "Clone Commander",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 150,
+		"cost": 1000,
+		"requiredTech": "Clone Armies",
+	//	"upgradesTo": "Near Future Infantry",
+		"uniques": ["Never appears as a Barbarian unit",
+			    "[+20]% Strength bonus for [Military] units within [3] tiles",
+			    "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>",
+			    "[5] free [Clone Infantry] units appear"],
+		"promotions": ["Logistics", "Formation I",],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+	*/
+
+
+	{
+		"name": "Clone Commander",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 150,
+		"cost": 1000,
+		"requiredTech": "Clone Armies",
+	//	"upgradesTo": "Near Future Infantry",
+		"uniques": ["Never appears as a Barbarian unit",
+			    "[+20]% Strength bonus for [Gunpowder] units within [3] tiles",	//Changed to gunpowder this isn't a great general only comands clones.
+			    "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>",
+			    "[5] free [Clone Infantry] units appear"],
+		"promotions": ["Logistics", "Formation I"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+
+	{
+		"name": "Clone Captain",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 100,
+		"cost": 650,
+		"requiredTech": "Clone Armies",
+	//	"upgradesTo": "Near Future Infantry",
+		"uniques": ["Never appears as a Barbarian unit",
+			    "[+10]% Strength bonus for [Gunpowder] units within [1] tiles",	//Changed to gunpowder this isn't a great general only comands clones.
+			    "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>",
+			    "Withdraws before melee combat <with [15]% chance>",
+			    "[2] free [Clone Infantry] units appear"],
+		"promotions": ["Medic"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "Clone Infantry",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 120,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "Clone Veteran",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+			   "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+10]% to Flank Attack bonuses"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "Clone Veteran",
+		"unitType": "Gunpowder",
+		"movement": 4,
+		"strength": 125,
+		"requiredTech": "Clone Armies",
+		"upgradesTo": "Clone Elite",
+		"requiredResource": "Iron",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+			   "[+60]% Strength <vs [Gunpowder] units>","[+60]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+12]% to Flank Attack bonuses"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+	{
+		"name": "Clone Elite",
+		"unitType": "Gunpowder",
+		"movement": 4,
+		"strength": 130,
+		"requiredTech": "Clone Armies",
+		"requiredResource": "Iron",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+			   "[+66]% Strength <vs [Gunpowder] units>","[+66]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+14]% to Flank Attack bonuses",			
+			    "Consumes [1] [Aluminum]","Consumes [1] [Iron]",],
+		"promotions": ["Medic"],
+	//	"obsoleteTech": "Augmented Reality",
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "Shielded Marines",
+		"unitType": "Melee Amphibious",
+		"movement": 4,
+		"strength": 145,
+		"cost": 350,
+		"requiredTech": "Energy Fields",
+		"upgradesTo": "Cyborg Commando",
+	//	"obsoleteTech": "Energy Fields",
+		"requiredResource": "Copper",
+		"promotions": ["Shock I"],
+		"uniques": ["[+1] Sight <when [Embarked]>", "[+100]% Strength <when defending> <when [Embarked]>"],
+		"promotions": ["Light Energy Shields"],
+		"attackSound": "shot"
+	},	
+
+
+
+	{
+		"name": "Enhanced Shielded Mech",
+		"unitType": "Armored", // Is a ground unit but can fly thus it moves like a helicopter
+		"movement": 5,
+		"strength": 465,
+		"cost": 860,
+		"requiredTech": "High Energy Theory",
+		"requiredResource": "Copper",
+		"upgradesTo": "Shielded Mech MK-II",
+		"uniques": ["Can pass through impassable tiles"
+			    "All tiles cost 1 movement",
+			    "Ignores Zone of Control",
+			    "Can move after attacking",
+			    "Consumes [1] [Oil]", "Consumes [1] [Iron]",
+			    "Never appears as a Barbarian unit"],		
+		"promotions": ["Medium Energy Shields"], 
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Shielded Mech MK-II",
+		"unitType": "Armored", // Is a ground unit but can fly thus it moves like a helicopter
+		"movement": 5,
+		"strength": 485,
+		"cost": 890,
+		"requiredTech": "High Energy Theory",
+		"requiredResource": "Copper",
+		"uniques": ["Can pass through impassable tiles"
+			    "All tiles cost 1 movement",
+			    "Ignores Zone of Control",
+			    "Can move after attacking",
+			    "Consumes [1] [Uranium]",
+			    "Never appears as a Barbarian unit"],		
+		"promotions": ["Medium Energy Shields","Depleted Uranium Armour"], 
+		"attackSound": "gdrAttack"
+	},
+
+
+	{
+		"name": "Agent",
+		"unitType": "Scout",
+		"movement": 4,
+		"strength": 65,
+		"rangedStrength": 60,
+		"range": 2,
+		"cost": 330,
+		"requiredResource": "Silver",
+		"requiredTech": "Invisibility",
+		"promotions": ["Cloaking",],
+		"uniques": ["[+3] Sight","Unable to capture cities"],
+		"attackSound": "shot"
+	},
+
+
+	{
+		"name": "Hypersonic Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 250,
+		"rangedStrength": 250,
+		"range": 16,
+		"cost": 500,
+		"requiredTech": "Space Racing",
+		"uniques": ["[-100]% maintenance costs","[+35]% Strength <vs cities>","Consumes [2] [Oil]"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Intercontinental Hypersonic Missile",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 300,
+		"rangedStrength": 300,
+		"range": 20,
+		"cost": 750,
+		"requiredTech": "Space Racing",
+		"uniques": ["[-100]% maintenance costs","[+35]% Strength <vs cities>","Consumes [2] [Oil]"],
+		"attackSound": "missile"
+	},
+
+
+
+
+
+
+
+
+
+
+	{
+		"name": "Giant Gorilla", //A lot Like the Giant Death Robot II but dosn't nead any unique reasorces allowing it to be spammed
+		"unitType": "Mounted", //Tecnically its not mentioned if someones riding it or not but due to promotions this one makes the most sense
+		"movement": 5,
+		"strength": 335,
+		"cost": 650,
+		"requiredTech": "Bio Merging",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"
+			    "Only available <if [Gorrila Bio-Tank] is constructed>",],
+		"promotions": ["Kaiju"]
+	//	"obsoleteTech": "AI",
+	//	"upgradesTo": "Shielded Mech",
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Sky-Rod",
+		"unitType": "Orbital Ordnance",
+		"movement": 1,
+		"strength": 100,
+		"rangedStrength": 100,
+		"range": 99,
+		"cost": 500,
+		"requiredResource": "Iron",
+		"requiredTech": "Interplanetary Colonisation",
+		"uniques": ["Only available <if [Orbital Bombardment Platform] is constructed>","[-100]% maintenance costs"],
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Bulky Sky-Rod",
+		"unitType": "Orbital Ordnance",
+		"movement": 1,
+		"strength": 150,
+		"rangedStrength": 150,
+		"range": 99,
+		"cost": 750,
+		"requiredResource": "Iron",
+		"requiredTech": "Interplanetary Colonisation",
+		"uniques": ["Only available <if [Orbital Bombardment Platform] is constructed>","[-100]% maintenance costs"],
+		"attackSound": "bombing"
+	},
+
+
+	{
+		"name": "Energy Cannon",
+		"unitType": "Siege",
+		"movement": 2,
+		"strength": 145,
+		"rangedStrength": 260,
+		"range": 3
+		"cost": 600,
+		"requiredTech": "High Energy Theory",
+	//	"upgradesTo": "Rocket Artillery",
+		"uniques": ["Unable to capture cities"
+			"[+500]% Strength <vs [Water] units>",
+			"[+300]% Strength <vs cities> <when attacking>",
+			"[+100]% Strength <vs [Armored] units>",
+			"[+50]% Strength <vs [Siege] units>",
+			"No defensive terrain bonus",
+			"Must set up to ranged attack","[-1] Sight",
+			 "Consumes [1] [Uranium]","Consumes [2] [Aluminum]",
+			],
+		"attackSound": "phasers"
+	},
+
+
+	{
+		"name": "Near Future Destroyer",
+		"unitType": "Melee Water",
+		"movement": 6,
+		"strength": 165,
+		"interceptRange": 3,
+		"cost": 450,
+	//	"upgradesTo": "Shielded Marines",
+	//	"obsoleteTech": "Energy Fields",
+		"requiredTech": "Augmented Reality",
+		"requiredResource": "Oil",
+		"uniques": [	
+				///Naval Combat
+				"Can see invisible [Submarine] units",
+			   	"[+200]% Strength <vs [Submarine] units>"
+			    	"Withdraws before melee combat <with [80]% chance>",
+				//Air related
+ 			    	"[80]% chance to intercept air attacks", "[+20]% Strength <vs [Drone] units>"
+				//Ice related
+				"Can enter ice tiles"
+				"[-80]% Strength <when fighting in [Ice] tiles>", //Just because it can dosen't mean it should
+				],
+		"attackSound": "shipguns"
+	},
+
+
+	{
+		"name": "Shielded Carrier",
+		"unitType": "Aircraft Carrier",
+		"movement": 5,
+		"strength": 800,
+		"cost": 2000,
+	//	"upgradesTo": "Shielded Marines",
+		"requiredTech": "Energy Fields",
+		"requiredResource": "Copper",
+		"uniques": ["Cannot attack", "Can carry [4] [Aircraft] units","[+10] HP when healing",
+			    "[+5]% Strength bonus for [Water] units within [3] tiles",],
+		"promotions": ["Heavy Energy Shields"],
+	},
+
+
+	{
+		"name": "Orbital Tactical Nuke",
+		"unitType": "Orbital Ordnance",
+		"movement": 1,
+		"strength": 850,
+		"rangedStrength": 850,
+		"range": 99,
+		"cost": 5000,
+		"requiredTech": "Orbital Communication",
+		"uniques": [ 
+				//Requirments 
+			"Only available <if [Orbital Bombardment Platform] is constructed>",
+			"Only available <if [Manhattan Project] is constructed>",
+				//Effects
+			"Nuclear weapon of Strength [1]", 
+			"Blast radius [1]",
+			"Consumes [1] [Uranium]",
+		],
+		"attackSound": "nuke"
+	},
+
+	{
+		"name": "Orbital Targeter",
+		"unitType": "Scout",
+		"movement": 4,
+		"strength": 85,
+		"rangedStrength": 85,
+		"range": 2,
+		"cost": 500,
+		"requiredResource": "Aluminum",
+		"requiredTech": "Orbital Communication",
+		"uniques": ["[+3] Sight", "Can carry [1] [Orbital Ordnance] units", "Withdraws before melee combat <with [50]% chance>"],
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "Solar Tank",
+		"unitType": "Armored",
+		"movement": 6,
+		"strength": 450,
+		"rangedStrength": 275,
+		"range": 2,
+		"interceptRange": 1,
+		"cost": 760,
+		"requiredTech": "Crystal Based Shielding",
+		"upgradesTo": "Crystal Shielded Solar Tank",
+		"uniques": [
+				//Drone & SRM Defence
+			    "[50]% chance to intercept air attacks", 
+			    "[+25]% Strength <vs [Drone] units>"
+			    "[+20]% Strength <vs [SRM] units>"
+				//Costs
+			    "Consumes [1] [Aluminum]",
+			    "Consumes [1] [Copper]",
+				//Other
+			    "Can move after attacking", 
+			    "No defensive terrain bonus"],
+		"promotions": ["Light Energy Shields"], 
+		"attackSound": "tankshot"
+	},
+	{ 
+		"name": "Crystal Shielded Solar Tank",
+		"unitType": "Armored",
+		"movement": 6,
+		"strength": 480,
+		"rangedStrength": 275,
+		"range": 2,
+		"interceptRange": 1,
+		"cost": 840,
+		"requiredTech": "Crystal Based Shielding",
+		"uniques": [
+				//Drone & SRM Defence
+			    "[50]% chance to intercept air attacks", 
+			    "[+25]% Strength <vs [Drone] units>"
+			    "[+20]% Strength <vs [SRM] units>"
+				//Costs
+			    "Consumes [1] [Aluminum]",
+			    "Consumes [1] [Gems]",
+				//Other
+			    "Can move after attacking", 
+			    "No defensive terrain bonus",
+			    "Never appears as a Barbarian unit"],
+		"promotions": ["Light Crystal Shields"], 
+		"attackSound": "tankshot"
+	},
+
+	{
+		"name": "Primitive Space Fighter",
+		"unitType": "Space Fighter",
+		"movement": 1,
+		"strength": 300,
+		"rangedStrength": 300,
+		"range": 16,
+		"interceptRange": 16,
+		"cost": 800,
+		"requiredTech": "Space Racing",
+		"upgradesTo": "Simple Space Fighter",
+		"uniques": ["[100]% chance to intercept air attacks", "[+40]% Strength <vs [Drone] units>","[+10]% Strength <vs [Space Fighter] units>"
+			    "Consumes [2] [Aluminum]",],
+		"promotions": ["Space Supremecy"],
+		"attackSound": "phasers"
+	},
+
+	{
+		"name": "Stealth Infantry",
+		"unitType": "Gunpowder",
+		"movement": 4,
+		"strength": 150,
+		"cost": 500,
+		"requiredResource": "Silver",
+		"requiredTech": "Large-Scale Invisibility",
+		"promotions": ["Cloaking","Barrage I","Ambush I"],
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+			   "[+50]% Strength <vs [Gunpowder] units>",
+			   "[+50]% Strength <vs [Archery] units>",
+			   "[+50]% Strength <vs [Sword] units>",
+			   "[+50]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+20]% to Flank Attack bonuses"],
+		"attackSound": "shot"
+	},
+
+	{
+		"name": "Atmospheric Fighter",
+		"unitType": "Fighter",
+		"movement": 1,
+		"strength": 335,
+		"rangedStrength": 335,
+		"range": 12,
+		"interceptRange": 12,
+		"cost": 900,
+		"requiredTech": "Space Racing",
+		"uniques": [ "Consumes [1] [Aluminum]","Consumes [1] [Oil]",
+		"[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>","[+40]% Strength <vs [Drone] units>"],
+		"attackSound": "jetgun"
+		"promotions": ["Sortie"],
+	},
+
+	{
+		"name": "Simple Space Fighter",
+		"unitType": "Space Fighter",
+		"movement": 1,
+		"strength": 340,
+		"rangedStrength": 340,
+		"range": 16,
+		"interceptRange": 16,
+		"cost": 1000,
+		"requiredTech": "Shielded Space-Fighters",
+		"upgradesTo": "Simple Shielded Space Fighter",
+		"uniques": ["[100]% chance to intercept air attacks", "[+40]% Strength <vs [Drone] units>","[+10]% Strength <vs [Space Fighter] units>"
+			    "Consumes [1] [Aluminum]","Consumes [1] [Uranium]",],
+		"promotions": ["Space Supremecy"],
+		"attackSound": "phasers"
+	},
+	{
+		"name": "Simple Shielded Space Fighter",
+		"unitType": "Space Fighter",
+		"movement": 1,
+		"strength": 380,
+		"rangedStrength": 380,
+		"range": 16,
+		"interceptRange": 16,
+		"cost": 1200,
+		"requiredTech": "Shielded Space-Fighters",
+		"uniques": ["[100]% chance to intercept air attacks", "[+40]% Strength <vs [Drone] units>","[+10]% Strength <vs [Space Fighter] units>"
+			    "Consumes [1] [Aluminum]","Consumes [1] [Copper]",],
+		"promotions": ["Space Supremecy"],
+		"attackSound": "phasers"
+	},
+	{
+		"name": "T-Rex Rider",
+		"unitType": "Mounted",
+		"movement": 7,
+		"strength": 265,
+		"cost": 1000,
+		"requiredTech": "Dinosaurs",
+	//	"obsoleteTech": "AI",
+	//	"upgradesTo": "Shielded Mech",
+		"uniques": [
+				//Buffs
+			    "Can move after attacking", 
+			    "[+1] Sight",
+			    "[-10]% Strength for enemy [Military] units in adjacent [All] tiles"
+				//Debuffs
+			    "[-10]% Strength <when fighting in [Rough terrain] tiles>"
+			    "[-10]% Strength <when fighting in [Forest] tiles>"
+			    "[-10]% Strength <when fighting in [Jungle] tiles>"
+				//Other
+			    "Never appears as a Barbarian unit"
+			    "Only available <if [Dino Lab] is constructed>",],
+		"promotions": ["Blitz"]
+		"attackSound": "Dragon"
+	},
+	{
+		"name": "Giant Reptilian",
+		"unitType": "Mounted",
+		"movement": 6,
+		"strength": 485,
+		"cost": 2000,
+		"requiredResource": "Coal",
+		"requiredTech": "Dinosaurs",
+	//	"obsoleteTech": "AI",
+	//	"upgradesTo": "Shielded Mech",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit",
+			    "Only available <if [Reptilian Bio-Tank] is constructed>","[-15]% Strength for enemy [Military] units in adjacent [All] tiles",
+			    "[+30]% Strength <vs [Water] units>", "[+1] Movement <when [Embarked]>", "[+200]% Strength <vs [Water] units> <when [Embarked]>",
+			   ],
+		"promotions": ["Kaiju"]
+		"attackSound": "Dragon"
+	},
+
+
+/*
+		"name": "Testing Missile",	// Tested if I.C.H.H.M can use blast radious without adding the nuke effect. Answer seems to be no
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 350,
+		"rangedStrength": 350,
+		"range": 20,
+	//	"cost": 1000,
+	//	"requiredTech": "Solar Era Explosives",
+		"uniques": ["[-100]% maintenance costs","[+35]% Strength <vs cities>","Blast radius [4]", ],
+											//"Consumes [2] [Oil]","Blast radius [1]",],
+		"cost": 1,
+	//	"requiredTech": "Solar Era Explosives",
+		"attackSound": "missile"
+	},
+
+*/
+
+	{	//Intercontinental <--I.C  Heavy Hypersonic <-- H.H Missile <-- .M
+		"name": "I.C.H.H.M",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 350,
+		"rangedStrength": 350,
+		"range": 20,
+		"cost": 1000,
+		"requiredTech": "Solar Era Explosives",
+		"uniques": ["[-100]% maintenance costs","[+35]% Strength <vs cities>","Consumes [2] [Oil]"],   //,"Blast radius [1]"
+		"cost": 1,
+		"requiredTech": "Solar Era Explosives",
+		"attackSound": "missile"
+	},
+
+
+
+
+
+
+
+
+			////SPECIAL////
+	{
+		"name": "Octo Trooper",
+		"unitType": "Melee Amphibious",
+		"movement": 3,
+		"strength": 175,
+	//	"cost": 2500,
+		"requiredTech": "Uplifting",
+		"uniques": ["Unbuildable",
+			    "Withdraws before melee combat <with [33]% chance>",
+			    "[+100]% Strength <vs [Water] units>",
+			    "[+100]% Strength <when [Embarked]>"],
+		"attackSound": "nonmetalhit"
+	},
+
+
+
+
+
+
 ]

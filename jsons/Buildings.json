@@ -1,4 +1,21 @@
 [
+
+/*
+
+	{
+		"name": "Experiment Code",
+		"cost": 1,
+		"science": 33,
+		"happiness": 8,
+		"culture": 4,
+		"food": 1,
+		"maintenance": 8,
+		"uniques": ["Destroyed when the city is captured"],
+	},
+
+*/
+
+
 	{
 		"name": "Holodeck",
 		"replaces": "Circus Maximus",
@@ -19,7 +36,2530 @@
 		"cost": 80,
 		"hurryCostModifier": 160,
 		"happiness": 2,
-		"uniques": ["40% of food is carried over after a new citizen is born"],
+		"uniques": ["[40]% Food is carried over after population increases [in this city]"]
 		"requiredTech": "Engineering"
-	}
+	},
+	{
+		"name": "Homing Beacon",
+        	"replaces": "Monument",
+		"uniqueTo": "Aliens",
+		"culture": 2,
+		"science": 1,
+		"cost": 20,
+		"hurryCostModifier": 20,
+		"uniques": ["Destroyed when the city is captured"]
+	},
+
+	{
+		"name": "Ice Fortress",
+        	"replaces": "Ice Electrolysis Fuel Deppo",
+		"uniqueTo": "Aliens",
+		"cityStrength": 4,
+		"cityHealth": 150,
+		"cost": 1250,
+		"culture": 10,
+		"production": 6,
+		"science": 4,
+		"maintenance": 10,
+		"uniques": ["Must be on [Snow]"
+			    "Provides [8] [Oil]"
+			    "Provides [2] [Aluminum]"
+			    "[+4 Food] from [Snow] tiles [in this city]"
+			    "[+2 Food] from [Ice] tiles [in this city]" 
+			    "[1] free [Tripod] units appear"
+			    "[1] free [Zubber] units appear"	
+			    "Destroyed when the city is captured"			
+								],
+		"requiredTech": "Asteroid Mining"
+	},
+	{
+		"name": "Vaddelisc",
+		"uniqueTo": "Aliens",
+		"cost": 220,
+		"science": 10,
+		"isNationalWonder": true,
+		"requiredTech": "Telecommunications",
+	},
+		
+
+		//////////////////////ISRAEL/////////////////
+	
+
+
+	{
+		"name": "Reservoir",
+		"uniqueTo": "Israel",
+		"cost": 120,
+		"hurryCostModifier": 160,
+		"happiness": 1,
+		"food": 2,
+		"faith": 1,
+		"uniques": ["[40]% Food is carried over after population increases [in this city]",
+				"[+1 Food, +1 Gold] from [Desert] tiles [in this city]",]
+		"requiredTech": "Engineering"
+	},
+	{
+		"name": "Altar",
+		"replaces": "Shrine",
+		"uniqueTo": "Israel",
+		"faith": 5,
+		"happiness": 1,
+		"cost": 25,
+		"requiredTech": "Pottery",
+		"uniques": ["Only available <when religion is enabled>"]
+	},
+	{
+		"name": "Menorah",
+        	"replaces": "Monument",
+		"uniqueTo": "Israel",
+		"culture": 2,
+		"faith": 1,
+		"happiness": 1,
+		"cost": 20,
+		"hurryCostModifier": 20,
+		"uniques": ["Destroyed when the city is captured","Only available <when religion is enabled>"]
+	},
+	{
+		"name": "Coastal Tech Supercomplex",
+		"uniqueTo": "Israel",
+		"science": 5,
+		"production": 5,
+		"percentStatBonus": {"science": 25},
+		"specialistSlots": {"Scientist": 1},
+		"specialistSlots": {"Engineer": 1},
+		"cost": 1500,
+		"hurryCostModifier": 250,
+		"maintenance": 15,
+		"requiredBuilding": "Harbor",
+		"uniques": [
+			"[+2 Production] from [Hill] tiles [in this city]", 
+			"[+4 Science] from [Water] tiles [in this city]",
+			"[+15]% Production when constructing [Land] units [in this city]",
+			"[+25]% Production when constructing [Water] units [in this city]",
+			"[+1 Science] per [5] population [in this city]",
+			"[+1 Food] per [5] population [in this city]",
+			"[+1 Production] per [10] population [in this city]"
+			"[+1 Production] from every specialist [in this city]",
+			"[+1 Science] from [Lakes] tiles [in this city]",
+			"Provides [1] [Aluminum]",
+			"Provides [1] [Iron]",
+			"Provides [1] [Uranium]",
+			"[40]% Food is carried over after population increases [in this city]",
+			"Must be next to [Hill]", 
+			"Limited to [3] per Civilization",
+			"Destroyed when the city is captured"],
+		"requiredTech": "Scientific Theory"
+	},
+	{
+		"name": "Agri-Lab",
+		"uniqueTo": "Israel",
+		"percentStatBonus": {"food": 25},
+		"specialistSlots": {"Scientist": 1},
+		"science": 1,
+		"food": 1,
+		"cost": 380,
+		"uniques": ["[+1 Food, +1 Science] from [Grassland] tiles [in this city]", 
+			"Must be next to [Grassland]","Only available <in cities without a [Bio-Lab]>", 
+			"Destroyed when the city is captured"],
+		"requiredTech": "Biology"
+	},
+	{
+		"name": "Yeshiva",
+		"uniqueTo": "Israel",
+		"faith": 4,
+		"production": 1,
+		"Culture": 1,
+		"maintenance": 1,
+		"cost": 200,
+		"uniques": ["[+1 Food] per [7] population [in this city]",],
+		"requiredTech": "Education"
+	},
+	{
+		"name": "Miggoonit",
+		"uniqueTo": "Israel",
+		"happiness": 1,
+		"cost": 50,
+		"cityStrength": 5,
+		"cityHealth": 100,
+		"requiredTech": "Dynamite",
+		"uniques": ["Destroyed when the city is captured"]
+	},	
+	{
+		"name": "Mountain Reaserch Center",
+		"uniqueTo": "Israel",
+		"specialistSlots": {"Scientist": 2},
+	        "percentStatBonus": {"production": 5},
+		"cost": 850,
+		"maintenance": 5,
+		"Science": 5
+		"food": 1,
+		"requiredTech": "Railroads",
+		"uniques": ["Must be next to [Mountain]","Provides [1] [Iron]",
+			"[+4 Science] from [Mountain] tiles [in this city]",
+			"[+4 Gold] from [Mountain] tiles [in this city]",
+			"[+2 Production] from [Mountain] tiles [in this city]",
+			"[+1 Happiness] from [Mountain] tiles [in this city]"
+			"[+1 Science] from [Hill] tiles [in this city]"
+			"[+1 Production] from [Hill] tiles [in this city]"
+			"[+1 Gold] from [Hill] tiles [in this city]"]
+	},
+	{
+		"name": "Mikklat Tsiboori",
+        	"replaces": "Bomb Shelter",
+		"uniqueTo": "Israel",
+		"cost": 450,
+		"happiness": 1,
+		"cityStrength": 7,
+		"cityHealth": 350,
+		"maintenance": 2,
+		"requiredTech": "Telecommunications",
+		"uniques": ["Destroyed when the city is captured",
+			"Population loss from nuclear attacks [-95]% [in this city]",
+			"Damage to garrison from nuclear attacks [-95]% [in this city]",
+			"Only available <when nuclear weapons are enabled> <hidden from users>"]
+	},
+	{
+		"name": "Mammadim",
+		"uniqueTo": "Israel",
+		"cost": 250,
+		"happiness": 1,
+		"cityStrength": 3,
+		"cityHealth": 50,
+		"maintenance": 1,
+		"requiredTech": "Telecommunications",
+		"uniques": ["Destroyed when the city is captured"
+		        "Population loss from nuclear attacks [-35]% [in this city]",
+			"Damage to garrison from nuclear attacks [-35]% [in this city]",
+			"Only available <when nuclear weapons are enabled> <hidden from users>"]
+	},
+	{
+		"name": "Mikklatim",
+		"uniqueTo": "Israel",
+		"cost": 350,
+		"maintenance": 1,
+		"happiness": 1,
+		"cityStrength": 7,
+		"cityHealth": 250,
+		"requiredTech": "Telecommunications",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+    	{
+        	"name": "Mossad Agency",
+		"uniqueTo": "Israel",
+		"cost": 1050,
+		"cityStrength": 10,
+		"cityHealth": 100,
+		"culture": 3,
+		"uniques": ["Only available <when espionage is enabled>",
+            		"New spies start with [3] level(s)",
+            		"Promotes all spies [2] time(s)",
+            		"Gain an extra spy", // Order is significant here
+            		"Gain an extra spy", // Two Spies Added
+			"[-100]% enemy spy effectiveness [in this city]",
+			"[-50]% enemy spy effectiveness [in all cities]",
+			"[+1 Science] per [2] population [in this city]",
+			"Destroyed when the city is captured",
+			"Limited to [1] per Civilization"],
+        "requiredTech": "Radio"
+    	},
+	{
+		"name": "Bio-Lab",
+		"uniqueTo": "Israel",
+		"percentStatBonus": {"science": 25},
+		"specialistSlots": {"Scientist": 1},
+		"science": 1,
+		"food": 1,
+		"cost": 380,
+		"uniques": ["[+1 Food, +1 Science] from [Grassland] tiles [in this city]", 
+			"Must be next to [Grassland]","Only available <in cities without a [Agri-Lab]>", 
+			"Destroyed when the city is captured"],
+		"requiredTech": "Biology"
+	},
+	{
+		"name": "Sleek",
+		"uniqueTo": "Israel",
+		"cost": 220,
+		"cityStrength": 3,
+		"cityHealth": 25,
+		"maintenance": 1,
+		"requiredTech": "Rifling",
+		"uniques": ["New [Military] units start with [25] XP [in this city]","Destroyed when the city is captured"]
+	},
+	{
+		"name": "Water Rock",
+		"uniqueTo": "Israel",
+		"cost": 130,
+		"hurryCostModifier": 130,
+		"faith": 1,
+		"happiness": 1,
+		"food": 1,
+		"gold": 1,
+		"requiredTech": "Mining",
+		"requiredNearbyImprovedResources": ["Stone"],
+		"uniques": ["Must not be on [Fresh water]",
+			    "[+1 Faith, +1 Gold] from [Desert] tiles [in this city]",
+			    "[+1 Faith, +1 Happiness] from [Hill] tiles [in this city]",
+			    "[+1 Science] from [Water] tiles [in this city]",
+			    "[+1 Science] from [Oasis] tiles [in this city]","Only available <when religion is enabled>",]
+	},
+	{
+		"name": "1st Temple",
+		"uniqueTo": "Israel",
+		"greatPersonPoints": {"Great Artist": 2},
+		"specialistSlots": {"Artist": 1},
+		"cost": 425,
+		"faith": 3,
+		"culture": 2,
+		"happiness": 1,
+		"maintenance": 3,
+		"uniques": [
+				"[-5]% Culture cost of adopting new Policies",
+				"[+1 Happiness, +1 Faith, +1 Culture] [in all cities]",
+				"Empire enters golden age",
+				"Limited to [1] per Civilization",
+				"[3] free [Levi] units appear"]
+		"requiredBuilding": "Altar",
+		"requiredTech": "Calendar"
+	},
+	{
+		"name": "2nd Temple",
+		"uniqueTo": "Israel",
+		"greatPersonPoints": {"Great Artist": 2},
+		"specialistSlots": {"Artist": 1},
+		"cost": 850,
+		"faith": 5,
+		"culture": 3,
+		"happiness": 2,
+		"maintenance": 5,
+		"uniques": [
+			"[-5]% Culture cost of adopting new Policies",
+			"[+1 Happiness, +1 Faith, +1 Culture] [in all cities]",
+			"Empire enters golden age","Limited to [1] per Civilization",
+			"[2] free [Kohen] units appear"]
+		"requiredBuilding": "1st Temple",
+		"requiredTech": "Engineering"
+	},
+	{
+		"name": "3rd Temple",
+		"uniqueTo": "Israel",
+		"greatPersonPoints": {"Great Artist": 2},
+		"specialistSlots": {"Artist": 1},
+		"cost": 2050,
+		"faith": 3,
+		"culture": 3,
+		"happiness": 3,
+		"maintenance": 7,
+		"uniques": [
+			"[-5]% Culture cost of adopting new Policies",
+			"[+1 Happiness, +1 Faith, +1 Culture] [in all cities]",
+			"Empire enters golden age","Limited to [1] per Civilization",
+			"[1] free [Navi] units appear"]
+		"requiredBuilding": "2nd Temple",
+		"requiredTech": "Globalization"
+	},
+
+	{
+		"name": "Israel Diamond Exchange",
+		"uniqueTo": "Israel",
+		"cost": 3248,
+		"greatPersonPoints": {"Great Merchant": 2},
+		"percentStatBonus": {"gold": 75},
+		"specialistSlots": {"Merchant": 5},
+		"hurryCostModifier": 750,
+		"gold": 10,
+		"culture": 5,
+		"happiness": 3,
+		"requiredNearbyImprovedResources": ["Gems", "Stone"],
+		"uniques": [
+			    "Provides [5] [Gems]",					
+			    "[+25]% [Gold] from Trade Routes",	
+			    "[+2 Gold] per [1] social policies adopted"			
+			    "[+15 Gold] from [Gems] tiles [in all cities]",		
+			    "[+3 Gold] per [4] population [in this city]",		
+			    "[+1 Gold] per [6] population [in this city]",		
+			    "[+1 Science] per [22] population [in this city]",		
+			    "[+1 Happiness] per [25] population [in this city]",	
+			    "[+1 Culture, +1 Production] per [33] population [in this city]",				
+		    	    "Gain [100] [Gold] <upon expending a [Great Person] unit> <(modified by game speed)>",	
+			    "Limited to [1] per Civilization", 				
+			    "Destroyed when the city is captured"]			
+		"requiredTech": "Telecommunications",
+	},
+
+
+		//bug Detected	    "[+2 Gold] per [1] social policies adopted"	//Bug	//REMOVE
+
+
+
+
+
+	{
+		"name": "Tannur Matzot",
+		"uniqueTo": "Israel",
+		"cost": 120,
+		"food": 2,
+		"faith": 1,
+		"culture": 1,
+		"happiness": 1,
+		"science": 1,
+		"maintenance": 2,
+		"requiredBuilding": "Granary",
+		"uniques": ["Only available <when religion is enabled>","[+1 Culture] from [Wheat] tiles [in this city]","[+1 Faith] from [Desert] tiles [in this city]"],
+		"requiredTech": "Masonry"
+	},
+
+
+
+		//////////////////////TEXAS//////////////////////
+
+
+
+	{
+		"name": "Texas Stock Exchange",
+		"uniqueTo": "Republic of Texas",
+		"cost": 3000,
+		"greatPersonPoints": {"Great Merchant": 1},
+		"specialistSlots": {"Merchant": 5},
+		"percentStatBonus": {"gold": 85},
+		//"percentStatBonus": {"science": 5},
+		"gold": 10,
+		"science": 3,
+		"culture": 1,
+		"happiness": 1,
+		"uniques": [
+			"Gain a free [Stock Exchange] [in this city]",
+				//Boosts based on Population
+			"[+1 Gold] per [1] population [in this city]",
+			"[+1 Gold] per [3] population [in this city]",
+			"[+1 Gold] per [15] population [in this city]",
+			"[+1 Gold] per [45] population [in this city]",
+			"[+1 Science] per [15] population [in this city]",
+			"[+1 Happiness] per [25] population [in this city]",
+			"[+1 Culture] per [33] population [in this city]",
+			"[+1 Production] per [40] population [in this city]",
+			"[+1 Production] per [100] population [in this city]",
+				//Boosts based on City States
+			"Allied City-States provide [Gold] equal to [+100]% of what they produce for themselves",
+			"Allied City-States provide [Science] equal to [+10]% of what they produce for themselves",
+				//Trade based Boosts
+			"[+5 Gold] from each Trade Route"
+			"[+20]% [Gold] from Trade Routes"
+				//Other
+			"[+5]% Golden Age length",
+			"[-5]% Culture cost of adopting new Policies",
+				//Restrictions
+			"Limited to [1] per Civilization", 
+			"Destroyed when the city is captured"],
+		"requiredBuilding": "Bank",
+		"requiredTech": "Electricity"
+	},
+	{
+		"name": "Fence",
+		"uniqueTo": "Republic of Texas",
+		"cost": 35,
+		"cityStrength": 3,
+		"cityHealth": 15,
+		"requiredTech": "Masonry",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{
+		"name": "Small Charcoal Plant",
+		"uniqueTo": "Republic of Texas",
+		"percentStatBonus": {"production": 5},
+		"cost": 250,
+		"production": 2,
+		"maintenance": 1,
+		"requiredTech": "Industrialization",
+		"uniques": ["Must be next to [Lumber mill]","Provides [1] [Coal]",]
+	},
+	{
+		"name": "Large Charcoal Plant",
+		"uniqueTo": "Republic of Texas",
+		"percentStatBonus": {"production": 15},
+		"specialistSlots": {"Engineer": 1},
+		"cost": 695,
+		"production": 10,
+		"happiness": -2,
+		"maintenance": 2,
+		"requiredBuilding": "Small Charcoal Plant",
+		"requiredTech": "Industrialization",
+		"uniques": ["Must be next to [Lumber mill]","Provides [5] [Coal]",
+			    "[+10]% Production when constructing [Gunpowder] units [in this city]"]
+	},
+	/*
+	{
+		"name": "Anax",
+		"uniqueTo": "Republic of Texas",
+		"cost": 130,
+		"production": 3,
+		"food": 1,
+		"food": 1,
+		"hurryCostModifier": 50,
+		"uniques": ["Can only be built <in [Annexed] cities>","[+1 Gold] [in this city] <after discovering [Architecture]>"],
+		"requiredTech": "Civil Service"
+	},
+	*/
+	{
+		"name": "National Shooting Range",
+		"uniqueTo": "Republic of Texas",
+		"cost": 1875,
+		"cityStrength": 10,
+		"cityHealth": 500,
+		"maintenance": 5,
+		"requiredTech": "Rifling",
+		"uniques": ["Only available <if [Shooting Range] is constructed in all [non-[Puppeted]] cities>", "Cost increases by [25] per owned city"
+			    "New [Military] units start with [75] XP [in this city]","Destroyed when the city is captured","Limited to [1] per Civilization"],
+	},
+	{
+		"name": "Shooting Range",
+		"uniqueTo": "Republic of Texas",
+		"cost": 180,
+		"cityStrength": 3,
+		"cityHealth": 50,
+		"maintenance": 1,
+		"requiredTech": "Rifling",
+		"uniques": ["New [Military] units start with [15] XP [in this city]","Destroyed when the city is captured",]
+	},
+	{
+		"name": "Gold rush camp",
+		"uniqueTo": "Republic of Texas",
+		"cost": 300,
+		"percentStatBonus": {"gold": 5},
+		"maintenance": 3,
+		"requiredNearbyImprovedResources": ["Gold Ore"],
+		"uniques": [
+			"Limited to [2] per Civilization",
+			"[+2 Gold, +1 Happiness] from [Gold Ore] tiles [in this city]", 
+			"[+1 Gold] per [5] population [in this city]",
+			"[+1 Happiness] per [7] population [in this city]",
+			"[+10]% Production when constructing [Civilian] units [in this city]",
+			"[1] free [Settler] units appear"],
+		"requiredTech": "Currency"
+	},
+	{
+		"name": "Privately owned oil pump",
+		"uniqueTo": "Republic of Texas",
+		"cost": 105,
+		"gold": 1,
+		"requiredNearbyImprovedResources": ["Oil"],
+		"uniques": [
+			"Provides [1] [Oil]",
+			"[1] free [Worker] units appear"],
+		"requiredTech": "Biology"
+	},
+	{
+		"name": "Tax Advisory",
+		"uniqueTo": "Republic of Texas",
+		"cost": 480,
+		"maintenance": 5,
+		"uniques": ["[+4 Gold] [in all cities]"],
+		"requiredBuilding": "Public School",
+		"requiredTech": "Radio"
+	},
+	{
+		"name": "Grand Texan Arms Factory",
+		"uniqueTo": "Republic of Texas",
+		"cost": 1800,
+		"cityStrength": 5,
+		"cityHealth": 100,
+		"production": 7,
+		"gold": 5,
+		"requiredTech": "Robotics",
+		"uniques": [	"[+50]% Production when constructing [SRM] units [in this city]",
+				"[+33]% Production when constructing [Drone] units [in this city]",
+				"[+25]% Production when constructing [Missile] units [in this city]",
+				"[+20]% Production when constructing [Armored] units [in this city]",
+				"[+15]% Production when constructing [Gunpowder] units [in this city]",
+				"[+10]% Production when constructing [Ranged Gunpowder] units [in this city]",
+				"New [Military] units start with [15] XP [in this city]",
+				"[1] free [Cowboy] units appear" // Placeholder until a better unit can be added
+				"Limited to [1] per Civilization"
+				"Destroyed when the city is captured",]
+	},
+	{
+		"name": "Construction Crane",
+		"uniqueTo": "Republic of Texas",
+		"percentStatBonus": {"production": 10},
+		"specialistSlots": {"Engineer": 2},
+		"greatPersonPoints": {"Great Engineer": 1},
+		"cost": 440,
+		"production": 2,
+		"maintenance": 3,
+		"requiredResource": "Iron",
+		"uniques": ["[+25]% Production when constructing [All] buildings [in this city]","Destroyed when the city is captured"],
+		"requiredBuilding": "Factory",
+		"requiredTech": "Replaceable Parts"
+	},
+	{
+		"name": "Traveling Circus",
+		"uniqueTo": "Republic of Texas",
+		"cost": 85,
+		"requiredNearbyImprovedResources": ["Horses","Ivory"],
+		"requiredTech": "The Wheel",
+		"uniques": ["Limited to [1] per Civilization",
+			    "[+1 Happiness] [in all cities]",
+			    "[1] free [Settler] units appear"]
+	},
+	{
+		"name": "Caddo Hut",
+		"uniqueTo": "Republic of Texas",
+		"cost": 35,
+		"production": 2,
+		"requiredTech": "The Wheel",
+		"uniques": ["Limited to [1] per Civilization",
+			    "[+1 Happiness] per [2] population [in this city]",
+			    "[+1 Happiness] per [2] population [in this city] <after discovering [Globalization]>",
+			    "[1] free [Settler] units appear",
+			    "[+6 Happiness] [in this city] <after discovering [Archaeology]>"]
+	},
+	{
+		"name": "Starbase",
+		"uniqueTo": "Republic of Texas",
+		"cost": 5000,
+		"specialistSlots": {"Engineer": 6},
+		"production": 10,
+		"science": 7,
+		"culture": 3,
+		"requiredTech": "Asteroid Mining",
+		"uniques": ["Limited to [1] per Civilization",
+			    "Must be next to [Coast]",
+				///Production
+			    "[+110]% Production when constructing [Space Fighter] units [in this city]",
+			    "[+100]% Production when constructing [Missile] units [in this city]",
+			    "[+100]% Production when constructing [SRM] units [in this city]",
+			    "[+100]% Production when constructing [Drone] units [in this city]",
+			    "[+100]% Production when constructing [Fighter] units [in this city]",
+			    "[+100]% Production when constructing [Bomber] units [in this city]",
+			    "[+10]% Production when constructing [All] buildings [in this city]",
+				///Population Based Boosts
+			    "[+1 Production] per [1] population [in this city]",
+			    "[+1 Science] per [1] population [in this city]",
+			    "[+1 Gold] per [10] population [in this city]",
+				///Space Industry Bloosts
+			    "[+2 Production] from every [Spaceship Factory]",
+			    "[+2 Science] from every [Spaceship Factory]",
+			    "[+1 Gold] from every [Spaceship Factory]",
+				///Reasorce Boosts
+			    "[+1 Production] from [Iron] tiles [in this city]",
+			    "[+1 Production] from [Aluminum] tiles [in this city]",
+			    "[+1 Production] from [Oil] tiles [in this city]",
+				///Other Advancements
+			    "[+3 Production] [in all cities]",
+			    "[+3 Science] [in all cities]",
+			    "[+6 Food] [in this city] <after discovering [Interplanetary Mining]>",
+				//Civilian Units
+			    "[1] free [Settler] units appear",
+			    "[1] free [Great Scientist] units appear",
+			    "[2] free [Great Engineer] units appear",
+			    "[1] free [Worker Bot] units appear",
+				//Extra Airospace Boosts
+ 			    "Can carry [1] extra [Air] units"
+				],
+	},	
+	{
+		"name": "Golfing Hill",
+		"uniqueTo": "Republic of Texas",
+		"cost": 136,
+		"happiness": 2,
+		"culture": 1,
+		"gold": 1,
+		"requiredTech": "Mathematics",
+		"uniques": ["Must be on [Hill]"]
+	},
+	{
+		"name": "Giant Carpark",
+		"uniqueTo": "Republic of Texas",
+		"happiness": 1,
+		"maintenance": 5,
+		"requiredTech": "Combustion",
+		"uniques": ["Must not be on [Hill]"]
+	},
+	{
+		"name": "Drive-in diner",
+		"uniqueTo": "Republic of Texas",
+		"happiness": 3,
+		"gold": 3,
+		"culture": 1,
+		"requiredTech": "Combustion",
+		"requiredBuilding": "Giant Carpark",
+	},
+	{
+		"name": "Drive-in restaurant",
+		"uniqueTo": "Republic of Texas",
+		"happiness": 3,
+		"gold": 3,
+		"culture": 1,
+		"requiredTech": "Plastics",
+		"requiredBuilding": "Giant Carpark",
+	},
+
+
+
+	{
+		"name": "Brown Shipbuilding Shipyard",
+		"uniqueTo": "Republic of Texas",
+		"cost": 1800,
+		"greatPersonPoints": {"Great Engineer": 1},
+		"specialistSlots": {"Engineer": 3},
+		"percentStatBonus": {"production": 50},
+		"production": 8,
+		"science": 3,
+		"culture": 2,
+		"maintenance": 5,
+		"requiredResource": "Iron",
+		"uniques": [
+				//Provides a fleet on completion
+			    "[3] free [Work Boats] units appear",
+			    "[1] free [Escort Carrier] units appear",
+			    "[1] free [Grumman Hellcat] units appear",
+			    "[2] free [Destroyer] units appear",
+			    "[1] free [Battleship] units appear",
+			    "[1] free [Submarine] units appear",
+
+			//Population Based
+			"[+1 Production] per [3] population [in this city]",
+			"[+1 Production] per [7] population [in this city]",
+			"[+1 Gold] per [10] population [in this city]",
+			"[+1 Happiness] per [25] population [in this city]",
+			
+			//Other
+			"Gain a free [Factory] [in this city]",
+			"New [Military] units start with [5] XP [in this city]"
+			"[+40]% Production when constructing [Water] units [in this city]",
+			"[+2 Science] from every specialist [in this city]"
+			"[+1 Gold] from [Ocean] tiles [in this city]"
+			"[+1 Production] from [Water] tiles [in this city]"
+			"[+1 Production] from [Hill] tiles [in this city]"
+			"[-10]% Gold cost of acquiring tiles [in this city]",
+
+
+			//Limitations
+			"Limited to [1] per Civilization", 
+			"Only available <in cities without a [Orange Shipbuilding Shipyards]>",
+			"Only available <in cities without a [Todd-Galveston Shipyard]>",
+			"Must be next to [Coast]",
+			"Destroyed when the city is captured"
+			],
+		"requiredBuilding": "Seaport",
+		"requiredTech": "Radar"
+	},
+	{
+		"name": "Orange Shipbuilding Shipyards",
+		"uniqueTo": "Republic of Texas",
+		"cost": 1800,
+		"greatPersonPoints": {"Great Engineer": 1},
+		"specialistSlots": {"Engineer": 3},
+		"percentStatBonus": {"production": 50},
+		"production": 8,
+		"science": 3,
+		"culture": 2,
+		"maintenance": 5,
+		"requiredResource": "Iron",
+		"uniques": [
+				//Provides a fleet on completion
+			    "[4] free [Work Boats] units appear",
+			    "[5] free [Destroyer] units appear",
+			    "[1] free [Settler] units appear",
+
+			//Population Based
+			"[+2 Production] per [4] population [in this city]",
+			"[+2 Production] per [9] population [in this city]",
+			"[+1 Gold] per [10] population [in this city]",
+			"[+1 Happiness] per [25] population [in this city]",
+			
+			//Other
+			"Gain a free [Factory] [in this city]",
+			"New [Military] units start with [5] XP [in this city]"
+			"[+40]% Production when constructing [Water] units [in this city]",
+			"[+2 Production] from every specialist [in this city]"
+			"[+1 Gold] from [Ocean] tiles [in this city]"
+			"[+2 Production] from [Water] tiles [in this city]"
+			"[-10]% Gold cost of acquiring tiles [in this city]",
+
+
+			//Limitations
+			"Limited to [1] per Civilization", 
+			"Only available <in cities without a [Brown Shipbuilding Shipyard]>",
+			"Only available <in cities without a [Todd-Galveston Shipyard]>",
+			"Must be next to [Coast]",
+			"Destroyed when the city is captured"
+			],
+		"requiredBuilding": "Seaport",
+		"requiredTech": "Radar"
+	},
+	{
+		"name": "Todd-Galveston Shipyard",
+		"uniqueTo": "Republic of Texas",
+		"cost": 1800,
+		"greatPersonPoints": {"Great Engineer": 1},
+		"specialistSlots": {"Engineer": 3},
+		"percentStatBonus": {"production": 50},
+		"production": 8,
+		"science": 3,
+		"culture": 2,
+		"maintenance": 5,
+		"requiredResource": "Iron",
+		"uniques": [
+				//Provides a fleet on completion
+			    "[3] free [Work Boats] units appear",
+			    "[3] free [Destroyer] units appear",
+			    "[2] free [Battleship] units appear",
+
+			//Population Based
+			"[+5 Production] per [15] population [in this city]",
+			"[+1 Happiness] per [20] population [in this city]",
+			"[+1 Gold] per [24] population [in this city]",
+			
+			//Other
+			"Gain a free [Factory] [in this city]",
+			"New [Military] units start with [5] XP [in this city]"
+			"[+40]% Production when constructing [Water] units [in this city]",
+			"[+2 Food] from every specialist [in this city]"
+			"[+1 Food] from [Ocean] tiles [in this city]"
+			"[+1 Gold] from [Water] tiles [in this city]"
+			"[+1 Production] from [Hill] tiles [in this city]"
+			"[-10]% Gold cost of acquiring tiles [in this city]",
+
+
+			//Limitations
+			"Limited to [1] per Civilization", 
+			"Only available <in cities without a [Orange Shipbuilding Shipyards]>",
+			"Only available <in cities without a [Brown Shipbuilding Shipyard]>",
+			"Must be next to [Coast]",
+			"Destroyed when the city is captured"
+			],
+		"requiredBuilding": "Seaport",
+		"requiredTech": "Radar"
+	},
+
+	/*
+	{	//Air base
+		"name": "Quantum Hive",
+		"isWonder": true,
+	//	"cost": 10000
+		"greatPersonPoints": {"Great Scientist": 2},
+		"maintenance": 10,
+		"uniques": ["[+2 Science] per [5] population [in this city]",
+			    "[+5 Science] [in all cities]",
+			    "Gain a free [Quantum Server] [in all cities]",
+			    "[1] free [Great Scientist] units appear",
+			    "[+5]% Strength <for [All] units> <when attacking>"
+			    "[+5]% Strength <for [All] units> <when defending>"],
+		"requiredTech": "Quantum Technology",
+	},
+	*/
+	
+ //"Can carry [1] extra [Air] units"
+
+
+	{
+		"name": "Iron Warehouse",
+		"uniqueTo": "Republic of Texas",
+		"cost": 100,
+		"production": 2,
+		"maintenance": 1,
+		"requiredTech": "Iron Working",
+		"requiredResource": "Iron",	//Takes 1 Iron and gives 5 in exhange thus resulting in a net increase of 4 Iron to the CIV
+		"uniques": [
+			"Must be next to [Iron]",
+			"Provides [5] [Iron]",
+				//City Boosts
+			"[+1 Production] [in this city] <after discovering [Metal Casting]>"
+			"[+1 Production] [in this city] <after discovering [Steel]>"
+			"[+1 Production] [in this city] <after discovering [Industrialization]>"
+				//Tile Boosts
+			"[+1 Gold] from [Iron] tiles [in this city] <after discovering [Economics]>",
+			"[+1 Production] from [Iron] tiles [in this city] <after discovering [Metallurgy]>",
+			"[+1 Production] from [Iron] tiles [in this city] <after discovering [Industrialization]>",
+			"[+1 Production] from [Iron] tiles [in this city] <after discovering [Robotics]>",
+			]
+	},
+	{
+		"name": "Cowboy Ranch",
+		"uniqueTo": "Republic of Texas",
+		"cost": 300,
+		"cityStrength": 2,
+		"cityHealth": 20,
+		"production": 1,
+		"food": 1,
+		"maintenance": 1,
+		"uniques": [
+			"[1] free [Cowboy] units appear",
+			"[+1 Gold] from [Fresh water] tiles [in this city]",
+			"[+1 Production, +1 Food] from [Cattle] tiles [in this city]",
+			"[+1 Production] from [Horses] tiles [in this city]",
+			"[+1 Food] from [Sheep] tiles [in this city]",],		
+		"requiredTech": "Dynamite",
+	},
+		//////////////////////Magic Empire////////////////////
+	
+	
+
+	{
+		"name": "Fertility Stone",
+		"requiredBuilding": "Fertility Rocks",
+		"uniqueTo": "Magic Empire",
+		"cost": 500,
+		"hurryCostModifier": 250,
+		"food": 4,
+		"requiredTech": "Fertilizer",
+		"uniques": ["[10]% Food is carried over after population increases [in this city]","Must be next to [Coast]","Must be next to [Grassland]",]
+	},
+	{
+		"name": "Fertility Rocks",
+		"uniqueTo": "Magic Empire",
+		"cost": 250,
+		"hurryCostModifier": 250,
+		"food": 2,
+		"requiredTech": "Chemistry",
+		"uniques": ["[10]% Food is carried over after population increases [in this city]","Must be next to [Coast]","Must be next to [Grassland]",]
+	},
+	{
+		"name": "Lake Stone",
+		"uniqueTo": "Magic Empire",
+		"cost": 350,
+		"hurryCostModifier": 350,
+		"food": 5,
+		"requiredTech": "Chemistry",
+		"uniques": ["[10]% Food is carried over after population increases [in this city]","Must be next to [Lakes]"]
+	},
+	{
+		"name": "Salt Stone",
+		"uniqueTo": "Magic Empire",
+		"cost": 450,
+		"hurryCostModifier": 350,
+		"requiredNearbyImprovedResources": ["Salt","Fish"],
+		"production": 4,
+		"requiredTech": "Chemistry",
+		"uniques": ["[10]% Food is carried over after population increases [in this city]","Must be next to [Hill]"]
+	},
+	{
+		"name": "Sand Golem Constructorium",
+		"uniqueTo": "Magic Empire",
+		"cost": 500,
+		"maintenance": 5,
+		"requiredNearbyImprovedResources": ["Stone","Iron","Aluminum"],
+		"hurryCostModifier": 125,
+		"uniques": ["Must be next to [Desert]"
+			"[+10]% Production when constructing [Civilian] units [in this city]",
+			"[+10]% Production when constructing [Scout] units [in this city]",
+			"[+1 Production] from [Stone] tiles [in this city]",
+			"[+1 Production] from [Iron] tiles [in this city]",
+			"[1] free [Worker Golem] units appear"
+			"[1] free [Construction Golem] units appear"],
+		"requiredTech": "Construction"
+	},
+	{
+		"name": "Eagle Nest",
+		"uniqueTo": "Magic Empire",
+		"cost": 250,
+		"maintenance": 1,
+		"uniques": [
+			"[+10]% Production when constructing [Drone] units [in this city]",
+			"[+10]% Production when constructing [Scout] units [in this city]",
+			"[2] free [Scouting Eagle Familiar] units appear"
+			"[1] free [Eagle Scout] units appear"],
+		"requiredTech": "Trapping"
+	},
+	{
+		"name": "Happieness Nexus Nest",
+		"uniqueTo": "Magic Empire",
+		"cost": 850,
+		"maintenance": 5,
+		"uniques": ["[+1 Happiness] [in all cities]"]
+		"requiredTech": "Globalization"
+	},
+	{
+		"name": "Eagle Communication Tower",
+		"uniqueTo": "Magic Empire",
+		"cost": 1250,
+		"science": 3,
+		"culture": 3,
+		"maintenance": 5,
+		"hurryCostModifier": 500,
+		"requiredBuilding": "Eagle Nest",
+		"uniques": ["[+1 Science] [in all cities]"]
+		"requiredTech": "Philosophy"
+	},
+	{
+		"name": "Warp Beacon",
+		"uniqueTo": "Magic Empire",
+		"cost": 385,
+		"culture": 1,
+		"maintenance": 5,
+		"uniques": ["Must be next to [Mountain]", "[+1] Movement <for [{Military} {Land}] units>","Limited to [1] per Civilization"],
+		"requiredTech": "Civil Service",
+	},
+	{
+		"name": "Magic Archer Tower",
+		"uniqueTo": "Magic Empire",
+		"cost": 5,
+		"cityStrength": 1,
+		"cityHealth": 5,
+		"maintenance": 1,
+		"requiredTech": "The Wheel",
+		"uniques": ["Destroyed when the city is captured","[1] free [Magic Archer] units appear"]
+	},
+	{
+		"name": "Abysal Road",
+		"uniqueTo": "Magic Empire",
+		"cost": 15,
+		"gold": 5,
+		"happiness": -2,
+		"requiredTech": "The Wheel",
+		"uniques": ["[1] free [Settler] units appear","Limited to [3] per Civilization",
+		"[+2 Gold] per [5] population [in this city]","[-1 Happiness] per [30] population [in this city]",]
+	},
+	{
+		"name": "Hedonist Spire",
+		"uniqueTo": "Magic Empire",
+		"cost": 215,
+		"maintenance": 2,
+		"requiredTech": "Chivalry",
+		"uniques": ["[+1 Happiness] per [12] population [in this city]","[1] free [Worker Golem] units appear"]
+	},
+	{
+		"name": "Snowhill Rocks",
+		"uniqueTo": "Magic Empire",
+		"cost": 250,
+		"hurryCostModifier": 250,
+		"production": 2,
+		"requiredTech": "Chemistry",
+		"uniques": ["[5]% Food is carried over after population increases [in this city]","Must be next to [Hill]","Must be next to [Tundra]",
+			    "[+1 Happiness] per [12] population [in this city]"]
+	},
+	{
+		"name": "Merchant Guild",
+		"uniqueTo": "Magic Empire",
+		"greatPersonPoints": {"Great Merchant": 1},
+		"specialistSlots": {"Merchant": 1},
+		"percentStatBonus": {"gold": 5},
+		"cost": 500,
+		"gold": 3,
+		"requiredTech": "Guilds",
+		"uniques": ["[+3 Gold] per [10] population [in this city]"]
+	},
+	{
+		"name": "Mercenary Guild",
+		"uniqueTo": "Magic Empire",
+		"cost": 500,
+		"production": 2,
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"maintenance": 5,
+		"requiredTech": "Guilds",
+		"uniques": ["New [Military] units start with [10] XP [in this city]"]
+	},
+	{
+		"name": "Adventurer Guild",
+		"uniqueTo": "Magic Empire",
+		"cost": 500,
+		"cityStrength": 1,
+		"cityHealth": 10,
+		"food": 2,
+		"production": 2,
+		"science": 1,
+		"maintenance": 10,
+		"requiredTech": "Guilds",
+		"uniques": [
+	"[+1 Gold] per [15] population [in this city]",
+	"[+1 Production] per [15] population [in this city]",
+	"[+1 Food] per [15] population [in this city]"]
+	},
+	{
+		"name": "Dragon's Lair",
+		"uniqueTo": "Magic Empire",
+		"cost": 750,
+		"cityStrength": 2,
+		"cityHealth": 25,
+		"maintenance": 3,
+		"uniques": [
+			"[+10]% Production when constructing [Fighter] units [in this city]",
+			"[+10]% Production when constructing [Bomber] units [in this city]",
+			"[+10]% Production when constructing [Drone] units [in this city]",
+			"Provides [1] [Coal]",
+			"Provides [1] [Aluminum]",
+			"[1] free [Adult Dragon] units appear"],
+		"requiredTech": "Lasers"
+	},
+	{
+		"name": "Dragon Communication Tower",
+		"uniqueTo": "Magic Empire",
+		"cost": 1750,
+		"production": 3,
+		"science": 3,
+		"culture": 3,
+		"cityStrength": 3,
+		"cityHealth": 100,
+		"maintenance": 10,
+		"hurryCostModifier": 500,
+		"requiredBuilding": "Dragon's Lair",
+		"uniques": ["[+2 Science] [in all cities]",
+			    "[1] free [Adult Dragon] units appear"]
+		"requiredTech": "Lasers"
+	},
+	{ 
+		"name": "Magic Circle",
+		"uniqueTo": "Magic Empire",
+		"cost": 45,
+		"food": 1,
+		"science": 1,
+		"culture": 1,
+		"production": 1,
+		"requiredTech": "Writing",
+		"uniques": ["[+1 Food] [in this city] <after discovering [Optics]>"
+			    "[+1 Science] [in this city] <after discovering [Mathematics]>"
+			    "[+1 Culture] [in this city] <after discovering [Philosophy]>"
+			    "[+1 Production] [in this city] <after discovering [Iron Working]>"
+			    "[+1 Happiness] [in this city] <after discovering [Guilds]>"]
+	},
+	{ 
+		"name": "Defencive Circle",
+		"requiredBuilding": "Magic Circle",
+		"uniqueTo": "Magic Empire",
+		"cost": 90,
+		"cityStrength": 3,
+		"cityHealth": 30,
+		"maintenance": 1,
+		"requiredTech": "Civil Service",
+		"uniques": ["[+1 Production] from [{non-[Natural Wonder]} {Mountain}] tiles [in this city]"
+			    "[+1 Gold] from [Ocean] tiles [in this city]"]
+	},
+	{ 
+		"name": "Defencive Barrier Circle",
+		"requiredBuilding": "Defencive Circle",
+		"uniqueTo": "Magic Empire",
+		"cost": 115,
+		"cityStrength": 4,
+		"cityHealth": 40,
+		"maintenance": 1,
+		"requiredTech": "Education",
+		"uniques": [
+			"[+1 Production] from [{non-[Natural Wonder]} {Mountain}] tiles [in this city]",
+			"[+1 Production] from [Mountain] tiles [in this city]",
+			"[+1 Gold] from [Hill] tiles [in this city]",
+			"Population loss from nuclear attacks [-5]% [in this city]",
+			"Damage to garrison from nuclear attacks [-5]% [in this city]",
+			"Only available <when nuclear weapons are enabled> <hidden from users>"]
+	},
+	{
+		"name": "City Shielding Spell",
+		"uniqueTo": "Magic Empire",
+		"cost": 2500,
+		"production": 10,
+		"happiness": 1,
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"maintenance": 5,
+		"requiredTech": "Globalization",
+		"uniques": ["Destroyed when the city is captured",
+			"Population loss from nuclear attacks [-80]% [in this city]",
+			"Damage to garrison from nuclear attacks [-80]% [in this city]",
+			"Only available <when nuclear weapons are enabled> <hidden from users>"]
+	},
+	{ 
+		"name": "Teleportation Circle",
+		"requiredBuilding": "Magic Circle",
+		"uniqueTo": "Magic Empire",
+		"cost": 280,
+		"maintenance": 5,
+		"requiredTech": "Education",
+		"uniques": [
+			     //"[+1 Production] from [Teleportation Circle] tiles [in all cities]"
+			    "[+1 Production] from every [Teleportation Circle]"
+			    "[+1 Food] from every [Teleportation Circle]"
+			    "[+1 Gold] from every [Magic Circle]"
+			    "[+1 Production] from every [Magic Circle]"]
+	},
+			
+	/*
+		//Magic empire monument +1 science during peace +1 Production during war
+	{
+		"name": "Magus Stone formations",
+        	"replaces": "Monument",
+		"uniqueTo": "Magic Empire",
+		"culture": 2,
+		"cost": 40,
+		"hurryCostModifier": 40,
+		"maintenance": 1,
+		"uniques": [	
+				"[+1 Science] [in this city] <when not at war>",
+				"[+1 Production] [in this city] <when at war>
+				"Destroyed when the city is captured",
+			   ]
+	},
+	*/
+
+	{
+		"name": "Magus Stone formations",
+        	"replaces": "Monument",
+		"uniqueTo": "Magic Empire",
+		"culture": 2,
+		"cost": 40,
+		"hurryCostModifier": 40,
+		"maintenance": 1,
+		"uniques": [
+			"[+1 Science] [in this city] <when not at war>",
+			"[+1 Production] [in this city] <when at war>",
+			"Destroyed when the city is captured"]
+	},
+
+	{
+		"name": "Wizard's Treasure Pile",
+		"uniqueTo": "Magic Empire",
+		"cost": 120,
+		"gold": 5,
+		"uniques": [
+			 "[+33]% Gold given to enemy if city is captured <in this city>",
+			"Destroyed when the city is captured"]
+		"requiredTech": "Currency",
+	},
+
+
+		//////////////////////British Empire///////////////////
+
+
+
+	{ 
+		"name": "Brittonic Hut",
+		"uniqueTo": "British Empire",
+		"food": 1,
+		"production": 1,
+		"requiredTech": "Pottery",
+	},
+
+	{ 
+		"name": "Brittonic Roundhouse",
+		"uniqueTo": "British Empire",
+		"cost": 100,
+		"cityStrength": 1,
+		"cityHealth": 10,
+		"food": 1,
+		"production": 1,
+		"science": 1,
+		"gold": 1,
+		"requiredTech": "Calendar",
+		"requiredBuilding": "Brittonic Hut",
+		"uniques": ["Limited to [1] per Civilization","[1] free [Settler] units appear"],
+	},
+
+	{ 
+		"name": "Ancient Britton Fish House",
+		"uniqueTo": "British Empire",
+		"cost": 120,
+		"requiredTech": "Calendar",
+		"requiredBuilding": "Brittonic Hut",
+		"uniques": ["[+1 Food, +1 Gold, +1 Production] from [Fish] tiles [in this city]",], //Does not have to actually be on the coast though
+	},
+
+	{
+		"name": "Pond house",
+		"uniqueTo": "British Empire",
+		"culture": 2,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must be next to [Marsh]", 
+			"[+1 Culture] from [Marsh] tiles [in this city]"
+			"[+1 Culture] from [Forest] tiles [in this city]"],
+		"requiredTech": "Theology"
+	},
+	
+
+	{
+		"name": "London Bridge",
+		"uniqueTo": "British Empire",
+		"cost": 320,
+		"culture": 4,
+		"gold": 2,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must be next to [River]",
+			"Limited to [1] per Civilization", 
+			"[-5]% Culture cost of adopting new Policies",
+			"[+1 Culture] from every specialist [in all cities]",
+			"[+1 Food, +1 Culture, +1 Production] from [River] tiles [in this city]",
+			"[+1 Food, +1 Science, +1 Culture, +1 Production] from [Water] tiles [in this city]",
+		//	"[+1 Culture, +1 Production, +1 Food,] from [River] tiles [in this city]",
+		//	"[+1 Culture, +1 Production, +1 Food, +1 Science,] from [Water] tiles [in this city]",
+		],
+		"requiredTech": "Steam Power"
+	},
+	/*
+	{
+		"name": "London Bridge",
+		"uniqueTo": "British Empire",
+		"cost": 320,
+		"culture": 4,
+		"gold": 2,
+		"hurryCostModifier": 25,
+		"uniques": [
+			"Must be next to [River]",
+			"Limited to [1] per Civilization", 
+			"[+1 Culture] from every specialist [in all cities]",
+			"[+1 Culture, +1 Production, +1 Food] from [River] tiles [in this city]",
+			"[+1 Culture, +1 Production, +1 Food, +1 Science] from [Water] tiles [in this city]",
+			],
+		"requiredTech": "Steam Power"
+	},
+	*/
+
+	{
+		"name": "Cidery",
+		"uniqueTo": "British Empire",
+		"happiness": 2,
+		"culture": 1,
+		"food": 1,
+		"hurryCostModifier": 30,
+		"uniques": ["Must be next to [Grassland]",
+			    "Only available <while the empire is happy>"
+				//Tech
+			    "[+2]% growth [in this city] <after discovering [Civil Service]>"
+			    "[+1 Food, +1 Gold, +1 Science] <after discovering [Fertilizer]>"
+			    "[+2 Food] <after discovering [Terraforming]>"
+		    	    "[+1 Food, +1 Production] <after discovering [Carbonometric Technology]>"
+				//Tech and pop
+			    "[+1 Happiness] per [25] population [in this city] <after discovering [Robotics]>"
+			],
+		"requiredTech": "Calendar",
+	},
+
+	{
+		"name": "Tea Garden",
+		"uniqueTo": "British Empire",
+		"percentStatBonus": {"culture": 5},
+		"specialistSlots": {"Artist": 1},
+		"greatPersonPoints": {"Great Artist": 1},
+		"culture": 3,
+		"gold": 1,
+		"uniques": [
+			"[+2 Culture] from [River] tiles [in this city]",
+			"[+2 Culture] from [Rock of Gibraltar] tiles [in this city]",
+			"[+1 Culture] from [Farm] tiles [in this city]"
+			"[+1 Culture] from [Plantation] tiles [in this city]"
+			"[+1 Culture] from [Polder] tiles [in this city]"
+			"[+1 Culture] from [Terrace farm] tiles [in this city]"
+			"[+1 Culture] from [Camp] tiles [in this city]",
+			"[+1 Culture] from [Academy] tiles [in this city]",
+			"[+1 Culture] from [Landmark] tiles [in this city]",
+			"[+1 Culture] from [Holy site] tiles [in this city]",
+			"[+1 Culture] from [Citadel] tiles [in this city]",
+			"[+1 Culture] from [Lumber mill] tiles [in this city]",
+			"[+1 Culture] from [Pasture] tiles [in this city]",
+			"[+1 Culture] from [Lakes] tiles [in this city]",
+			"[-5]% Unhappiness from [Population] [in this city] <after discovering [Steam Power]>",
+			"[+1 Happiness] [in this city] <after discovering [Combustion]>",
+			"[+1 Happiness] [in this city] <after discovering [Electronics]>",
+			"[+1 Happiness] [in this city] <after discovering [Ecology]>",
+		],
+		"requiredTech": "Industrialization"
+	},
+
+		//////////////////////Nicho Clans///////////////
+	{
+		"name": "Monument of the winter's gold",
+        	"replaces": "Monument",
+		"uniqueTo": "Nicho Clans",
+		"culture": 2,
+		"gold": 2,
+		"cost": 16,
+		"hurryCostModifier": 16,
+		"uniques": ["Destroyed when the city is captured"]
+	},
+
+	{
+		"name": "Nurrumo Teppep Postwar Peace Hut",
+		"uniqueTo": "Nicho Clans",
+		"food": 1,
+		"culture": 1,
+		"cost": 26,
+		"hurryCostModifier": 26,
+		"uniques": ["Limited to [1] per Civilization", "Must be next to [Water]",
+				//Immediate boost
+			    "[+5]% growth [in this city] <when not at war>"
+				//Post advancement boosts below
+				//Population and tech based:
+			    "[+1 Gold, +1 Production, +1 Science] per [10] population [in this city] <after discovering [Civil Service]>",
+			    "[+1 Happiness, +1 Food] per [10] population [in this city] <after discovering [Terraforming]> <when not at war>",
+			    	//Tech only:
+			    "[+1 Science] [in this city] <after discovering [Trapping]>",
+			    "[+3 Culture] [in this city] <after discovering [Computers]>"
+			    "[+5 Happiness] [in this city] <after discovering [Globalization]>"],
+		"requiredTech": "Pottery",
+	},
+	{
+		"name": "Igloo Shed",
+		"uniqueTo": "Nicho Clans",
+		"cost": 5,
+		"uniques": ["[+1 Science] [in this city] <when not at war>","[+1 Food] [in this city] <after discovering [Civil Service]> <when not at war>","Must be next to [Snow]",]
+		"requiredTech": "Pottery",
+	},
+	{
+		"name": "Hill Flag",
+		"uniqueTo": "Nicho Clans",
+		"cost": 15,
+		"uniques": ["[+2 Science] [in this city] <when not at war>","Must be next to [Hill]","Cost increases by [5] per owned city","Only available <while the empire is happy>"]
+		"requiredTech": "Trapping",
+	},
+	{
+		"name": "Mountain Flag",
+		"uniqueTo": "Nicho Clans",
+		"cost": 25,
+		"uniques": ["[+2 Science] [in this city] <when not at war>","Must be next to [Mountain]","Cost increases by [5] per owned city",
+			    "Only available <while the empire is happy>",
+			    "[+1 Science] from [Mountain] tiles [in this city] <when not at war>"]
+		"requiredTech": "Bronze Working",
+	},
+	{
+		"name": "Snow Hill Flag",
+		"uniqueTo": "Nicho Clans",
+		"percentStatBonus": {"science": 5},
+		"cost": 35,
+		"uniques": ["Must be next to [Hill]", "Must be next to [Snow]","Cost increases by [5] per owned city", "Only available <while the empire is happy>",
+			    "[+3 Science] [in this city] <when not at war>",]
+		"requiredTech": "Writing",
+	},
+	{
+		"name": "Tundric Mountain Flag",
+		"uniqueTo": "Nicho Clans",
+		"percentStatBonus": {"science": 5},
+		"cost": 45,
+		"uniques": ["Must be next to [Mountain]", "Must be next to [Tundra]","Cost increases by [5] per owned city", "Only available <while the empire is happy>",
+			    "[+3 Science] [in this city] <when not at war>",
+			    "[+1 Science] from [Mountain] tiles [in this city] <when not at war>"]
+		"requiredTech": "Calendar",
+	},
+	{
+		"name": "Swan Ice Sculpture",
+		"uniqueTo": "Nicho Clans",
+		"maintenance": 1,
+		"cost": 25,
+		"uniques": ["Must be next to [Snow]","Must be next to [Tundra]","Cost increases by [5] per owned city"
+			    "[+1 Culture] [in this city] <when not at war>",
+			    "[+1 Science] [in this city] <after discovering [Civil Service]> <when not at war>",
+			    "[+1 Culture] [in this city] <after discovering [Architecture]> <when not at war>",
+			    "Only available <while the empire is happy>"
+			   ]
+		"requiredTech": "Masonry",
+	},
+/*
+	{
+		"name": "Nicho Hero Sculpture",
+		"uniqueTo": "Nicho Clans",
+		"maintenance": 1,
+		"cost": 25,
+		"uniques": ["Must be next to [Snow]","Must be next to [Tundra]","Cost increases by [5] per owned city"
+			    "[+1 Culture] [in this city] <when not at war>",
+			    "[+1 Science] [in this city] <after discovering [Civil Service]> <when not at war>",
+			    "[+1 Culture] [in this city] <after discovering [Architecture]> <when not at war>",
+			    "Only available <while the empire is happy>"
+			   ]
+		"requiredTech": "Masonry",
+	},
+*/
+	{
+		"name": "Costal Mountain Flag",
+		"uniqueTo": "Nicho Clans",
+		"cost": 55,
+		"uniques": ["[+2 Science] [in this city] <when not at war>",
+			    "Must be next to [Mountain]", "Must be next to [Coast]",
+			    "Cost increases by [15] per owned city",
+			    "Only available <while the empire is happy>",
+			    "[+1 Science] from [Mountain] tiles [in this city] <when not at war>",
+			    "[+1 Science] from [Ice] tiles [in this city] <when not at war>",
+			    "[+1 Science] from [Water] tiles [in this city] <when not at war>",]
+		"requiredTech": "Scientific Theory",
+	},
+	{
+		"name": "Costal Hill Flag",
+		"uniqueTo": "Nicho Clans",
+		"cost": 50,
+		"uniques": ["[+1 Science] [in this city] <when not at war>",
+			    "Must be next to [Hill]", "Must be next to [Coast]",
+			    "Cost increases by [10] per owned city",
+			    "Only available <while the empire is happy>",
+			    "[+1 Science] from [Hill] tiles [in this city] <when not at war>",
+			    "[+1 Science] from [Tundra] tiles [in this city] <when not at war>",
+			    "[+1 Science] from [Water] tiles [in this city] <when not at war>",]
+		"requiredTech": "Navigation",
+	},
+
+		//////////////////////European Union///////////////
+
+	{
+		"name": "European Monument",
+		"uniqueTo": "European Union",
+        	"replaces": "Monument",
+		"culture": 1,
+		"cost": 45,
+		"hurryCostModifier": 45,
+		"uniques": ["Destroyed when the city is captured","[+2 Culture] [in this city] <when not at war>",]
+	},
+	{
+		"name": "Open Borders",
+		"uniqueTo": "European Union",
+        	"replaces": "Walls",
+		"cityStrength": -1,
+		"cityHealth": -50,
+		"culture": 1,
+		"hurryCostModifier": 25,
+		"requiredTech": "The Wheel",
+		"uniques": ["Destroyed when the city is captured","[+2 Gold] [in this city] <when not at war>","[+100]% Gold given to enemy if city is captured <in this city>"]
+	},
+
+	{
+		"name": "Peace Shrine",
+        	"replaces": "Shrine",
+		"uniqueTo": "European Union",
+		"gold": 1,
+		"cost": 65,
+		"requiredTech": "Pottery",
+		"uniques": ["Only available <when religion is enabled>", "[+1 Faith] [in this city] <when not at war>",]
+	},
+
+	{
+		"name": "Temple of Europe",
+		"uniqueTo": "European Union",
+        	"replaces": "Temple",
+		"faith": 1,
+		"requiredBuilding": "Peace Shrine",
+		"maintenance": 2,
+		"hurryCostModifier": 25,
+		"requiredTech": "Philosophy",
+		"uniques": ["Only available <when religion is enabled>","[+1 Food] [in this city] <when not at war>","[+1 Culture] [in this city] <when not at war>",]
+	},
+
+		//////////////////////Universal///////////////
+
+	{
+		"name": "Quantum Server",
+	//	"cost": 2000,
+		"science": 4,
+		"culture": 2,
+		"maintenance": 5,
+		"uniques": ["[+1 Science] [in all cities]"],
+		"requiredTech": "Quantum Technology",
+	},
+
+	{
+		"name": "Asteroid Mine",
+		"cost": 2000,
+		"percentStatBonus": {"science": 33},
+		"specialistSlots": {"Engineer": 2},
+		"science": 10,
+		"production": 5,
+		"maintenance": 10,
+		"uniques": [
+			"Provides [3] [Iron]",
+			"Provides [2] [Aluminum]",
+			"Provides [1] [Uranium]",
+			"[+1 Production] [in all cities]"
+			"[+3 Gold, +1 Production, +1 Science] per [7] population [in this city]",
+			"[+1 Gold] per [11] population [in this city]"],
+		"requiredTech": "Asteroid Mining",
+		"requiredBuilding": "Spaceship Factory",
+	},
+
+	{
+		"name": "Material Synthesizer",
+		"cost": 500,
+	        "percentStatBonus": {"production": 15},
+		"specialistSlots": {"Engineer": 1},
+		"production": 2,
+		"maintenance": 2,
+		"uniques": ["[+1 Production] from every [Strategic resource]","[+1 Production, +1 Science] per [5] population [in this city]"]
+		"requiredTech": "Programmable Materials",
+		"requiredBuilding": "Research Lab",
+	},
+
+	{
+		"name": "Food Synthesizer",
+		"cost": 700,
+	        "percentStatBonus": {"production": 5},
+		"specialistSlots": {"Engineer": 1},
+		"Food": 5,
+		"production": 1,
+		"maintenance": 2,
+		"uniques": ["[+1 Food] from every [Strategic resource]","[+1 Food, +1 Science] per [5] population [in this city]",]
+		"requiredTech": "Genetic Engineering",
+		"requiredBuilding": "Medical Lab",
+	},
+	{
+		"name": "Bio Engineered Farm",
+		"cost": 550,
+		"specialistSlots": {"Scientist": 1},
+		"Food": 3,
+		"production": 3,
+		"maintenance": 2,
+		"uniques": [
+			"[+1 Food, +1 Gold, +1 Production] from [Cattle] tiles [in this city]",
+			"[+1 Food, +1 Gold, +1 Production] from [Sheep] tiles [in this city]",
+			"[+1 Food, +2 Gold] from [Bananas] tiles [in this city]",
+			"[+1 Food, +2 Gold] from [Wheat] tiles [in this city]",]
+		"requiredTech": "Genetic Engineering",
+		"requiredBuilding": "Research Lab",
+	},
+	{
+		"name": "Bio Enhanced Fertiliser",
+		"cost": 1150,
+		"Food": 2,
+		"production": 2,
+		"happiness": 1,
+		"uniques": [
+			"[+3 Food, +1 Gold, +1 Production] from [Bananas] tiles [in this city]",
+			"[+3 Food, +1 Gold, +1 Production] from [Wheat] tiles [in this city]",
+			"[+3 Food, +1 Gold, +1 Production] from [Citrus] tiles [in this city]",
+			"[+3 Food, +1 Gold, +1 Production] from [Spices] tiles [in this city]",
+			"[+3 Food, +1 Gold, +1 Production] from [Wine] tiles [in this city]",
+			"[+3 Food, +1 Gold, +1 Production] from [Sugar] tiles [in this city]",
+			"[+3 Gold] from [Cotton] tiles [in this city]",
+			"[+2 Gold] from [Dyes] tiles [in this city]",
+			"[+2 Gold] from [Truffles] tiles [in this city]",
+			"[+2 Gold] from [Incense] tiles [in this city]",]
+		"requiredTech": "Genetic Engineering",
+		"requiredBuilding": "Research Lab",
+	},
+	{
+		"name": "AR School",
+		"science": 2,
+		"happiness": 1,
+		"culture": 1,
+		"cost": 140,
+		"maintenance": 1,
+		"uniques": ["Destroyed when the city is captured"]
+		"requiredBuilding": "Broadcast Tower",
+		"requiredTech": "Augmented Reality",
+	},
+	{
+		"name": "Virtual Hangout",
+		"happiness": 5,
+		"culture": 2,
+		"cost": 276,
+		"maintenance": 1,
+		"uniques": ["[-10]% Unhappiness from [Population] [in this city]",
+			    "[-5]% Unhappiness from [Population] [in all cities]"]
+		"requiredBuilding": "Broadcast Tower",
+		"requiredTech": "Virtual Worlds",
+	},
+	{
+		"name": "Ice Electrolysis Fuel Deppo",
+		"maintenance": 2,
+		"production": 6,
+		"uniques": ["Must be on [Snow]"
+			    "Provides [10] [Oil]",],
+		"requiredTech": "Asteroid Mining"
+	},
+
+	{
+		"name": "Ice Electrolysis Plant",
+		"cost": 675,
+	        "percentStatBonus": {"production": 5},
+		"maintenance": 2,
+		"production": 6,
+		"hurryCostModifier": 350,
+		"uniques": ["Must be on [Snow]",
+			    "[+4 Production, +1 Gold] from [Snow] tiles [in this city]",
+			    "[+2 Production] from [Tundra] tiles [in this city]",
+			    "[+2 Production] from [Water] tiles [in this city]",
+			    "[+1 Production] from [Ice] tiles [in this city]"
+			    "[+1 Production] from [Lakes] tiles [in this city]",
+			    "[+1 Production] from [Fresh water] tiles [in this city]",
+			    "[+1 Production] from [River] tiles [in this city]",
+			    "[+1 Production] from [Oasis] tiles [in this city]",
+			    "[+1 Production] from [{non-[Natural Wonder]} {Mountain}] tiles [in this city]"	],
+		"requiredTech": "Asteroid Mining"
+	},
+	{
+		"name": "Virtual Training Facility",
+		"hurryCostModifier": 25,
+		"maintenance": 1,
+		"uniques": ["New [Military] units start with [15] XP [in this city]", "Destroyed when the city is captured"],
+		"requiredTech": "Virtual Worlds"
+	},
+	{
+		"name": "Biofuel Facility",
+		"production": 1,
+		"food": -1,
+		"maintenance": 1,
+		"uniques": ["Limited to [5] per Civilization",
+			    "Provides [1] [Oil]"
+			    "Destroyed when the city is captured"],
+		"requiredTech": "Programmable Materials"
+	},
+
+	{ 
+		"name": "Cloned Meat Factory",
+		"food": 10,
+		"production": 4,
+		"maintenance": 4,
+		"requiredTech": "Cloning",
+		"requiredResource": "Coal",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{ 
+		"name": "Cloning Vats",
+		"percentStatBonus": {"production": 100}, //Cloned evryone for double production
+		"happiness": -10,
+		"food": -10,
+		"maintenance": 10,
+		"requiredResource": "Aluminum",
+		"requiredTech": "Cloning",
+		"uniques": ["Destroyed when the city is captured","[+2 Gold] per [3] population [in this city]",]
+	},
+	{ 
+		"name": "Horse Printer",
+		"production": 4,
+		"maintenance": 2,
+		"requiredTech": "Cloning",
+		"requiredResource": "Coal",
+		"uniques": ["Provides [3] [Horses]"]
+	},
+	{ 
+		"name": "Advanced Food Synthesizer",
+		"percentStatBonus": {"food": 35},
+		"food": 14,
+		"science": 3,
+		"maintenance": 5,
+		"requiredTech": "Food Synthesization", 
+		"requiredResource": "Coal",
+		"uniques": ["[+4 Production] per [10] population [in this city]", 			
+			    "[+1 Production] from every specialist [in this city]"
+			    "[+1 Food] from [Coal] tiles [in this city]",
+			    "[+1 Food] from [Jungle] tiles [in this city]",
+			    "[+1 Gold] per [4] population [in this city]",
+			   ],
+		"requiredBuilding": "Food Synthesizer",
+	},
+	{ 
+		"name": "Meat Generator",
+		"food": 6,
+		"science": 2,
+		"production": 2,
+		"maintenance": 2,
+		"requiredTech": "Food Synthesization",
+		"requiredResource": "Coal",
+		"uniques": ["[+4 Production] per [10] population [in this city]",
+			    "[+1 Gold] per [4] population [in this city]",]
+	},
+
+
+	{
+		"name": "City Core",
+		"cost": 2250,
+		"gold": 25,
+		"science": 22,
+		"production": 14,
+		"food": 12,
+		"culture": 8,
+		"requiredResource": "Aluminum",
+		"requiredTech": "Smart Cities",
+		"uniques": ["Destroyed when the city is captured"]
+	},
+	{ 
+		"name": "City AI",
+		"cost": 3333,
+		"cityStrength": 3,
+		"cityHealth": 70,
+		"food": 10,
+		"science": 6,
+		"production": 4,
+		"happiness": 6,
+		"maintenance": 20,
+		"requiredTech": "Smart Cities",
+		"requiredResource": "Aluminum",
+		"requiredBuilding": "City Core",
+		"uniques": ["[-25]% enemy spy effectiveness [in this city]",
+		"[+1 Science] [in all cities]",
+		"[+1 Gold] from every [City Core]",
+		"Destroyed when the city is captured",
+		],
+	},
+
+
+	{
+		"name": "Diamond Compactor",
+		"production": 1,
+		"requiredResource": "Coal",
+		"uniques": ["Limited to [3] per Civilization",
+			    "Provides [1] [Gems]"
+			    "Destroyed when the city is captured"],
+		"requiredTech": "Bio Machinery"
+	},
+
+
+
+	{
+		"name": "Cephalopod Upliftary",
+		"production": 3,
+		"science": 2,
+		"requiredResource": "Coal",
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredBuilding": "Harbor",
+		"requiredTech": "Uplifting"
+	},
+	{
+		"name": "Cephalopod Workforce",
+		"production": 5,
+		"gold": 5,
+		"requiredResource": "Coal",
+		"uniques": [
+			"Destroyed when the city is captured"
+			"[+4 Food, +3 Gold, +2 Production, +2 Science, +1 Culture] from [Ocean] tiles [in this city]" //Residential
+			"[+5 Gold, +3 Production, +3 Science] from [Coast] tiles [in this city]"	//Buissness
+			//Under water Mines
+			"Provides [1] [Iron]"
+			"Provides [1] [Aluminum]"
+			   ],
+		"requiredBuilding": "Cephalopod Upliftary",
+		"requiredTech": "Uplifting"
+	},
+
+	
+	{
+		"name": "Cephalopod Barracks",
+		"cityStrength": 3,
+		"cityHealth": 30,
+		"production": 2,
+		"maintenance": 1,
+		"requiredResource": "Coal",
+		"uniques": ["Destroyed when the city is captured",
+			    "May buy [Octo Trooper] units for [750] [Gold] [in this city]"],   //"May buy [Octo Trooper] units for [150] [Gold] [in this city]" //500 //1000
+		"requiredTech": "Uplifting"
+		"requiredBuilding": "Cephalopod Upliftary",
+	},
+	
+
+
+
+
+/*	------------------------------	*/
+
+
+	{
+		"name": "Off-world Copper Mine", 
+		/* These Off-world mines all gave you (The player/s) & the bots a shot at converting 1 Oil into a diffrent materials. It also gives exactly 1 production each */
+		"production": 1,
+		"requiredResource": "Oil",
+		"uniques": [
+			    "Limited to [1] per Civilization",
+			    "Provides [1] [Copper]"],
+		"requiredTech": "Interplanetary Mining"
+	},
+	{
+		"name": "Off-world Iron Mine",
+		"production": 1,
+		"requiredResource": "Oil",
+		"uniques": [
+			    "Limited to [1] per Civilization",
+			    "Provides [1] [Iron]"],
+		"requiredTech": "Interplanetary Mining"
+	},
+	{
+		"name": "Off-world Aluminum Mine",
+		"production": 1,
+		"requiredResource": "Oil",
+		"uniques": [
+			    "Limited to [1] per Civilization",
+			    "Provides [1] [Aluminum]"],
+		"requiredTech": "Interplanetary Mining"
+	},
+	{
+		"name": "Off-world Gem Mine",
+		"production": 1,
+		"requiredResource": "Oil",
+		"uniques": [
+			    "Limited to [1] per Civilization",
+			    "Provides [1] [Gems]"],
+		"requiredTech": "Interplanetary Mining"
+	},
+	{
+		"name": "Off-world Uranium Mine",
+		"production": 1,
+		"requiredResource": "Oil",
+		"uniques": [
+			    "Limited to [1] per Civilization",
+			    "Provides [1] [Uranium]"],
+		"requiredTech": "Interplanetary Mining"
+	},
+
+	{
+		"name": "Dehorseifier",
+		"requiredNearbyImprovedResources": ["Horses", "Cattle", "Sheep", "Deer", "Ivory"],
+		"production": 4,
+		"science": 2,
+		"maintenance": 1,
+		"requiredResource": "Horses",
+		"uniques": [
+			    "Destroyed when the city is captured"
+			    "[-1 Happiness] [in this city] <after discovering [Uplifting]>"
+			    "Provides [1] [Oil]"
+				],
+		"requiredTech": "Bio Machinery"
+		"civilopediaText": [
+			{"text": "Advanced tecnology that turns Horses to fuel."}
+		]
+	},
+
+
+	{
+		"name": "Weather Manipulation Machine",
+		"food": 8,
+		"science": 8,
+		"gold": 2,
+		"uniques": ["[+1 Food, +1 Science] from [Water] tiles [in this city]"],
+		"requiredTech": "Terraforming"
+	},
+
+	{
+		"name": "Small Space Farm",
+		"percentStatBonus": {"food": 5},
+		"food": 4,
+		"science": 2,
+		"production": 2,
+		"gold": 2,
+		"requiredResource": "Oil",
+		"uniques": ["[+1 Science] [in all cities]",], //Each city cab have their own farm so this effect can be stacked heavily.
+		"requiredTech": "Space Architecture"
+	},
+
+	{
+		"name": "Rejuvenation Pod",
+		"science": 33,
+		"happiness": 8,
+		"culture": 4,
+		"food": 1,
+		"maintenance": 8,
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredTech": "Enhancement"
+	},
+
+
+	{
+		"name": "Off-world Drone Mine",
+		"cost": 4000,
+		"production": 25,
+		"science": 10,
+		"maintenance": 50,
+		"uniques": ["Destroyed when the city is captured","Cannot be hurried",
+			"Only available <if [Space Elevator] is constructed>",
+		//	"Only available <while the empire is happy>"
+				//Gives
+			"Provides [5] [Iron]",
+			"Provides [4] [Aluminum]",
+			"Provides [3] [Uranium]",
+			"Provides [1] [Copper]",
+			"Provides [1] [Gems]",
+				///Takes
+			"Consumes [3] [Oil]",
+			],
+		"requiredTech": "Space Architecture"	//May be placed elswhere later
+	},
+	{
+		"name": "Irottomic Transformer",
+		"production": 6,
+		"science": 3,
+		"maintenance": 2,
+		"uniques": ["Destroyed when the city is captured"
+				"[+1 Production] per [10] population [in this city]"
+				"[+1 Gold] per [25] population [in this city]"
+				"Provides [1] [Uranium]",
+				"Consumes [10] [Iron]",
+			],
+		"requiredTech": "Programmable Materials"
+	},
+	{
+		"name": "Force Field Projectors",
+		"cityStrength": 15,
+		"cityHealth": 500,
+		"science": 5,
+		"maintenance": 5,
+		"requiredResource": "Copper",
+		"uniques": ["Destroyed when the city is captured"],
+		"requiredTech": "Energy Fields"
+	},
+	{
+		"name": "Carbonometricly Enriched Soil Plant",
+		"science": 3,
+		"production": 3,
+		"maintenance": 3,
+		"requiredResource": "Coal",
+		"uniques": ["Destroyed when the city is captured"
+			    "[+2 Food] from [Grassland] tiles [in this city]"
+			    "[+2 Food] from [Plains] tiles [in this city]"
+			],
+		"requiredTech": "Carbonometric Technology"
+	},
+	{
+		"name": "Coal Infuser",
+		"science": 3,
+		"production": 3,
+		"maintenance": 3,
+		"food": -1,
+		"uniques": ["Limited to [5] per Civilization",
+			    "Provides [1] [Coal]"
+			    "Destroyed when the city is captured"],
+		"requiredTech": "Carbonometric Technology"
+	},
+	{
+		"name": "Coal Manufactory",
+		"production": 10,
+		"happiness": -1,
+		"maintenance": 3,
+		"requiredResource": "Oil",
+		"uniques": ["Limited to [5] per Civilization",
+			    "Provides [1] [Coal]"
+			    "Destroyed when the city is captured"],
+		"requiredTech": "Carbonometric Technology"
+	},
+	{
+		"name": "Advanced Biofuel Facility",
+		"production": 5,
+		"food": -3,
+		"maintenance": 2,
+		"uniques": ["Limited to [5] per Civilization",
+			    "Provides [2] [Oil]"
+			    "Destroyed when the city is captured"],
+		"requiredBuilding": "Biofuel Facility",
+		"requiredTech": "Spaceborne Population"
+	},
+	{
+		"name": "Atmospheric Decarboniser",
+		"happiness": 4,
+		"science": 3,
+		"production": 1,
+		"maintenance": 10,
+		"uniques": ["Limited to [2] per Civilization",
+			    "Provides [1] [Coal]"
+			    "Destroyed when the city is captured"],
+		"requiredTech": "Carbonometric Technology"
+	},
+	
+	
+	{
+		"name": "Off-world Silver Mine",
+		"cost": 1000,
+		"production": 1,
+		"requiredResource": "Oil",
+		"uniques": [
+			    "Limited to [1] per Civilization",
+			    "Provides [1] [Silver]"],
+		"requiredTech": "Spaceborne Population"
+	},
+		{	
+		"name": "Hyper Atomic Power Plant",
+	        "percentStatBonus": {"production": 15},
+		"specialistSlots": {"Engineer": 1},
+		"production": 10,
+		"science": 3,
+		"happiness": 2,
+		"maintenance": 5,
+		"requiredResource": "Uranium",
+		"uniques": [
+			"[+3 Gold] per [10] population [in this city]"
+			"[+3 Gold] per [11] population [in this city]"
+			"[+3 Gold] per [25] population [in this city]"
+			   ],
+		"requiredTech": "High Energy Theory"
+	},
+	{	
+		"name": "Atomic High Energy Material Production Machine",
+	        "percentStatBonus": {"production": 50},
+		"specialistSlots": {"Engineer": 2},
+		"production": 18,
+		"maintenance": 10,
+		"requiredResource": "Uranium",
+		"uniques": ["Limited to [2] per Civilization",
+			"Provides [2] [Copper]",
+			"Provides [2] [Silver]",
+			"Provides [3] [Iron]",
+			"[+3 Gold] per [7] population [in this city]"
+			"[+1 Gold] per [22] population [in this city]"
+			    "Destroyed when the city is captured"],
+		"requiredTech": "High Energy Theory"
+		"requiredBuilding": "Hyper Atomic Power Plant",
+	},
+
+
+	{
+		"name": "Second Asteroid Mine",
+		"percentStatBonus": {"science": 33},
+		"specialistSlots": {"Engineer": 2},
+		"science": 10,
+		"production": 5,
+		"maintenance": 10,
+		"uniques": [
+			"Provides [3] [Iron]",
+			"Provides [2] [Aluminum]",
+			"Provides [1] [Uranium]",
+			"[+1 Production] [in all cities]"
+			"[+3 Gold, +1 Production, +1 Science] per [7] population [in this city]",
+			"[+1 Gold] per [11] population [in this city]"],
+		"requiredTech": "Interplanetary Colonisation",
+		"requiredBuilding": "Asteroid Mine",
+	},
+	{
+		"name": "Earth to Space Space-race Track",
+		"greatPersonPoints": {"Great Artist": 1},
+		"happiness": 12,
+		"culture": 5,
+		"science": 1,
+		"production": 1,
+		"maintenance": 5,
+		"uniques": [
+			    "[+1 Gold] per [3] population [in this city]",
+			    "[+1 Culture] per [5] population [in this city]",
+			    "[+5 Gold, +1 Happiness] per [20] population [in this city]",
+			    "Limited to [5] per Civilization",
+			    "Consumes [5] [Iron]",
+			    "Consumes [2] [Aluminum]"],
+		"requiredTech": "Space Racing"
+	},
+
+	{
+		"name": "Space Fighter Repair Shop",
+		"gold": 10,
+		"production": 10,
+		"science": 3,
+		"requiredResource": "Iron",
+		"uniques": ["[+33]% Production when constructing [Space Fighter] units [in this city]",]
+		"requiredTech": "Shielded Space-Fighters"
+	},
+
+	{
+		"name": "City to Space Communication Facility",
+		"culture": 8,
+		"science": 3,
+		"happiness": 1,
+		"maintenance": 4,
+		"requiredResource": "Iron",
+		"uniques": [			    
+			    "[+1 Culture] per [5] population [in this city]",
+			    "[+1 Science] per [11] population [in this city]",
+			    "[+1 Happiness] per [12] population [in this city]",
+			    "[+1 Production] per [30] population [in this city]",
+			    "[+1 Culture] per [49] population [in this city]",]
+		"requiredBuilding": "Broadcast Tower",
+		"requiredTech": "Orbital Communication"
+	},
+
+	{
+		"name": "Bio Materialization Facility",
+		"gold": 8,
+		"production": 6,
+		"happiness": 2,
+		"food": -15,
+		"uniques": [
+			    "[+1 Science] [in all cities]"
+			    "Provides [5] [Coal]"
+			    "Provides [2] [Oil]"
+			],
+		"requiredTech": "Dinosaurs"
+	},
+	{
+		"name": "Dino Farm",
+		"food": 8,
+		"gold": 8,
+		"culture": 3,
+		"production": 3,
+		"uniques": [
+			    "[+1 Production, +1 Food, +1 Gold] from [Farm] tiles [in this city]",
+			    "[+1 Production, +1 Food, +1 Gold] from [Pasture] tiles [in this city]",
+			    "[+1 Production, +1 Food, +1 Gold] from [Polder] tiles [in this city]",
+			    "[+1 Production, +1 Food, +1 Gold] from [Terrace farm] tiles [in this city]",
+			    "[+1 Production, +1 Food, +1 Gold] from [Camp] tiles [in this city]",
+			    "[+1 Production, +1 Food, +1 Gold] from [Fishing Boats] tiles [in this city]",
+			    "[+1 Production, +1 Food, +1 Gold] from [Plantation] tiles [in this city]",
+			],
+		"requiredTech": "Dinosaurs"
+	},
+
+	{
+		"name": "Surgical AI",
+		"specialistSlots": {"Scientist": 4},
+		"science": 8,
+		"food": 4,
+		"production": 4,
+		"culture": 3,
+		"maintenance": 10,
+		"cost": 2500,
+		"uniques": [
+			    "Destroyed when the city is captured"
+				//Buffs
+			    "[+2 Production, +2 Happiness, +2 Science] per [9] population [in this city]"
+			    "[+1 Production, +1 Food, +1 Happiness, +1 Science] per [12] population [in this city]"
+			    "[+1 Production, +2 Food, +2 Science] per [15] population [in this city]"
+			    "[+1 Production, +1 Food, +5 Gold] per [18] population [in this city]"
+			    "[+1 Happiness, +1 Faith, +1 Culture] per [25] population [in this city]",
+			    "[+1 Happiness] from every specialist [in this city]"
+			    "[+1 Science] from every specialist [in this city]"
+			    "[+1 Production] from every specialist [in this city]"
+			    "[+1 Food] from every specialist [in this city]"
+			    "[+1 Gold] from every specialist [in this city]"
+			    "[+1 Faith] from every specialist [in this city]"
+				//Material Costs
+			    "Consumes [1] [Uranium]",
+			    "Consumes [2] [Aluminum]",
+			],
+		"requiredTech": "Enhancement"
+	},
+
+ //"Can carry [1] extra [Air] units"
+
+
+/*	------------------------------	*/
+
+    	{
+        	"name": "Quantum Cyber-Assault Center",
+		"cost": 3000,
+		"science": 8,
+		"maintenance": 1,
+		"isNationalWonder": true,
+		"uniques": ["Only available <when espionage is enabled>",
+            		//espionage
+			"Promotes all spies [1] time(s)",
+            		"Gain an extra spy",
+			//Science
+			"[+1 Science] per [5] population [in this city]"],
+	"requiredBuildingInAllCities": "Quantum Server",
+        "requiredTech": "Quantum Technology"
+    	},
+
+	{
+		"name": "Permanent Moon Base", //Note that the image has a phisical dome not an energy one
+		"cost": 6000,
+		"percentStatBonus": {"science": 100},
+		"specialistSlots": {"Scientist": 6},
+		"science": 100,
+		"production": 25,
+		"food": 10,
+		"happiness": 10,
+		"maintenance": 10,
+		"isNationalWonder": true,
+		"uniques": [
+			"Provides [9] [Iron]",
+			"Provides [6] [Aluminum]",
+			"Provides [3] [Uranium]",
+			"Provides [3] [Oil]",
+			"Provides [2] [Copper]",
+			"[+1 Production] [in all cities]"
+			"[+1 Science] per [3] population [in this city]"
+			"[+1 Gold] per [5] population [in this city]"
+			"[+1 Gold] per [7] population [in this city]"
+			"[+3 Gold, +3 Production, +3 Science] per [10] population [in this city]",
+			"[+1 Gold] per [11] population [in this city]"],
+		"requiredTech": "Interplanetary Mining",
+		"requiredBuildingInAllCities": "Spaceship Factory",
+	},
+
+    	{
+        	"name": "Citywide Super AI Network",
+		"cost": 4500,
+		"science": 8,
+		"culture": 7,
+		"gold": 6,
+		"production": 5,
+		"isNationalWonder": true,
+		"uniques": ["Only available <when espionage is enabled>",
+            		//Espionage
+			"[-33]% enemy spy effectiveness [in this city]",
+			"Promotes all spies [1] time(s)",
+            		"Gain an extra spy",
+			//Gold Science Production
+			"[+3 Gold, +2 Science, +1 Production] from every [City Core]",
+			"[+3 Gold, +2 Science, +1 Production] from every [City AI]",
+			"[+3 Gold, +2 Science, +1 Production] from each Trade Route", 
+			//Other			
+			"[+3 Food, +2 Science, +1 Happiness] per [10] population [in this city]"
+			"[+3 Culture, +2 Production, +1 Gold] per [25] population [in this city]"
+			"[+2 Happiness] from every [Great Improvement]",
+			//Construction
+			"[+25]% Production when constructing [Drone] units [in this city]",
+			"[+5]% Production when constructing [All] wonders [in this city]",],
+	"requiredBuildingInAllCities": "City AI",
+        "requiredTech": "Smart Cities"
+    	},
+	{
+		"name": "Quark Weaponization Project",
+		"isNationalWonder": true,
+		"uniques": ["Triggers a global alert upon completion", "Cannot be hurried"],
+		"requiredTech": "Quantum Weaponry"
+	},
+
+	{
+		"name": "Orbital Bombardment Platform",
+		"isNationalWonder": true,
+		"uniques": ["Triggers a global alert upon completion", "Cannot be hurried","[1] free [Orbital Strike] units appear"],
+		"requiredTech": "Space Architecture"
+	},
+	{
+		"name": "Space Elevator",
+		"percentStatBonus": {"food": 33},
+		"specialistSlots": {"Merchant": 10},
+		"greatPersonPoints": {"Great Artist": 2},
+		"gold": 60,
+		"production": 25,
+		"science": 10,
+		"culture": 12,
+		"happiness": 5,
+		"isNationalWonder": true,
+		"uniques": ["Triggers a global alert upon completion"
+            		//Space Trade
+			"Provides 1 extra copy of each improved luxury resource near this City"
+		//	"[+2 Gold] from [Strategic resource] tiles [in this city]",
+			"[+10]% [Food] from City-States","[+10]% [Culture] from City-States","[+10]% [Faith] from City-States"
+			"[+10]% [Gold] from City-States","[+10]% [Science] from City-States","[+10]% [Production] from City-States"
+			//Bonuses to all Cities
+			"[+5 Gold, +3 Production, +3 Food, +3 Science] [in all cities]",
+			"[+5 Gold] from each Trade Route", 
+			//Bonuses to this City			
+			"[+10 Gold, +5 Production, +2 Food, +2 Science, +2 Culture, +1 Happiness] per [10] population [in this city]", 
+			//Construction Bonous
+			"[+25]% Production when constructing [Space Fighter] units [in this city]",]
+		"requiredBuildingInAllCities": "Asteroid Mine",
+		"requiredTech": "Space Architecture"
+	},
+
+	{
+		"name": "kaiju Lab",
+		"isNationalWonder": true,
+		"uniques": ["Triggers a global alert upon completion", "Cannot be hurried",
+			   "[+3 Science] [in all cities]"
+			   "[+2 Food] [in all cities]"
+			   "[+1 Production] [in all cities]"],
+		"requiredTech": "Bio Merging"
+	},
+	{
+		"name": "Gorrila Bio-Tank",
+		"isNationalWonder": true,
+		"requiredResource": "Oil",
+		"uniques": ["[+1 Production] [in all cities]"
+			    "[+1 Production] from every specialist [in all cities]"
+			    "Only available <if [kaiju Lab] is constructed>",
+			],
+		"requiredTech": "Bio Merging"
+	},
+
+
+	{
+		"name": "Automated National Defence Command Center",
+		"isNationalWonder": true,
+		"cost": 6500,
+		"maintenance": 10,
+		"uniques": ["[+15]% Strength for cities <when attacking>"
+			    "[+5]% Strength <for [Land] units> <when defending>"
+			    "Population loss from nuclear attacks [-5]% [in this city]",
+			    "Damage to garrison from nuclear attacks [-5]% [in this city]",
+			    "[2] free [Near Future Armor] units appear",
+			    "Only available <when nuclear weapons are enabled> <hidden from users>"],
+		"requiredBuildingInAllCities": "City AI",
+		"requiredTech": "Smart Cities",
+	},
+
+	{
+		"name": "Dimond Based Super Computer",
+		"isNationalWonder": true,
+		"requiredResource": "Gems",
+		"science": 5,
+		"culture": 5,
+		"production": 3,
+		"happiness": 2,
+		"maintenance": 10,
+		"uniques": ["[+10 Production] [in all cities]"],
+		"requiredTech": "Carbonometric Technology"
+	},
+
+	{
+		"name": "Beyond Luner Planetary Colony",
+		"isNationalWonder": true,
+		"maintenance": 100,
+		"uniques": [
+			"Consumes [10] [Oil]",
+			"Provides [15] [Iron]",
+			"Provides [20] [Aluminum]",
+			"Provides [7] [Uranium]",
+			"Provides [3] [Copper]",
+			"Provides [2] [Silver]",
+			"Provides [1] [Gems]",
+			"[+50 Production] [in all cities]",
+			"[+50 Science] [in all cities]",
+			"[+50 Gold] [in all cities]",
+			"[+5 Culture] [in all cities]",
+			"[+1 Happiness] [in all cities]",
+		    	"Gain [5] [Faith] <upon expending a [Great Person] unit> <(modified by game speed)>",
+			"[+33]% [Gold] from Trade Routes",
+			"Empire enters golden age",],
+		"requiredTech": "Interplanetary Colonisation",
+		"requiredBuilding": "Space Elevator",
+	},
+
+	{
+		"name": "Space Station",
+		"isNationalWonder": true,
+		"requiredResource": "Aluminum",
+		"science": 3,
+		"culture": 3,
+		"maintenance": 3,
+		"uniques": ["[+1 Science] [in all cities]","Cost increases by [30] per owned city"],
+		"requiredBuildingInAllCities": "Broadcast Tower",
+		"requiredTech": "Nuclear Fusion"
+	},
+	{
+		"name": "Planet to Space Communication Facility",
+		"isNationalWonder": true,
+		"percentStatBonus": {"culture": 25},
+		"specialistSlots": {"Engineer": 2},
+		"greatPersonPoints": {"Great Engineer": 2},
+		"culture": 20,
+		"science": 10,
+		"happiness": 8,
+		"maintenance": 8,
+		"requiredResource": "Iron",
+		"uniques": [
+			    "[+1 Culture] from every specialist [in all cities]",	
+				//Wartime and Peacetime bonuses
+			    "[+1 Production] from every specialist [in this city] <when at war>",	
+			    "[+1 Science] from every specialist [in this city] <when not at war>",
+				//Population based bonuses	    
+			    "[+1 Culture] per [3] population [in this city]",
+			    "[+1 Science] per [7] population [in this city]",
+			    "[+1 Happiness] per [10] population [in this city]",
+			    "[+1 Production] per [15] population [in this city]",
+			    "[+1 Culture] per [19] population [in this city]",
+			    "[+1 Gold] per [24] population [in this city]",]
+		"requiredBuildingInAllCities": "City to Space Communication Facility",
+		"requiredTech": "Orbital Communication"
+	},
+
+
+	
+	{
+		"name": "De Extinction Lab",
+		"isNationalWonder": true,
+		"uniques": ["Triggers a global alert upon completion", "Cannot be hurried",
+			   "[+4 Science] [in all cities]"
+			   "[+1 Food] [in all cities]"
+			   "[+1 Production] [in all cities]"],
+		"requiredTech": "Dinosaurs"
+	},
+	{
+		"name": "Dino Lab",
+		"isNationalWonder": true,
+		"uniques": ["[+1 Production] [in all cities]"
+			    "[+1 Production] from every specialist [in all cities]"
+			    "[+1 Food] from every specialist [in all cities]"
+			    "Only available <if [De Extinction Lab] is constructed>",
+			],
+		"requiredTech": "Dinosaurs"
+	},
+	{
+		"name": "Reptilian Bio-Tank",
+		"isNationalWonder": true,
+		"requiredResource": "Coal",
+		"uniques": ["[+1 Production] [in all cities]"
+			    "[+1 Production] from every specialist [in all cities]"
+			    "Only available <if [kaiju Lab] is constructed>",
+			    "Only available <if [Dino Lab] is constructed>",
+			],
+		"requiredTech": "Dinosaurs"
+	},
+	
+
+
+
+
+/*	------------------------------	*/
+
+
+
+
+
+	{
+		"name": "Empire State Building",
+		"culture": 3,
+		"gold": 3,
+		"isWonder": true,
+		"greatPersonPoints": {"Great Engineer": 1},
+		"uniques": ["[+5 Gold] [in all cities]"],
+		"requiredTech": "Electronics",
+	//	"quote": "'The Empire State Building is more than just a skyscraper; it's evidence of a city's desire to reach for the stars.' - Anthony T. Hincks"
+	},
+
+
+
+
+	{
+		"name": "Quantum Hive",
+		"isWonder": true,
+	//	"cost": 10000
+		"greatPersonPoints": {"Great Scientist": 2},
+		"maintenance": 10,
+		"uniques": ["[+2 Science] per [5] population [in this city]",
+			    "[+5 Science] [in all cities]",
+			    "Gain a free [Quantum Server] [in all cities]",
+			    "[1] free [Great Scientist] units appear",
+			    "[+5]% Strength <for [All] units> <when attacking>"
+			    "[+5]% Strength <for [All] units> <when defending>"],
+		"requiredTech": "Quantum Technology",
+	},
+
+
+
+
+
+	{
+		"name": "Defence Matrix",
+		"isWonder": true,
+	//	"cost": 10000
+		"maintenance": 10,
+		"uniques": ["[+15]% Strength for cities <when attacking>",
+			    "[+5]% Strength <for [Land] units> <when defending>",
+			    "[1] free [Great General] units appear",
+			    "[+1 Science] from every specialist [in all cities]",
+			    "Only available <if [Automated National Defence Command Center] is constructed>",],
+		"requiredTech": "Smart Cities",
+	},
+
+
+	{
+		"name": "International Space Station",
+		"isWonder": true,
+		"requiredResource": "Aluminum",
+		"science": 10,
+		"culture": 5,
+		"happiness": 3,
+		"maintenance": 5,
+		"uniques": [
+			"[+2 Science] [in all cities]",
+			"Only available <if [Space Station] is constructed>",
+			   ],
+		"requiredTech": "Nuclear Fusion"
+	},
+
+
+
+
+	/////////////////////////////////////////SPECIAL BUILDINGS////////////////////////////////////////////
+	{
+		"name": "Synagogue",
+		"cost": 0,
+		"culture": 3,
+		"faith": 3,
+		"happiness": 2,
+		"uniques": ["Unbuildable", "Only available <when religion is enabled>","[+1 Happiness, +1 Faith] from [Wine] tiles [in this city]",
+			"[+1 Culture, +1 Faith] from [Wheat] tiles [in this city]"]
+	},
+	{
+		"name": "Gurdwara",
+		"specialistSlots": {"Artist": 2},
+		"faith": 3,
+		"uniques": ["Unbuildable", "Only available <when religion is enabled>","[+3 Faith] from [Citrus] tiles [in this city]",]
+	},
+	{
+		"name": "Megachurch",
+		"cost": 0,
+		"maintenance": 5,
+		"uniques": ["Unbuildable", "Only available <when religion is enabled>","[+1 Happiness, +1 Faith, +1 Gold] per [5] population [in this city]",]
+	},
+
+
+
 ]

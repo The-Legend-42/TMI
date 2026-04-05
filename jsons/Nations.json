@@ -1,5 +1,55 @@
 [
 	{
+		"name": "Israel",
+		"leaderName": "David",
+		"adjective": ["Israeli"],
+		"startBias": ["Hill"],
+		"preferredVictoryType": "Scientific",
+		
+		"startIntroPart1": "Peace be apon you!",
+		"startIntroPart2": "play as the holy nation blessed by God, From biblical Israel to the modern day",
+		
+		"declaringWar": "The time for war has come",
+		"attacked": "You shall face the wrath of god!",
+		"defeated": "You may have won but she shall outlive you",
+		"introduction": "As superior galactic entities, you are not worthy of our attention.",
+		
+		"neutralHello": "How are you doing?",
+		"neutralLetsHearIt": ["Yes?","What do you say?","You may begin."],
+		"neutralNo": ["We refuse.","No.","I refuse."],
+		"neutralYes": ["Very good.","Of course","That is very good."],
+
+		"hateHello": "Why are you here?",
+		"hateLetsHearIt": ["Speak!","What do you have say?","Go on."],
+		"hateNo": ["That is not going to happen!","We do not agree.","I beg your pardon?"],
+		"hateYes": ["Fine.","Thats bearly good enough.","So be it..."],
+		
+		"afterPeace": "Peace is preferable",
+		"tradeRequest": "We bestow you the honor of this trade offer.",
+
+		"outerColor": [48,194,255],
+		"innerColor": [245,245,248],
+        	"favoredReligion": "Judaism",
+		
+		"uniqueName": "The Holy Land", //Placeholder
+		"uniques": ["Units ignore terrain costs when moving into any tile with Hills",
+			"[-50]% maintenance on road & railroads",
+			"No Maintenance costs for improvements in [Hill] tiles"
+			"May choose [1] additional belief(s) of any type when [founding] a religion"
+			"May choose [1] additional belief(s) of any type when [enhancing] a religion"
+			],
+
+		"cities": ["Jerusalem","Hebron","Shechem","Tel-Aviv","Ramat-Gan","Haifa","Ber-Sheva","Ashdod","Aza","Akko",
+			"Eilat","Petah Tikva","Rishon Le-Tsion","Ashkelon","Beit-Shemesh","Beit-Lehem","Kfar-Sabba","Yeriḥo",
+			"Yaffo","Beit El", "Lod","Ramleh","Yahhud","Dveria","Givon","Beit Shan","Holon","Krayot","Quiriat Ono",
+			"Nesher","Dan","Meggido","Tsfat","Rosh ha-Ayn","Modi'in","Ha-Aie","Kibuts Gezzer","Kibuts Gezzer", 
+			"Nahal Oz","Sde Bokker","Massada","Kibuts Levi","Rosh ha-Nikkrah","Magen","Zvoolon","Emmek Izarel","Rimon", 	
+			"Yad Mordehai","Eilot","Yotvata","Kiryat Shomnah","Kiryat Arba","Matta","Givat Smoo'el","Lehavim","Savyon",
+			"Or-yehuda","Yarka","Yarka","Kibutz Be'eri","Hod ha-sharon","Hertzelia","Beit Jann","Bat Yam","Rahhat",
+			"Kiryat Gatt","Kaisaria","Rammat ha-Sharon","Kfar Kama","Rosh Pina","Mitspe ramon","Offekim","Kibutz Ortal"]
+        	"spyNames": ["Ron", "Dan", "Israel", "Yossef", "Prof. Khohen", "Yassmin", "Maital", "Moshico", "Sappir", "Avram", "Allona", "Ommer"]
+	},
+	{
 		"name": "Aliens",
 		"leaderName": "Zyxxyz",
 		"adjective": ["alien"],
@@ -15,19 +65,17 @@
 		"introduction": "As superior galactic entities, you are not worthy of our attention.",
 		
 		"neutralHello": "How are you doing?",
-		//"neutralLetsHearIt": ["Go on.","What do you say?","You may begin."],
-		//"neutralNo": ["We absolutely refuse.","No!","I refuse."],
-		//"neutralYes": ["Very good.","Of course, yes.","That is very good."],
+		"neutralLetsHearIt": ["Go on.","What do you say?","You may begin."],
+		"neutralNo": ["We absolutely refuse.","No!","I refuse."],
+		"neutralYes": ["Very good.","Of course, yes.","That is very good."],
 
 		"hateHello": "What do you want now?",
-		//"hateLetsHearIt": ["Speak!","What do you say?","Go on."],
-		//"hateNo": ["That is not possible!","We are not agreeing to that!","I beg your pardon?"],
-		//"hateYes": ["That is fine.","That is good enough.","Very well..."],
+		"hateLetsHearIt": ["Speak!","What do you say?","Go on."],
+		"hateNo": ["That is not possible!","We are not agreeing to that!","I beg your pardon?"],
+		"hateYes": ["That is fine.","That is good enough.","Very well..."],
 		
-		//"afterPeace": "Very well, all that fighting was getting boring anyway.",
+		"afterPeace": "Very well, all that fighting was getting boring anyway.",
 		"tradeRequest": "We bestow you the honor of this trade offer.",
-		"denounced": "The accusations of primitive lifeforms are beneath us.",
-		"declaringfriendship": "Let us become like friends!",
 
 		"outerColor": [16,16,16],
 		"innerColor": [255,200,200],
@@ -36,5 +84,269 @@
 			"Q'Phulnoith","Q'Creved","Q'Xirqen","Q'Gax","Q'Threqals","Q'Bhilmuk","Q'Mazea","Q'Zomirs","Q'Drorkrex","Q'Honkrath",
 			"Q'Zulgra","Q'Vahars","Q'Crindith","Q'Raavraes","Q'Bhoknais","Qho'Qru","Q'Dateatz","Q'Elnad","Q'Izien","Qol'Ell",
 			"Q'Dhihien","Q'Naquiel","Q'Ugneon","Q'Straquks","Q'Nulptr","Q'Ohfahl"]
-	}
+        	"spyNames": ["Q'ueb","Q'uoi","Q'uuman Being", "Q'uspicious", "Q'urmal", "Q'elgi", "Q'otti", "Q'ench", "Q'orrocan", "Q'appa", "Q'ighed", "Q'rey"]
+	},
+	{
+		"name": "Republic of Texas",
+		"leaderName": "Sam Houston",
+		"adjective": ["Texan"],
+		"preferredVictoryType": "Scientific",
+		"personality": "George Washington",
+
+        	"startIntroPart1": "President Sam Houston rules the new young nation known as the Republic of Texas",
+        	"startIntroPart2": "President Sam Housto, will you show to the world greatness of your state, to be remembered annuls of of history?",
+
+        	"declaringWar": "Your wanton aggression leaves us no choice. Prepare for war!",
+		"attacked": "You have mistaken our kindess for weakness. You shall come regret this!",
+		"defeated": "Today you triumph but someday others with do the same to you.",
+		"introduction": "The people of the great Republic of Texas welcome you.",
+		"neutralHello": "Good day.",
+		"hateHello": "Well?",
+		"tradeRequest": "Is the following trade of interest to you?",
+
+        	"outerColor": [ 28,51,119], //Same Blue as america but switched out the white with red
+        	"innerColor": [109, 2, 0],
+
+        	"favoredReligion": "Christianity",
+		"uniqueName": "Manifest Destiny",
+		"uniques": ["[+1] Sight <for [{Military} {Land}] units>", "[-50]% Gold cost of acquiring tiles [in all cities]"],
+		"cities": ["Houston", "San Antonio", "Dallas", "Austin", "Fort Worth", "El Paso", "Arlington", "Corpus Christi", "Plano",
+			   "Lubbock", "Garland", "Irving", "Amarillo", "Grand Prairie", "Brownsville", "Pasadena", "McKinney", "Frisco",
+			   "Mesquite", "Denton", "Midland", "Waco", "Carrollton", "Beaumont", "Abilene","Round Rock", "Pearland",
+			   "The Woodlands", "Richardson", "League City", "College Station", "Beaumont", "Allen", "Sugar Land", "Tyler",
+			   "Wichita Falls", "Conroe", "San Angelo", "Mission", "Bryan", "Horizon City", "Cloverleaf", "Marshall", 
+			   "Bee Cave", "Vidor", "Englans", "Clute", "Port Lavaca", "Horseshoe Bay", "Zapata", "Wyldwood", "Diboll",
+			   "Progreso", "Doffing", "Gilmer", "Mineola", "Terrell Hills", "Pilot Point"],
+        	"spyNames": ["Bud", "Felix", "Dennis", "Tex", "Prof. Red", "Olivia", "Mary", "Sebastian", "Scarlett", "Amelia", "Doc", "Bob"]
+	},
+	{
+		"name": "Magic Empire",
+		"leaderName": "Hubar V",
+		"adjective": ["Magian"],
+		"startBias": ["Avoid [Tundra]"],
+		"preferredVictoryType": "Scientific",
+		"personality": "Nebuchadnezzar II",
+
+		"startIntroPart1": "The Magic Empire.",
+		"startIntroPart2": "Can the power of magic conqurer all",
+
+		"declaringWar": "We want the blood of your soldiers!",
+		"attacked": "Oh well, I presume you know what you're getting yourself into?",
+		"defeated": "We shall be waiting for you in the afterlife. You won't be so lucky there",
+		"introduction": "We exist, But do you?",
+
+		"neutralHello": "Greetings.",
+		"hateHello": "What do YOU want?!",
+
+		"tradeRequest": "It appears that you do have a reason for existing – and its to make this deal with us.",
+
+		"outerColor": [248,243,245],
+		"innerColor": [54,1,63],
+		"favoredReligion": "Voodoo",
+		"uniqueName": "Ingenuity",
+		"uniques": ["Free [Great Scientist] appears <upon discovering [Writing] technology>", "[Great Scientist] is earned [50]% faster"], //Placeholder
+		"cities": ["Magioius","Mekkur","Aggad","Bablor","Toll-goll","Dur-shtinzu","Marin","krush","Orisa","Sishoppar","Na-Rush","Konz","ša'a",
+			"Dur-Deroo","Emecher","Kuta","Elssasar","Purlan","Nebutim","Ashers","Veh-Olan","Nimer","Belaosa","Nizuri","Pakka","Pookos",
+			"Tuttoob","Pumshal","Pumshak","Markan Sappiros","Rammed","Affla","Haragos","Rabgab","Mooruk","Borsnic", "Dur-Magotter","Uqurisk",
+			"Gutta","Urkhai","Dur-Urkesh","Awon","Hafyrita","Dur-Naggos","Shubbatos","Tivan","Veh-Taggotoob","Derennek","Kainz","Na-Sivhai",
+			"šo-hassk","Vizzyo-sa"],
+     	  	"spyNames": ["Rimser", "Shmendis", "Itipesh", "Hahamatzik", "Hišig", "Sharra-ura", "Emmesh", "Isharo", "Tautho", "Roorrok", "Rummuk", "Ayzimestro"]
+	},
+
+
+
+	{
+		"name": "British Empire",
+		"leaderName": "Victoria",
+		"adjective": ["British"],
+		"startBias": ["Coast"],
+		"preferredVictoryType": "Domination",
+
+
+        	"startIntroPart1": "Long live to Your Highness, Queen Victoria, leader and protector of the glorious British Empire! Through history, enduring many invasions, England strengthened its will, playing smartly with diplomacy, cunning, and military power, to eventually rose as one of the most dominant Empires the world has ever known. Their matchless navy, brilliant scientists and artists, and powerful merchants, have shaped the known world for centuries.",
+        	"startIntroPart2": "Queen Victoria, will the British Empire cast its brightness upon all lands and seas of the world? Will your new empire shine through the ages of history?",
+
+        "declaringWar": "By the grace of God, your days are numbered.",
+		"attacked": "We shall never surrender.",
+		"defeated": "You have triumphed over us. The day is yours.",
+		"denounced": "Your reckless pride will destroy you if you're not careful.",
+		"introduction": "We are pleased to meet you.",
+		"neutralHello": "Hello, again.",
+		"hateHello": "Oh, it's you!",
+		"tradeRequest": "Would you be interested in a trade agreement with England?",
+
+	//	"outerColor": [236,12,33],	//Did not like the esttetics, Too similar to Texas (Both use the same three colours so there arent many options)
+	//	"innerColor": [10,5,100],	
+		"innerColor": [200,200,200],	//More unique, and doesn't get in the way of the faction logo. though far from optimal.
+		"outerColor": [50,50,50],
+		"favoredReligion": "Christianity",
+
+		"uniqueName": "Britania Rules Waves",
+		"uniques": ["[+2] Movement <for [Water] units>",			//England
+		//	    "[+1 Faith] [in all cities] <with [1] to [2] neighboring [{unimproved} {Forest}] tiles>,  //To glitchy to work so something similar a row down
+			    "[+1 Faith] from [{unimproved} {Forest}] tiles [in all cities]" 	//Celts: Works now
+			    "[-50]% Unhappiness from [Population] [in all cities]",		//India
+			    "[+1] Sight <for [{Military} {Land}] units>",			//13 Colonies (Aka America)
+			    "[-50]% Gold cost of acquiring tiles [in all cities]",		//13 Colonies (Aka America)
+			    "[+20]% Production when constructing [All] wonders [in all cities]" //Egypt
+			    "City-State territory always counts as friendly territory" 		//Ionian Islands (Greece)
+			    "[+2 Culture] [in all cities] <before discovering [Steam Power]>"	//Brittany (and other parts of France)
+			    "[+100 Gold] for discovering a Natural Wonder (bonus enhanced to [+500 Gold] if first to discover it)", //Menorca (and other parts of Spain)
+			    "[+1 Happiness] for every known Natural Wonder", "[+100]% Yield from every [Natural Wonder]"	    //Menorca (and other parts of Spain)
+			    "Enables embarkation for land units <starting from the [Ancient era]> <Suppress warning [*contains a conditional on a unit movement unique*]>",//Polynesia
+            		    "Enables [All] units to enter ocean tiles <starting from the [Ancient era]>",					//Polynesia
+           		    "[+1] Sight <for [Embarked] units>",  										//Polynesia
+			    "[+10]% Strength <within [2] tiles of a [Mine]>", //								//Polynesia (Altered (Due to No Moai))
+		//Maori != Maoi
+		],
+
+		//As stated above the Names here reflect the fact that this Civ is an amalgimation of multiple Civs + a bunch of new unique additions
+		"cities": 
+			   ["City of London","Greater Manchester","York","Edinburgh","Dublin","Delhi","New Delhi","Mumbai",
+			   "Tonga", "Kiritimati", "New York", "Boston", "Philadelphia","Alexandria","Cairo","Giza","Hong-Kong",
+			   "Weihaiwei","Kerkyra","Cephalonia","Kingston","Montreal","Ottawa","Sydney","Hobart","Brisbane",
+			   "Cape Colony","Pietermaritzburg","Nantes","Nottingham","Hastings","Canterbury","Coventry","Warwick",
+			   "Newcastle","Oxford","Liverpool","Cardiff","Glasgow","Perth","Melbourne","Adelaide","Gibraltar",
+			   "Bristol","Leicester","Ipswich","Calcutta","Lahore","Bangalore","Toronto","Dover","Brighton",
+			   "Norwich","Leeds","Reading","Birmingham","Newport","Charleston","Wellington","Auckland","Vannes",
+			   "Rennes","Mahón","Es Castell","Brest","Dunkirk","Bombay","Singapore","Johannesburg","Nairobi",
+			   "Bridgetown","Madras","Cork","Aberystwyth","Richmond","Exeter","Cambridge","Gloucester","Winchester",
+			   "Bath","Mumbles","Southampton","Sheffield","Salisbury","Colchester","Plymouth","Lancaster",
+			   "Blackpool","Hull","Londonderry","Llanfairpwllgwyngyll","Falmouth","Lorient","Bodhgaya","Kushinagar",
+			   "Amaravati","Gaur","Gwalior","Jaipur","Karachi","Jerusalem","Amman","Zanzibar","Salisbury",
+			   "Port of Spain","Nassau","St. John's","Spanish Town","St. George's","Plymouth","Port Stanley"],
+
+    //    "spyNames": ["James", "Scarlett", "Edward", "Mycroft", "Charlotte", "Gwendolyn", "Mr. Eks", "Dr. Grey", "Andrew", "Scott",
+    //		       "Anne", "Eddie", "Mary", "Who?", "Sir White", "Sir English", "Princely", "Lady Red", "Robby","Dennis", "Jake"]		//Bugs
+    },
+	
+
+
+
+
+
+
+
+
+
+
+
+
+	{
+		"name": "Nicho Clans",
+		"leaderName": "Khorvir Nurummo",
+		"adjective": ["Nichon"],
+		"startBias": ["Snow","Coast"], //["Snow","Hill","Avoid [Desert]","Avoid [Jungle]"],
+
+        "startIntroPart1": "O Khorvir the great, your people are no longer devided. The clans welcome you! May your magnificence continue to unite all our people annd let our forces dominate the worlds discorse!",
+        "startIntroPart2": "O mighty Khorvir, do you hear the call of your people? seeking for revenge? Will you lead them to victory under the light of the Five Suns? Will your new empire shine through the ages of history?",
+
+        "declaringWar": "By the grace of God, your days are numbered.",
+		"attacked": "We shall never surrender.",
+		"defeated": "You have triumphed over us. The day is yours.",
+		"denounced": "Your reckless pride will destroy you if you're not careful.",
+		"introduction": "We are pleased to meet you.",
+		"neutralHello": "Hello, again.",
+		"hateHello": "Oh, it's you!",
+		"tradeRequest": "Would you be interested in a trade agreement with England?",
+
+        "outerColor": [0,0,112],
+        "innerColor": [0,190,245],
+
+		"uniqueName": "Natives of the Ice",
+		"uniques": [
+	//General
+		"No Maintenance costs for improvements in [Snow] tiles"
+	//Posetive for Tiles
+	"[+10 Faith, +3 Happiness, +3 Culture] from every [Ice]",
+	"[+3 Food, +1 Production] from every [Snow]",
+	"[+1 Food, +1 Production, +1 Gold] from every [Tundra]",
+	"[+1 Food, +3 Production, +1 Happiness] from every [{non-[Natural Wonder]} {Mountain}]",
+	"[+3 Faith, +2 Gold] from every [Atoll]",
+	"[+1 Food, +2 Gold] from every [Coast]",
+	"[+2 Food] from every [Ocean]",
+	"[+1 Food] from every [Lakes]",
+	"[+1 Culture] from every [River]",
+	//Negative for Tiles
+	"[-2 Food] from every [Jungle]",
+	"[-2 Food] from every [Desert]",
+],
+
+		"favoredReligion": "Jainism", //This is a fictonal Civ so i chose a religions that is currently not used by any other Civ
+		"cities": ["Clan Nurummo","Clan Teppep","Clan Icewalker","Clan Mukko","Clan Ocean Blue","Clan Catha","Clan Loccosso",
+			"Clan Tsattopano","Clan Vengence","Clan Iroonas","Clan Khoshir","Clan Neppe","Clan Fearfull","Clan Snowsands"
+			"Clan Alocco","Clan Tzintos","Clan Rokkos","Clan Tulat","Clan Voormin","Clan Tessio","Clan Creak","Clan Challo",
+			"Clan Thallo", "Clan Ruca","Clan Motskosh","Clan Xepan","Clan Tepettet","Clan Hazzard","Clan Zitlaltepec",
+			"Clan Snow fox","Clan Redsea", "Clan Jullo", "Clan Yotta","Clan Caprisso","Clan Ecattat","Clan Cepplec",
+			"Clan Clarron","Clan Chinta","Clan Storrool","Clan Yellossa","Clan Thettep","Clan Klarric", "Clan Innic"
+			"Clan Iztapakka","Clan Ayotto","Clan Izta-theno", "Clan Rukka","Clan Deepseas","Clan Ice-eater","Clan Storro"
+			"Clan Stone","Clan Eights","Clan Roofto","Clan Ruffuca","Clan Concha","Clan Kathotto","Clan Khethlic","Clan Great Spear"],
+	"spyNames": ["Khorssir", "Xattal", "Chimai", "Thottoso", "Thettey", "Yokkocha", "Cotyol", "Huzithinotto", "Chotto", "Zeppin","Ayyala","Kottocha","Kithitti","Khirn"]
+    },
+
+
+
+
+
+
+
+	{
+		"name": "European Union",
+		"leaderName": "The Council",
+		"adjective": ["European"],
+		"startBias": ["Avoid [Desert]"],
+		"preferredVictoryType": "Diplomatic",
+
+        "startIntroPart1": "The emergency situation has lead to the council has taken over the EU as a whole. It is your job as a memeber of the Council to save the union from the threats comming its way",
+        "startIntroPart2": "Council it is time to shine",
+
+        "declaringWar": "We are sick of your pressence!",
+		//"attacked": "Doom is the only payment awaying one as foolish as you!",
+		//"defeated": "You Monster! Seek to destroy our greatness?",
+		//"introduction": "What do we see before us? Outsiders from an unkown clan?",
+
+		"attacked": "You! will! pay! for! this!",
+		"defeated": "This union has ended, has ended, has ended, but one day! A new union! Will rise! And replace you!",
+		"introduction": "Hello, Hello, Hello, Hello, Hello. We are the, EUROPAN! Union, and we, ARE THE COUNCIL! whose tasked with, its govvernance. Are you? Interested in joining! our ranks? ",
+
+		"neutralHello": "Welcome, greetings, hello. Our freind.",
+		"hateHello": "Why, Are you? Here.",
+		"tradeRequest": "We! Have an! Offer! For you.",
+
+		//Original colour scheme
+     	//   "outerColor": [249, 247, 3],
+     	// "innerColor": [65, 141, 254],
+		
+		//MK 2 Colour scheme
+        //"outerColor": [249, 247, 3],
+	//"innerColor": [100, 100, 255],
+
+		//MK 3 Colour scheme
+        "outerColor": [100, 100, 255],
+	"innerColor": [249, 247, 3],	//Not a fan may change later
+
+
+		"uniqueName": "The EU",
+		"uniques": [
+			    "When conquering an encampment, earn [25] Gold and recruit a Barbarian unit <with [67]% chance>", //German (Germany)
+			    "[-25]% maintenance costs <for [Land] units>"						      //German (Germany)
+			    "[+2 Culture] [in all cities] <before discovering [Steam Power]>"				      //French (france)
+			    "[+1 Faith] from [{unimproved} {Forest}] tiles [in all cities]"				      //Celts: Fixed version (Republic of Irleand)
+			    "City-State territory always counts as friendly territory"					      //Greek: (Greece)
+			    "Can spend Gold to annex or puppet a City-State that has been your Ally for [5] turns"	      //Austrian (Austria)
+			    "Retain [50]% of the happiness from a luxury after the last copy has been traded away"	      //Dutch (The Netherlands)
+			    "[+100 Gold] for discovering a Natural Wonder (bonus enhanced to [+500 Gold] if first to discover it)", //Spanish (spain)
+			    "[+1 Happiness] for every known Natural Wonder", "[+100]% Yield from every [Natural Wonder]"	    //Spanish (spain)
+
+		],
+
+	//	"favoredReligion": "Jainism", //will be changed to chistianity soon
+		"cities": ["Brussels","Paris","Berlin","Rome","Vienna","Sofia","Budapest","Amsterdam","Stockholm","Luxembourg","Athens","Copenhagen","Prague","Warsaw","Bucharest",
+			   "Zagreb","Nicosia","Helsinki","Valletta","Bratislava","Dublin","Tallinn","Riga","Vilnius","Ljubljana","Lisbon","Madrid","Frankfurt","Strasbourg"],
+	"spyNames": ["Ralph", "Rafael", "Leo", "Anna", "Gretta", "Isaballe", "Leon", "Mario", "Lisa", "Olga", "Kate", "Fjorn", "Michelle","Denise","Alex"]
+    },
+
+
+
+
 ]

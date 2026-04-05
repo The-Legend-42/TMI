@@ -1,0 +1,758 @@
+[
+/*
+        {
+        "name": "Biological Immortality", //Closest to an all rounder route
+        "era": "Future era",
+        "priorities": {
+            "Neutral": 10,
+            "Cultural": 10,
+            "Diplomatic": 10,
+            "Domination": 10,
+            "Scientific": 10
+        },
+        "uniques": [
+            "[+25]% Great Person generation [in all cities]",
+            "Only available <before adopting [Cybernetic Immortality]>",
+            "Only available <before adopting [Digital Immortality]>"
+        ],
+        "policies": [
+            {
+                "name": "Constitution",
+                "uniques": ["[+2 Culture] from every [Wonder]", "[-100]% weight to this choice for AI decisions"],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Universal Suffrage",
+                "uniques": ["[+33]% Strength for cities <when defending>", "[-100]% weight to this choice for AI decisions"],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Civil Society",
+                "uniques": [
+                    "[-50]% Food consumption by [Specialists] [in all cities]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Free Speech",
+                "uniques": ["[8] units cost no maintenance"],
+                "requires": ["Constitution"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Democracy",
+                "uniques": [
+                    "[-50]% Unhappiness from [Specialists] [in all cities]"
+                ],
+                "requires": ["Civil Society"],
+                "row": 1,
+                "column": 6
+            },
+            {
+                "name": "Freedom Complete",
+                "uniques": [
+                    "[+100]% Yield from every [Great Improvement]",
+                    "[+50]% Golden Age length",
+                    "May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>",
+                    "Get the leader title of [President [leaderName]]"
+                ]
+            }
+        ]
+    },
+        {
+        "name": "Cybernetic Immortality", //Production and War
+        "era": "Future era",
+        "priorities": {
+            "Neutral": 10,
+            "Cultural": 5,
+            "Diplomatic": 5,
+            "Domination": 15,
+            "Scientific": 5
+        },
+        "uniques": [
+            "[+25]% Great Person generation [in all cities]",
+            "Only available <before adopting [Biological Immortality]>",
+            "Only available <before adopting [Digital Immortality]>"
+        ],
+        "policies": [
+            {
+                "name": "Enhanced Manufactory",
+                "uniques": [
+                    "[+100 Production] [in capital]",
+                    "[+5]% Production when constructing [All] buildings [in all cities]",
+		    "[+50]% weight to this choice for AI decisions"],
+                ],
+            {
+                "name": "Cybernetic Workforce",
+
+
+                "uniques": ["
+			"[+50]% Strength for cities <when defending>", 
+                	"[+100]% [Production] from every [Factory]",
+			"[+100]% [Production] from every [Material Synthesizer]",
+			"[+25]% [Gold] from every [Factory]",
+			"[+5]% [Gold] from every [Virtual Training Facility]",
+		],
+                "requires": ["Enhanced Manufactory"],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Civil Society",
+                "uniques": [
+                    "[-50]% Food consumption by [Specialists] [in all cities]"
+                ],
+                "row": 1,
+                "column": 5
+            },
+            {
+                "name": "Free Speech",
+                "uniques": ["[8] units cost no maintenance"],
+                "requires": ["Constitution"],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Democracy",
+                "uniques": [
+                    "[-50]% Unhappiness from [Specialists] [in all cities]"
+                ],
+                "requires": ["Civil Society"],
+                "row": 1,
+                "column": 6
+            },
+            {
+                "name": "Freedom Complete",
+                "uniques": [
+                    "[+100]% Yield from every [Great Improvement]",
+                    "[+50]% Golden Age length",
+                    "May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>",
+                    "Get the leader title of [President [leaderName]]"
+                ]
+            }
+        ]
+    },
+        {
+        "name": "Digital Immortality", //Going All In On Science
+        "era": "Future era",
+        "priorities": {
+            "Neutral": 5,
+            "Cultural": 5,
+            "Diplomatic": 10,
+            "Domination": 5,
+            "Scientific": 15
+        },
+        "uniques": [
+            "[+25]% Great Person generation [in all cities]",
+            "Only available <before adopting [Cybernetic Immortality]>",
+            "Only available <before adopting [Biological Immortality]>",
+        ],
+        "policies": [
+            {
+                "name": "Scientific Hub",
+                "uniques": ["[50]% of excess happiness converted to [Science]"
+                            "Allied City-States provide [Science] equal to [33]% of what they produce for themselves"],
+                "row": 1,
+                "column": 1
+            },
+            {
+                "name": "Digitisation",
+                "uniques": ["[+5 Science] from all [Science] buildings"],
+                "requires": ["Scientific Hub"],
+                "row": 1,
+                "column": 2
+            },
+            {
+                "name": "Conectivity",
+                "uniques": [
+                    "[+5 Science] [in all cities connected to capital]",
+		    "[+100]% [Science] from every [Quantum Server]"
+		    "[+100]% [Science] from every [Asteroid Mine]"
+	            "Resting point for Influence with City-States is increased by [5]"
+                    "[-50]% weight to this choice for AI decisions"
+                ],
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Phisical Cacoon",
+		"uniques": [
+                "[+25]% [Science] from every [Factory]",
+		"[+25]% [Science] from every [Food Synthesizer]",
+		"[+25]% [Science] from every [Material Synthesizer]",
+		"[+25]% [Science] from every [Virtual Hangout]",
+		"[+25]% [Gold] from every [Virtual Hangout]",
+		"[+5]% [Gold] from every [Virtual Training Facility]",
+		"Resting point for Influence with City-States is increased by [5]"]
+                "row": 2,
+                "column": 1
+            },
+            {
+                "name": "Digital Revival",
+                "uniques": [
+                    "[-50]% Unhappiness from [Specialists] [in all cities]"
+                    "[-100]% Food consumption by [Specialists] [in all cities]"
+		    "[-10]% Culture cost of adopting new Policies",
+		    "Science gained from research agreements [+250]%"
+		    "[+15]% [Science] <while the empire is happy>",
+                ],
+                "requires": ["Phisical Cacoon"],
+                "row": 1,
+                "column": 6
+            },
+            {
+                "name": "Freedom Complete",
+                "uniques": [
+                    "[+100]% Yield from every [Great Improvement]",
+                    "[+50]% Golden Age length",
+                    "May buy [Great Artist] units for [1000] [Faith] [in all cities in which the majority religion is a major religion] at an increasing price ([500]) <starting from the [Industrial era]>",
+                    "Get the leader title of [President [leaderName]]"
+                ]
+            }
+        ]
+    },
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+        {
+        "name": "Dystopia",
+        "era": "Solar era",
+        "priorities": {
+            "Neutral": 10,
+            "Cultural": 5,
+            "Diplomatic": 5,
+            "Domination": 15,
+            "Scientific": 5
+        },
+
+        "uniques": [
+		//War
+            "[-33]% maintenance costs <for [All] units>",
+	    "Receive [+10]% Gold from Barbarian encampments and pillaging Cities"
+            "Upon capturing a city, receive [10] times its [Gold] production as [Gold] immediately",
+            "Upon capturing a city, receive [5] times its [Happiness] production as [Gold] immediately",
+		//Debuff
+            "[-10 Happiness] [in all cities]",
+		//Requierments
+	    "Only available <when nuclear weapons are enabled>",	//Due to including nukes
+	    "Only available <when espionage is enabled>",		//Due to effecting espionage
+            "Only available <before adopting [Liberty]>"
+            "Only available <before adopting [Freedom]>"
+            "Only available <before adopting [Utopia]>"
+        ],
+
+        "policies": [
+ 
+
+            {			
+                "name": "Surveillance State",
+                "uniques": [
+			"[+5]% Unhappiness from [Population] [in all cities]",
+			"[-30]% enemy spy effectiveness [in all cities]",
+			"[+5]% [Gold] [in capital]"
+			   ],
+                "row": 1,
+                "column": 3
+            },
+            {
+                "name": "Eternal Warfare",
+                "uniques": ["[Gold] cost of purchasing [All] units [-10]%",
+			   "Population loss from nuclear attacks [-5]% [in all cities]",
+			   "Damage to garrison from nuclear attacks [-5]% [in all cities]",
+                    	   "[+5]% Production when constructing [Military] units [in all cities]",
+			   "New [Military] units start with [5] XP [in all cities]",
+			   "[+25]% Yield from pillaging tiles",
+			   "[+20]% Health from pillaging tiles",
+			   "[+1] Movement <for [Great General] units>",
+                    	   "[+10]% Strength <for [All] units> <when fighting in [Friendly Land] tiles>",
+			   "[+10]% Strength for cities <when attacking>",
+                    	   "Militaristic City-States grant units [3] times as fast when you are at war with a common nation",
+			   "[+100]% weight to this choice for AI decisions",
+			],
+                "row": 2,
+                "column": 1
+                "requires": ["Surveillance State"],
+            },
+
+
+            {
+                "name": "Narrative Control",
+                "uniques": [
+                    "[+3 Happiness] from every [Broadcast Tower]",
+                    "[+3 Happiness] from every [Virtual Hangout]",
+                    "[+3 Happiness] from every [City AI]",
+		    "[+1 Happiness] from every [Wonder]",
+		    "[+1] Happiness from each type of luxury resource",
+                ],
+                "row": 2,
+                "column": 5
+                "requires": ["Surveillance State"],
+            },
+            {
+                "name": "Outlawing Ethics", //Human Recycling?
+                "uniques": [
+                    "[+100]% [Strategic] resource production",
+                    "[+100]% Production when constructing [Dehorseifier] buildings [in all cities]",
+                    "[+1 Production] from every [Mine]",
+                    "[+1 Production] from every [Quarry]"
+                    "[+10 Production] [in all cities]",
+			//Materials ... Do yourself a favour and ... Don't ask from where they came from
+		"Provides [10] [Iron]",
+		"Provides [10] [Coal]",
+		"Provides [10] [Oil]",
+		"Provides [10] [Aluminum]"
+		"Provides [10] [Uranium]",
+		"Provides [5] [Copper]",
+		"Provides [5] [Silver]",
+		"Provides [5] [Gold Ore]",
+		"Provides [5] [Gems]",
+			//Debuff
+            	    "[-5 Happiness] [in all cities]", //Other than loosing their rights they probbably lost their propperty too
+		    "[+5]% Unhappiness from [Population] [in all cities]",
+                ],
+                "row": 2,
+                "column": 3
+                "requires": ["Surveillance State"],
+            },
+            {
+                "name": "Enslaved Population",
+                "uniques": [
+                    "[-15]% maintenance cost for [all] buildings [in all cities]"
+                    "[+5]% Production when constructing [All] units [in all cities]",
+		    "[+50]% [Science] from every [AR School]",
+                    "[+20]% growth [in capital]",
+			//Debuff
+            	    "[-5 Happiness] [in all cities]",
+		    "[+5]% Unhappiness from [Population] [in all cities]",
+                ],
+                "row": 3,
+                "column": 3
+                "requires": ["Eternal Warfare","Narrative Control","Outlawing Ethics"],
+            },
+            {
+                "name": "Dystopia Complete",
+                "uniques": [
+			//Debuff
+                    "[-70]% Strength <when attacking> <for [Military] units> <for [10] turns>", //Due to demoralisation
+            	    "[-5 Happiness] [in all cities]",
+		    "[+5]% Unhappiness from [Population] [in all cities]",
+			//Sabotage
+		    "Can spend Gold to annex or puppet a City-State that has been your Ally for [55] turns"
+		    "Promotes all spies [1] time(s)",
+		    	//Other City State Stuff
+		    "Military Units gifted from City-States start with [5] XP",
+		    "[+33]% [Science] from City-States",
+		    "Gain [5] Influence with a [Melee] gift to a City-State"
+			//Capital
+                    "[+50]% Production when constructing [Military] units [in capital]",
+			//Weapons
+		    "[3] free [Intercontinental Hypersonic Missile] units appear",
+			//Expansion
+		    "[-25]% Culture cost of natural border growth [in all cities]",
+		    "[-50]% Culture cost of natural border growth [in capital]",
+			//War Resources
+		    "Earn [10]% of killed [Military] unit's [Cost] as [Gold]",
+		    "Earn [10]% of killed [Military] unit's [Cost] as [Culture]",
+		    "Earn [10]% of killed [Military] unit's [Cost] as [Happiness]",
+			//Anti Civil
+		    "Earn [1000]% of killed [Civilian] unit's [Cost] as [Gold]",
+		    "Earn [1000]% of killed [Civilian] unit's [Cost] as [Culture]",
+		    "Earn [1000]% of killed [Civilian] unit's [Cost] as [Happiness]",
+			//Title
+                    "Get the leader title of [Supreme leader [leaderName]]" 
+                ]
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
+        {
+        "name": "Utopia",
+        "era": "Solar era",
+        "priorities": {
+            "Neutral": 10,
+            "Cultural": 5,
+            "Diplomatic": 5,
+            "Domination": 15,
+            "Scientific": 5
+        },
+
+        "uniques": [
+		//Specialists
+            "[-50]% Food consumption by [Specialists] [in all cities]"
+	    "[-20]% Unhappiness from [Specialists] [in all cities]"
+	    "[+6 Culture] from every specialist [in all cities]",
+	    "[+5 Food] from every specialist [in all cities]",
+	    "[+4 Science] from every specialist [in all cities]",
+	    "[+3 Production] from every specialist [in all cities]",
+	    "[+2 Gold] from every specialist [in all cities]",
+	    "[+1 Faith] from every specialist [in all cities]",
+		//Debuff
+            "[-10 Happiness] [in all cities]",
+		//Requierments
+	    "Only available <when religion is enabled>"		//Due to effecting faith
+            "Only available <before adopting [Autocracy]>",
+            "Only available <before adopting [Order]>",
+            "Only available <before adopting [Dystopia]>",
+        ],
+
+        "policies": [
+ 
+
+            {			
+                "name": "Freedom of Thought and Expression",
+                "uniques": [
+			"[+100]% weight to this choice for AI decisions"
+                    	"[+80]% Production when constructing [Settler] units [in all cities]",
+                    	"Each city founded increases culture cost of policies [40]% less than normal",
+			"Science gained from research agreements [+40]%",
+			"[-25]% Culture cost of natural border growth [in all cities]",
+			"[-10]% Unhappiness from [Population] [in all cities]",
+			"[+5]% [Culture] [in all cities]",
+			"[+5]% [Production] [in all cities]",
+			"[+5]% [Science] [in all cities]",
+			"[+5]% [Faith] [in all cities]",
+			"[+5]% [Gold] [in all cities]",
+			"[+10]% growth [in all cities]",
+		    	"[+10]% of excess happiness converted to [Culture]"
+                    	"[+1 Science] from every [Trading post]",
+                    	"Free Great Person",
+			"Allied City-States will occasionally gift Great People"
+			"Allied City-States provide [Culture] equal to [+25]% of what they produce for themselves"
+			   ],
+                "row": 1,
+                "column": 3
+            },
+
+            {
+                "name": "Endless Abundance",
+                "uniques": [
+                    	"Empire enters golden age"
+                    	"[+10 Food] [in all cities]",
+                    	"[+10 Food, +5 Production, +5 Happiness] [in all cities connected to capital]",
+			"[+2 Culture] from every [Wonder]",
+		    	"[+1] Happiness from each type of luxury resource",
+                 	"[+1 Happiness] from every [Virtual Hangout]",
+			],
+                "row": 2,
+                "column": 1
+            },
+
+
+            {
+                "name": "Shared Purpose and Unity",
+                "uniques": [
+			//When happy
+            	    "[+15]% [Science] <while the empire is happy>",
+            	    "[+15]% [Production] <while the empire is happy>",
+            	    "[+15]% [Culture] <while the empire is happy>",
+			//Sience
+		    "Science gained from research agreements [+20]%",
+		    "[+1 Science] for every known Natural Wonder"
+			//Culture
+		    "[+10]% of excess happiness converted to [Culture]"
+			//Production
+		    "[+10]% Production when constructing [All] buildings [in all cities]",
+		    "Can build [all] improvements at a [+25]% rate",
+			//Units
+                    "Free [Settler] appears"
+                    "Free [Worker] appears",
+                    "Free Great Person",
+                ],
+                "row": 2,
+                "column": 5
+            },
+            {
+                "name": "Crimeless Society",
+                "uniques": [
+			//Policies
+		    "[+10 Gold] per [5] social policies adopted"
+			//Tiles
+                    "[+3 Culture] from every [Great Improvement]",
+			//Trade
+		    "Retain [+20]% of the happiness from a luxury after the last copy has been traded away"
+		    "[+10 Culture] from each Trade Route"
+			//Other
+                    "[+5 Food, +5 Science, +5 Culture, +5 Production, +5 Happiness] [in all cities connected to capital]",
+            	    "[+2 Happiness] [in all cities]", 
+                    "Free Great Person",
+                    "Empire enters golden age"
+                ],
+                "row": 2,
+                "column": 3
+            },
+            {
+                "name": "Work as Fulfillment",
+                "uniques": [
+			//Sience
+		    "Science gained from research agreements [+35]%",
+		    "[-5]% Science cost of researching new Technologies"
+		    "Free Great Person",	//Ish
+			//Happiness 
+	            "[+25 Happiness] [in all cities]",
+	            "[+25 Happiness] [in capital]",	//Capital gets 50
+			//Other
+                    "[-10]% maintenance cost for [all] buildings [in all cities]",
+                    "[-50]% maintenance cost for [all] buildings [in capital]",
+                    "[+3 Gold] from every [Mine]",
+                    "[+3 Food] from every [Farm]",
+                    "[+3 Production] from every [Great Improvement]",
+		    "No Maintenance costs for improvements in [Land] tiles"
+                ],
+                "row": 3,
+                "column": 3
+            },
+            {
+                "name": "Utopia Complete",
+                "uniques": [
+			//Golden Age
+		     "[+250]% Golden Age length",
+		     "Empire enters golden age"
+
+			//Gold
+		    "[+2 Gold] from all [Science] buildings"
+		    "[+2 Gold] from all [Gold] buildings"
+		    "[+5]% of excess happiness converted to [Gold]"
+		    "Production to [Gold] conversion in cities changed by [+20]%"
+
+
+			//Sicence
+		    "Science gained from research agreements [+100]%",
+		    "Allied City-States provide [Science] equal to [+10]% of what they produce for themselves",
+	    	    "[+1 Science] from every specialist [in capital]",
+		    "[+5]% of excess happiness converted to [Science]"
+		    "Production to [Science] conversion in cities changed by [+20]%"
+
+			//Building in the capital
+                    "[+20]% Production when constructing [All] units [in capital]",
+	    	    "[+3 Production] from every specialist [in capital]",
+
+			//Diplomatic
+		    "Can spend Gold to annex or puppet a City-State that has been your Ally for [40] turns" //Via diplomatic means they were convinced to willingly join
+		    "When declaring friendship, both parties gain a [+5]% boost to great person generation"
+		    "Resting point for Influence with City-States is increased by [5]"
+		    "[+10]% Happiness from luxury resources gifted by City-States"
+		    "City-State Influence recovers at twice the normal rate"
+
+			//Other
+                    "[+100]% [Strategic] resource production",
+                    "[+200]% Yield from every [Great Improvement]",
+		    "Allied City-States provide [Faith] equal to [+10]% of what they produce for themselves"
+		    "Production to [Culture] conversion in cities changed by [+20]%"
+		    "Production to [Happiness] conversion in cities changed by [+20]%"
+
+			//Temporary
+                    "[+70]% Strength <when attacking> <for [Military] units> <for [10] turns>", //Due to being elated 
+
+			//Title
+                    "Get the leader title of [Beloved leader [leaderName]]" 
+                ]
+            }
+        ]
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]
