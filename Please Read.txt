@@ -1,0 +1,30 @@
+Hello thanks for trying my (The Legend's) mod.
+
+
+Note this mod is still incomplete:
+
+This mod is by: The Legend
+though it was built upon the-mod example made by: yairm210
+
+Link for Unciv-mod-example [Link: https://github.com/yairm210/Unciv-mod-example]
+
+
+
+This mod is very heavy and adds a lot to the game: 
+1: Multiple Civilisations [Added]
+2: 5 More Religions [Added]
+3: Alongside extra beliefs to accommodate them {WIP}
+4: More Technologies (~Added)
+5: More Buildings (~Added)
+6: More Culture (~Added)
+7: More Win Conditions (~Added)
+8: More Units (~Added)
+9: Images for all the things mentioned above {WIP}
+
+
+Note that this mod IS NOT BALLANCED AT ALL, partially due to it still being incomplete partially because this mod exists for fun and little else thus balance is a low priority. Fortunetly you can still play the mod without the unbalanced nations either by deliberately selecting all the factions who spawn, ir by going to advanced settings and pressing "Set available nations for random pool" and than deselecting the nations that come with this mod.
+
+
+This Mod is made for fun so enjoy.
+
+
