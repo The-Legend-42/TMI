@@ -29,7 +29,14 @@
         "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
     },
     {
-        "name": "Space Race",
+        "name": "Space Race",	//Will be expanded to include more later. STILL INCOMPLETE
+        "victoryScreenHeader": "Be the first to build a Moon Base!",
+        "milestones": ["Build [Permanent Moon Base]", "Build [Beyond Luner Planetary Colony]"],
+        "victoryString": "You have touched the worlds beyond your own. Your civilisation is Victorious! With the moon in your hands nothing can stop you from expanding into the stars!",
+        "defeatString": "You have been defeated. Your civilization has been overwhelmed by its many foes. But your people do not despair, for they know that one day you shall return - and lead them forward to victory!"
+    },
+    {
+        "name": "Moon Race",
         "victoryScreenHeader": "Be the first to build a Moon Base!",
         "milestones": ["Build [Permanent Moon Base]"],
         "victoryString": "You have touched the worlds beyond your own. Your civilisation is Victorious! With the moon in your hands nothing can stop you from expanding into the stars!",

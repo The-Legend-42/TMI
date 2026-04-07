@@ -43,6 +43,22 @@
 		"uniques": ["Cannot attack", "Can carry [2] [Aircraft] units"]
 	},
 	{
+		"name": "Battleship",
+		"unitType": "Ranged Water",
+		"movement": 5,
+		"strength": 55,
+		"rangedStrength": 55,
+		"range": 3,
+		"cost": 375,
+		"requiredResource": "Oil",
+		"requiredTech": "Electronics",
+		"obsoleteTech": "Electronic Warfare",
+		"upgradesTo": "Near Future Warship",
+		"uniques": ["Never appears as a Barbarian unit"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "shipguns"
+	},
+	{
 		"name": "Destroyer",
 		"unitType": "Melee Water",
 		"movement": 6,
@@ -1078,7 +1094,7 @@
 		"Unbuildable", "Religious Unit", "Only available <when religion is enabled>",
 		"Takes your religion over the one in their birth city"],
 		"movement": 3,
-		"religiousStrength": 1500
+		"religiousStrength": 2000
 	},
 	{
 		"name": "Kohen",
@@ -1091,7 +1107,7 @@
 		"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
 		"[-1] Sight", "Unbuildable", "Religious Unit", "Only available <when religion is enabled>"],
 		"movement": 4,
-		"religiousStrength": 1250
+		"religiousStrength": 1750
 	},
 	{
 		"name": "Levi",
@@ -1103,6 +1119,33 @@
 		"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
 		"[-1] Sight", "Unbuildable", "Religious Unit", "Only available <when religion is enabled>"],
 		"movement": 5,
+		"religiousStrength": 1000
+	},
+
+	//The following religious units cannot enter forigen tiles nor spead religion outside of freindly territory
+
+
+	{
+		"name": "Rav",
+		"unitType": "Civilian",
+		"uniqueTo": "Israel",
+		"uniques": [
+         	"Can Spread Religion <for [3] movement> <[2] times> <in [Friendly] tiles> <after which this unit is consumed>",
+		"All adjacent units heal [+2] HP when healing",
+            	"May enhance a religion <by consuming this unit>  <if it hasn't used other actions yet>",
+            	"Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+		"[-1] Sight", "Unbuildable", "Religious Unit", "Only available <when religion is enabled>"],
+		"movement": 3,
+		"religiousStrength": 1000
+	},
+	{
+		"name": "Rabbi",
+		"unitType": "Civilian",
+		"uniqueTo": "Israel",
+		"uniques": [
+         	"Can Spread Religion <for [3] movement> <[1] times> <in [Friendly] tiles> <after which this unit is consumed>","All adjacent units heal [+1] HP when healing",
+		"[-1] Sight", "Unbuildable", "Religious Unit", "Only available <when religion is enabled>"],
+		"movement": 3,
 		"religiousStrength": 500
 	},
 
@@ -1193,7 +1236,7 @@
 		"attackSound": "shot"
 	},
 	{
-		"name": "Sherif",
+		"name": "Sheriff",
 		"unitType": "Ranged Gunpowder",
 		"uniqueTo": "Republic of Texas",
 		"range": 2,
@@ -1471,7 +1514,87 @@
 		"range": 10,
 		"cost": 350,
 		"requiredTech": "Nanotechnology",
+		"upgradesTo": "Block V Tomahawk Missile",
 		"uniques": ["[-100]% maintenance costs"],
+		"obsoleteTech": "Space Combat",
+		"attackSound": "missile"
+	},
+	{
+		"name": "Block V Tomahawk Missile",
+		"replaces": "Ballistic Missile",
+		"unitType": "Missile",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 250,
+		"rangedStrength": 250,
+		"range": 15,
+		"cost": 600,
+		"requiredTech": "Programmable Materials",
+		"obsoleteTech": "Orbital Communication",
+		"upgradesTo": "Block VI Tomahawk Missile",
+		"uniques": ["[-100]% maintenance costs","[+20]% Strength <vs cities>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Block VI Tomahawk Missile",
+		"replaces": "ICBM",
+		"unitType": "Missile",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 275,
+		"rangedStrength": 275,
+		"range": 18,
+		"cost": 600,
+		"requiredTech": "Space Combat",
+		"obsoleteTech": "Orbital Communication",
+		"upgradesTo": "Block VII Tomahawk Missile",
+		"uniques": ["[-100]% maintenance costs","[+20]% Strength <vs cities>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Block VII Tomahawk Missile",
+		"replaces": "Hypersonic Missile",
+		"unitType": "Missile",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 300,
+		"rangedStrength": 300,
+		"range": 20,
+		"cost": 700,
+		"requiredTech": "Space Racing",
+		"upgradesTo": "Super Tomahawk Missile",
+		"uniques": ["[-100]% maintenance costs","[+40]% Strength <vs cities>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Super Tomahawk Missile",
+		"replaces": "Intercontinental Hypersonic Missile",
+		"unitType": "Missile",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 350,
+		"rangedStrength": 350,
+		"range": 20,
+		"cost": 1000,
+		"requiredResource": "Oil",
+		"requiredTech": "Space Racing",
+		"upgradesTo": "Ultra Tomahawk Missile",
+		"uniques": ["[-100]% maintenance costs","[+40]% Strength <vs cities>"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Ultra Tomahawk Missile",
+		"uniqueTo": "Republic of Texas",
+		"replaces": "I.C.H.H.M",
+		"unitType": "Missile",
+		"movement": 1,
+		"strength": 400,
+		"rangedStrength": 400,
+		"range": 22,
+		"cost": 1250,
+		"requiredTech": "Shielded Space-Fighters",
+		"uniques": ["[-100]% maintenance costs","[+40]% Strength <vs cities>"],
+		"requiredTech": "Solar Era Explosives",
 		"attackSound": "missile"
 	},
 	{
@@ -1958,8 +2081,23 @@
 	},
 /////////////////////////////////////////////////////////////////////////////
 
+	/* ------------------------------------ */
 
 
+
+	//The this religious unit cannot enter forigen tiles
+
+	{
+		"name": "Preacher",
+		"unitType": "Civilian",
+		"uniqueTo": "Republic of Texas",
+		"uniques": [
+         	"Can Spread Religion <for [4] movement> <in [Friendly] tiles> <[1] times> <after which this unit is consumed>",
+		"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+		"[-1] Sight", "Unbuildable", "Religious Unit", "Only available <when religion is enabled>"],
+		"movement": 4,
+		"religiousStrength": 500
+	},
 
 
 
@@ -3076,6 +3214,18 @@
 
 
 	////////////////////Nicho Clans///////////////////////
+	{
+		"name": "Nicho Worker",
+		"uniqueTo": "Nicho Clans",
+		"replaces": "Worker",
+		"unitType": "Civilian",
+		"movement": 2,
+		"requiredTech": "Agriculture",
+		"uniques": ["Can build [Land] improvements on tiles", "Automation is a primary action"],
+		"promotions": ["[Nicho] ability"],
+		"obsoleteTech": "AI",
+		"cost": 70
+	},
 
 	{
 		"name": "Nicho Warrior",
@@ -3458,10 +3608,15 @@
 			    "[-10]% Strength <when fighting in [Jungle] tiles>"
 				//Other
 			    "Never appears as a Barbarian unit"
+			    "Consumes [1] [Dinosaur]"
 			    "Only available <if [Dino Lab] is constructed>",],
 		"promotions": ["Blitz","[Ice Skidder] ability"]
 		"attackSound": "Dragon"
 	},
+
+
+
+
 
 
 ///////////////////////////////////////////////////////
@@ -3587,9 +3742,80 @@
 
 
 
+	/* ------------------------------------ */
 
 
 
+	//The this religious unit cannot enter forigen tiles but can both remove religion and spread it multiple times in freindly territory 
+
+	{
+		"name": "Ice Treader",
+		"unitType": "Civilian",
+		"uniqueTo": "Nicho Clans",
+		"uniques": [
+		"Can enter ice tiles","[+1000]% Strength <when defending> <when fighting in [Ice] tiles>"
+		"Can remove other religions from cities <in [Friendly] tiles> <for [4] movement> <[3] times>",
+         	"Can Spread Religion <for [4] movement> <in [Friendly] tiles> <[2] times> <after which this unit is consumed>",
+		"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
+		"[+2] Sight", "Unbuildable", "Religious Unit", "Only available <when religion is enabled>"],
+		"promotions": ["[Nicho] ability"],
+		"movement": 4,
+		"religiousStrength": 400
+	},
+
+
+
+
+
+
+
+
+	////////////////////European Union///////////////////////
+
+
+	{
+		"name": "T-55", //Serbia, Finland, Romania, Latvia
+		"uniqueTo": "European Union",
+		"replaces": "Tank",
+		"unitType": "Armored",
+		"movement": 4,
+		"strength": 75,
+		"cost": 350,
+		"requiredTech": "Combined Arms",
+		"requiredResource": "Oil",
+		"upgradesTo": "Kampfpanzer Leopard",
+		"uniques": ["Can move after attacking","No defensive terrain bonus", "Never appears as a Barbarian unit","[-15]% maintenance costs"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Kampfpanzer Leopard",	//Germany, Italy, Netherlands, Greece
+		"unitType": "Armored",
+		"replaces": "Modern Armor",
+		"uniqueTo": "European Union",
+		"movement": 5,
+		"strength": 128,
+		"cost": 450,
+		"requiredTech": "Lasers",
+		"requiredResource": "Aluminum",
+		"obsoleteTech": "Smart Cities",
+		"upgradesTo": "Leopard II",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "Leopard II",	//The vast maority of Europe
+		"unitType": "Armored",
+		"uniqueTo": "European Union",
+		"movement": 5,
+		"strength": 135,
+		"cost": 485,
+		"requiredTech": "Lasers",
+		"requiredResource": "Aluminum",
+		"obsoleteTech": "Smart Cities",
+		"upgradesTo": "Giant Death Robot",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"attackSound": "tankshot"
+	},
 
 
 
@@ -3659,6 +3885,56 @@
 		"obsoleteTech": "Large-Scale Invisibility",
 		"attackSound": "shot"
 	},
+
+
+
+
+
+
+
+	{
+		"name": "Near Future Warship",
+		"unitType": "Ranged Water",
+		"movement": 5,
+		"strength": 180,
+		"rangedStrength": 100,
+		"range": 3,
+		"interceptRange": 2,	//Not as good as the destoyer at intercepting
+		"cost": 650,
+		"requiredResource": "Oil",
+		"requiredTech": "Electronic Warfare",
+		"uniques": ["Never appears as a Barbarian unit",
+			    "Can carry [1] [Drone] units",
+			   "[+20]% Strength <vs [Water] units>",
+ 			   "[50]% chance to intercept air attacks"],
+		"promotions": ["Indirect Fire"],
+		"attackSound": "shipguns"
+	},
+
+	{
+		"name": "UAV",		//Generally only to be used for RECON, It cannot be built just purchased
+		"unitType": "Drone",
+		"movement": 1,
+		"strength": 10,
+		"rangedStrength": 25,
+		"range": 4,
+		"interceptRange": 4,
+		"cost": 40,
+		"requiredTech": "Electronic Warfare",
+	//	"obsoleteTech": "Printing Press",
+		"uniques": ["Unbuildable","[15]% chance to intercept air attacks", "[+3] Sight"],
+		"attackSound": "nonmetalhit"
+	},
+
+
+
+
+
+
+
+
+
+
 	{
 		"name": "Guided Missile",
 		"unitType": "Missile",
@@ -3973,6 +4249,7 @@
 			    "Can carry [2] [SRM] units"
 			    "Never appears as a Barbarian unit"],	
 		"promotions": ["Medium Energy Shields","Indirect Fire","Supply",],
+		"upgradesTo": "Shielded Quarkyonic Cannon Warship",
 		"attackSound": "shipguns"
 	},
 
@@ -4246,7 +4523,7 @@
 			"Must set up to ranged attack","[-1] Sight",
 			 "Consumes [1] [Uranium]","Consumes [2] [Aluminum]",
 			],
-		"attackSound": "phasers"
+		"attackSound": "Beam-Attack"
 	},
 
 
@@ -4479,6 +4756,7 @@
 			    "[-10]% Strength <when fighting in [Jungle] tiles>"
 				//Other
 			    "Never appears as a Barbarian unit"
+			    "Consumes [1] [Dinosaur]"
 			    "Only available <if [Dino Lab] is constructed>",],
 		"promotions": ["Blitz"]
 		"attackSound": "Dragon"
@@ -4528,12 +4806,75 @@
 		"rangedStrength": 350,
 		"range": 20,
 		"cost": 1000,
-		"requiredTech": "Solar Era Explosives",
+		"requiredTech": "Shielded Space-Fighters",
 		"uniques": ["[-100]% maintenance costs","[+35]% Strength <vs cities>","Consumes [2] [Oil]"],   //,"Blast radius [1]"
-		"cost": 1,
-		"requiredTech": "Solar Era Explosives",
 		"attackSound": "missile"
 	},
+
+	{
+		"name": "Solar Explosive Launcher",
+		"unitType": "Ranged Gunpowder",
+		"movement": 3,
+		"strength": 130,
+		"rangedStrength": 225,
+		"range": 2,
+		"cost": 500,
+		"requiredTech": "Solar Era Explosives",
+		"uniques": [ "[2] additional attacks per turn","[+35]% Strength <vs [Armored] units> <when attacking>","[+15]% Strength <vs [Water] units> <when attacking>"],
+		"attackSound": "shot"
+	},
+
+	{	//I.C.N
+		"name": "Infantry Clearing Nuke",
+		"unitType": "Atomic Bomber",
+		"movement": 1,
+		"strength": 100,
+		"rangedStrength": 100,
+		"range": 14,
+		"cost": 200,
+		"requiredTech": "Solar Era Explosives",
+	//	"obsoleteTech": "AI",
+	//	"upgradesTo": "Shielded Mech",
+		"uniques": ["[-100]% maintenance costs",
+			    "[-90]% Strength <vs cities>",
+			    "[+600]% Strength <vs [Gunpowder] units>","[+600]% Strength <vs [Ranged Gunpowder] units>",
+			    "[+600]% Strength <vs [Sword] units>","[+600]% Strength <vs [Archery] units>",
+			     "Consumes [1] [Uranium]","Consumes [1] [Heavy Oil]",
+			     "Cannot be carried by [Carrier] units",
+			     "Nuclear weapon of Strength [1]",
+			     "Blast radius [5]",
+			     "Only available <if [Manhattan Project] is constructed>",
+			     "Limited to [5] per Civilization",
+				],   //,
+		"attackSound": "nuke"
+	},
+
+
+	{
+		"name": "Shielded Quarkyonic Cannon Warship",
+		"unitType": "Ranged Water",
+		"requiredResource": "Copper", //For the shields
+		"movement": 5,
+		"strength": 800,
+        	"rangedStrength": 500,
+		"range": 3,
+		"interceptRange": 3,
+		"cost": 2000,
+		"requiredTech": "Energetic Quantum Weaponry",
+		"uniques": ["Never appears as a Barbarian unit"
+			   "[100]% chance to intercept air attacks", 
+			    "Can carry [3] [Missile] units",
+			    "Can carry [2] [SRM] units",
+			    "Consumes [1] [Low Yield Quarkyonic Power Core]",
+			    "Only available <if [Low Yield Quarkyonic Weaponization Project] is constructed>"],	
+		"promotions": ["Medium Energy Shields","Supply",],
+		"attackSound": "Beam-Attack"
+	},
+
+
+
+
+
 
 
 
@@ -4556,8 +4897,17 @@
 			    "[+100]% Strength <when [Embarked]>"],
 		"attackSound": "nonmetalhit"
 	},
-
-
+	{
+		"name": "Mark 1 Supersoldier",
+		"unitType": "Gunpowder",
+		"movement": 6,
+		"strength": 400,
+	//	"cost": 5000,
+		"requiredTech": "Superhumans",
+		"uniques": ["No defensive terrain bonus", "Unbuildable",
+			    "[4] additional attacks per turn"],
+		"attackSound": "machinegun"
+	},
 
 
 

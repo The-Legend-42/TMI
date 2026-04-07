@@ -822,7 +822,14 @@
 		"wonderCost": 5000,
 		"techs": [
 			///////////////////////////////////////ROW 2//////////////////////////////
-			///////////////////////////////////////ROW 3//////////////////////////////		
+			///////////////////////////////////////ROW 3//////////////////////////////	
+			{
+				"name": "Electronic Warfare", 
+				"row": 1,
+				"prerequisites": ["Cyborgism"],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},	
 			{
 				"name": "Energy Fields",
 				"row": 2,
@@ -889,7 +896,7 @@
 			{
 				"name": "Invisibility",
 				"row": 1,
-				"prerequisites": ["Cyborgism","Energy Fields",],
+				"prerequisites": ["Electronic Warfare","Energy Fields",],
                			 "uniques": ["Promotes all spies [2] time(s)",],
 				"quote": "'Place of the sky Palace is here' - T-L",
                 "civilopediaText": [{"text": "Who knows what the future holds?"}]
