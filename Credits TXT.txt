@@ -51,8 +51,8 @@ The following units are from:
 [Texan Smoothbore Musketman] https://www.flaticon.com/free-icon/rifle\\\\\\\_261220 
 [Texan Rifleman] "https://www.flaticon.com/free-icons/cowboy"
 [Gunslinger] "https://www.flaticon.com/free-icons/sports-and-competition	
-[Sharpshooter] https://www.flaticon.com/free-icons/bandit		
-[Sheriff] https://www.flaticon.com/free-icons/footwear
+[Sharpshooter] https://www.flaticon.com/free-icons/bandit	
+[Sheriff] https://www.freepik.com/icon/sheriff-badge_2058507#fromView=search&page=1&position=1&uuid=f8dffe27-d559-4271-b20d-fac2f632facd	
 [Cowboy] https://www.flaticon.com/free-icons/texas			
 [Texas Ranger] https://www.flaticon.com/free-icons/cowboy
 [Demolitionist] https://www.flaticon.com/free-icons/war
@@ -60,6 +60,7 @@ The following units are from:
 [Modern Ranger] https://www.flaticon.com/free-icons/ranger
 [Bradley] https://www.flaticon.com/free-icons/armoured
 * All Short range rockets "https://www.flaticon.com/free-icons/space-shuttle
+[Nicho Worker] Exact same as in the regular game
 [Worker Golem] https://www.flaticon.com/free-icons/golem
 [Construction Golem] https://www.flaticon.com/free-icons/golem
 [Defender Golem] https://www.flaticon.com/free-icons/golem
@@ -97,11 +98,7 @@ The following units are from:
 [Adult Dragon] <a href="https://www.flaticon.com/free-icons/dragon" title="dragon icons">Dragon icons created by Freepik - Flaticon</a>
 [Zubber]<a href="https://www.flaticon.com/free-icons/space-invaders" title="space invaders icons">Space invaders icons created by Freepik - Flaticon</a>
 [Worker Bot] <a href="https://www.flaticon.com/free-icons/builder" title="builder icons">Builder icons created by Leremy - Flaticon</a>
-[Tripod] <a href="https://www.flaticon.com/free-icons/miscellaneous" title="miscellaneous icons">Miscellaneous icons created by justicon - Flaticon</a>
-[Tripod-II] Same as the original
-[Tripod-III] Same as the original
-[Stealth Tripod] Same as the original
-[Elite Tripod] Same as the original
+*Tripods <a href="https://www.flaticon.com/free-icons/miscellaneous" title="miscellaneous icons">Miscellaneous icons created by justicon - Flaticon</a>
 [Giant Death Robot II] From the vanilla game though ever so slightly altered.
 [AT-Rocket Jeep] https://www.flaticon.com/free-icon/car_3016581
 [Near Future Armor] From the vanilla game though ever so slightly altered.
@@ -223,6 +220,24 @@ The following units are from:
 [Nicho T-Rex Rider] Same as the T-Rex Rider
 [U-2] https://commons.wikimedia.org/wiki/File:U2withExperiments.jpg
 [F-18 Hornet] https://commons.wikimedia.org/wiki/File:McDonnell_Douglas_F-A-18_Hornet_3-view_line_drawing.png
+[Magic Swordsman] https://www.flaticon.com/free-icon/warrior_6031960
+*Tomahawk Missiles Edited image from https://commons.wikimedia.org/wiki/File:Tomahawk_Block_IV_cruise_missile_-crop.jpg
+[I.C.H.H.M] Based on https://commons.wikimedia.org/wiki/File:HAWC_Missile_Render.png
+[Solar Explosive Launcher] https://www.flaticon.com/free-icon/gun_6088545
+[Kampfpanzer Leopard] https://commons.wikimedia.org/wiki/File:19_04_2022_-_Ministro_da_Defesa_prestigia_celebra%C3%A7%C3%A3o_dos_374_anos_do_Ex%C3%A9rcito_(52017823580).jpg
+[Leopard II] https://thenounproject.com/icon/leopard-2a4-finnish-tank-2057453/
+[T-55] https://commons.wikimedia.org/wiki/File:T-55_schematic.png
+[Near Future Warship] https://www.freepik.com/icon/crusier_2089990
+[B-24 Liberator] https://commons.wikimedia.org/wiki/File:XB-24_in_Flight.jpg
+[UAV] https://www.flaticon.com/free-icon/camera_16170759
+[Infantry Clearing Nuke] https://www.flaticon.com/free-icon/explosion_7675020?related_id=7675122&origin=search
+[Preacher] https://www.freepik.com/icon/priest_2965000#fromView=search&page=2&position=7&uuid=935b869a-9458-4e4f-9821-9eb44f490d08
+[Ice Treader] https://www.flaticon.com/free-icon/shaman_6116856?related_id=6116690&origin=search
+[Rav] https://www.flaticon.com/free-icon/jewish_2541268
+[Rabbi] https://www.flaticon.com/free-icon/rabbi_6271237
+[Mark 1 Supersoldier] https://www.flaticon.com/free-icon/cyberpunk-character_19013171
+[Shielded Quarkyonic Cannon Warship] https://www.flaticon.com/free-icon/ship_16613474
+
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -339,7 +354,19 @@ The Magic Circles <a href="https://www.flaticon.com/free-icons/magic" title="mag
 [Surgical AI] https://www.flaticon.com/free-icon/medical_15641500
 [Iron Warehouse] Edited version of https://www.flaticon.com/free-icon/warehouse_17041551
 [Cowboy Ranch] https://www.flaticon.com/free-icon/domestic_16127996
-
+[Dragon's Lair] https://icons8.com/icons/set/wyvern--style-sf-regular
+[Tax Advisory] https://www.freepik.com/icon/tax-office_8117538#fromView=search&page=1&position=12&uuid=ec14f1f4-cede-4736-bb90-751779aafda1
+[Small Heavy Oil Refinery] https://www.flaticon.com/free-icon/oil-refinery_3621902
+[National Heavy Oil Refinery] https://www.flaticon.com/free-icon/gas-tank_18137068
+[EMP-Proof Shelter] https://www.freepik.com/icon/hut_7835283#fromView=search&page=5&position=20&uuid=87fbbed9-0d68-44a8-a703-c5b37741b73f
+[Megachurch] https://www.flaticon.com/free-icon/church_15142349
+[Preacher's Hall] https://www.flaticon.com/free-icon/preacher_9896962
+[Super Soldier Program] https://www.flaticon.com/free-icon/athlete_17873788
+[Mark 1 Supersoldier Development] https://www.flaticon.com/free-icon/athlete_17856088
+[Mark 1 Supersoldier Barracks] https://www.flaticon.com/free-icon/cyberpunk-character_19013171
+[Energetic Quantum Research Facility] <a href="https://www.flaticon.com/free-icons/quantum" title="quantum icons">Quantum icons created by Vlad Szirka - Flaticon</a>
+[Low Yield Quarkyonic Weaponization Project] <a href="https://www.flaticon.com/free-icons/quantum" title="quantum icons">Quantum icons created by Vlad Szirka - Flaticon</a>
+[Dino Farm] https://www.flaticon.com/free-icon/triceratops_838014
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -379,6 +406,17 @@ The following faction logos are from:
 The following Sounds are from:
 
 [Dragon] https://freesound.org/people/OGsoundFX/sounds/423010/
+[Beam-Attack] https://pixabay.com/sound-effects/film-special-effects-a-large-explosive-laser-gun-shot-scifi-410622/
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+The following Resource Icons are from:
+
+[Heavy Oil] Based on the Oil icon from the original game
+[Low Yield Quarkyonic Power Core] <a href="https://www.flaticon.com/free-icons/quark" title="quark icons">Quark icons created by martin.allien - Flaticon</a>
+[Dinosaur]  https://www.flaticon.com/free-icon/triceratops_838014
 
 
 
@@ -440,6 +478,16 @@ The following Technologic logos are from:
 3. https://www.flaticon.com/free-icon/spaceship_4581829
 [Bio Merging] https://www.flaticon.com/free-icon/dna_6436755
 [Clone Armies] https://www.flaticon.com/free-icon/human-resource_12122043
+[Electronic Warfare] https://www.freepik.com/icon/cyber-attack_2974394#fromView=search&page=2&position=91&uuid=cc5f54fc-6425-4d91-9e8d-982e9edc2024
+[Energetic Quantum Weaponry] https://www.flaticon.com/free-icon/quark_16147373
+[Large-Scale Invisibility] https://www.flaticon.com/free-icon/blind_14935460
+[Crystal Based Shielding] https://www.flaticon.com/free-icon/crystal_2701757
+[Solar Era Explosives] https://www.flaticon.com/free-icon/explosion_71300?term=destruction&page=1&position=2&origin=search&related_id=71300
+[Shielded Space-Fighters] https://www.flaticon.com/free-icon/spaceship_1985891?related_id=1985828&origin=search
+[Orbital Communication] https://www.freepik.com/icon/parabolic-antenna_5947449#fromView=search&page=1&position=12&uuid=3346a224-28ab-435b-a05c-f668aadbddce
+[Superhumans] https://www.freepik.com/icon/weightlifting_18103671#fromView=search&page=1&position=7&uuid=3a398d3f-c1cf-41c5-85c0-20aa9251bd99
+[Dinosaurs] https://www.flaticon.com/free-icon/footprint_838006
+
 
 
 
@@ -457,16 +505,25 @@ Unused/Removed Assets are from:
 <a href="https://www.flaticon.com/free-icons/magic" title="magic icons">Magic icons created by Freepik - Flaticon</a>
 
 
-https://www.flaticon.com/free-icon/snowflake_3059742
-
+Original Sherriff Icon
+[Sheriff] https://www.flaticon.com/free-icons/footwear
 
 [3D model for AT-Jeep] <a href="https://www.flaticon.com/free-icons/military" title="military icons">Military icons created by smashingstocks - Flaticon</a>
 
 
 
+	May use for a future quark based missile
+[B.N.M] https://www.flaticon.com/free-icon/rocket-start_81191
+
+
 //Had a back and forth here on which to use
 [British Empire] <a href="https://www.flaticon.com/free-icons/uk-flag" title="uk flag icons">Uk flag icons created by riajulislam - Flaticon</a>
 [British Empire] <a href="https://www.flaticon.com/free-icons/union-jack" title="union jack icons">Union jack icons created by Freepik - Flaticon</a>
+
+
+
+
+https://www.flaticon.com/free-icon/snowflake_3059742
 
 
 
