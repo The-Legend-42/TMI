@@ -143,6 +143,10 @@
 		"uniques": ["Unit will heal every turn, even if it performs an action", "[+30]% Strength <vs cities> <when attacking>"]
 	},
 
+	{
+		"name": "Vigor",
+		"uniques": ["[+1] Movement"],
+	},
 
 /////////////////////////////////////Drones//////////////////////
 

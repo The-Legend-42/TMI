@@ -837,6 +837,52 @@
 		"requiredTech": "Radar"
 	},
 
+	{
+		"name": "Local Bull Riding Tournament",
+		"uniqueTo": "Republic of Texas",
+		"buildingCost": 240,
+		"maintenance": 2,
+		"requiredNearbyImprovedResources": ["Cattle"],
+		"uniques": ["[+5]% Production when constructing [Mounted] units [in this city]",
+			"[+2 Happiness, +1 Culture] from [Cattle] tiles [in this city]",
+			"[+1 Happiness, +1 Production] from [Horses] tiles [in this city]",
+			"[+1 Production] from [Sheep] tiles [in this city]"],
+		"requiredTech": "Acoustics"
+	},
+	/*
+	{	////THIS ORIGINAL VERSION WAS REMOVED DUE TO REQUIRING ALL TEXAN CITIES TO BE NEAR CATTLE TO BE PRODUCEABLE 
+		"name": "National Bull Riding Tournament",
+		"uniqueTo": "Republic of Texas",
+		"cost": 700,
+		"culture": 5,
+		"maintenance": 5,
+		"requiredNearbyImprovedResources": ["Cattle"],
+		"uniques": ["Limited to [1] per Civilization", 
+			"[+10]% Production when constructing [Mounted] units [in this city]",
+			"[+1 Happiness, +1 Culture, +1 Gold] from [Cattle] tiles [in this city]",
+			"[+1 Production, +1 Gold] from [Horses] tiles [in this city]",
+			"[+1 Production, +1 Gold] from [Sheep] tiles [in this city]"],
+		"requiredTech": "Architecture"
+		"requiredBuildingInAllCities": "Local Bull Riding Tournament",
+	},
+	*/
+	{
+		"name": "National Bull Riding Tournament",
+		"uniqueTo": "Republic of Texas",
+		"cost": 700,
+		"culture": 5,
+		"maintenance": 5,
+		"requiredNearbyImprovedResources": ["Cattle"],
+		"uniques": ["Limited to [1] per Civilization", 
+			"[+10]% Production when constructing [Mounted] units [in this city]",
+			"[+1 Happiness, +1 Culture, +1 Gold] from [Cattle] tiles [in this city]",
+			"[+1 Production, +1 Gold] from [Horses] tiles [in this city]",
+			"[+1 Production, +1 Gold] from [Sheep] tiles [in this city]"
+			"[1] free [Cowboy] units appear",],
+		"requiredTech": "Military Science"
+		"requiredBuilding": "Local Bull Riding Tournament",
+	},
+
 	/*
 	{	//Air base
 		"name": "Quantum Hive",
@@ -1402,6 +1448,14 @@
 			    "[+5 Happiness] [in this city] <after discovering [Globalization]>"],
 		"requiredTech": "Pottery",
 	},
+	{ 
+		"name": "Chief's Stable",
+		"uniqueTo": "Nicho Clans",
+		"cost": 120, //Originally 25 but changed due to adding the gain a free stable
+		"culture": 1,
+		"requiredTech": "Education",
+		"uniques": ["Provides [1] [Horses]","Limited to [1] per Civilization","Gain a free [Stable] [in this city]",]
+	},
 	{
 		"name": "Igloo Shed",
 		"uniqueTo": "Nicho Clans",
@@ -1858,6 +1912,53 @@
 			    "Consumes [1] [Uranium]","Consumes [2] [Coal]"],
 		"requiredTech": "Superhumans"
 		"requiredBuilding": "Cloning Vats",
+	},
+	{
+		"name": "Mark 2 Supersoldier Barracks",
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"production": 20,
+		"science": 10,
+		"food": 5,
+		"maintenance": 5,
+		"uniques": ["Destroyed when the city is captured",
+			    "Only available <if [Mark 2 Supersoldier Development] is constructed>",
+			    "May buy [Mark 2 Supersoldier] units for [6000] [Gold] [in this city]"
+			    "Consumes [1] [Uranium]","Consumes [2] [Coal]"],
+		"requiredTech": "Supersoldiers"
+		"requiredBuilding": "Mark 1 Supersoldier Barracks",
+	},
+	{
+		"name": "Stealth Supersoldier Barracks",
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"production": 20,
+		"science": 10,
+		"food": 5,
+		"maintenance": 5,
+		"uniques": ["Destroyed when the city is captured",
+			    "Only available <if [Stealth Supersoldier Development] is constructed>",
+			    "May buy [Paratrooper Supersoldier] units for [7500] [Gold] [in this city]"
+			    "May buy [Advanced Stealth Supersoldier] units for [8500] [Gold] [in this city]"
+				],
+		"requiredTech": "Supersoldiers"
+		"requiredBuilding": "Mark 2 Supersoldier Barracks",
+	},
+	{
+		"name": "Enhanced Mark 2 Supersoldier Barracks",
+		"cityStrength": 5,
+		"cityHealth": 50,
+		"production": 20,
+		"science": 10,
+		"food": 5,
+		"maintenance": 5,
+		"uniques": ["Destroyed when the city is captured",
+			    "Only available <if [Stealth Supersoldier Development] is constructed>",
+			    "May buy [Shielded Supersoldier] units for [9500] [Gold] [in this city]"
+			    "May buy [Mobile Supersoldier] units for [10000] [Gold] [in this city]"
+				],
+		"requiredTech": "Supersoldiers"
+		"requiredBuilding": "Mark 2 Supersoldier Barracks",
 	},
 
 
@@ -2588,7 +2689,7 @@
 		"isNationalWonder": true,
 		"science": 150,
 		"greatPersonPoints": {"Great Scientist": 2},
-		"uniques": ["Triggers a global alert upon completion", "Cannot be hurried","Provides [2] [Low Yield Quarkyonic Power Core]"],
+		"uniques": ["Triggers a global alert upon completion", "Cannot be hurried","Provides [3] [Low Yield Quarkyonic Power Core]"],
 		"requiredTech": "Energetic Quantum Weaponry"
 	},
 
@@ -2616,6 +2717,111 @@
 		"uniques": [ "Only available <if [Super Soldier Program] is constructed>", "Cannot be hurried"],
 		"requiredTech": "Superhumans"
 	},
+	{
+		"name": "City Dome",
+		"isNationalWonder": true,
+	//	"isWonder": true,
+		"greatPersonPoints": {"Great Engineer": 3},
+		"specialistSlots": {"Engineer": 3},
+		"cityHealth": 100,
+		"culture": 15,
+		"gold": 15,
+		"production": 12,
+		"science": 10,
+		"happiness": 10,
+		"faith": 3,
+		"uniques": ["Consumes [10] [Iron]","Must be on [Plains]",
+			    "[+10 Gold] per [3] social policies adopted",
+			    "[+1 Culture] from every specialist [in all cities]",
+			    "[+1 Production] from every specialist [in this city]",
+			    "[+4 Science] per [10] population [in this city]"],
+		"requiredTech": "Superstructures",
+	},
+	{
+		"name": "Mark 2 Supersoldier Development",
+		"isNationalWonder": true,
+		"uniques": [ "Only available <if [Mark 1 Supersoldier Development] is constructed>", "Cannot be hurried"],
+		"requiredTech": "Supersoldiers"
+	},
+	{
+		"name": "Stealth Supersoldier Development",
+		"isNationalWonder": true,
+		"uniques": [ "Only available <if [Mark 2 Supersoldier Development] is constructed>", "Cannot be hurried"],
+		"requiredTech": "Supersoldiers"
+	},
+	{
+		"name": "Enhanced Mark 2 Supersoldier Development",
+		"isNationalWonder": true,
+		"uniques": [ "Only available <if [Mark 2 Supersoldier Development] is constructed>", "Cannot be hurried"],
+		"requiredTech": "Supersoldiers"
+	},
+	{
+		//This Wonder will provide the builder an Army
+		"name": "Super Barracks",
+		"isNationalWonder": true,
+		"greatPersonPoints": {"Great Scientist": 1},
+		"cityHealth": 150,
+		"cityStrength": 5,
+		"production": 8,
+		"science": 8,
+		"maintenance": 10,
+		"uniques": [	//Costs
+			    "Consumes [5] [Iron]","Consumes [5] [Coal]","Consumes [5] [Aluminum]","Consumes [3] [Uranium]",
+				//Prerquisits
+			    "Only available <if [Cephalopod Barracks] is constructed>",
+			    "Only available <if [Stealth Supersoldier Barracks] is constructed>",
+			    "Only available <if [Enhanced Mark 2 Supersoldier Barracks] is constructed>",
+				//Units
+			    "[4] free [Octo Trooper] units appear"
+			    "[2] free [Mark 1 Supersoldier] units appear"	// Two Apear as their easier to produce than the others
+			    "[1] free [Mark 2 Supersoldier] units appear"
+			    "[1] free [Advanced Stealth Supersoldier] units appear" //No paratroopers as 2 parratrooping units may mess up the system
+			    "[1] free [Shielded Supersoldier] units appear"
+			    "[1] free [Mobile Supersoldier] units appear"
+				//Boosts
+			    "New [Military] units start with [5] XP [in this city]"
+            		    "Promotes all spies [1] time(s)"
+			    "Can carry [1] extra [Air] units",
+			    "[+25 Science] per [100] population [in this city]"],
+		"requiredTech": "Supersoldiers"
+	},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2633,9 +2839,8 @@
 		"greatPersonPoints": {"Great Engineer": 1},
 		"uniques": ["[+5 Gold] [in all cities]"],
 		"requiredTech": "Electronics",
-	//	"quote": "'The Empire State Building is more than just a skyscraper; it's evidence of a city's desire to reach for the stars.' - Anthony T. Hincks"
+		"quote": "'The Empire State Building is more than just a skyscraper; it's evidence of a city's desire to reach for the stars.' - Anthony T. Hincks"
 	},
-
 
 
 
@@ -2653,9 +2858,6 @@
 			    "[+5]% Strength <for [All] units> <when defending>"],
 		"requiredTech": "Quantum Technology",
 	},
-
-
-
 
 
 	{
@@ -2686,7 +2888,56 @@
 			   ],
 		"requiredTech": "Nuclear Fusion"
 	},
-
+	{
+		"name": "Sky Dome",
+		"isWonder": true,
+		"greatPersonPoints": {"Great Engineer": 3},
+		"specialistSlots": {"Engineer": 6},
+		"cityHealth": 500,
+		"culture": 100,
+		"gold": 100,
+		"production": 50,
+		"science": 30,
+		"happiness": 20,
+		"faith": 13,
+		"uniques": ["Consumes [100] [Iron]", "Must be on [Plains]",
+			    "[+100 Gold] per [5] social policies adopted"	
+			    "[+2 Culture] from every specialist [in all cities]",
+			    "[+1 Production] from every specialist [in all cities]",
+			    "[+1 Culture] from every specialist [in this city]",
+			    "[+5 Science] per [9] population [in this city]"],
+		"requiredTech": "Superstructures",
+	},
+	{
+		"name": "World Temple",
+		"isWonder": true,
+		"greatPersonPoints": {"Great Artist": 3},
+		"specialistSlots": {"Artist": 3},
+		"faith": 150,
+		"culture": 75,
+		"gold": 50,
+		"happiness": 30,
+		"uniques": ["Consumes [50] [Iron]", "Only available <when religion is enabled>","Must be on [Grassland]",
+			"Gain a free [Cathedral] [in this city]",
+			"Gain a free [Monastery] [in this city]",
+			"Gain a free [Mosque] [in this city]",
+			"Gain a free [Pagoda] [in this city]",
+			"Gain a free [Synagogue] [in this city]",
+			"Gain a free [Gurdwara] [in this city]",
+			"Gain a free [Megachurch] [in this city]",
+			"[+5 Faith] from every specialist [in all cities]",
+			"[+1 Faith] [in all cities]",
+			"[+2 Faith] per [10] population [in this city]",
+			"[1] free [Great Prophet] units appear",
+			"[1] free [Great General] units appear",
+			"[1] free [Great Artist] units appear",
+            		"All newly-trained [Missionary] units [in this city] receive the [Devout] promotion",
+            		"All newly-trained [Great Prophet] units [in this city] receive the [Devout] promotion"
+            		"All newly-trained [Civilian] units [in this city] receive the [Vigor] promotion"
+			"[+50]% Golden Age length",
+			"[+150]% Natural religion spread [in this city]"],
+		"requiredTech": "Superstructures",
+	},
 
 
 

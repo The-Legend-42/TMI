@@ -1029,6 +1029,115 @@
 
 
 	}
+	{
+		"columnNumber": 22,
+		"era": "Solar era",
+		"techCost": 90000,
+		"buildingCost": 4500,
+		"wonderCost": 15000,
+		"techs": [
+			///////////////////////////////////////ROW 2//////////////////////////////
+			///////////////////////////////////////ROW 3//////////////////////////////
+			{
+				"name": "Detection Crystals",
+				"row": 3,
+				"prerequisites": ["Large-Scale Invisibility","Crystal Based Shielding"],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Cystals created to detect what was once invisible"}]
+			},
+			{
+				"name": "Material Mixing",	//"Combined Effects",
+				"row": 4,
+				"prerequisites": ["Large-Scale Invisibility","Crystal Based Shielding","Solar Era Explosives"],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Combining the unique effects of multiple materials"}]
+			},
+			{
+				"name": "Late Solar Era Weaponry",
+				"row": 5,
+				"prerequisites": ["Crystal Based Shielding", "Solar Era Explosives", "Energetic Quantum Weaponry", "Shielded Space-Fighters",],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+			{
+				"name": "Superstructures",
+				"row": 6,
+				"prerequisites": ["Crystal Based Shielding","Solar Era Explosives","Energetic Quantum Weaponry","Shielded Space-Fighters","Orbital Communication","Superhumans",],
+                "uniques": ["[+100]% weight to this choice for AI decisions","[+5 Happiness] [in capital]","[+1 Happiness] [in all cities]","[+5 Production] [in capital]",],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+			{
+				"name": "Supersoldiers",
+				"row": 7,
+				"prerequisites": ["Superhumans","Dinosaurs","Orbital Communication"],
+                "uniques": ["[+100]% weight to this choice for AI decisions","[+5 Happiness] [in capital]","[+1 Happiness] [in all cities]","[+5 Production] [in capital]",],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+
+		
+		/*
+
+			{
+				"name": "Crystal Based Shielding",
+				"row": 3,
+				"prerequisites": ["Carbonometric Technology"],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+			{
+				"name": "Solar Era Explosives",
+				"row": 4,
+				"prerequisites": ["Carbonometric Technology","High Energy Theory"],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+			{
+				"name": "Energetic Quantum Weaponry",
+				"row": 5,
+				"prerequisites": ["High Energy Theory","Interplanetary Colonisation"],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+			{
+				"name": "Shielded Space-Fighters",
+				"row": 6,
+				"prerequisites": ["High Energy Theory","Interplanetary Colonisation","Space Racing","Spaceborne Population"],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+			{
+				"name": "Orbital Communication",
+				"row": 7,
+				"prerequisites": ["Interplanetary Colonisation","Space Racing","Spaceborne Population"],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+			{
+				"name": "Superhumans",
+				"row": 8,
+				"prerequisites": ["Spaceborne Population","Bio Merging","Clone Armies",],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+			{
+				"name": "Dinosaurs",
+				"row": 9,
+				"prerequisites": ["Bio Merging","Clone Armies",],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+
+
+		*/
+
+
+
+		]
+
+
+	}
 
 
 ]

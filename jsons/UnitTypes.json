@@ -19,7 +19,7 @@
 	/////// Reconnaissance Aircraft ///////
         "name": "Air Recon",
         "movementType": "Air",
-        "uniques": ["Aircraft", "[+6] Sight", "Can see over obstacles", "Can perform Air Sweep"]
+        "uniques": ["Aircraft", "[+6] Sight", "Can see over obstacles"]
     }
 
     { 
