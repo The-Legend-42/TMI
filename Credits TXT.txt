@@ -135,6 +135,10 @@ The following units are from:
 [Primitive Quarkionic Missile] From the Nuclear missile from the Vanilla game + <a href="https://www.flaticon.com/free-icons/quark" title="quark icons">Quark icons created by martin.allien - Flaticon</a>
 [Primitive Quarkionic Bomb] <a href="https://www.flaticon.com/free-icons/nuclear-bomb" title="nuclear bomb icons">Nuclear bomb icons created by Freepik - Flaticon</a>
 [Shielded Mech] https://www.flaticon.com/free-icon/robot_2791991?related_id=2792041&origin=search
+[Shielded Mech MK-II"] https://www.flaticon.com/free-icon/robot_2791991?related_id=2792041&origin=search
+[Enhanced Shielded Mech] https://www.flaticon.com/free-icon/robot_2791991?related_id=2792041&origin=search
+[Shielded Mech MK-III"] https://www.flaticon.com/free-icon/robot_2791991?related_id=2792041&origin=search
+[Enhanced Shielded Mech MK-III] https://www.flaticon.com/free-icon/robot_2791991?related_id=2792041&origin=search
 [Merkava V] Altered version of https://www.vecteezy.com/vector-art/78059519-military-tank-silhouette-side-view-armored-vehicle-illustration
 [Greater Colossus] Same as great colossus
 [MLRS Truck] <a href="https://www.flaticon.com/free-icons/missile" title="missile icons">Missile icons created by max.icons - Flaticon</a>
@@ -178,8 +182,6 @@ The following units are from:
 [Clone Veteran] https://www.flaticon.com/free-icon/soldier_2354270
 [Clone Elite] https://www.flaticon.com/free-icon/soldier_2354270
 [Shielded Marines] Base Game
-[Shielded Mech MK-II"] https://www.flaticon.com/free-icon/robot_2791991?related_id=2792041&origin=search
-[Enhanced Shielded Mech] https://www.flaticon.com/free-icon/robot_2791991?related_id=2792041&origin=search
 [Agent] https://www.flaticon.com/free-icon/agent_4094806
 [Hypersonic Missile] Based on the Guided Missile From the vanilla game though Heavily altered.
 [Intercontinental Hypersonic Missile] Based on the Guided Missile From the vanilla game though Heavily altered.
@@ -236,7 +238,22 @@ The following units are from:
 [Rav] https://www.flaticon.com/free-icon/jewish_2541268
 [Rabbi] https://www.flaticon.com/free-icon/rabbi_6271237
 [Mark 1 Supersoldier] https://www.flaticon.com/free-icon/cyberpunk-character_19013171
+[Mark 2 Supersoldier] https://www.flaticon.com/free-icon/cyberpunk-character_19013171
+[Paratrooper Supersoldier] https://www.flaticon.com/free-icon/cyberpunk-character_19013171
+[Advanced Stealth Supersoldier] https://www.flaticon.com/free-icon/cyberpunk-character_19013171
+[Shielded Supersoldier] https://www.flaticon.com/free-icon/cyberpunk-character_19013171
+[Mobile Supersoldier] https://www.flaticon.com/free-icon/cyberpunk-character_19013171
 [Shielded Quarkyonic Cannon Warship] https://www.flaticon.com/free-icon/ship_16613474
+[Stealth Tank] Took an ai image and edited it
+[Anti-Stealth UAV] https://www.flaticon.com/free-icon/drones_15758815
+[Orbital Targeter] https://www.flaticon.com/free-icon/iris-recognition_16196574
+[Basic Quarkionic Bomb] https://www.flaticon.com/free-icon/nuclear-explosion_3368967
+[Union Bomb] https://www.flaticon.com/free-icon/explosion_7675020?related_id=7675122&origin=search and https://www.flaticon.com/free-icon/europe_2885374
+[Depth-Hunter Submarine] Altered the original submarine from the base game
+[Sub Chaser] https://www.gettyimages.com/photos/flying-boat
+[F-4 Phantom] https://en.wikipedia.org/wiki/McDonnell_Douglas_F-4_Phantom_II#Current
+
+
 
 
 
@@ -363,10 +380,25 @@ The Magic Circles <a href="https://www.flaticon.com/free-icons/magic" title="mag
 [Preacher's Hall] https://www.flaticon.com/free-icon/preacher_9896962
 [Super Soldier Program] https://www.flaticon.com/free-icon/athlete_17873788
 [Mark 1 Supersoldier Development] https://www.flaticon.com/free-icon/athlete_17856088
-[Mark 1 Supersoldier Barracks] https://www.flaticon.com/free-icon/cyberpunk-character_19013171
+[Mark 2 Supersoldier Development] https://www.flaticon.com/free-icon/athlete_17856088
+[Stealth Supersoldier Development] https://www.flaticon.com/free-icon/athlete_17856088
+[Enhanced Mark 2 Supersoldier Development] https://www.flaticon.com/free-icon/athlete_17856088
+[Mark 1 Supersoldier Barracks] https://www.flaticon.com/free-icon/athlete_17856088
+[Mark 2 Supersoldier Barracks] https://www.flaticon.com/free-icon/athlete_17856088
+[Stealth Supersoldier Development] https://www.flaticon.com/free-icon/athlete_17856088
+[Enhanced Mark 2 Supersoldier Development] https://www.flaticon.com/free-icon/athlete_17856088
 [Energetic Quantum Research Facility] <a href="https://www.flaticon.com/free-icons/quantum" title="quantum icons">Quantum icons created by Vlad Szirka - Flaticon</a>
 [Low Yield Quarkyonic Weaponization Project] <a href="https://www.flaticon.com/free-icons/quantum" title="quantum icons">Quantum icons created by Vlad Szirka - Flaticon</a>
 [Dino Farm] https://www.flaticon.com/free-icon/triceratops_838014
+[Monument of the winter's gold] https://www.flaticon.com/free-icon/snowflake_3059742
+[City Dome] https://www.flaticon.com/free-icon/dome_5476172
+[Sky Dome]https://www.flaticon.com/free-icon/dome_5476172
+[World Temple] https://www.flaticon.com/free-icon/bank-symbol_2402
+[Chief's Stable] Based on cavalry from the vanilla game
+[National Bull Riding Tournament] https://www.flaticon.com/free-icon/bull_15306717
+[Local Bull Riding Tournament] https://www.flaticon.com/free-icon/bull_15306717
+
+
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -521,9 +553,6 @@ Original Sherriff Icon
 [British Empire] <a href="https://www.flaticon.com/free-icons/union-jack" title="union jack icons">Union jack icons created by Freepik - Flaticon</a>
 
 
-
-
-https://www.flaticon.com/free-icon/snowflake_3059742
 
 
 
