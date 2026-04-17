@@ -252,7 +252,32 @@ The following units are from:
 [Depth-Hunter Submarine] Altered the original submarine from the base game
 [Sub Chaser] https://www.gettyimages.com/photos/flying-boat
 [F-4 Phantom] https://en.wikipedia.org/wiki/McDonnell_Douglas_F-4_Phantom_II#Current
-
+[Near Future Helicopter Gunship] Based on the base games Helicopter Gunship
+[Invisible Attack Helicopter] https://www.flaticon.com/free-icon/military-helicopter_3194819
+[Harpy] https://www.flaticon.com/free-icon/harpy_5169523?related_id=5169540&origin=search
+[Harpy Swarm] https://www.flaticon.com/free-icon/harpy_5169523?related_id=5169540&origin=search
+[Harpy Assassin] https://www.flaticon.com/free-icon/harpy_5169523?related_id=5169540&origin=search
+[Orbital Tactical Nuke] https://www.flaticon.com/free-icon/nuclear-energy_2751976
+[Mortar] https://www.flaticon.com/free-icon/mortar_3857458
+[Stealth Flame Mortar] https://www.flaticon.com/free-icon/mortar_3857458
+[Spitfire] https://commons.wikimedia.org/wiki/File:Spitfire_mk2a_p7350_arp.jpg
+[Seafire] https://commons.wikimedia.org/wiki/File:Spitfire_-_Season_Premiere_Airshow_2018_(cropped).jpg
+[Hawker Sea Hurricane] https://commons.wikimedia.org/wiki/File:Hawker_Hurricane_3-view.svg
+[Hawker Hurricane] https://en.wikipedia.org/wiki/File:Hurricane_in_planform_arp.jpg
+[Royal Aircraft Factory S.E.5] https://commons.wikimedia.org/wiki/File:RAF_SE5a_F904_(G-EBIA)_(6736738219).jpg
+[Sopwith Camel] https://commons.wikimedia.org/wiki/File:Sopwith_Camel_-_Season_Premiere_Airshow_2018_(cropped).jpg
+[Sopwith Triplane] https://commons.wikimedia.org/wiki/File:Sopwith_Triplane_3-view_silhouette.png
+[Handley Page Type O] https://commons.wikimedia.org/wiki/File:1st_Handley_Page_bomber_Langley,_built_in_US_by_Standard_Aircraft-NARA-17341622_(crop).jpg
+[Fairey Swordfish] https://commons.wikimedia.org/wiki/File:Fairey_Swordfish_Mk_I_3-view_line_drawing.svg
+[Avro 504] https://commons.wikimedia.org/wiki/File:Avro504n_left.png
+[Gloster Sea Gladiator] https://commons.wikimedia.org/wiki/File:Gloster_Gladiator_7985K.jpg
+[de Havilland Vampire] https://commons.wikimedia.org/wiki/File:De_Havilland_Vampire_FB5_3-view_silhouette.jpg
+[de Havilland Sea Vampire] https://commons.wikimedia.org/wiki/File:De_Havilland_Vampire_FB5_3-view_silhouette.jpg
+*Both versions of the Eurofighter (BRITISH EMPIRE, EUROPE) https://commons.wikimedia.org/wiki/File:Eurofighter_Typhoon_FGR.4_%27ZK356%27_(35359259191).jpg
+[Harrier] https://en.wikipedia.org/wiki/File:Hawker_P._1127_-_NASA.jpg
+[Seaplane tender] https://commons.wikimedia.org/wiki/File:HMS_Hermes_Dar_es_Salaam1907-14.jpg
+[Seaplane] https://www.flaticon.com/free-icon/plane_5723380?term=seaplane&page=1&position=90&origin=search&related_id=5723380
+[Walking Tower] https://www.flaticon.com/free-icon/tower_3328528?related_id=3328525&origin=search
 
 
 
@@ -326,7 +351,7 @@ The Magic Circles <a href="https://www.flaticon.com/free-icons/magic" title="mag
 [Cephalopod Workforce] https://www.flaticon.com/free-icon/octopus_4551973 
 [Cephalopod Barracks] https://www.flaticon.com/free-icon/octopus_4551973
 [Empire State Building] <a href="https://www.flaticon.com/free-icons/empire-state-building" title="empire state building icons">Empire state building icons created by Victoruler - Flaticon</a>
-[London Bridge] <a href="https://www.flaticon.com/free-icons/england" title="england icons">England icons created by edt.im - Flaticon</a>
+[London Bridge] https://www.flaticon.com/free-icon/tower-bridge_774248?related_id=774197&origin=search
 [Advanced Biofuel Facility] https://www.flaticon.com/free-icon/oil-refinery_18137085
 [Coal Infuser] https://www.flaticon.com/free-icon/refinery_17984841
 [Coal Manufactory] https://www.flaticon.com/free-icon/air-pollution_9645612?related_id=9649715&origin=search
@@ -397,6 +422,11 @@ The Magic Circles <a href="https://www.flaticon.com/free-icons/magic" title="mag
 [Chief's Stable] Based on cavalry from the vanilla game
 [National Bull Riding Tournament] https://www.flaticon.com/free-icon/bull_15306717
 [Local Bull Riding Tournament] https://www.flaticon.com/free-icon/bull_15306717
+[Mountain Superlab] Heavily altered version of https://www.flaticon.com/free-icon/estate_14080807?term=mountain+building&page=2&position=89&origin=search&related_id=14080807
+[Dinosaurium] https://www.flaticon.com/free-icon/park_16127118
+[Duxford Aerodrome] https://www.flaticon.com/free-icon/repair_12848916
+
+
 
 
 
@@ -523,6 +553,7 @@ The following Technologic logos are from:
 
 
 
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Unused/Removed Assets are from:
@@ -539,6 +570,11 @@ Unused/Removed Assets are from:
 
 Original Sherriff Icon
 [Sheriff] https://www.flaticon.com/free-icons/footwear
+
+Original London Bridge Icon:
+[London Bridge] <a href="https://www.flaticon.com/free-icons/england" title="england icons">England icons created by edt.im - Flaticon</a>
+
+
 
 [3D model for AT-Jeep] <a href="https://www.flaticon.com/free-icons/military" title="military icons">Military icons created by smashingstocks - Flaticon</a>
 
