@@ -871,6 +871,7 @@
 		"cost": 150,
 		"requiredTech": "Navigation",
 		"upgradesTo": "Destroyer",
+		"obsoleteTech": "Energy Fields",
 		"promotions": ["Coastal Raider I", "[Privateer] ability"],
 		"attackSound": "cannon"
 	},
@@ -1192,8 +1193,9 @@
 		"movement": 5,
 		"strength": 40,
 		"cost": 375,
-	//	"upgradesTo": "Shielded Carrier", //Perhaps will instead make em upgrade to heavy carrier if added
+		"upgradesTo": "Shielded Carrier", //Perhaps will instead make them upgrade to heavy carriers i add them
 		"requiredTech": "Electronics",
+		"obsoleteTech": "High Energy Theory",
 		"uniques": ["Cannot attack", "Can carry [2] [Aircraft] units"]
 	},
 	{
@@ -1220,7 +1222,7 @@
 		"interceptRange": 2,
 		"cost": 375,
 		"upgradesTo": "Near Future Destroyer",
-	//	"obsoleteTech": "Energy Fields",	//There bt default may change
+		"obsoleteTech": "Energy Fields",
 		"requiredTech": "Combustion",
 		"uniques": ["Can see invisible [Submarine] units", "[40]% chance to intercept air attacks",
 			"Withdraws before melee combat <with [80]% chance>", "[+100]% Strength <vs [Submarine] units>"],
@@ -1336,6 +1338,22 @@
 		"attackSound": "tankshot"
 	},
 	{
+		// "Hovering unit" unique gives ability to get into impassable tiles - and only that (no vision bonus or flying over ocean)
+		// Unit embarks like any other ground unit and has penalty for attacking over river or from embarked state
+		"name": "Helicopter Gunship",
+		"unitType": "Helicopter",
+		"movement": 6,
+		"strength": 60,
+		"cost": 425,
+		"requiredTech": "Computers",
+		"upgradesTo": "Near Future Helicopter Gunship",
+		"obsoleteTech": "Large-Scale Invisibility",
+		"requiredResource": "Aluminum",
+		"uniques": ["[+100]% Strength <vs [Armored] units>", "No defensive terrain bonus", "Can move after attacking",
+			"All tiles cost 1 movement", "Ignores Zone of Control", "Unable to capture cities", "Never appears as a Barbarian unit"],
+		"attackSound": "machinegun"
+	},
+	{
 		"name": "Modern Armor",
 		"unitType": "Armored",
 		"movement": 5,
@@ -1358,6 +1376,7 @@
 		"interceptRange": 2,
 		"cost": 425,
 		"requiredTech": "Robotics",
+		"obsoleteTech": "Solar Era Explosives",
 		"upgradesTo": "Shielded Missile Ship",
 		"uniques": ["[100]% chance to intercept air attacks", "Can see invisible [Submarine] units",
 			"Can carry [3] [Missile] units", "[+100]% Strength <vs [Submarine] units>", "Never appears as a Barbarian unit"],
@@ -1721,6 +1740,7 @@
 		"strength": 100,
 		"cost": 450,
 		"requiredTech": "Combined Arms",
+		"obsoleteTech": "Crystal Based Shielding",
 		"requiredResource": "Oil",
 		"upgradesTo": "Merkava II",
 		"uniques": ["Can move after attacking","No defensive terrain bonus"],
@@ -1735,6 +1755,7 @@
 		"strength": 125,
 		"cost": 450,
 		"requiredTech": "Combined Arms",
+		"obsoleteTech": "Crystal Based Shielding",
 		"requiredResource": "Iron",
 		"upgradesTo": "Merkava II",
 		"uniques": ["Can move after attacking","No defensive terrain bonus"],
@@ -3002,7 +3023,8 @@
 		"cost": 500,
 		"requiredTech": "Mobile Tactics",
 		"requiredResource": "Aluminum",
-		"uniques": ["[50]% chance to intercept air attacks", 
+		"uniques": ["[50]% chance to intercept air attacks",
+			    "[1] additional attacks per turn"	//De facto 2 more thanks to logistics
 			    "[+200]% Strength <vs [Armored] units>", 
 			    "[+200]% Strength <vs [Mounted] units>", 
 			    "[+200]% Strength <vs [Ranged Gunpowder] units>", 
@@ -3869,6 +3891,156 @@
 		"upgradesTo": "Giant Shielded Golem",
 		"attackSound": "metalhit"
 	},
+
+
+	{
+		// "Hovering unit" unique gives ability to get into impassable tiles - and only that (no vision bonus or flying over ocean)
+		// Unit embarks like any other ground unit and has penalty for attacking over river or from embarked state
+		"name": "Harpy",
+		"replaces": "Helicopter Gunship",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Helicopter",
+		"movement": 8,
+		"strength": 45,
+		"cost": 380,
+		"requiredTech": "Computers",
+		"upgradesTo": "Near Future Helicopter Gunship",
+		"obsoleteTech": "Material Mixing",
+		"requiredResource": "Iron",
+		"uniques": ["[+75]% Strength <vs [Armored] units>", "No defensive terrain bonus", "Can move after attacking",
+			"All tiles cost 1 movement", "Ignores Zone of Control", "Unable to capture cities", "Never appears as a Barbarian unit"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Harpy Swarm",
+		"replaces": "Near Future Helicopter Gunship",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Helicopter",
+		"movement": 8,
+		"strength": 60,
+		"cost": 500,
+		"requiredTech": "Electronic Warfare",
+	//	"obsoleteTech": "Material Mixing",		//No obsolete tech just yet
+	//	"upgradesTo": "Invisible Attack Helicopter", 	//No upgrade here
+		"uniques": ["[+75]% Strength <vs [Armored] units>", "[1] additional attacks per turn", "Consumes [3] [Iron]",
+			"No defensive terrain bonus", "Can move after attacking", "Can see over obstacles"
+			"All tiles cost 1 movement", "Ignores Zone of Control", "Unable to capture cities", "Never appears as a Barbarian unit","[+1] Sight"],
+		"attackSound": "machinegun"
+	},
+
+	{	//Menace to those without cover
+		"name": "Harpy Assassin",
+		"replaces": "Invisible Attack Helicopter",
+		"uniqueTo": "Magic Empire",
+		"unitType": "Helicopter",
+		"movement": 5,	//Lowered speed for stealth
+		"strength": 120,
+		"cost": 680,
+		"requiredTech": "Invisibility",
+		"uniques": ["[+200]% Strength <vs [Sword] units>",
+			    "[+200]% Strength <vs [Gunpowder] units>", 
+			    "[+200]% Strength <vs [Ranged Gunpowder] units>",
+			    "[+400]% Strength <vs [Archery] units>",
+			"No defensive terrain bonus", "Can move after attacking", "Can see over obstacles"
+			"All tiles cost 1 movement", "Ignores Zone of Control", "Unable to capture cities", "Never appears as a Barbarian unit","[+1] Sight"
+			"Consumes [1] [Silver]","Consumes [1] [Iron]"],
+		"promotions": ["Cloaking"],
+		"attackSound": "machinegun"
+	},
+
+	{
+		"name": "Walking Tower",
+		"unitType": "Armored",
+		"uniqueTo": "Magic Empire",
+		"replaces": "Shielded Mech MK-III",
+		"movement": 2,
+		"strength": 605,
+		"rangedStrength": 324,
+		"range": 2,
+		"cost": 2260,
+		"requiredTech": "Superstructures",
+		"uniques": [
+				//Armoured	
+			   "No defensive terrain bonus", "Never appears as a Barbarian unit",
+				//Transport Cappacity + Air Support
+			   "Can carry [4] [Aircraft] units", "Can carry [1] [SRM] units",
+			   "[2] free [Adult Dragon] units appear"	//Originally wasnt suposed to be added but after testing it fits well (especially for recon)
+				//Abilities
+			   "Destroys tile improvements when attacking"
+           		   "Can instantly construct a [Fort] improvement <by consuming this unit>",
+           		   "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+				//Bonuses
+			   "All tiles cost 1 movement",
+				//Cost and additional restrictions
+			   "Cannot embark", "Unable to pillage tiles", "Unable to capture cities",
+			   "Requires at least [5] population", "Consumes [3] [Uranium]",],
+		"promotions": ["Logistics",],
+		"attackSound": "gdrAttack"
+	},
+
+	/*
+	{
+		"name": "Walking Tower",
+		"unitType": "Armored",
+		"uniqueTo": "Magic Empire",
+		"replaces": "Shielded Mech MK-III",
+		"movement": 2,
+		"strength": 605,
+		"rangedStrength": 324,
+		"range": 2,
+		"cost": 1,
+	//	"requiredTech": "Asteroid Mining",
+		"uniques": [
+				//Armoured	
+			   "No defensive terrain bonus", "Never appears as a Barbarian unit",
+			   "[2] free [Adult Dragon] units appear"
+				//Transport Cappacity
+			   "Can carry [4] [Aircraft] units", "Can carry [1] [SRM] units",
+				//Abilities
+			   "Founds a new puppet city <by consuming this unit>", "Destroys tile improvements when attacking"
+           		   "Can instantly construct a [Fort] improvement <by consuming this unit>",
+           		   "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+				//Bonuses
+			   "Ignores terrain cost",
+				//Cost and additional restrictions
+			   "Cannot embark", "Requires at least [1] population",],
+		"promotions": ["Logistics",],
+		"attackSound": "gdrAttack"
+	},
+	{
+		"name": "Walking Castle",
+		"unitType": "Armored",
+		"uniqueTo": "Magic Empire",
+		"movement": 2,
+		"strength": 605,
+		"rangedStrength": 324,
+		"range": 2,
+		"cost": 1,
+	//	"requiredTech": "Asteroid Mining",
+		"uniques": [
+				//Armoured	
+			   "No defensive terrain bonus", "Never appears as a Barbarian unit",
+			   "[2] free [Adult Dragon] units appear"
+			   "[2] free [Faerie Dragon Familiar] units appear"
+			   "[1] free [Magic Archer] units appear"
+				//Transport Cappacity
+			   "Can carry [4] [Aircraft] units", "Can carry [1] [SRM] units", "Can carry [1] [Archery] units",	//Test result: Cannot tranceport Archers
+				//Abilities
+			   "Founds a new city <by consuming this unit>", "Destroys tile improvements when attacking"
+           		   "Can instantly construct a [Fort] improvement <by consuming this unit>",
+           		   "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+				//Bonuses
+			   "All tiles cost 1 movement",
+				//Cost and additional restrictions
+			   "Cannot embark", "Requires at least [10] population",],
+		"promotions": ["Logistics",],
+		"attackSound": "gdrAttack"
+	},
+	*/
+//All tiles cost 1 movement, Ignores terrain cost
+// "Excess Food converted to Production when under construction",
+//
+
 /////////////////////////////////////////////////////////
 	{
 		"name": "Wizened Necromancer",
@@ -4240,8 +4412,387 @@
 		"uniques": ["Cannot be purchased","Unbuildable","[+100]% to Flank Attack bonuses"],
 		"attackSound": "metalhit"
 	}, 
+	{
+		"name": "Sopwith Camel",
+		"unitType": "Fighter",
+		"replaces": "Triplane",
+		"uniqueTo": "British Empire",
+		"movement": 1,
+		"strength": 38,
+		"rangedStrength": 38,
+		"range": 6,
+		"interceptRange": 6,
+		"cost": 335,
+		"requiredTech": "Flight",
+		"requiredResource": "Oil",
+		"upgradesTo": "Spitfire",
+		"obsoleteTech": "Radar",
+		"uniques": ["[55]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"promotions": ["Sortie"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Sopwith Triplane",
+		"unitType": "Fighter",
+		"uniqueTo": "British Empire",
+		"movement": 1,
+		"strength": 38,
+		"rangedStrength": 38,
+		"range": 6,
+		"interceptRange": 6,
+		"cost": 335,
+		"requiredTech": "Flight",
+		"requiredResource": "Oil",
+		"upgradesTo": "Hawker Sea Hurricane",
+		"obsoleteTech": "Radar",
+		"uniques": ["[65]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"promotions": ["Operational Range"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Royal Aircraft Factory S.E.5",
+		"unitType": "Fighter",
+	//	"replaces": "Triplane",
+		"uniqueTo": "British Empire",
+		"movement": 1,
+		"strength": 40,
+		"rangedStrength": 40,
+		"range": 7,
+		"interceptRange": 7,
+		"cost": 375,
+		"requiredTech": "Flight",
+		"requiredResource": "Oil",
+		"upgradesTo": "Spitfire",
+		"obsoleteTech": "Radar",
+		"uniques": ["[70]% chance to intercept air attacks", 
+			    "[+1] Sight","[+35]% Strength <vs [Fighter] units>",
+			    "[+150]% Strength <vs [Bomber] units>",
+			    "[+150]% Strength <vs [Helicopter] units>",
+			    ],
+		"promotions": ["Air Repair"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Handley Page Type O",
+		"replaces": "Great War Bomber",
+		"unitType": "Bomber",
+		"uniqueTo": "British Empire",
+		"movement": 1,
+		"strength": 65,
+		"rangedStrength": 80,
+		"range": 9,
+		"cost": 500,
+		"requiredTech": "Flight",
+		"requiredResource": "Oil",
+		"upgradesTo": "Bomber",
+		"obsoleteTech": "Radar",
+		"uniques": [  "Cannot be carried by [Carrier] units", "[+25]% maintenance costs"],
+		"promotions": ["Air Repair","Defensive Machine Guns",],
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Fairey Swordfish",
+		"uniqueTo": "British Empire",
+		"unitType": "Bomber",
+		"movement": 1,
+		"strength": 40,
+		"rangedStrength": 40,
+		"range": 4,
+		"cost": 290,
+		"requiredTech": "Flight",
+		"requiredResource": "Oil",
+		"upgradesTo": "Harrier",
+		"obsoleteTech": "Advanced Ballistics",	//may or may not be changed
+		"promotions": ["Targeting II",],
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Avro 504",
+		"uniqueTo": "British Empire",
+		"unitType": "Bomber",
+		"movement": 1,
+		"strength": 36,
+		"rangedStrength": 36,
+		"range": 4,
+		"interceptRange": 4,
+		"cost": 280,
+		"requiredTech": "Flight",
+		"requiredResource": "Oil",
+		"upgradesTo": "Bomber",
+		"obsoleteTech": "Radar",
+		"uniques": ["[10]% chance to intercept air attacks", "Can perform Air Sweep", "[-25]% maintenance costs"],
+		"attackSound": "bombing"
+	},
+	{
+		"name": "Hawker Hurricane",
+		"unitType": "Fighter",
+		"replaces": "Fighter",
+		"uniqueTo": "British Empire",
+		"movement": 1,
+		"strength": 42,
+		"rangedStrength": 42,
+		"range": 8,
+		"interceptRange": 8,
+		"cost": 321,
+		"requiredTech": "Radar",
+		"requiredResource": "Oil",
+		"upgradesTo": "de Havilland Vampire",
+		"uniques": ["[100]% chance to intercept air attacks",
+			    "[+150]% Strength <vs [Bomber] units>",
+			    "[+150]% Strength <vs [Helicopter] units>"],
+		"promotions": ["Sortie"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Hawker Sea Hurricane",
+		"unitType": "Fighter",
+		"uniqueTo": "British Empire",
+		"movement": 1,
+		"strength": 40,
+		"rangedStrength": 40,
+		"range": 9,
+		"interceptRange": 9,
+		"cost": 321,
+		"requiredTech": "Radar",
+		"requiredResource": "Oil",
+		"upgradesTo": "de Havilland Sea Vampire",
+		"uniques": ["[100]% chance to intercept air attacks",
+			    "[+150]% Strength <vs [Bomber] units>", 
+			    "[+150]% Strength <vs [Helicopter] units>",
+			    "[+50]% Strength <vs [Water] units>"],
+		"promotions": ["Air Repair"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Spitfire",
+		"unitType": "Fighter",
+		"uniqueTo": "British Empire",
+		"movement": 1,
+		"strength": 60,
+		"rangedStrength": 60,
+		"range": 9,
+		"interceptRange": 9,
+		"cost": 405,
+		"requiredTech": "Radar",
+		"upgradesTo": "Gloster Meteor",
+		"uniques": ["[100]% chance to intercept air attacks", 
+			    "[+175]% Strength <vs [Bomber] units>",
+			    "[+150]% Strength <vs [Helicopter] units>"
+			    "[+35]% Strength <vs [Fighter] units>"
+			    "Consumes [2] [Oil]",],
+		"promotions": ["[Spitfire] ability","Interception II","Dogfighting II"],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Seafire",
+		"unitType": "Fighter",
+		"uniqueTo": "British Empire",
+		"movement": 1,
+		"strength": 52,
+		"rangedStrength": 52,
+		"range": 9,
+		"interceptRange": 9,
+		"cost": 400,
+		"requiredTech": "Radar",
+		"upgradesTo": "Gloster Meteor",
+		"uniques": ["[100]% chance to intercept air attacks", 
+			    "[+150]% Strength <vs [Bomber] units>",
+			    "[+150]% Strength <vs [Helicopter] units>",
+			    "[+15]% Strength <vs [Fighter] units>"
+			    "[+1] Sight"
+			    "Consumes [2] [Oil]",],
+		"promotions": ["[Spitfire] ability","Air Repair","Operational Range",],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Gloster Sea Gladiator",
+		"unitType": "Fighter",
+		"uniqueTo": "British Empire",
+		"movement": 1,
+		"strength": 48,
+		"rangedStrength": 48,
+		"range": 8,
+		"interceptRange": 8,
+		"cost": 380,
+		"requiredTech": "Rocketry",
+		"upgradesTo": "de Havilland Sea Vampire",
+		"requiredResource": "Oil",
+		"uniques": ["[80]% chance to intercept air attacks", 
+			    "[+150]% Strength <vs [Bomber] units>",
+			    "[+150]% Strength <vs [Helicopter] units>",
+			    "[+10]% Strength <vs [Fighter] units>"
+			    "[+1] Sight"],
+		"promotions": ["Dogfighting II", "Sortie"],
+		"attackSound": "machinegun"
+	},
 
 
+	/*	
+	{	//TX EQUIV
+		"name": "F-84 Thunderjet",
+		"unitType": "Fighter",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 64,
+		"rangedStrength": 64,
+		"range": 9,
+		"interceptRange": 9,
+		"cost": 420,
+		"requiredTech": "Rocketry",
+		"requiredResource": "Oil",
+		"upgradesTo": "F-18 Hornet",
+		"obsoleteTech": "Advanced Ballistics",
+		"uniques": ["[100]% chance to intercept air attacks","[+155]% Strength <vs [Bomber] units>",
+			     "[+150]% Strength <vs [Helicopter] units>","[+50]% Strength <vs cities>"],
+		"promotions": ["Bombardment II"],
+		"attackSound": "jetgun"
+	},
+	{
+		"name": "Jet Fighter",
+		"unitType": "Fighter",
+		"movement": 1,
+		"strength": 75,
+		"rangedStrength": 75,
+		"range": 10,
+		"interceptRange": 10,
+		"cost": 425,
+		"requiredTech": "Lasers",
+		"requiredResource": "Aluminum",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"attackSound": "jetgun"
+	},
+	*/
+
+
+	{
+		"name": "Gloster Meteor",
+		"unitType": "Fighter",
+		"uniqueTo": "British Empire",
+		"movement": 1,
+		"strength": 64,
+		"rangedStrength": 64,
+		"range": 9,
+		"interceptRange": 9,
+		"cost": 420,
+		"requiredTech": "Rocketry",
+		"requiredResource": "Oil",
+		"upgradesTo": "Eurofighter Typhoon",
+		"obsoleteTech": "Robotics",
+		"uniques": ["[80]% chance to intercept air attacks","[+170]% Strength <vs [Bomber] units>",
+			     "[+150]% Strength <vs [Helicopter] units>","[+50]% Strength <vs cities>"],
+		"promotions": ["Interception I"],
+		"attackSound": "jetgun"
+	},
+	{
+		"name": "de Havilland Vampire",
+		"unitType": "Fighter",
+		"uniqueTo": "British Empire",
+		"movement": 1,
+		"strength": 62,
+		"rangedStrength": 62,
+		"range": 9,
+		"interceptRange": 9,
+		"cost": 400,
+		"requiredTech": "Rocketry",
+		"requiredResource": "Oil",
+		"upgradesTo": "Jet Fighter",
+		"obsoleteTech": "Lasers",
+	//	"obsoleteTech": "Advanced Ballistics",
+		"uniques": ["[75]% chance to intercept air attacks","[+150]% Strength <vs [Bomber] units>",
+			    "[+50]% Strength <vs [Gunpowder] units>"
+			    "[+150]% Strength <vs [Helicopter] units>","[+50]% Strength <vs cities>"],
+		"promotions": ["Dogfighting I"],
+		"attackSound": "jetgun"
+	},
+	{
+		"name": "de Havilland Sea Vampire",
+		"unitType": "Fighter",
+		"uniqueTo": "British Empire",
+		"movement": 1,
+		"strength": 62,
+		"rangedStrength": 62,
+		"range": 9,
+		"interceptRange": 9,
+		"cost": 400,
+		"requiredTech": "Rocketry",
+		"requiredResource": "Oil",
+		"upgradesTo": "Harrier",
+		"obsoleteTech": "Advanced Ballistics",
+		"uniques": ["[75]% chance to intercept air attacks","[+150]% Strength <vs [Bomber] units>",
+			    "[+50]% Strength <vs [Water] units>"
+			    "[+150]% Strength <vs [Helicopter] units>","[+50]% Strength <vs cities>"],
+		"promotions": ["Dogfighting I"],
+		"attackSound": "jetgun"
+	},
+	{
+		"name": "Eurofighter Typhoon",
+		"unitType": "Fighter",
+		"uniqueTo": "British Empire",
+		"movement": 1,
+		"strength": 82,
+		"rangedStrength": 82,
+		"range": 11,
+		"interceptRange": 11,
+		"cost": 385,
+		"requiredTech": "Robotics",
+		"upgradesTo": "Atmospheric Fighter",
+		"requiredResource": "Aluminum",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", 
+			   "[+150]% Strength <vs [Helicopter] units>","[+1] Sight","[-5]% maintenance costs",],
+		"promotions": ["Dogfighting II","Interception I","Air Repair"],
+		"attackSound": "jetgun"
+	},
+	{
+		"name": "Harrier", //Harrier jump jet
+		"unitType": "Fighter",
+		"uniqueTo": "British Empire",
+		"movement": 1,
+		"strength": 77,
+		"rangedStrength": 77,
+		"range": 8,
+		"interceptRange": 8,
+		"cost": 390,
+		"requiredTech": "Advanced Ballistics",
+		"upgradesTo": "Atmospheric Fighter",
+		"requiredResource": "Oil",
+		"uniques": ["[1] additional attacks per turn"
+			    "[100]% chance to intercept air attacks",
+			    "[+150]% Strength <vs [Bomber] units>", 
+			    "[+150]% Strength <vs [Helicopter] units>",
+			    "[+1] Sight",
+			    "[+5]% maintenance costs",],
+		"promotions": ["[Harrier] ability"],
+		"attackSound": "jetgun"
+	},
+	{
+        	"name": "Seaplane tender",
+		"unitType": "Seaplane tender",
+		"uniqueTo": "British Empire",
+		"movement": 5,
+		"strength": 35,
+		"rangedStrength": 40,
+		"cost": 340,
+		"hurryCostModifier": 40,
+		"requiredResource": "Coal",
+		"requiredTech": "Flight",
+		"obsoleteTech": "Advanced Ballistics",
+		"uniques": ["[+1] Sight", "[1] free [Seaplane] units appear"],
+	//	"upgradesTo": "Carrier",
+	},
+	{
+        	"name": "Seaplane",
+		"unitType": "Seaplane",
+		"uniqueTo": "British Empire",
+		"movement": 4,
+		"strength": 33,
+		"rangedStrength": 33,
+		"cost": 280,
+		"requiredResource": "Oil",
+		"requiredTech": "Flight",
+		"uniques": ["[30]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"obsoleteTech": "Advanced Ballistics",
+		"uniques": ["[+2] Sight",]
+	},
 
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -4582,7 +5133,8 @@
 		"strength": 82,
 		"cost": 390,
 		"requiredTech": "Combined Arms",
-		"upgradesTo": "Modern Armor",
+		"obsoleteTech": "High Energy Theory",
+		"upgradesTo": "Nicho Decimator",
 		"uniques": ["Can move after attacking",
 			    "Consumes [1] [Oil]",
 			    "Consumes [1] [Iron]",
@@ -4602,6 +5154,7 @@
 		"requiredTech": "Lasers",
 		"requiredResource": "Aluminum",
 		"upgradesTo": "Near Future Armor",
+		"obsoleteTech": "Crystal Based Shielding",
 		"uniques": ["Can move after attacking", 
 			    "Consumes [1] [Oil]",
 			    "Consumes [1] [Iron]",
@@ -4620,6 +5173,7 @@
 		"requiredTech": "Lasers",
 		"requiredResource": "Aluminum",
 		"upgradesTo": "Giant Death Robot",
+		"obsoleteTech": "Crystal Based Shielding",
 		"uniques": ["Can move after attacking", 
 			    "Consumes [2] [Oil]",
 			    "Consumes [1] [Iron]",
@@ -4767,9 +5321,60 @@
 		"promotions": ["Blitz","[Ice Skidder] ability"]
 		"attackSound": "Dragon"
 	},
-
-
-
+	{
+		"name": "Nistak Tank",
+		"replaces": "Solar Tank",
+		"uniqueTo": "Nicho Clans",
+		"unitType": "Armored",
+		"movement": 6,
+		"strength": 450,
+		"rangedStrength": 285,
+		"range": 2,
+		"interceptRange": 1,
+		"cost": 720,
+		"requiredTech": "Crystal Based Shielding",
+		"upgradesTo": "Crystal Shielded Solar Tank",
+		"uniques": [
+				//Drone & SRM Defence
+			    "[50]% chance to intercept air attacks", 
+			    "[+25]% Strength <vs [Drone] units>"
+			    "[+20]% Strength <vs [SRM] units>"
+				//Costs
+			    "Consumes [1] [Aluminum]",
+			    "Consumes [1] [Copper]",
+				//Other
+			    "Can move after attacking", 
+			    "No defensive terrain bonus"],
+		"promotions": ["Light Energy Shields","[Nicho] ability"], 
+		"attackSound": "tankshot"
+	},
+	{ 
+		"name": "Mukko Solar Tank",
+		"replaces": "Crystal Shielded Solar Tank",
+		"uniqueTo": "Nicho Clans",
+		"unitType": "Armored",
+		"movement": 6,
+		"strength": 480,
+		"rangedStrength": 290,
+		"range": 2,
+		"interceptRange": 1,
+		"cost": 820,
+		"requiredTech": "Crystal Based Shielding",
+		"uniques": [
+				//Drone & SRM Defence
+			    "[50]% chance to intercept air attacks", 
+			    "[+25]% Strength <vs [Drone] units>"
+			    "[+20]% Strength <vs [SRM] units>"
+				//Costs
+			    "Consumes [1] [Aluminum]",
+			    "Consumes [1] [Gems]",
+				//Other
+			    "Can move after attacking", 
+			    "No defensive terrain bonus",
+			    "Never appears as a Barbarian unit"],
+		"promotions": ["Light Crystal Shields","[Nicho] ability"], 
+		"attackSound": "tankshot"
+	},
 
 
 
@@ -4923,7 +5528,7 @@
 
 
 
-
+			//Ero 
 	////////////////////European Union///////////////////////
 
 
@@ -4970,7 +5575,67 @@
 		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
 		"attackSound": "tankshot"
 	},
-
+	{	//Long range
+		"name": "EF2000",	//Germany, Italy, Spain, 
+		"unitType": "Fighter",
+		"uniqueTo": "European Union",
+		"movement": 1,
+		"strength": 82,
+		"rangedStrength": 82,
+		"range": 11,
+		"interceptRange": 11,
+		"cost": 385,
+		"requiredTech": "Robotics",
+		"requiredResource": "Aluminum",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", 
+			   "[+150]% Strength <vs [Helicopter] units>","[+1] Sight","[-5]% maintenance costs",],
+		"promotions": ["Dogfighting II","Interception I","Air Repair"],
+		"attackSound": "jetgun"
+	},
+	{	//Power
+		"name": "Dassault Rafale",	//France, Greece, Croatia,
+		"replaces": "Jet Fighter",
+		"unitType": "Fighter",
+		"uniqueTo": "European Union",
+		"movement": 1,
+		"strength": 95,
+		"rangedStrength": 95,
+		"range": 9,
+		"interceptRange": 9,
+		"cost": 435,
+		"requiredTech": "Lasers",
+		"requiredResource": "Aluminum",
+		"uniques": ["[100]% chance to intercept air attacks",
+			    "[+150]% Strength <vs [Bomber] units>",
+			    "[+150]% Strength <vs [Helicopter] units>",
+			    "[+1] Sight"
+			    "[+15]% maintenance costs",
+			    //"Consumes [1] [Heavy Oil]"
+			    "Consumes [1] [Oil]"
+				],
+		"promotions": ["Sortie","Interception I","Air Repair"],
+		"attackSound": "jetgun"
+	},
+	{	//Interceptions
+		"name": "JAS 39 Gripen",	//Sweden, Czechia, Hungary,
+		"uniqueTo": "European Union",
+		"unitType": "Fighter",
+		"movement": 1,
+		"strength": 78,
+		"rangedStrength": 78,
+		"range": 10,
+		"interceptRange": 10,
+		"cost": 380,
+		"requiredTech": "Advanced Ballistics",
+		"requiredResource": "Aluminum",
+		"uniques": ["[1] extra interceptions may be made per turn", //De facto 3 due to Sortie
+			   "[100]% chance to intercept air attacks", 
+			   "[+150]% Strength <vs [Bomber] units>", 
+			   "[+150]% Strength <vs [Helicopter] units>","[+1] Sight",
+			   "[+5]% maintenance costs",],
+		"promotions": ["Sortie","Interception II",],
+		"attackSound": "jetgun"
+	},
 	{
 		"name": "Union Bomb",
 		"replaces": "Infantry Clearing Nuke",
@@ -4997,7 +5662,6 @@
 				],   //,
 		"attackSound": "nuke"
 	},
-
 
 
 
@@ -5139,12 +5803,34 @@
 			    "[+300]% Strength <vs [Submarine] units>"],
 		"attackSound": "shot"
 	},
+	{
+		"name": "Near Future Helicopter Gunship",
+		"unitType": "Helicopter",
+		"movement": 6,
+		"strength": 100,
+		"cost": 465,
+		"requiredTech": "Electronic Warfare",
+		"obsoleteTech": "Material Mixing",
+		"upgradesTo": "Invisible Attack Helicopter",
+		"requiredResource": "Aluminum",
+		"uniques": ["[+100]% Strength <vs [Armored] units>", "No defensive terrain bonus", "Can move after attacking", "Can see over obstacles"
+			"All tiles cost 1 movement", "Ignores Zone of Control", "Unable to capture cities", "Never appears as a Barbarian unit","[+1] Sight"],
+		"attackSound": "machinegun"
+	},
 
-
-
-
-
-
+	{
+		"name": "Invisible Attack Helicopter",
+		"unitType": "Helicopter",
+		"movement": 7,
+		"strength": 250,
+		"cost": 800,
+		"requiredTech": "Large-Scale Invisibility",
+		"uniques": ["[+100]% Strength <vs [Armored] units>", "No defensive terrain bonus", "Can move after attacking", "Can see over obstacles"
+			"All tiles cost 1 movement", "Ignores Zone of Control", "Unable to capture cities", "Never appears as a Barbarian unit","[+1] Sight"
+			"Consumes [1] [Silver]","Consumes [1] [Aluminum]"],
+		"promotions": ["Cloaking"],
+		"attackSound": "machinegun"
+	},
 
 	{
 		"name": "Guided Missile",
@@ -5892,7 +6578,7 @@
 		"requiredResource": "Silver",
 		"requiredTech": "Large-Scale Invisibility",
 		"promotions": ["Cloaking","Barrage I","Ambush I"],
-		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+		"uniques": ["Cannot be purchased","Never appears as a Barbarian unit" //Can be built cannot be bought
 			   "[+50]% Strength <vs [Gunpowder] units>",
 			   "[+50]% Strength <vs [Archery] units>",
 			   "[+50]% Strength <vs [Sword] units>",
@@ -5916,6 +6602,51 @@
 			    "Can move after attacking", 
 			    "No defensive terrain bonus"],
 		"attackSound": "tankshot"
+	},
+
+
+	{
+		"name": "Mortar",
+		"unitType": "Ranged Gunpowder",
+		"movement": 2
+		"strength": 65,
+		"rangedStrength": 60,
+		"range": 3,
+		"cost": 300,
+		"obsoleteTech": "Material Mixing",
+		"requiredTech": "Nanotechnology",
+		"upgradesTo": "Stealth Flame Mortar",
+		"promotions": ["Indirect Fire"],
+		"uniques": ["Must set up to ranged attack"
+			    "[+40]% Strength <vs [Sword] units> <when attacking>",
+			    "[+40]% Strength <vs [Archery] units> <when attacking>",
+			    "[+40]% Strength <vs [Gunpowder] units> <when attacking>",
+			    "[+40]% Strength <vs [Ranged Gunpowder] units> <when attacking>",
+			    "[+20]% Strength <vs [Melee Amphibious] units> <when attacking>",
+			   ],
+		"attackSound": "artillery"
+	},
+	{
+		"name": "Stealth Flame Mortar",
+		"unitType": "Ranged Gunpowder",
+		"movement": 3
+		"strength": 180,
+		"rangedStrength": 450,
+		"range": 3,
+		"cost": 850,
+		"requiredResource": "Silver",
+		"requiredTech": "Material Mixing",
+		"promotions": ["Cloaking","Indirect Fire"],
+		"uniques": ["Never appears as a Barbarian unit"
+			    "Must set up to ranged attack"
+			    "Destroys tile improvements when attacking"
+			    "[+40]% Strength <vs [Sword] units> <when attacking>",
+			    "[+40]% Strength <vs [Archery] units> <when attacking>",
+			    "[+40]% Strength <vs [Gunpowder] units> <when attacking>",
+			    "[+40]% Strength <vs [Ranged Gunpowder] units> <when attacking>",
+			    "[+20]% Strength <vs [Melee Amphibious] units> <when attacking>",
+			   ],
+		"attackSound": "artillery"
 	},
 
 	{
@@ -6196,7 +6927,7 @@
 		"requiredResource": "Gems",
 		"requiredTech": "Detection Crystals",
 	//	"obsoleteTech": "Printing Press",
-		"uniques": ["Can see invisible [Gunpowder] units","Can see invisible [Scout] units","Can see invisible [Armored] units",
+		"uniques": ["Can see invisible [Gunpowder] units","Can see invisible [Scout] units","Can see invisible [Armored] units","Can see invisible [Helicopter] units", 
 				"Unbuildable","[15]% chance to intercept air attacks", "[+3] Sight"],
 		"attackSound": "nonmetalhit"
 	},

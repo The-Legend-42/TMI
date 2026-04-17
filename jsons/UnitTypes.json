@@ -1,11 +1,11 @@
 [
+
+		//General Domain Air and Space
     {
         "name": "Drone",
         "movementType": "Air",
         "uniques": ["Aircraft", "[+2] Sight", "Can see over obstacles", "Can perform Air Sweep"]
     },
-
-
     	
     {
 	 /////// SRM Stands for Short Range Missile //////
@@ -21,7 +21,21 @@
         "movementType": "Air",
         "uniques": ["Aircraft", "[+6] Sight", "Can see over obstacles"]
     }
-
+    { 
+        "name": "Seaplane",
+        "movementType": "Air",
+        "uniques": ["Can only be built <in [Coastal] cities>", 
+		    "Cannot be carried by [Sword] units", 
+		    "Cannot be carried by [Gunpowder] units", 
+		    "Cannot be carried by [Archery] units", 
+		    "Cannot be carried by [Ranged Gunpowder] units", 
+		    "Cannot be carried by [Scout] units", 
+		    "Cannot be carried by [Mounted] units", 
+		    "Cannot be carried by [Siege] units", 
+		    "Cannot be carried by [Armored] units",
+	//	    "Cannot be carried by [Carrier] units",  //Removed to avoid bugs
+		   "Aircraft", "[+4] Sight", "Can see over obstacles", "Can perform Air Sweep"]
+    }
     { 
         "name": "Space Fighter",
         "movementType": "Air",
@@ -36,18 +50,29 @@
 		
 
 
+
+
+		//General Domain Amphibious
 	//////AMPHIBS
     { 
         "name": "Amphibious",
         "movementType": "Land",
-        "uniques": ["[+2] Movement <when [Embarked]>"]
+        "uniques": ["[+2] Movement <when [Embarked]>", "[+1] Sight <when [Embarked]>"]
     },
     { 
         "name": "Melee Amphibious",
         "movementType": "Land",
-        "uniques": ["[+2] Movement <when [Embarked]>","Eliminates combat penalty for attacking over a river", "Eliminates combat penalty for attacking across a coast"]
+        "uniques": ["[+2] Movement <when [Embarked]>","Eliminates combat penalty for attacking over a river", 
+		    "[+1] Sight <when [Embarked]>", "Eliminates combat penalty for attacking across a coast"]
     },
 	///May add in Melee Amphibious","Ranged Amphibious","Armored Amphibious"
 
+
+	//General Domain Sea, Lake, Oceanic
+    {
+        "name": "Seaplane tender",
+        "uniques": ["Can carry [1] [Seaplane] units"]
+        "movementType": "Water"
+    },
 
 ]

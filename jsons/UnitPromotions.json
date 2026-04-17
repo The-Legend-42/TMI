@@ -148,6 +148,28 @@
 		"uniques": ["[+1] Movement"],
 	},
 
+	{
+		"name": "[Spitfire] ability",
+		"uniques": [
+			"[2] extra interceptions may be made per turn",
+			"[1] additional attacks per turn",]
+	},
+	{
+		"name": "Battle of Britain",
+		"uniques": ["[+15]% Strength when performing Air Sweep","[+15]% Damage when intercepting", "Damage taken from interception reduced by [10]%",],
+	},
+	{
+		"name": "Defensive Machine Guns",
+		"uniques": ["Damage taken from interception reduced by [15]%"],
+	},
+	{
+		"name": "[Harrier] ability",
+		"uniques": [
+			"[+25]% Strength <vs [Water] units>",
+			"[+25]% Strength <vs [Armored] units>",
+			"[+25]% Damage when intercepting",
+			"[1] additional attacks per turn",]
+	},
 /////////////////////////////////////Drones//////////////////////
 
 
@@ -175,12 +197,12 @@
         "row": 3
 	},
 
-///////////////////////////////////Air Recon//////////////////////////////////////////////////
+///////////////////////////////////Air Recon and Seaplane//////////////////////////////////////////////////
 
 	{
 		"name": "Sky Eye I",
 		"uniques": ["[+1] Sight","Damage taken from interception reduced by [10]%",],
-		"unitTypes": ["Air Recon"],
+		"unitTypes": ["Air Recon", "Seaplane"],
         "column": 29,
         "row": 1
 	},
@@ -188,7 +210,7 @@
 		"name": "Sky Eye II",
 		"prerequisites": ["Sky Eye I"],
 		"uniques": ["[+1] Sight","Damage taken from interception reduced by [10]%",],
-		"unitTypes": ["Air Recon"],
+		"unitTypes": ["Air Recon", "Seaplane"],
         "column": 29,
         "row": 2
 	},
@@ -196,7 +218,7 @@
 		"name": "Sky Eye III",
 		"prerequisites": ["Sky Eye II"],
 		"uniques": ["[+1] Sight","Damage taken from interception reduced by [10]%",],
-		"unitTypes": ["Air Recon"],
+		"unitTypes": ["Air Recon", "Seaplane"],
         "column": 29,
         "row": 3
 	},
@@ -381,9 +403,9 @@
 
 	{
 		"name": "Medic",
-		"prerequisites": ["Shock I", "Drill I", "Scouting II", "Survivalism II"],
+		"prerequisites": ["Shock I", "Drill I", "Scouting II", "Survivalism II", "Additional Capacity I",],
 		"uniques": ["All adjacent units heal [+5] HP when healing", "[-50]% weight to this choice for AI decisions"],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Melee Amphibious"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Melee Amphibious","Seaplane tender"],
         "column": 10, // after scout base
         "row": 1
 	},
@@ -391,7 +413,7 @@
 		"name": "Medic II",
 		"prerequisites": ["Medic"],
 		"uniques": ["[+5] HP when healing <in [Foreign Land] tiles>", "All adjacent units heal [+5] HP when healing"],
-		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Melee Amphibious"],
+		"unitTypes": ["Sword","Gunpowder","Mounted","Scout","Melee Amphibious","Seaplane tender"],
         "column": 10,
         "row": 2
 	},
@@ -427,7 +449,23 @@
         "column": 28,
         "row": 1
 	},
+//////////////////////////Drone transport//////////////
 
+	{
+		"name": "Additional Capacity I",
+		"uniques": ["Can carry [1] extra [Seaplane] units"],
+		"unitTypes": ["Seaplane tender"],
+        "column": 31,
+        "row": 1
+	},	
+	{
+		"name": "Additional Capacity II",
+		"prerequisites": ["Additional Capacity I",],
+		"uniques": ["Can carry [1] extra [Air] units"],//Any air unit
+		"unitTypes": ["Seaplane tender"],
+        "column": 31,
+        "row": 2
+	},
 
 
 ]

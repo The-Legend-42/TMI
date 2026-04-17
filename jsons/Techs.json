@@ -1043,7 +1043,7 @@
 				"row": 3,
 				"prerequisites": ["Large-Scale Invisibility","Crystal Based Shielding"],
 				"quote": "'Place of the sky Palace is here' - T-L",
-                "civilopediaText": [{"text": "Cystals created to detect what was once invisible"}]
+                "civilopediaText": [{"text": "Crystals created to detect what was once invisible"}]
 			},
 			{
 				"name": "Material Mixing",	//"Combined Effects",
