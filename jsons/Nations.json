@@ -47,7 +47,7 @@
 			"Yad Mordehai","Eilot","Yotvata","Kiryat Shomnah","Kiryat Arba","Matta","Givat Smoo'el","Lehavim","Savyon",
 			"Or-yehuda","Yarka","Yarka","Kibutz Be'eri","Hod ha-sharon","Hertzelia","Beit Jann","Bat Yam","Rahhat",
 			"Kiryat Gatt","Kaisaria","Rammat ha-Sharon","Kfar Kama","Rosh Pina","Mitspe ramon","Offekim","Kibutz Ortal"]
-        	"spyNames": ["Ron", "Dan", "Israel", "Yossef", "Prof. Khohen", "Yassmin", "Maital", "Moshico", "Sappir", "Avram", "Allona", "Ommer"]
+        	"spyNames": ["Ron", "Dan", "Israel", "Yossef", "Prof. Khohen", "Yassmin", "Maital", "Moshico", "Sappir", "Avram", "Allona", "Ommer", "Lottem","Magnoov"]
 	},
 	{
 		"name": "Aliens",
@@ -84,7 +84,7 @@
 			"Q'Phulnoith","Q'Creved","Q'Xirqen","Q'Gax","Q'Threqals","Q'Bhilmuk","Q'Mazea","Q'Zomirs","Q'Drorkrex","Q'Honkrath",
 			"Q'Zulgra","Q'Vahars","Q'Crindith","Q'Raavraes","Q'Bhoknais","Qho'Qru","Q'Dateatz","Q'Elnad","Q'Izien","Qol'Ell",
 			"Q'Dhihien","Q'Naquiel","Q'Ugneon","Q'Straquks","Q'Nulptr","Q'Ohfahl"]
-        	"spyNames": ["Q'ueb","Q'uoi","Q'uuman Being", "Q'uspicious", "Q'urmal", "Q'elgi", "Q'otti", "Q'ench", "Q'orrocan", "Q'appa", "Q'ighed", "Q'rey"]
+        	"spyNames": ["Q'ueb","Q'uoi","Q'uuman Being", "Q'uspicious", "Q'urmal", "Q'elgi", "Q'otti", "Q'ench", "Q'orrocan", "Q'appa", "Q'ighed", "Q'rey", "Q'est"]
 	},
 	{
 		"name": "Republic of Texas",
@@ -117,7 +117,7 @@
 			   "Wichita Falls", "Conroe", "San Angelo", "Mission", "Bryan", "Horizon City", "Cloverleaf", "Marshall", 
 			   "Bee Cave", "Vidor", "Englans", "Clute", "Port Lavaca", "Horseshoe Bay", "Zapata", "Wyldwood", "Diboll",
 			   "Progreso", "Doffing", "Gilmer", "Mineola", "Terrell Hills", "Pilot Point"],
-        	"spyNames": ["Bud", "Felix", "Dennis", "Tex", "Prof. Red", "Olivia", "Mary", "Sebastian", "Scarlett", "Amelia", "Doc", "Bob"]
+        	"spyNames": ["Bud", "Felix", "Dennis", "Tex", "Prof. Red", "Olivia", "Mary", "Sebastian", "Scarlett", "Amelia", "Doc", "Bob", "Allen"]
 	},
 	{
 		"name": "Magic Empire",
@@ -150,7 +150,7 @@
 			"Tuttoob","Pumshal","Pumshak","Markan Sappiros","Rammed","Affla","Haragos","Rabgab","Mooruk","Borsnic", "Dur-Magotter","Uqurisk",
 			"Gutta","Urkhai","Dur-Urkesh","Awon","Hafyrita","Dur-Naggos","Shubbatos","Tivan","Veh-Taggotoob","Derennek","Kainz","Na-Sivhai",
 			"šo-hassk","Vizzyo-sa"],
-     	  	"spyNames": ["Rimser", "Shmendis", "Itipesh", "Hahamatzik", "Hišig", "Sharra-ura", "Emmesh", "Isharo", "Tautho", "Roorrok", "Rummuk", "Ayzimestro"]
+     	  	"spyNames": ["Rimser", "Shmendis", "Itipesh", "Hahamatzik", "Hišig", "Sharra-ura", "Emmesh", "Isharo", "Tautho", "Roorrok", "Rummuk", "Ayzimestro","Rooshu", "Kšoss"]
 	},
 
 
@@ -216,8 +216,8 @@
 			   "Amaravati","Gaur","Gwalior","Jaipur","Karachi","Jerusalem","Amman","Zanzibar","Salisbury",
 			   "Port of Spain","Nassau","St. John's","Spanish Town","St. George's","Plymouth","Port Stanley"],
 
-    //    "spyNames": ["James", "Scarlett", "Edward", "Mycroft", "Charlotte", "Gwendolyn", "Mr. Eks", "Dr. Grey", "Andrew", "Scott",
-    //		       "Anne", "Eddie", "Mary", "Who?", "Sir White", "Sir English", "Princely", "Lady Red", "Robby","Dennis", "Jake"]		//Bugs
+       		"spyNames": ["James", "Scarlett", "Edward", "Mycroft", "Charlotte", "Gwendolyn", "Mr. Eks", "Dr. Grey", "Andrew", "Scott",
+    		       "Anne", "Eddie", "Mary", "Who?", "Sir White", "Sir English", "Princely", "Lady Red", "Robby", "Dennis", "Jake"]
     },
 	
 
@@ -270,7 +270,7 @@
 	//Negative for Tiles
 	"[-2 Food] from every [Jungle]",
 	"[-2 Food] from every [Desert]",
-],
+		],
 
 		"favoredReligion": "Jainism", //This is a fictonal Civ so i chose a religions that is currently not used by any other Civ
 		"cities": ["Clan Nurummo","Clan Teppep","Clan Icewalker","Clan Mukko","Clan Ocean Blue","Clan Catha","Clan Loccosso",
@@ -281,7 +281,7 @@
 			"Clan Clarron","Clan Chinta","Clan Storrool","Clan Yellossa","Clan Thettep","Clan Klarric", "Clan Innic"
 			"Clan Iztapakka","Clan Ayotto","Clan Izta-theno", "Clan Rukka","Clan Deepseas","Clan Ice-eater","Clan Storro"
 			"Clan Stone","Clan Eights","Clan Roofto","Clan Ruffuca","Clan Concha","Clan Kathotto","Clan Khethlic","Clan Great Spear"],
-	"spyNames": ["Khorssir", "Xattal", "Chimai", "Thottoso", "Thettey", "Yokkocha", "Cotyol", "Huzithinotto", "Chotto", "Zeppin","Ayyala","Kottocha","Kithitti","Khirn"]
+	"spyNames": ["Khorssir", "Xattal", "Chimai", "Thottoso", "Thettey", "Yokkocha", "Cotyol", "Huzithinotto", "Chotto", "Zeppin","Ayyala","Kottocha","Kithitti","Khirn","Koodo","Zuchoh"]
     },
 
 
@@ -331,7 +331,7 @@
 			    "When conquering an encampment, earn [25] Gold and recruit a Barbarian unit <with [67]% chance>", //German (Germany)
 			    "[-25]% maintenance costs <for [Land] units>"						      //German (Germany)
 			    "[+2 Culture] [in all cities] <before discovering [Steam Power]>"				      //French (france)
-			    "[+1 Faith] from [{unimproved} {Forest}] tiles [in all cities]"				      //Celts: Fixed version (Republic of Irleand)
+			    "[+1 Faith] from [{unimproved} {Forest}] tiles [in all cities]"				      //Celts: Fixed version(Republic of Irleand)
 			    "City-State territory always counts as friendly territory"					      //Greek: (Greece)
 			    "Can spend Gold to annex or puppet a City-State that has been your Ally for [5] turns"	      //Austrian (Austria)
 			    "Retain [50]% of the happiness from a luxury after the last copy has been traded away"	      //Dutch (The Netherlands)
@@ -343,8 +343,69 @@
 	//	"favoredReligion": "Jainism", //will be changed to chistianity soon
 		"cities": ["Brussels","Paris","Berlin","Rome","Vienna","Sofia","Budapest","Amsterdam","Stockholm","Luxembourg","Athens","Copenhagen","Prague","Warsaw","Bucharest",
 			   "Zagreb","Nicosia","Helsinki","Valletta","Bratislava","Dublin","Tallinn","Riga","Vilnius","Ljubljana","Lisbon","Madrid","Frankfurt","Strasbourg"],
-	"spyNames": ["Ralph", "Rafael", "Leo", "Anna", "Gretta", "Isaballe", "Leon", "Mario", "Lisa", "Olga", "Kate", "Fjorn", "Michelle","Denise","Alex"]
+	"spyNames": ["Ralph", "Rafael", "Leo", "Anna", "Gretta", "Isaballe", "Leon", "Mario", "Lisa", "Olga", "Kate", "Fjorn", "Michelle","Denise","Alex", "Noel"]
     },
+
+
+
+
+
+
+
+
+	{	//Added by fan request
+		"name": "Iron Curtain",
+		"leaderName": "Gorbachev",
+		"adjective": ["Commie"],
+		"startBias": ["Tundra"],
+		"preferredVictoryType": "Domination",
+		"personality": "Catherine",
+
+
+        "startIntroPart1": "Hail to Imperial Majesty Catherine, Empress of all Russians. Living in the largest country in the world, from the Pacific Ocean in the east to the Baltic Sea in the west, your people endured wars, droughts, and many disasters, imbuing the Russian society with heroism and tenacity, and producing artists and scientists among the best in the world. Russia is a powerful empire which rightfully claims its place in the world concert of superpowers.",
+        "startIntroPart2": "Empress Catherine, your people are eager for Russian glory, to revive the sacred light of the Motherland. Will your new empire shine through the ages of history?",
+
+
+
+        "declaringWar": "It is time for the revolution to spread into your borders",
+		"attacked": "You've our unwillingess to act as weakness, but now you will face our full might!",
+		"defeated": "NO! NO! NO! NO! How could we be defeated!",
+		"denounced": "So be it. You'll have only yourself to blame.",
+		"introduction": "Greetings stranger, What brings you here?",
+		"neutralHello": "Privet!",
+		"hateHello": "Why are you here?!",
+		"tradeRequest": "Exchange. Da or Nyet?",
+
+	
+	//	"outerColor": [247, 255, 0],
+	//	"innerColor": [239, 180, 0],
+
+	//	"outerColor": [247, 255, 0],
+	//	"innerColor": [00, 100, 0], //Reminnant from when it was suposed to be the russian empire but i noticed Russia in this game litteraly is the russian empire
+
+		"outerColor": [247, 255, 0],
+		"innerColor": [100, 00, 0],
+
+
+		"favoredReligion": "Atheism",
+		"uniqueName": "Curtain",
+		"uniques": [
+			"[+1 Production] from every [Strategic resource]","[+100]% [Horses] resource production",	//Russia
+			"[+100]% [Iron] resource production","[+100]% [Uranium] resource production",			//Russia
+			"When conquering an encampment, earn [25] Gold and recruit a Barbarian unit <with [67]% chance>", //East Germany
+			"[-25]% maintenance costs <for [Land] units>",						      	   //East Germany
+			],
+
+		"cities": ["Moscow", "East Berlin", "Warsaw", "Prague", "Budapest", "Bucharest", "Sofia", "Tirana", "Leningrad", 
+			  "Novgorod", "Rostov", "Tallinn", "Riga", "Vilnius", "Kyiv", "Minsk", "Leipzig", "Lodz", "Brno",
+			  "Debrecen", "Plovdiv", "Cluj-Napoca", "Durres", "Zagreb", "Krakow", Vladivostok","Timisoara", "Ostrava",
+			  "Labedy", "Vilyuchinsk", "Tashkent", "Baku", "Kharkov", "Gorky", "Novosibirsk", "Sverdlovsk","Yakutsk",
+			  "Stalinstadt"],
+	
+        "spyNames": ["Alexei", "Maik", "Lena", "Dmitry", "Guenter", "Kevin", "Anastasia", "Oleg", "Tatiana", "Doktor khorosho", "Mikhail", "Natacha", "Zmeya", "Rudolf", "Klaus",]
+	
+
+	},
 
 
 

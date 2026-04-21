@@ -1467,8 +1467,10 @@
 		"rangedStrength": 77,
 		"range": 2,
 		"cost": 400,
+
 		"requiredTech": "Cloning",
 		"requiredResource": "Uranium",
+		"upgradesTo": "Q'usorn Zebbic",
 		"uniques": ["[+1] Sight","Can build [Road] improvements on tiles",],
 		"promotions": ["Logistics","Accuracy I"],
 		"attackSound": "phasers"
@@ -1477,9 +1479,30 @@
 		]
 	},
 	{
+		"name": "Q'usorn Zebbic",
+		"unitType": "Ranged",
+		"uniqueTo": "Aliens",
+		"replaces": "Solar Explosive Launcher",
+		"movement": 3,
+		"strength": 155,
+		"rangedStrength": 235,
+		"range": 2,
+		"cost": 650,
+		"requiredTech": "Superhumans",
+		"requiredResource": "Uranium",
+		"uniques": ["[+1] Sight","Can build [Road] improvements on tiles","[2] additional attacks per turn",],
+		"promotions": ["Accuracy II"],
+		"attackSound": "phasers"
+        	"civilopediaText": [
+			{"text": "A clone of the fammed warrior Q'usorn Zebbic."}
+		]
+	},
+
+	{
 		"name": "Orbus",
 		"unitType": "Drone",
 		"uniqueTo": "Aliens",
+		"replaces": "UAV",
 		"movement": 1,
 		"strength": 25,
 		"rangedStrength": 25,
@@ -1500,7 +1523,38 @@
 		"rangedStrength": 33,
 		"range": 12,
 		"cost": 50,
+		"upgradesTo": "Zorbus",
 		"requiredTech": "Nanotechnology",
+		"uniques": ["[+100]% Strength <vs [Gunpowder] units>","[+100]% Strength <vs [Ranged Gunpowder] units>",],
+		"promotions": ["[Orbus] ability",],
+		"attackSound": "phasers"
+	},
+	{
+		"name": "Zorbus",
+		"unitType": "Drone",
+		"uniqueTo": "Aliens",
+		"movement": 1,
+		"strength": 55,
+		"rangedStrength": 55,
+		"range": 13,
+		"cost": 50,
+		"upgradesTo": "Xorbus",
+		"requiredTech": "Space Racing",
+		"uniques": ["[+100]% Strength <vs [Gunpowder] units>","[+100]% Strength <vs [Ranged Gunpowder] units>",],
+		"promotions": ["[Orbus] ability",],
+		"attackSound": "phasers"
+	},
+	{
+		"name": "Xorbus",
+		"unitType": "Drone",
+		"uniqueTo": "Aliens",
+		"replaces": "Anti-Stealth UAV",
+		"movement": 1,
+		"strength": 80,
+		"rangedStrength": 80,
+		"range": 14,
+		"cost": 100,
+		"requiredTech": "Droid Factories",
 		"uniques": ["[+100]% Strength <vs [Gunpowder] units>","[+100]% Strength <vs [Ranged Gunpowder] units>",],
 		"promotions": ["[Orbus] ability",],
 		"attackSound": "phasers"
@@ -1730,6 +1784,23 @@
 		"uniques": ["[+150]% Strength <vs [Mounted] units>", "All healing effects doubled"],
 		"promotions": ["[Blessed Warrior] ability","Defenders of the Capital"],
 		"attackSound": "metalhit"
+	},
+	{
+		"name": "Kurnass (F-4)",
+		"unitType": "Fighter",
+		"uniqueTo": "Israel",
+		"movement": 1,
+		"strength": 77,
+		"rangedStrength": 77,
+		"range": 10,
+		"interceptRange": 10,
+		"cost": 438,
+		"requiredTech": "Computers",
+		"requiredResource": "Oil",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"promotions": ["Dogfighting I"],
+		"upgradesTo": "Jet Fighter",
+		"attackSound": "jetgun"
 	},
 	{
 		"name": "Shot-Kal Dalled",
@@ -2350,7 +2421,7 @@
 		"cost": 225,
 		"requiredTech": "Rifling",
 		"obsoleteTech": "Replaceable Parts",
-		"upgradesTo": "Great War Infantry",
+		"upgradesTo": "Texas Ranger",
 		"promotions": ["[Texan] ability"],
 		"attackSound": "shot"
 	},
@@ -2453,7 +2524,7 @@
 		"cost": 320,
 		"requiredTech": "Replaceable Parts",
 		"promotions": ["[Texan] ability"],
-		"upgradesTo": "Infantry",
+		"upgradesTo": "Ranger",
 		"obsoleteTech": "Plastics",
 		"attackSound": "shot"
 	},
@@ -2594,6 +2665,7 @@
 		"uniques": ["[-100]% maintenance costs","[+75]% Strength <vs [Armored] units>"],
 		"attackSound": "missile"
 	},
+// TOW-2A and TOW-2B 
 	{
 		"name": "Douglas O-2",
 		"unitType": "Air Recon",
@@ -2991,6 +3063,23 @@
 		"requiredResource": "Oil",
 		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
 		"promotions": ["Dogfighting I"],
+		"upgradesTo": "Boeing Super Phantom",
+		"attackSound": "jetgun"
+	},
+	{
+		"name": "Boeing Super Phantom",
+		"unitType": "Fighter",
+		"uniqueTo": "Republic of Texas",
+		"movement": 1,
+		"strength": 80,
+		"rangedStrength": 80,
+		"range": 11,
+		"interceptRange": 11,
+		"cost": 445,
+		"requiredTech": "Lasers",
+		"requiredResource": "Oil",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"promotions": ["Dogfighting I"],
 		"upgradesTo": "Jet Fighter",
 		"attackSound": "jetgun"
 	},
@@ -3261,8 +3350,35 @@
 
 
 
-	//The this religious unit cannot enter forigen tiles
 
+
+	//The these religious unit cannot enter forigen tiles (unnless freindly)
+
+
+	{
+		"name": "Xinesi",
+		"unitType": "Civilian",
+		"uniqueTo": "Republic of Texas",
+		"uniques": [
+            	"Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+            	"May found a religion <by consuming this unit> <if it hasn't used other actions yet>",
+            	"Can Spread Religion <by consuming this unit>",
+		"[+1] Sight", "Unbuildable", "Cannot be purchased", "Religious Unit", "Only available <when religion is enabled>"],
+		"movement": 2,
+		"religiousStrength": 150
+	},
+	{
+		"name": "Canahas",
+		"unitType": "Civilian",
+		"uniqueTo": "Republic of Texas",
+		"uniques": [
+            	"Can instantly construct a [Holy site] improvement <by consuming this unit> <if it hasn't used other actions yet>",
+            	"Can Spread Religion <by consuming this unit>",
+		"Can be purchased for [75] [Faith] [in cities following our religion] <before the [Medieval era]>"
+		"Unbuildable", "Religious Unit", "Only available <when religion is enabled>"],
+		"movement": 3,
+		"religiousStrength": 100
+	},
 	{
 		"name": "Preacher",
 		"unitType": "Civilian",
@@ -3276,7 +3392,7 @@
 	},
 
 
-
+	//	"Can be purchased with [Faith] [in all cities in which the majority religion is a major religion]",
 
 
 
@@ -3409,6 +3525,22 @@
 		"range": 3,
 		"cost": 40,
 		"requiredTech": "Guilds",
+		"obsoleteTech": "Terraforming",
+		"upgradesTo": "Shadowball Scroll",
+		"uniques": ["[-100]% maintenance costs"],
+		"attackSound": "missile"
+	},
+	{
+		"name": "Shadowball Scroll",
+		"unitType": "SRM",
+		"uniqueTo": "Magic Empire",
+		"movement": 1,
+		"strength": 90,
+		"rangedStrength": 90,
+		"range": 3,
+		"cost": 80,
+		"requiredTech": "Guilds",
+		"requiredTech": "Terraforming",
 		"uniques": ["[-100]% maintenance costs"],
 		"attackSound": "missile"
 	},
@@ -3904,7 +4036,7 @@
 		"strength": 45,
 		"cost": 380,
 		"requiredTech": "Computers",
-		"upgradesTo": "Near Future Helicopter Gunship",
+		"upgradesTo": "Harpy Swarm",
 		"obsoleteTech": "Material Mixing",
 		"requiredResource": "Iron",
 		"uniques": ["[+75]% Strength <vs [Armored] units>", "No defensive terrain bonus", "Can move after attacking",
@@ -3958,13 +4090,15 @@
 		"rangedStrength": 324,
 		"range": 2,
 		"cost": 2260,
+		"hurryCostModifier": 2260,
 		"requiredTech": "Superstructures",
+		"upgradesTo": "Walking Fortress",
 		"uniques": [
 				//Armoured	
 			   "No defensive terrain bonus", "Never appears as a Barbarian unit",
 				//Transport Cappacity + Air Support
 			   "Can carry [4] [Aircraft] units", "Can carry [1] [SRM] units",
-			   "[2] free [Adult Dragon] units appear"	//Originally wasnt suposed to be added but after testing it fits well (especially for recon)
+			   "[2] free [Adult Dragon] units appear",	//Originally wasnt suposed to be added but after testing it fits well (especially for recon)
 				//Abilities
 			   "Destroys tile improvements when attacking"
            		   "Can instantly construct a [Fort] improvement <by consuming this unit>",
@@ -3977,7 +4111,44 @@
 		"promotions": ["Logistics",],
 		"attackSound": "gdrAttack"
 	},
-
+	{
+		"name": "Walking Fortress",
+		"unitType": "Armored",
+		"uniqueTo": "Magic Empire",
+		"replaces": "Enhanced Shielded Mech MK-III",
+		"movement": 2,
+		"strength": 755,
+		"rangedStrength": 364,
+		"range": 3,
+		"cost": 3280,
+		"hurryCostModifier": 3280,
+		"requiredResource": "Copper",
+		"requiredTech": "Droid Factories",
+		"uniques": [
+				//Armoured	
+			   "No defensive terrain bonus", "Never appears as a Barbarian unit",
+				//Transport Cappacity + Air Support
+			   "Can carry [4] [Aircraft] units", "Can carry [1] [SRM] units",
+			   "[2] free [Adult Dragon] units appear"	//May have to alter this
+				//Abilities
+			   "Destroys tile improvements when attacking"
+           		   "Can instantly construct a [Fort] improvement <by consuming this unit>",
+           		   "Can instantly construct a [Citadel] improvement <by consuming this unit>",
+			   "Founds a new puppet city <by consuming this unit>", 
+				//Bonuses
+			   "All tiles cost 1 movement",
+			   "[1] additional attacks per turn"
+			   "[+100]% Strength <when defending> <vs [Archery] units>"
+			   "[+75]% Strength <when defending> <vs [Sword] units>"
+			   "[+50]% Strength <when defending> <vs [Ranged Gunpowder] units>"
+			   "[+25]% Strength <when defending> <vs [Gunpowder] units>"
+			   "[+10]% Strength <vs [Armored] units> <when attacking>",
+				//Cost and additional restrictions
+			   "Cannot embark", "Unable to pillage tiles", "Unable to capture cities",
+			   "Requires at least [10] population", "Consumes [4] [Uranium]",],
+		"promotions": ["Logistics","Heavy Energy Shields"],
+		"attackSound": "gdrAttack"
+	},
 	/*
 	{
 		"name": "Walking Tower",
@@ -5528,6 +5699,7 @@
 
 
 
+
 			//Ero 
 	////////////////////European Union///////////////////////
 
@@ -5664,6 +5836,78 @@
 	},
 
 
+ 
+	////////////////////Iron Curtain///////////////////////
+
+
+
+	{
+		"name": "BT-5", //Faster and cheeper than a landship but is weaker too
+		"unitType": "Armored",
+		"replaces": "Landship",
+		"uniqueTo": "Iron Curtain",
+		"movement": 7,
+		"strength": 45,
+		"cost": 275,
+		"requiredTech": "Combustion",
+		"obsoleteTech": "Combined Arms",
+		"upgradesTo": "BT-7",
+		"uniques": ["Can move after attacking",
+			    "No defensive terrain bonus", 
+			    "Never appears as a Barbarian unit"
+				//Discount
+			    "[-25]% maintenance costs",
+				//VS Debufs
+			    "[-10]% Strength <vs [Armored] units>",
+			    "[-15]% Strength <when fighting in [Rough terrain] tiles>",
+			    "[-35]% Strength <when defending> <vs [Siege] units>"
+			    "[-50]% Strength <vs cities> <when attacking>",],
+		"promotions": ["Shock I"],
+		"requiredResource": "Oil",
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "BT-7",
+		"unitType": "Armored",
+		"uniqueTo": "Iron Curtain",
+		"movement": 7,
+		"strength": 50,
+		"cost": 285,
+		"requiredTech": "Combustion",
+		"obsoleteTech": "Crystal Based Shielding",
+		"upgradesTo": "Modern Armor",
+		"uniques": ["Can move after attacking",
+			    "No defensive terrain bonus", 
+			    "Never appears as a Barbarian unit"
+				//Discount
+			    "[-25]% maintenance costs",
+				//VS Debufs
+			    "[-10]% Strength <vs [Armored] units>",
+			    "[-10]% Strength <when fighting in [Rough terrain] tiles>",
+			    "[-35]% Strength <when defending> <vs [Siege] units>",
+			    "[-50]% Strength <vs cities> <when attacking>",],
+		"promotions": ["Shock I"],
+		"requiredResource": "Oil",
+		"attackSound": "tankshot"
+	},
+	{
+		"name": "T-34",
+		"unitType": "Armored",
+		"uniqueTo": "Iron Curtain",
+		"replaces": "Tank",
+		"movement": 6,
+		"strength": 75,
+		"cost": 370,
+		"requiredTech": "Combined Arms",
+		"obsoleteTech": "Crystal Based Shielding",
+		"upgradesTo": "Modern Armor",
+		"uniques": ["Can move after attacking",
+			    "No defensive terrain bonus", 
+			    "Never appears as a Barbarian unit"
+			    "[-33]% maintenance costs",],
+		"requiredResource": "Iron",
+		"attackSound": "tankshot"
+	},
 
 
 
@@ -6956,7 +7200,20 @@
 
 
 
-
+	{
+		"name": "Giant Death Robot III",
+		"unitType": "Armored",
+		"movement": 5,
+		"strength": 800,
+		"cost": 2500,
+		"requiredTech": "Droid Factories",
+		"requiredResource": "Uranium",
+	//	"upgradesTo": "Shielded Mech",
+	//	"obsoleteTech": "Shielded Space-Fighters",
+		"uniques": ["Can move after attacking", "No defensive terrain bonus", "Never appears as a Barbarian unit"],
+		"promotions": ["Depleted Uranium Armour"],
+		"attackSound": "gdrAttack"
+	},
 
 
 

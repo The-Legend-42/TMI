@@ -1139,5 +1139,97 @@
 
 	}
 
+	{
+		"columnNumber": 23,
+		"era": "Droid era",
+		"techCost": 180000,
+		"buildingCost": 8000,
+		"wonderCost": 25000,
+		"techs": [
+			///////////////////////////////////////ROW 1//////////////////////////////
+
+
+
+			{
+				"name": "Droid Factories",
+				"row": 5,
+				"prerequisites": ["Material Mixing","Late Solar Era Weaponry","Superstructures"],
+               			 "uniques": ["[+150]% weight to this choice for AI decisions","[+50 Production] [in all cities]",],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+
+
+			/*
+			{
+				"name": "Invisibility",
+				"row": 1,
+				"prerequisites": ["Electronic Warfare","Energy Fields",],
+               			 "uniques": ["Promotes all spies [2] time(s)",],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+			{
+				"name": "Carbonometric Technology",
+				"row": 3,
+				"prerequisites": ["Energy Fields","Terraforming",],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},	
+			{
+				"name": "High Energy Theory",
+				"row": 4,
+				"prerequisites": ["Energy Fields","Terraforming","Quantum Weaponry"],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+			{
+				"name": "Interplanetary Colonisation",
+				"row": 6,
+				"prerequisites": ["Quantum Weaponry","Space Architecture",],
+                		"uniques": ["[+25]% weight to this choice for AI decisions","[1] free [Settler] units appear"],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+			{
+				"name": "Space Racing",
+				"row": 7,
+				"prerequisites": ["Space Combat",],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+			{
+				"name": "Spaceborne Population",
+				"row": 8,
+				"prerequisites": ["Enhancement",],
+               			 "uniques": ["[+50]% weight to this choice for AI decisions", "[+1 Culture] [in all cities]",],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Born in space, the Spaceborne are."}]
+			},
+			{
+				"name": "Bio Merging",
+				"row": 9,
+				"prerequisites": ["Enhancement","Uplifting",],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+			{
+				"name": "Clone Armies",
+				"row": 10,
+				"prerequisites": ["Food Synthesization",],
+                		"uniques": ["[-95]% weight to this choice for AI decisions"],
+				"quote": "'Place of the sky Palace is here' - T-L",
+                "civilopediaText": [{"text": "Who knows what the future holds?"}]
+			},
+			*/
+
+
+
+		]
+
+
+	}
+
+
 
 ]
