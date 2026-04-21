@@ -70,6 +70,9 @@ The following units are from:
 [Giant Eagle Familiar] https://www.flaticon.com/free-icons/tattoo"
 [Great Wizard https://www.flaticon.com/free-icons/gandalf
 [Orbus] https://www.flaticon.com/free-icons/camera-360]
+[Gorbus] https://www.flaticon.com/free-icons/camera-360]
+[Zorbus] https://www.flaticon.com/free-icons/camera-360]
+[Xorbus] https://www.flaticon.com/free-icons/camera-360]
 [Oriole]"https://www.flaticon.com/free-icons/drone"
 [Meyromit]"https://www.flaticon.com/free-icons/drone"
 [AAI RQ-2 Pioneer] "https://www.flaticon.com/free-icons/drone"
@@ -82,6 +85,9 @@ The following units are from:
 [Unicorn Cavalry] Altered version off https://www.freepik.com/icon/horse\\\_836034
 [Douglas O-2] <a href="https://www.flaticon.com/free-icons/plane" title="plane icons">Plane icons created by Freepik - Flaticon</a>
 [Fireball Scroll] <a href="https://www.flaticon.com/free-icons/fireball" title="fireball icons">Fireball icons created by Vectorslab - Flaticon</a>
+
+https://www.flaticon.com/free-icon/fireball_16928978
+
 [Baby Dragon Familiar]<a href="https://www.flaticon.com/free-icons/monster" title="monster icons">Monster icons created by Freepik - Flaticon</a>
 [Faerie Dragon Familiar] altered version of <a href="https://www.flaticon.com/free-icons/comix" title="comix icons">Comix icons created by egorpolyakov - Flaticon</a>
 [Douglas O-43A] <a href="https://www.flaticon.com/free-icons/propeller" title="propeller icons">Propeller icons created by alekseyvanin - Flaticon</a>
@@ -102,7 +108,6 @@ The following units are from:
 [Giant Death Robot II] From the vanilla game though ever so slightly altered.
 [AT-Rocket Jeep] https://www.flaticon.com/free-icon/car_3016581
 [Near Future Armor] From the vanilla game though ever so slightly altered.
-[Gorbus] https://www.flaticon.com/free-icons/camera-360]
 [Ballistic Missile] From the vanilla game though ever so slightly altered.
 [Merkava II] https://www.vecteezy.com/vector-art/78059519-military-tank-silhouette-side-view-armored-vehicle-illustration
 [Great Colossus] <a href="https://www.flaticon.com/free-icons/giant" title="giant icons">Giant icons created by Leremy - Flaticon</a>
@@ -153,6 +158,7 @@ The following units are from:
 [Railgun Artillery] <a href="https://www.flaticon.com/free-icons/howitzer" title="howitzer icons">Howitzer icons created by gravisio - Flaticon</a>
 [A-10 Warthog] https://en.wikipedia.org/wiki/File:Fairchild_Republic_A-10_Thunderbolt_II_-_32156159151.jpg
 [Q'u Zebbis] https://www.freepik.com/icon/alien_18988132#fromView=resource_detail&position=63
+[Q'usorn Zebbic] https://www.freepik.com/icon/alien_18988132#fromView=resource_detail&position=63
 [Medieval Galley] From the base game
 [Eitan]	https://wiki.warthunder.com/unit/il_eitan
 [Spy Satellite] <a href="https://www.flaticon.com/free-icons/satellite" title="satellite icons">Satellite icons created by VectorPortal - Flaticon</a>
@@ -278,6 +284,14 @@ The following units are from:
 [Seaplane tender] https://commons.wikimedia.org/wiki/File:HMS_Hermes_Dar_es_Salaam1907-14.jpg
 [Seaplane] https://www.flaticon.com/free-icon/plane_5723380?term=seaplane&page=1&position=90&origin=search&related_id=5723380
 [Walking Tower] https://www.flaticon.com/free-icon/tower_3328528?related_id=3328525&origin=search
+[Walking Fortress] https://www.flaticon.com/free-icon/tower_4615101
+[Xinesi] https://www.flaticon.com/free-icon/shaman_3959573
+[Canahas] https://www.flaticon.com/free-icon/shaman_3959573
+[T-34] https://openclipart.org/detail/211353/tank-t34
+[BT-5] https://commons.wikimedia.org/wiki/File:BT_-_5.jpg
+[BT-7] https://commons.wikimedia.org/wiki/File:BT_-_5.jpg
+
+
 
 
 
@@ -425,6 +439,13 @@ The Magic Circles <a href="https://www.flaticon.com/free-icons/magic" title="mag
 [Mountain Superlab] Heavily altered version of https://www.flaticon.com/free-icon/estate_14080807?term=mountain+building&page=2&position=89&origin=search&related_id=14080807
 [Dinosaurium] https://www.flaticon.com/free-icon/park_16127118
 [Duxford Aerodrome] https://www.flaticon.com/free-icon/repair_12848916
+[Prime Ancestral Totem] https://www.flaticon.com/free-icon/totem_1203176
+[Lesser Ancestral Totem] https://www.flaticon.com/free-icon/totem_4697715
+[Mikve] https://www.flaticon.com/free-icon/sauna_1891786
+[Ancient Agora] https://www.flaticon.com/free-icon/agora_4802011
+[Soviet Monument] https://www.flaticon.com/free-icon/communist_2251922?related_id=2251977&origin=search 
+
+
 
 
 
@@ -444,6 +465,9 @@ The following religious symbols are from:
 
 
 
+
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
@@ -457,6 +481,10 @@ The following faction logos are from:
 [Israel] https://www.flaticon.com/free-icon/star-of-david_5936586?term=israel&page=7&position=81&origin=search&related_id=5936586
 [Nicho Clans] https://www.flaticon.com/free-icon/snowflake_2319060
 [European Union] https://www.flaticon.com/free-icon/europe_2885374
+[Iron Curtain] https://www.flaticon.com/free-icon/communist_2251922?related_id=2251977&origin=search
+
+
+
 
 
 
@@ -471,7 +499,12 @@ The following Sounds are from:
 [Beam-Attack] https://pixabay.com/sound-effects/film-special-effects-a-large-explosive-laser-gun-shot-scifi-410622/
 
 
+
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 The following Resource Icons are from:
@@ -482,7 +515,14 @@ The following Resource Icons are from:
 
 
 
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
 
 The following Culture / Policy images are from:
 
@@ -505,7 +545,13 @@ Minor Icons:
 
 
 
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
 
 
 The following Technologic logos are from:
@@ -554,7 +600,39 @@ The following Technologic logos are from:
 
 
 
+
+
+
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+The following Unit sprites are from:
+
+*Abrams Tanks https://www.clipartmax.com/middle/m2K9A0d3G6b1N4b1_modern-tank-png-clipart-tank-clip-art-free/
+*Solar Tanks https://www.clipartmax.com/middle/m2i8A0b1N4m2A0G6_pork-tank-by-badbird29-pork-tank-by-badbird29-pork-tank/
+[Giant Death Robot II] From the base game
+*T-rex Riders are a heavily edited version of the following two images:
+.1. https://www.clipartmax.com/middle/m2i8i8d3H7d3K9m2_soldier-clipart-soldier-clipart/ and 
+.2. https://www.clipartmax.com/middle/m2K9A0d3b1m2Z5G6_rex-dinosaur-clip-art-dinosaure-clipart-t-rex/
+[Walking Tower] https://www.flaticon.com/free-icon/tower_10345629
+[Walking Fortress] https://www.flaticon.com/free-icon/sand-castle_5808337
+[Seaplane tender] Edited version of destroyer from the base game
+[Depth-Hunter Submarine] Mildly edited version of the one from the base game
+[Near Future Helicopter Gunship] exactly the same as the base games Helicopter Gunship
+[Near Future Helicopter Gunship] Based on the base games Anti-Tank Gun
+[Giant Death Robot II] Based in the giant death robot of the vanilla base game
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 Unused/Removed Assets are from:
 
