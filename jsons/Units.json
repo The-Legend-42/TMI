@@ -1786,7 +1786,7 @@
 		"attackSound": "metalhit"
 	},
 	{
-		"name": "Kurnass (F-4)",
+		"name": "Kurnass",
 		"unitType": "Fighter",
 		"uniqueTo": "Israel",
 		"movement": 1,
@@ -1799,8 +1799,31 @@
 		"requiredResource": "Oil",
 		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
 		"promotions": ["Dogfighting I"],
+		"upgradesTo": "Kurnass 2000",
+		"attackSound": "jetgun"
+        	"civilopediaText": [
+			{"text": "Israeli Verient of the Phantom."}
+		]
+	},
+	{
+		"name": "Kurnass 2000",
+		"unitType": "Fighter",
+		"uniqueTo": "Israel",
+		"movement": 1,
+		"strength": 82,
+		"rangedStrength": 82,
+		"range": 11,
+		"interceptRange": 11,
+		"cost": 456,
+		"requiredTech": "Lasers",
+		"requiredResource": "Oil",
+		"uniques": ["[100]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"promotions": ["Dogfighting I"],
 		"upgradesTo": "Jet Fighter",
 		"attackSound": "jetgun"
+        "civilopediaText": [
+			{"text": "Israeli Verient of the Super Phantom."}
+		]
 	},
 	{
 		"name": "Shot-Kal Dalled",
@@ -2201,6 +2224,7 @@
 		"strength": 220,
 		"requiredResource": "Copper",
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 	//	"upgradesTo": "Near Future Infantry",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit","[+1] Sight"
 			    "[+50]% Strength bonus for [Gunpowder] units within [5] tiles",
@@ -2221,6 +2245,7 @@
 		"strength": 195,
 		"cost": 950,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 	//	"upgradesTo": "Seasoned Israeli Clone Commander"
 		"uniques": ["Never appears as a Barbarian unit",
 			    "[+50]% Strength bonus for [Gunpowder] units within [3] tiles",
@@ -2241,6 +2266,7 @@
 		"strength": 145,
 		"cost": 625,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 	//	"upgradesTo": "Near Future Infantry",
 		"uniques": ["Never appears as a Barbarian unit",
 			    "[+50]% Strength bonus for [Gunpowder] units within [1] tiles",
@@ -2259,6 +2285,7 @@
 		"movement": 4,
 		"strength": 130,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "Israeli Clone Veteran",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
 			   "[+55]% Strength <vs [Gunpowder] units>","[+55]% Strength <vs [Ranged Gunpowder] units>",
@@ -2275,6 +2302,7 @@
 		"movement": 4,
 		"strength": 145,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "Israeli Clone Elite",
 		"requiredResource": "Iron",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
@@ -3231,6 +3259,22 @@
 		"attackSound": "tankshot"
 	},
 
+	{
+		"name": "Operative",
+		"uniqueTo": "Republic of Texas",
+		"unitType": "Scout",
+		"movement": 5,
+		"strength": 75,
+		"rangedStrength": 70,
+		"range": 2,
+		"cost": 400,
+		"requiredResource": "Silver",
+		"requiredTech": "Invisibility",
+		"promotions": ["Cloaking",],
+		"uniques": ["[+3] Sight","Unable to capture cities"],
+		"attackSound": "shot"
+	},
+
 //////////////////////////////////////////////////////////////////////////////
 	{
 		"name": "Texan Elite Clone Commander",
@@ -3239,6 +3283,7 @@
 		"movement": 4,
 		"strength": 190,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 	//	"upgradesTo": "Near Future Infantry",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit",
 			    "[+33]% Strength bonus for [Gunpowder] units within [3] tiles",
@@ -3262,6 +3307,7 @@
 		"strength": 150,
 		"cost": 1000,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "Texan Elite Clone Commander",
 		"uniques": ["Never appears as a Barbarian unit",
 			    "[+25]% Strength bonus for [Gunpowder] units within [3] tiles",
@@ -3282,6 +3328,7 @@
 		"strength": 100,
 		"cost": 650,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 	//	"upgradesTo": "Near Future Infantry",
 		"uniques": ["Never appears as a Barbarian unit",
 			    "[+20]% Strength bonus for [Gunpowder] units within [1] tiles",			    
@@ -3301,6 +3348,7 @@
 		"movement": 3,
 		"strength": 123,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "Clone Veteran",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit",
 			   "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>",
@@ -3318,6 +3366,7 @@
 		"movement": 4,
 		"strength": 128,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "Clone Elite",
 		"requiredResource": "Iron",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit",
@@ -3335,6 +3384,7 @@
 		"movement": 4,
 		"strength": 135,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"requiredResource": "Iron",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit",
 			   "[+66]% Strength <vs [Gunpowder] units>","[+66]% Strength <vs [Ranged Gunpowder] units>",
@@ -4222,6 +4272,7 @@
 		"rangedStrength": 120,
 		"range": 3,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 	//	"upgradesTo": "Near Future Infantry",
 		"uniques": ["Never appears as a Barbarian unit",
 			   "[+20]% Strength bonus for [Sword] units within [6] tiles",
@@ -4253,6 +4304,7 @@
 		"range": 3,
 		"cost": 1250,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "Wizened Necromancer"
 		"uniques": ["Never appears as a Barbarian unit",
 			   "[6] free [Skeletal Servant] units appear"
@@ -4281,6 +4333,7 @@
 		"strength": 90,
 		"cost": 550,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 	//	"upgradesTo": "Near Future Infantry",
 		"uniques": ["Never appears as a Barbarian unit",
 			   "[+10]% Strength bonus for [Sword] units within [1] tiles",
@@ -4305,6 +4358,7 @@
 		"movement": 4,
 		"strength": 85,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "Skeleton Archer",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit",
 			   "[-50]% maintenance costs",
@@ -4328,6 +4382,7 @@
 		"rangedStrength": 75,
 		"range": 2,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "Clone Elite",
 		"requiredResource": "Iron",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
@@ -4351,6 +4406,7 @@
 		"rangedStrength": 85,
 		"range": 2,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"requiredResource": "Coal",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
 			   "[-50]% maintenance costs",
@@ -4949,23 +5005,45 @@
 		"obsoleteTech": "Advanced Ballistics",
 		"uniques": ["[+1] Sight", "[1] free [Seaplane] units appear"],
 	//	"upgradesTo": "Carrier",
+		"attackSound": "shipguns"
 	},
 	{
         	"name": "Seaplane",
 		"unitType": "Seaplane",
 		"uniqueTo": "British Empire",
-		"movement": 4,
+		"movement": 1,
+		"range": 4,
+		"interceptRange": 4,
 		"strength": 33,
 		"rangedStrength": 33,
 		"cost": 280,
 		"requiredResource": "Oil",
 		"requiredTech": "Flight",
-		"uniques": ["[30]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>"],
+		"upgradesTo": "Spitfire Floatplane",
+		"uniques": ["[30]% chance to intercept air attacks", "[+150]% Strength <vs [Bomber] units>", "[+150]% Strength <vs [Helicopter] units>", "[+2] Sight"],
 		"obsoleteTech": "Advanced Ballistics",
-		"uniques": ["[+2] Sight",]
+		"attackSound": "machinegun"
 	},
-
-
+	{
+        	"name": "Spitfire Floatplane",
+		"unitType": "Seaplane",
+		"uniqueTo": "British Empire",
+		"movement": 1,
+		"range": 6,
+		"interceptRange": 6,
+		"strength": 40,
+		"rangedStrength": 40,
+		"cost": 410,
+		"requiredTech": "Radar",
+		"obsoleteTech": "Advanced Ballistics",
+		"uniques": ["[60]% chance to intercept air attacks", 
+			    "[+150]% Strength <vs [Bomber] units>",
+			    "[+150]% Strength <vs [Helicopter] units>",
+			    "[+2] Sight",
+			    "Consumes [2] [Oil]",],
+		"promotions": ["[Spitfire] ability","Air Repair",],
+		"attackSound": "machinegun"
+	},
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 	{
@@ -4975,6 +5053,7 @@
 		"movement": 4,
 		"strength": 205,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 	//	"upgradesTo": "Near Future Infantry",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit",
 			    "[+33]% Strength bonus for [Water] units within [7] tiles",
@@ -4996,6 +5075,7 @@
 		"strength": 200,
 		"cost": 1280,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "British Naval Clone Commander"
 		"uniques": ["Never appears as a Barbarian unit",
 			    "[+25]% Strength bonus for [Water] units within [5] tiles",
@@ -5018,6 +5098,7 @@
 		"strength": 150,
 		"cost": 850,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 	//	"upgradesTo": "Near Future Infantry",
 		"uniques": ["Never appears as a Barbarian unit",
 			    "[+15]% Strength bonus for [Water] units within [2] tiles",
@@ -5039,6 +5120,7 @@
 		"movement": 3,
 		"strength": 150,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "Clone Veteran",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
 			   "[+60]% Strength <vs [Gunpowder] units>","[+60]% Strength <vs [Ranged Gunpowder] units>",
@@ -5056,6 +5138,7 @@
 		"movement": 4,
 		"strength": 165,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "Clone Elite",
 		"requiredResource": "Iron",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
@@ -5074,6 +5157,7 @@
 		"movement": 4,
 		"strength": 175,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"requiredResource": "Iron",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
 			   "[+70]% Strength <vs [Gunpowder] units>","[+70]% Strength <vs [Ranged Gunpowder] units>",
@@ -5557,6 +5641,7 @@
 		"movement": 6,
 		"strength": 235,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 	//	"upgradesTo": "Near Future Infantry",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit",
 			    "Can enter ice tiles","Can move after attacking",
@@ -5584,6 +5669,7 @@
 		"strength": 140,
 		"cost": 800,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "Nicho Clone Cheif",
 		"uniques": ["Never appears as a Barbarian unit",
 			    "[+20]% Strength bonus for [Gunpowder] units within [3] tiles",
@@ -5604,6 +5690,7 @@
 		"strength": 100,
 		"cost": 600,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 	//	"upgradesTo": "Near Future Infantry",
 		"uniques": ["Never appears as a Barbarian unit",
 			    "[+10]% Strength bonus for [Gunpowder] units within [1] tiles",
@@ -5623,6 +5710,7 @@
 		"movement": 4,
 		"strength": 120,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "Clone Veteran",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
 			   "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>",
@@ -5640,6 +5728,7 @@
 		"movement": 4,
 		"strength": 125,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "Clone Elite",
 		"requiredResource": "Iron",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
@@ -5657,6 +5746,7 @@
 		"movement": 4,
 		"strength": 130,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"requiredResource": "Iron",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
 			   "[+66]% Strength <vs [Gunpowder] units>","[+66]% Strength <vs [Ranged Gunpowder] units>",
@@ -5907,6 +5997,23 @@
 			    "[-33]% maintenance costs",],
 		"requiredResource": "Iron",
 		"attackSound": "tankshot"
+	},
+
+	{
+		"name": "Informer",
+		"unitType": "Scout",
+		"replaces": "Agent",
+		"uniqueTo": "Iron Curtain",
+		"movement": 3,
+		"strength": 45,
+		"rangedStrength": 40,
+		"range": 2,
+		"cost": 300,
+		"requiredResource": "Silver",
+		"requiredTech": "Invisibility",
+		"promotions": ["Cloaking",],
+		"uniques": ["[+4] Sight","Unable to capture cities"],
+		"attackSound": "shot"
 	},
 
 
@@ -6175,7 +6282,7 @@
 		"requiredTech": "Cloning",
 		"uniques": ["[+1] Sight","Can build [Road] improvements on tiles",],
 		"promotions": ["Blitz"],
-	//	"upgradesTo": "Mechanized Infantry",
+		"upgradesTo": "Cyborg Trooper",
 		"attackSound": "shot"
 	},
 	{
@@ -6203,7 +6310,7 @@
 			    "May Paradrop to [Land] tiles up to [5] tiles away <in [{Friendly} {Land}] tiles>", 
 			    "Never appears as a Barbarian unit"],
 		"promotions": ["[Urban Combat] ability","Cover I"],
-	//	"upgradesTo": "Mechanized Infantry",
+		"upgradesTo": "Cyborg Trooper",
 		"attackSound": "shot"
 	},
 	{
@@ -6406,7 +6513,8 @@
 		"strength": 150,
 		"cost": 1000,
 		"requiredTech": "Clone Armies",
-	//	"upgradesTo": "Near Future Infantry",
+		"obsoleteTech": "Droid Armies",
+		"upgradesTo": "Cyborg Trooper",
 		"uniques": ["Never appears as a Barbarian unit",
 			    "[+20]% Strength bonus for [Military] units within [3] tiles",
 			    "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>",
@@ -6425,7 +6533,8 @@
 		"strength": 150,
 		"cost": 1000,
 		"requiredTech": "Clone Armies",
-	//	"upgradesTo": "Near Future Infantry",
+		"obsoleteTech": "Droid Armies",
+		"upgradesTo": "Cyborg Trooper",
 		"uniques": ["Never appears as a Barbarian unit",
 			    "[+20]% Strength bonus for [Gunpowder] units within [3] tiles",	//Changed to gunpowder this isn't a great general only comands clones.
 			    "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>",
@@ -6443,7 +6552,8 @@
 		"strength": 100,
 		"cost": 650,
 		"requiredTech": "Clone Armies",
-	//	"upgradesTo": "Near Future Infantry",
+		"obsoleteTech": "Droid Armies",
+		"upgradesTo": "Cyborg Trooper",
 		"uniques": ["Never appears as a Barbarian unit",
 			    "[+10]% Strength bonus for [Gunpowder] units within [1] tiles",	//Changed to gunpowder this isn't a great general only comands clones.
 			    "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>",
@@ -6460,6 +6570,7 @@
 		"movement": 3,
 		"strength": 120,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "Clone Veteran",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
 			   "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>",
@@ -6474,6 +6585,7 @@
 		"movement": 4,
 		"strength": 125,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
 		"upgradesTo": "Clone Elite",
 		"requiredResource": "Iron",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
@@ -6488,6 +6600,8 @@
 		"movement": 4,
 		"strength": 130,
 		"requiredTech": "Clone Armies",
+		"obsoleteTech": "Droid Armies",
+		"upgradesTo": "Cyborg Trooper",
 		"requiredResource": "Iron",
 		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
 			   "[+66]% Strength <vs [Gunpowder] units>","[+66]% Strength <vs [Ranged Gunpowder] units>",
@@ -7215,7 +7329,111 @@
 		"attackSound": "gdrAttack"
 	},
 
+	{
+		"name": "Archon Droid",
+		"unitType": "Droid",
+		"movement": 2,
+		"strength": 300,
+		"cost": 1500,
+		"requiredTech": "Droid Armies",
+	//	"obsoleteTech": "Droid Armies",
+	//	"upgradesTo": "Near Future Infantry",
+		"uniques": ["Never appears as a Barbarian unit",
+			    "Consumes [1] [Iron]",
+			    "[+33]% Strength bonus for [Droid] units within [3] tiles <when attacking>",
+			    "[+10]% Strength bonus for [Droid] units within [1] tiles",
+			    "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>","[+67]% Strength <vs [Droid] units>",
+			    "Withdraws before melee combat <with [33]% chance>",
+			    "[4] free [Droid Infantry] units appear"],
+		"promotions": ["Mechanic II","Scouting II","Blitz"],
+		"attackSound": "machinegun"
+	},
 
+	{
+		"name": "Droid Infantry",
+		"unitType": "Droid",
+		"movement": 3,
+		"strength": 200,
+		"requiredTech": "Droid Armies",
+	//	"obsoleteTech": "Droid Armies",
+	//	"upgradesTo": "Clone Veteran",
+		"uniques": ["Cannot be purchased","Unbuildable","Never appears as a Barbarian unit"
+			    "Consumes [1] [Iron]",
+			   "[+5]% Strength bonus for [Droid] units within [3] tiles <when attacking>",
+			   "[+50]% Strength <vs [Gunpowder] units>","[+50]% Strength <vs [Ranged Gunpowder] units>",
+			   "[+10]% to Flank Attack bonuses"],
+		"attackSound": "machinegun"
+	},
+
+
+
+	{
+		"name": "Cyborg Trooper",
+		"unitType": "Gunpowder",
+		"movement": 3,
+		"strength": 235,
+		"cost": 1000,
+		"requiredTech": "Droid Armies",
+	//	"obsoleteTech": "Droid Armies",
+		"upgradesTo": "Enhanced Cyborg Trooper",
+		"requiredResource": "Aluminum",
+		"uniques": ["Never appears as a Barbarian unit","Cannot be purchased",
+			    "May Paradrop to [Land] tiles up to [6] tiles away <in [{Friendly} {Land}] tiles>", 
+			    "[+50]% Strength <vs [Gunpowder] units>",
+			    "[+50]% Strength <vs [Sword] units>",
+			    "[+50]% Strength <vs [Droid] units>",
+			    "[+50]% Strength <vs [Scout] units>",
+			    "[+10]% to Flank Attack bonuses"
+			    "[+1] Sight",],
+		"promotions": ["Cybernetics Network", "Logistics", "Medic", "Formation I","[Urban Combat] ability",],
+		"attackSound": "machinegun"
+	},
+	{
+		"name": "Enhanced Cyborg Trooper",
+		"unitType": "Gunpowder",
+		"movement": 4,
+		"strength": 255,
+		"cost": 1340,
+		"requiredTech": "Droid Armies",
+	//	"obsoleteTech": "Droid Armies",
+		"upgradesTo": "Cyborg Supertrooper",
+		"requiredResource": "Aluminum",
+		"uniques": ["Never appears as a Barbarian unit","Cannot be purchased","Unbuildable"
+			    "May Paradrop to [Land] tiles up to [6] tiles away <in [{Friendly} {Land}] tiles>", 
+			    "[+50]% Strength <vs [Gunpowder] units>",
+			    "[+50]% Strength <vs [Sword] units>",
+			    "[+50]% Strength <vs [Droid] units>",
+			    "[+50]% Strength <vs [Scout] units>",
+			    "[+10]% to Flank Attack bonuses"
+			    "[+2] Sight",],
+		"promotions": ["Cybernetics Network", "Logistics", "Medic", "Formation I","[Urban Combat] ability",],
+		"attackSound": "machinegun"
+	},
+
+	{
+		"name": "Cyborg Supertrooper",
+		"unitType": "Gunpowder",
+		"movement": 5,
+		"strength": 285,
+		"cost": 1775,
+		"requiredTech": "Droid Armies",	//Temporary will be set to a higher tech later on and will remain unbuildabe as a upgradable only unit.
+	//	"obsoleteTech": "Droid Armies",
+	//	"upgradesTo": "Clone Veteran",
+		"requiredResource": "Aluminum",
+		"uniques": [ "Only available <if [Super Soldier Program] is constructed>"
+			    "Never appears as a Barbarian unit","Cannot be purchased","Unbuildable"
+			    "May Paradrop to [Land] tiles up to [7] tiles away <in [{Friendly} {Land}] tiles>", 
+			    "[+50]% Strength <vs [Gunpowder] units>",
+			    "[+50]% Strength <vs [Sword] units>",
+			    "[+50]% Strength <vs [Droid] units>",
+			    "[+50]% Strength <vs [Scout] units>",
+			    "[+33]% Strength <vs [Ranged Gunpowder] units>",
+			    "[+33]% Strength <vs [Archery] units>",
+			    "[+10]% to Flank Attack bonuses"
+			    "[+3] Sight",],
+		"promotions": ["Cybernetics Network", "Logistics", "Medic", "Formation I","[Urban Combat] ability",],
+		"attackSound": "machinegun"
+	},
 
 
 

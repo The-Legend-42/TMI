@@ -533,7 +533,6 @@
 			    "AI will buy at [2000] Gold",
  			    "AI will sell at [2000] Gold",]
 	},
-
 	{
 		"name": "Dinosaur", 
 		"resourceType": "Luxury",
@@ -542,9 +541,16 @@
 		//"improvement": "Camp",
 		//"improvementStats": {"gold": 1},
 		"uniques": ["Doesn't generate naturally <in [All] tiles>",
+			    "AI will buy at [250] Gold",
+ 			    "AI will sell at [250] Gold",],
+	},
+	{
+		"name": "Dairy", 
+		"resourceType": "Luxury",
+		"revealedBy": "Animal Husbandry",
+		"uniques": ["Doesn't generate naturally <in [All] tiles>",
 			    "AI will buy at [50] Gold",
  			    "AI will sell at [50] Gold",],
-	}
-
+	},
 	
 ]
