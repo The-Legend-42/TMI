@@ -189,6 +189,8 @@ https://www.flaticon.com/free-icon/fireball_16928978
 [Clone Elite] https://www.flaticon.com/free-icon/soldier_2354270
 [Shielded Marines] Base Game
 [Agent] https://www.flaticon.com/free-icon/agent_4094806
+[Informer] https://www.flaticon.com/free-icon/agent_4094806
+[Operative] https://www.flaticon.com/free-icon/agent_4094806 
 [Hypersonic Missile] Based on the Guided Missile From the vanilla game though Heavily altered.
 [Intercontinental Hypersonic Missile] Based on the Guided Missile From the vanilla game though Heavily altered.
 [Skeleton Archer] https://www.flaticon.com/free-icon/archery_5557411?related_id=5557470&origin=search
@@ -258,6 +260,9 @@ https://www.flaticon.com/free-icon/fireball_16928978
 [Depth-Hunter Submarine] Altered the original submarine from the base game
 [Sub Chaser] https://www.gettyimages.com/photos/flying-boat
 [F-4 Phantom] https://en.wikipedia.org/wiki/McDonnell_Douglas_F-4_Phantom_II#Current
+[Boeing Super Phantom] https://en.wikipedia.org/wiki/McDonnell_Douglas_F-4_Phantom_II#Current
+[Kurnass] https://en.wikipedia.org/wiki/McDonnell_Douglas_F-4_Phantom_II#Current
+[Kurnass 2000] https://en.wikipedia.org/wiki/McDonnell_Douglas_F-4_Phantom_II#Current
 [Near Future Helicopter Gunship] Based on the base games Helicopter Gunship
 [Invisible Attack Helicopter] https://www.flaticon.com/free-icon/military-helicopter_3194819
 [Harpy] https://www.flaticon.com/free-icon/harpy_5169523?related_id=5169540&origin=search
@@ -290,7 +295,12 @@ https://www.flaticon.com/free-icon/fireball_16928978
 [T-34] https://openclipart.org/detail/211353/tank-t34
 [BT-5] https://commons.wikimedia.org/wiki/File:BT_-_5.jpg
 [BT-7] https://commons.wikimedia.org/wiki/File:BT_-_5.jpg
-
+[Archon Droid] Edited version of https://www.flaticon.com/free-icon/gun_9936236
+[Droid Infantry] Edited version of https://www.flaticon.com/free-icon/gun_9936236
+[Cyborg Trooper] https://www.flaticon.com/free-icon/cyborg_4490951?related_id=4492677&origin=search
+[Enhanced Cyborg Trooper] https://www.flaticon.com/free-icon/cyborg_4490951?related_id=4492677&origin=search
+[Cyborg Supertrooper] https://www.flaticon.com/free-icon/cyborg_4490951?related_id=4492677&origin=search
+[Spitfire Floatplane] https://en.wikipedia.org/wiki/File:Spitfire_VB_Floatplane_W3760.jpg
 
 
 
@@ -444,8 +454,17 @@ The Magic Circles <a href="https://www.flaticon.com/free-icons/magic" title="mag
 [Mikve] https://www.flaticon.com/free-icon/sauna_1891786
 [Ancient Agora] https://www.flaticon.com/free-icon/agora_4802011
 [Soviet Monument] https://www.flaticon.com/free-icon/communist_2251922?related_id=2251977&origin=search 
-
-
+[Texas Motor Car Association] https://www.flaticon.com/free-icon/car-manufacturing_8179853
+[Texan Hunting Grounds] https://www.flaticon.com/free-icon/hunting_18426035
+[Superconducting Superwires] Made by me (Original)
+[Triangular Milk Factory] Edited version of https://www.flaticon.com/free-icon/production_18958239
+[Growth Stone] https://www.flaticon.com/free-icon/stone_4405457?term=stone&related_id=4405457
+[Farm cottage] https://www.flaticon.com/free-icon/cottage_8384360
+[Country Home] https://www.flaticon.com/free-icon/cabin_4614488?term=cottage&page=1&position=9&origin=search&related_id=4614488
+[Giant Cheese] Uses:
+1. https://www.flaticon.com/free-icon/cheese_12926573
+2. https://www.flaticon.com/free-icon/man_4799793
+3. https://www.flaticon.com/free-icon/exercise_2723532
 
 
 
@@ -512,6 +531,7 @@ The following Resource Icons are from:
 [Heavy Oil] Based on the Oil icon from the original game
 [Low Yield Quarkyonic Power Core] <a href="https://www.flaticon.com/free-icons/quark" title="quark icons">Quark icons created by martin.allien - Flaticon</a>
 [Dinosaur]  https://www.flaticon.com/free-icon/triceratops_838014
+[Dairy] https://www.flaticon.com/free-icon/bottle_2836107?related_id=2826128&origin=search
 
 
 
@@ -602,6 +622,16 @@ The following Technologic logos are from:
 
 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+The following promotions are from:
+
+
+[Sky Intelligence] https://www.flaticon.com/free-icon/binocular_2050240
+[Drone Sweep] https://www.flaticon.com/free-icon/uav_11252619?related_id=11252609&origin=search
+
+
+
+
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -621,7 +651,7 @@ The following Unit sprites are from:
 [Near Future Helicopter Gunship] exactly the same as the base games Helicopter Gunship
 [Near Future Helicopter Gunship] Based on the base games Anti-Tank Gun
 [Giant Death Robot II] Based in the giant death robot of the vanilla base game
-
+[Eitan] exactly the same as the base games Mechanised Infantry
 
 
 
